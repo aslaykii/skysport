@@ -9,7 +9,7 @@ if not api_key:
 genai.configure(api_key=api_key)
 
 # 2. Tkhtir l-model l-mzyan (stakhdamna gemini-1.5-flash)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-flash')
 
 # 3. Generation dyal l-akhbar l-riyadiya
 prompt = "Generate a short sports news article in English about recent football highlights, formatted in clean HTML."
