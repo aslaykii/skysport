@@ -8,8 +8,8 @@ if not api_key:
 
 genai.configure(api_key=api_key)
 
-# 2. Utilisation du modèle compatible avec la bibliothèque standard
-model = genai.GenerativeModel('gemini-1.5-flash')
+# 2. Utilisation du modèle avec la syntaxe exacte reconnue par GitHub Actions
+model = genai.GenerativeModel('models/gemini-1.5-flash')
 
 # 3. Génération du contenu des actualités sportives
 prompt = "Generate a short sports news article in English about recent football highlights, formatted in clean HTML."
