@@ -1,9 +1,9 @@
 name: Auto Generate Sports News
 
 on:
-  workflow_dispatch: # كيمكنك تشغل السكريبت يدوياً من GitHub Actions
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # كتخدم أوتوماتيكياً مرة كل نهار
+    - cron: '0 0 * * *'
 
 jobs:
   generate:
@@ -18,10 +18,11 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install Dependencies
+    - name: Clean and Upgrade Pip & Library
       run: |
         python -m pip install --upgrade pip
-        pip install --upgrade google-generativeai
+        pip uninstall -y google-generativeai google-ai-generativelanguage
+        pip install --no-cache-dir --upgrade google-generativeai
 
     - name: Run News Generator
       env:
@@ -34,3 +35,4 @@ jobs:
       with:
         commit_message: "Auto-update sports news via Gemini API"
         branch: main
+
