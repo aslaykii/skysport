@@ -1,22 +1,21 @@
 import os
-import google.generativeai as genai
+from google import genai
 
-# 1. Configuration de la clé API
+# 1. Configuration de la clé API avec le nouveau client officiel
 api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("GEMINI_API_KEY not found in environment variables!")
 
-genai.configure(api_key=api_key)
+client = genai.Client(api_key=api_key)
 
-# 2. Utilisation du modèle de base stable
-model = genai.GenerativeModel('gemini-pro')
-
-# 3. Génération du contenu des actualités sportives
-prompt = "Generate a short sports news article in English about recent football highlights, formatted in clean HTML."
-response = model.generate_content(prompt)
+# 2. Utilisation du modèle moderne et stable
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="Generate a short sports news article in English about recent football highlights, formatted in clean HTML.",
+)
 news_html = response.text
 
-# 4. Écriture du contenu dans index.html
+# 3. Écriture du contenu dans index.html
 html_content = f"""
 <!DOCTYPE html>
 <html lang="en">
