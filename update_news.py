@@ -1,22 +1,39 @@
 import os
-import google.generativeai as genai
+import json
+import urllib.request
 
-# 1. Configuration de la clé API
+# 1. جلب المفتاح ديال API
 api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("GEMINI_API_KEY not found in environment variables!")
 
-genai.configure(api_key=api_key)
+# 2. إعداد الطلب المباشر لـ Gemini API عبر الرابط الرسمي
+url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
 
-# 2. Utilisation du modèle classique gemini-pro
-model = genai.GenerativeModel('gemini-pro')
+prompt_text = "Generate a short sports news article in English about recent football highlights, formatted in clean HTML."
 
-# 3. Génération du contenu des actualités sportives
-prompt = "Generate a short sports news article in English about recent football highlights, formatted in clean HTML."
-response = model.generate_content(prompt)
-news_html = response.text
+payload = {
+    "contents": [{
+        "parts": [{"text": prompt_text}]
+    }]
+}
 
-# 4. Écriture du contenu dans index.html
+req = urllib.request.Request(
+    url,
+    data=json.dumps(payload).encode('utf-8'),
+    headers={'Content-Type': 'application/json'},
+    method='POST'
+)
+
+try:
+    with urllib.request.urlopen(req) as response:
+        result = json.loads(response.read().decode('utf-8'))
+        news_html = result['candidates'][0]['content']['parts'][0]['text']
+except Exception as e:
+    print(f"Error calling Gemini API: {e}")
+    news_html = "<p>Could not generate news at this moment.</p>"
+
+# 3. كتابة النتيجة في ملف index.html
 html_content = f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -43,4 +60,4 @@ html_content = f"""
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("News updated successfully!")
+print("News updated successfully via direct API!")
