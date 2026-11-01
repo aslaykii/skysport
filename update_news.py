@@ -8,8 +8,8 @@ if not api_key:
 
 genai.configure(api_key=api_key)
 
-# 2. Utilisation du modèle stable et supporté
-model = genai.GenerativeModel('gemini-1.5-pro')
+# 2. Utilisation du modèle de base stable
+model = genai.GenerativeModel('gemini-pro')
 
 # 3. Génération du contenu des actualités sportives
 prompt = "Generate a short sports news article in English about recent football highlights, formatted in clean HTML."
