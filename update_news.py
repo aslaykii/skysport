@@ -1,7 +1,6 @@
 import urllib.request
 import xml.etree.ElementTree as ET
 
-# Nastakhdmo RSS Feed rasmi w majani dyal BBC Sport bash n-jibo l-akhbar l-haqiqia
 rss_url = "http://feeds.bbci.co.uk/sport/rss.xml"
 news_items_html = ""
 
@@ -15,7 +14,8 @@ try:
         for item in root.findall('./channel/item'):
             if count >= 6:
                 break
-            title = item.find('title').text if item.find('title'] is not None else ""
+            # التصحيح تم هنا (استعمال الأقواس الصحيحة)
+            title = item.find('title').text if item.find('title') is not None else ""
             description = item.find('description').text if item.find('description') is not None else ""
             
             news_items_html += f"""
@@ -28,7 +28,6 @@ try:
 except Exception as e:
     news_items_html = "<div class='news-card'><p>Could not fetch latest sports news at this moment. Please check back soon.</p></div>"
 
-# Kitabat index.html b design responsive w jdid
 html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
