@@ -25,17 +25,19 @@ req = urllib.request.Request(
     method='POST'
 )
 
+news_html = "<p>Could not generate news at this moment.</p>"
+
 try:
     with urllib.request.urlopen(req) as response:
         result = json.loads(response.read().decode('utf-8'))
-        news_html = result['candidates'][0]['content']['parts'][0]['text']
+        # استخراج النص بطريقة آمنة
+        if 'candidates' in result and len(result['candidates']) > 0:
+            news_html = result['candidates'][0]['content']['parts'][0]['text']
 except Exception as e:
     print(f"Error calling Gemini API: {e}")
-    news_html = "<p>Could not generate news at this moment.</p>"
 
 # 3. كتابة النتيجة في ملف index.html
-html_content = f"""
-<!DOCTYPE html>
+html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
