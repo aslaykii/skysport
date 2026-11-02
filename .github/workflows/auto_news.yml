@@ -1,112 +1,32 @@
-import os
-import json
-import urllib.request
-import urllib.error
+name: Auto Generate News
 
-# 1. Jlib l-API Key w t-2akkad meno
-api_key = os.environ.get("GEMINI_API_KEY")
-if not api_key:
-    raise ValueError("GEMINI_API_KEY not found in environment variables!")
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
-# 2. Iɛdad l-Endpoint dyal Gemini API (b l-model gemini-1.5-flash)
-url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+permissions:
+  contents: write
 
-prompt_text = (
-    "Generate a short, professional, and engaging sports news article in English "
-    "about recent football highlights. Format the output in clean, modern HTML "
-    "using semantic tags (like <h2>, <p>, etc.) without enclosing it in markdown code blocks."
-)
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-payload = {
-    "contents": [{
-        "parts": [{"text": prompt_text}]
-    }]
-}
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-req = urllib.request.Request(
-    url,
-    data=json.dumps(payload).encode('utf-8'),
-    headers={'Content-Type': 'application/json'},
-    method='POST'
-)
+      - name: Run News Generator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python update_news.py
 
-news_html = "<p>Could not generate news at this moment.</p>"
-
-try:
-    with urllib.request.urlopen(req) as response:
-        result = json.loads(response.read().decode('utf-8'))
-        # Stikhraj l-kalam b tariqa sahla w m-modd1ata
-        if 'candidates' in result and len(result['candidates']) > 0:
-            content = result['candidates'][0]['content']
-            if 'parts' in content and len(content['parts']) > 0:
-                raw_text = content['parts'][0]['text']
-                # Nqiw l-output ila kan fih markdown block dyal ```html ... ```
-                cleaned_text = raw_text.replace("```html", "").replace("```", "").strip()
-                news_html = cleaned_text
-except urllib.error.HTTPError as e:
-    error_body = e.read().decode('utf-8')
-    print(f"HTTP Error details: {e.code} - {error_body}")
-except Exception as e:
-    print(f"General Error calling Gemini API: {e}")
-
-# 3. Kitabat l-natija f l-malaf index.html b design nqi
-html_content = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skysport - Automated Sports News</title>
-    <style>
-        body {{
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            margin: 0;
-            padding: 40px 20px;
-        }}
-        .container {{
-            max-width: 800px;
-            margin: auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }}
-        h1 {{
-            color: #e74c3c;
-            border-bottom: 2px solid #f1f1f1;
-            padding-bottom: 15px;
-            margin-top: 0;
-        }}
-        .news-content {{
-            line-height: 1.6;
-            font-size: 16px;
-        }}
-        .footer {{
-            margin-top: 30px;
-            font-size: 12px;
-            color: #888;
-            text-align: center;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
-        }}
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Skysport Automated News</h1>
-        <div class="news-content">
-            {news_html}
-        </div>
-        <div class="footer">
-            Updated automatically every hour via Gemini API & GitHub Actions.
-        </div>
-    </div>
-</body>
-</html>
-"""
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-print("Script finished execution successfully and index.html was updated.")
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update sports news every hour via Gemini API"
+          file_pattern: index.html
