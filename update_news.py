@@ -3,12 +3,10 @@ import json
 import urllib.request
 import urllib.error
 
-# 1. جلب المفتاح ديال API
 api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("GEMINI_API_KEY not found in environment variables!")
 
-# 2. إعداد الطلب بـ gemini-1.5-flash
 url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
 
 prompt_text = (
@@ -38,7 +36,6 @@ try:
             content = result['candidates'][0]['content']
             if 'parts' in content and len(content['parts']) > 0:
                 raw_text = content['parts'][0]['text']
-                # تنقية النص وحذف علامات الـ Markdown إذا وجدت
                 cleaned_text = raw_text.replace("```html", "").replace("```", "").strip()
                 news_html = cleaned_text
 except urllib.error.HTTPError as e:
@@ -47,7 +44,6 @@ except urllib.error.HTTPError as e:
 except Exception as e:
     print(f"General Error calling Gemini API: {e}")
 
-# 3. كتابة النتيجة في ملف index.html بتصميم عصري ونظيف
 html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
