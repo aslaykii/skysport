@@ -7,7 +7,7 @@ api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("GEMINI_API_KEY not found in environment variables!")
 
-# 2. إعداد الطلب المباشر لـ Gemini API عبر الرابط الرسمي
+# 2. إعداد الطلب بـ gemini-1.5-flash
 url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
 
 prompt_text = "Generate a short sports news article in English about recent football highlights, formatted in clean HTML."
@@ -30,11 +30,13 @@ news_html = "<p>Could not generate news at this moment.</p>"
 try:
     with urllib.request.urlopen(req) as response:
         result = json.loads(response.read().decode('utf-8'))
-        # استخراج النص بطريقة آمنة
         if 'candidates' in result and len(result['candidates']) > 0:
             news_html = result['candidates'][0]['content']['parts'][0]['text']
+except urllib.error.HTTPError as e:
+    error_body = e.read().decode('utf-8')
+    print(f"HTTP Error details: {e.code} - {error_body}")
 except Exception as e:
-    print(f"Error calling Gemini API: {e}")
+    print(f"General Error calling Gemini API: {e}")
 
 # 3. كتابة النتيجة في ملف index.html
 html_content = f"""<!DOCTYPE html>
@@ -62,4 +64,4 @@ html_content = f"""<!DOCTYPE html>
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("News updated successfully via direct API!")
+print("Script finished execution successfully.")
