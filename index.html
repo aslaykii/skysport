@@ -5,96 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skysport - Global Sports News</title>
     <style>
+        :root {
+            --primary-color: #ff1801;
+            --bg-color: #0f1016;
+            --card-bg: #1a1c24;
+            --text-main: #ffffff;
+            --text-muted: #a0a5b8;
+        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
-            background: #f4f6f9;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-main);
         }
         header {
-            background: #111;
+            background: linear-gradient(135deg, #1a1c24, #0f1016);
             color: #fff;
-            padding: 25px;
+            padding: 35px 20px;
             text-align: center;
-            border-bottom: 4px solid #e74c3c;
+            border-bottom: 3px solid var(--primary-color);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
-        h1 {
+        header h1 {
             margin: 0;
-            font-size: 28px;
-            letter-spacing: 1px;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        header p {
+            margin: 8px 0 0 0;
+            color: var(--text-muted);
+            font-size: 14px;
         }
         .container {
-            max-width: 850px;
-            margin: 30px auto;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 0 20px;
         }
         .news-card {
-            background: #ffffff;
+            background: var(--card-bg);
             padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            border-left: 5px solid #e74c3c;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            border-left: 5px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(255,24,1,0.2);
         }
         .news-card h2 {
             margin-top: 0;
-            color: #2c3e50;
-            font-size: 20px;
+            color: #ffffff;
+            font-size: 22px;
+            line-height: 1.4;
         }
         .news-card p {
-            line-height: 1.6;
-            color: #555;
+            line-height: 1.7;
+            color: var(--text-muted);
+            font-size: 15px;
             margin-bottom: 0;
         }
         .footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             font-size: 13px;
-            color: #777;
-            border-top: 1px solid #ddd;
-            margin-top: 40px;
+            color: var(--text-muted);
+            border-top: 1px solid #222;
+            margin-top: 50px;
+            background: #0b0c10;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>SKYSPORT GLOBAL NEWS</h1>
+        <p>Your ultimate destination for live global sports headlines</p>
     </header>
     <div class="container">
         
-                <div class="news-card">
+                <article class="news-card">
                     <h2>How Antonelli 'blew everyone away' to make F1 history</h2>
                     <p>Kimi Antonelli seems destined for Formula 1 greatness after winning his first world title, writes Andrew Benson.</p>
-                </div>
+                </article>
             
-                <div class="news-card">
+                <article class="news-card">
                     <h2>'We've got big problems' - Hamilton says Ferrari need 'serious talks'</h2>
                     <p>Lewis Hamilton says Ferrari need "some serious talks behind closed doors" after fighting between their two drivers in Mexico.</p>
-                </div>
+                </article>
             
-                <div class="news-card">
+                <article class="news-card">
                     <h2>Antonelli - the boy 'born in a garage' who became world champion</h2>
                     <p>Kimi Antonelli was a natural driver at the age of three, according to his dad. Here's how he developed to become the F1 champion at the age of 20. </p>
-                </div>
+                </article>
             
-                <div class="news-card">
+                <article class="news-card">
                     <h2>I'll tell my players to dive in future - Iraola</h2>
                     <p>Andoni Iraola says that he will tell his players to go down in future after Liverpool were denied a penalty in Sunday's defeat by Arsenal.</p>
-                </div>
+                </article>
             
-                <div class="news-card">
+                <article class="news-card">
                     <h2>Were Arsenal 'lucky' not to concede penalty at Liverpool?</h2>
                     <p>BBC Sport's Kelly Cates, Danny Murphy and Micah Richards discuss Liverpool's denied penalty claim for a pull on Alexander Isak's shirt by Arsenal defender Jurrien Timber and whether the Reds can feel hard done by. </p>
-                </div>
+                </article>
             
-                <div class="news-card">
+                <article class="news-card">
                     <h2>Zverev becomes deserved world number one - but sense of discomfort remains</h2>
                     <p>Alexander Zverev has been the best player in the world in men's tennis this year - but a sense of discomfort remains.</p>
-                </div>
+                </article>
+            
+                <article class="news-card">
+                    <h2>Australia omit star pace trio for England series</h2>
+                    <p>Australia's star pace trio of Pat Cummins, Josh Hazlewood and Mitchell Starc will not feature in the upcoming white-ball series against England.</p>
+                </article>
+            
+                <article class="news-card">
+                    <h2>No Grealish, no problem - the rise of Everton's youngsters</h2>
+                    <p>BBC Sport examines the growing influence of Everton's youngsters on their chances of success this season.</p>
+                </article>
             
     </div>
     <div class="footer">
-        Auto-updated every hour via RSS Feeds & GitHub Actions.
+        Auto-updated every hour via RSS Feeds & GitHub Actions. Designed for Sports Fans.
     </div>
 </body>
 </html>
