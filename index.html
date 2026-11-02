@@ -3,26 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skysport - Global Sports News</title>
+    <title>Skysport - Live RSS News</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: #f8f9fa; color: #212529; }
         header { background: #111; color: #fff; padding: 20px; text-align: center; border-bottom: 4px solid #e74c3c; }
         .container { max-width: 900px; margin: 30px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
         h1 { margin: 0; font-size: 28px; color: #fff; letter-spacing: 1px; }
-        h2 { color: #2c3e50; border-left: 5px solid #e74c3c; padding-left: 12px; margin-top: 30px; }
-        p { line-height: 1.8; font-size: 16px; color: #444; }
-        ul { line-height: 1.8; font-size: 16px; color: #444; }
+        .news-item { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px; }
+        .news-item:last-child { border-bottom: none; }
+        h2 { color: #2c3e50; font-size: 20px; }
+        p { line-height: 1.6; font-size: 15px; color: #555; }
         .footer { margin-top: 40px; font-size: 13px; color: #777; text-align: center; border-top: 1px solid #eaeaea; padding-top: 20px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>SKYSPORT GLOBAL NEWS</h1>
+        <h1>SKYSPORT LIVE NEWS</h1>
     </header>
     <div class="container">
-        <p>Could not fetch latest sports news at this moment.</p>
+        
+                <div class="news-item">
+                    <h2>How Antonelli 'blew everyone away' to make F1 history</h2>
+                    <p>Kimi Antonelli seems destined for Formula 1 greatness after winning his first world title, writes Andrew Benson.</p>
+                </div>
+            
+                <div class="news-item">
+                    <h2>'We've got big problems' - Hamilton says Ferrari need 'serious talks'</h2>
+                    <p>Lewis Hamilton says Ferrari need "some serious talks behind closed doors" after fighting between their two drivers in Mexico.</p>
+                </div>
+            
+                <div class="news-item">
+                    <h2>Antonelli - the boy 'born in a garage' who became world champion</h2>
+                    <p>Kimi Antonelli was a natural driver at the age of three, according to his dad. Here's how he developed to become the F1 champion at the age of 20. </p>
+                </div>
+            
+                <div class="news-item">
+                    <h2>I'll tell my players to dive in future - Iraola</h2>
+                    <p>Andoni Iraola says that he will tell his players to go down in future after Liverpool were denied a penalty in Sunday's defeat by Arsenal.</p>
+                </div>
+            
+                <div class="news-item">
+                    <h2>Were Arsenal 'lucky' not to concede penalty at Liverpool?</h2>
+                    <p>BBC Sport's Kelly Cates, Danny Murphy and Micah Richards discuss Liverpool's denied penalty claim for a pull on Alexander Isak's shirt by Arsenal defender Jurrien Timber and whether the Reds can feel hard done by. </p>
+                </div>
+            
         <div class="footer">
-            Auto-updated hourly from global sports feeds via Gemini API & GitHub Actions.
+            Auto-updated hourly via RSS Feeds & GitHub Actions (No API Key required).
         </div>
     </div>
 </body>
