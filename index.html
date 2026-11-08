@@ -1,234 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The latest global sports headlines, with photos and stories updated automatically.">
-  <meta name="theme-color" content="#07101d">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The latest global sports headlines, photos and stories, updated automatically."><meta name="theme-color" content="#07101d">
   <title>Skysport | Global Sports News</title>
   <style>
     :root { color-scheme:dark; --bg:#07101d; --panel:#101d30; --text:#f4f7fc; --muted:#a9b5c9; --red:#ff3b30; --line:#ffffff16; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
-    a { color:inherit; }
+    :root.light { color-scheme:light; --bg:#f3f6fb; --panel:#fff; --text:#152238; --muted:#64748b; --line:#10274718; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; transition:background .2s,color .2s; } a { color:inherit; }
     .wrap { width:min(1160px,calc(100% - 40px)); margin:auto; }
-    header { position:relative; overflow:hidden; background:linear-gradient(90deg,rgba(5,12,23,.95),rgba(7,16,29,.68)),url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=2000&q=85") center 48%/cover; border-bottom:1px solid var(--line); }
-    .masthead { padding:22px 0; display:flex; align-items:center; justify-content:space-between; gap:20px; }
-    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
-    .mark { display:grid; place-items:center; width:42px; height:42px; border-radius:12px; background:var(--red); font-size:23px; font-weight:900; box-shadow:0 8px 25px #ff3b3040; }
-    h1 { margin:0; font-size:1.55rem; letter-spacing:.11em; text-transform:uppercase; }
-    .live { color:#ffe2df; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
-    .live:before { content:""; display:inline-block; width:8px; height:8px; margin-right:8px; border-radius:50%; background:#4ade80; box-shadow:0 0 12px #4ade80; }
-    .hero { min-height:310px; display:flex; align-items:end; padding:45px 0 42px; }
-    .hero-copy { max-width:750px; text-shadow:0 2px 18px #000; }
-    .eyebrow { color:#ffb5af; font-size:.78rem; font-weight:800; letter-spacing:.18em; text-transform:uppercase; }
-    .hero h2 { margin:8px 0; font-size:clamp(2rem,6vw,4.1rem); line-height:1.06; letter-spacing:-.04em; }
-    .hero p { margin:0; max-width:600px; color:#d5dced; font-size:1.02rem; }
-    .toolbar { padding:26px 0 18px; display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap; }
-    .toolbar h2 { margin:0; font-size:1.3rem; }
-    .updated { margin:3px 0 0; color:var(--muted); font-size:.83rem; }
-    .search { width:min(300px,100%); padding:11px 14px; color:var(--text); background:#101d30; border:1px solid var(--line); border-radius:10px; font:inherit; outline:none; }
-    .search:focus { border-color:var(--red); box-shadow:0 0 0 3px #ff3b3028; }
-    .filters { display:flex; gap:8px; overflow-x:auto; padding:0 0 20px; scrollbar-width:thin; }
-    .filter { flex:none; border:1px solid var(--line); border-radius:999px; padding:8px 14px; color:#cad4e5; background:#101d30; font:600 .85rem inherit; cursor:pointer; }
-    .filter.active,.filter:hover { color:#fff; border-color:#ff3b3080; background:#ff3b3026; }
-    main { padding-bottom:45px; }
-    .news-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
-    .news-card { overflow:hidden; background:var(--panel); border:1px solid var(--line); border-radius:16px; box-shadow:0 12px 30px #0003; transition:transform .2s ease,border-color .2s ease; }
-    .news-card:hover { transform:translateY(-4px); border-color:#ffffff38; }
-    .image-link { position:relative; display:block; aspect-ratio:16/9; overflow:hidden; background:#17263d; }
-    .story-image { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease; }
-    .news-card:hover .story-image { transform:scale(1.04); }
-    .image-badge { position:absolute; left:13px; bottom:12px; padding:5px 9px; border-radius:6px; background:var(--red); color:#fff; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; }
-    .story-content { padding:17px 18px 19px; }
-    .meta { display:flex; justify-content:space-between; gap:10px; margin:0 0 10px; color:#ffaaa3; font-size:.68rem; font-weight:800; letter-spacing:.1em; }
-    .meta span { color:var(--muted); font-weight:500; letter-spacing:normal; }
-    .news-card h2 { margin:0 0 9px; font-size:1.12rem; line-height:1.4; }
-    .news-card h2 a { text-decoration:none; }
-    .news-card h2 a:hover { color:#ffaaa3; }
-    .description { margin:0; color:var(--muted); font-size:.9rem; line-height:1.65; }
-    .read-more { display:inline-flex; gap:7px; margin-top:15px; color:#ff9e96; font-size:.83rem; font-weight:750; text-decoration:none; }
-    .notice { grid-column:1/-1; }
-    footer { border-top:1px solid var(--line); padding:25px 0 35px; color:var(--muted); text-align:center; font-size:.84rem; }
-    @media(max-width:900px) { .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-    @media(max-width:600px) { .wrap { width:min(100% - 28px,1160px); } .masthead { padding:17px 0; } .hero { min-height:260px; padding:35px 0; } .news-grid { grid-template-columns:1fr; gap:15px; } .toolbar { align-items:stretch; } .search { width:100%; } .news-card { display:grid; grid-template-columns:115px 1fr; } .image-link { aspect-ratio:auto; min-height:100%; } .story-content { padding:13px; } .news-card h2 { font-size:1rem; } .description { font-size:.82rem; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; } .meta { font-size:.62rem; } .read-more { margin-top:10px; } }
-    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
+    header { background:linear-gradient(90deg,rgba(5,12,23,.95),rgba(7,16,29,.63)),url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=2000&q=85") center 48%/cover; border-bottom:1px solid var(--line); color:#f4f7fc; }
+    .masthead { padding:19px 0; display:flex; align-items:center; justify-content:space-between; gap:20px; }.brand { display:flex; align-items:center; gap:12px; text-decoration:none; }.mark { display:grid; place-items:center; width:42px; height:42px; border-radius:12px; background:var(--red); font-size:23px; font-weight:900; }h1 { margin:0; font-size:1.55rem; letter-spacing:.11em; text-transform:uppercase; }.nav-actions { display:flex; align-items:center; gap:14px; }.live { color:#ffe2df; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }.live:before { content:""; display:inline-block; width:8px; height:8px; margin-right:8px; border-radius:50%; background:#4ade80; }.icon-button { width:40px; height:40px; border:1px solid #ffffff44; border-radius:50%; background:#07101d66; color:#fff; font-size:1.1rem; cursor:pointer; }
+    .hero { min-height:300px; display:flex; align-items:end; padding:42px 0; }.hero-copy { max-width:750px; text-shadow:0 2px 18px #000; }.eyebrow { color:#ffb5af; font-size:.78rem; font-weight:800; letter-spacing:.18em; text-transform:uppercase; }.hero h2 { margin:8px 0; font-size:clamp(2rem,6vw,4.1rem); line-height:1.06; letter-spacing:-.04em; }.hero p { margin:0; max-width:600px; color:#d5dced; }
+    .ticker { background:var(--red); color:#fff; }.ticker-inner { min-height:42px; display:flex; align-items:center; gap:13px; overflow:hidden; font-size:.82rem; font-weight:700; }.ticker-label { flex:none; padding:3px 8px; border:1px solid #ffffff70; border-radius:4px; font-size:.68rem; letter-spacing:.08em; }.ticker-text { overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+    .toolbar { padding:28px 0 17px; display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap; }.toolbar h2 { margin:0; font-size:1.35rem; }.updated { margin:3px 0 0; color:var(--muted); font-size:.83rem; }.search { width:min(310px,100%); padding:11px 14px; color:var(--text); background:var(--panel); border:1px solid var(--line); border-radius:10px; font:inherit; }.search:focus { outline:2px solid #ff3b3077; }.filters { display:flex; gap:8px; overflow-x:auto; padding:0 0 20px; }.filter { flex:none; border:1px solid var(--line); border-radius:999px; padding:8px 14px; color:var(--muted); background:var(--panel); font:inherit; font-size:.85rem; font-weight:600; cursor:pointer; }.filter.active,.filter:hover { color:var(--text); border-color:#ff3b3080; background:#ff3b301c; }
+    main { padding-bottom:45px; }.news-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }.news-card { overflow:hidden; background:var(--panel); border:1px solid var(--line); border-radius:16px; box-shadow:0 12px 30px #00000014; transition:transform .2s,border-color .2s; }.news-card:hover { transform:translateY(-4px); border-color:#ff3b3066; }.image-link { position:relative; display:block; aspect-ratio:16/9; overflow:hidden; background:#17263d; }.story-image { width:100%; height:100%; object-fit:cover; display:block; }.image-badge { position:absolute; left:13px; bottom:12px; padding:5px 9px; border-radius:6px; background:var(--red); color:#fff; font-size:.7rem; font-weight:800; text-transform:uppercase; }.story-content { padding:17px 18px 19px; }.meta-row { display:flex; align-items:center; justify-content:space-between; gap:8px; }.meta { display:flex; gap:10px; margin:0 0 10px; color:#ff6b60; font-size:.68rem; font-weight:800; letter-spacing:.1em; }.meta span { color:var(--muted); font-weight:500; letter-spacing:normal; }.save-button { flex:none; margin:-8px -8px 0 0; padding:4px 8px; border:0; border-radius:8px; background:transparent; color:var(--muted); font-size:1.45rem; cursor:pointer; }.save-button:hover,.save-button.saved { color:var(--red); }.news-card h2 { margin:0 0 9px; font-size:1.12rem; line-height:1.4; }.news-card h2 a { text-decoration:none; }.description { margin:0; color:var(--muted); font-size:.9rem; line-height:1.65; }.read-more { display:inline-flex; gap:7px; margin-top:15px; color:#ed6259; font-size:.83rem; font-weight:750; text-decoration:none; }.empty-state { grid-column:1/-1; padding:34px; text-align:center; color:var(--muted); background:var(--panel); border:1px dashed var(--line); border-radius:16px; }[hidden] { display:none!important; }footer { border-top:1px solid var(--line); padding:25px 0 35px; color:var(--muted); text-align:center; font-size:.84rem; }
+    @media(max-width:900px) { .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } } @media(max-width:600px) { .wrap { width:min(100% - 28px,1160px); }.masthead { padding:15px 0; }.live { display:none; }.hero { min-height:245px; padding:32px 0; }.news-grid { grid-template-columns:1fr; gap:14px; }.toolbar { align-items:stretch; }.search { width:100%; }.news-card { display:grid; grid-template-columns:112px 1fr; }.image-link { aspect-ratio:auto; min-height:100%; }.story-content { padding:12px; }.news-card h2 { font-size:.98rem; }.description { font-size:.81rem; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }.meta { font-size:.61rem; }.read-more { margin-top:9px; } }
   </style>
 </head>
 <body>
-  <header><div class="wrap">
-    <nav class="masthead" aria-label="Main navigation"><a class="brand" href="#top"><span class="mark" aria-hidden="true">S</span><h1>Skysport</h1></a><span class="live">World of sport</span></nav>
-    <section class="hero" id="top"><div class="hero-copy"><span class="eyebrow">The global sports desk</span><h2>Every moment.<br>Every sport.</h2><p>Big stories, match-day drama and the latest headlines from across the sporting world.</p></div></section>
-  </div></header>
-  <div class="wrap">
-    <section class="toolbar" aria-label="News tools"><div><h2>Latest headlines</h2><p class="updated">Updated 08 Nov 2026 at 09:15 UTC · Photos and stories from BBC Sport</p></div><input class="search" type="search" id="news-search" placeholder="Search headlines…" aria-label="Search headlines"></section>
-    <nav class="filters" aria-label="Filter news by sport"><button class="filter active" data-filter="All" type="button">All sports</button><button class="filter" data-filter="Football" type="button">Football</button><button class="filter" data-filter="Tennis" type="button">Tennis</button><button class="filter" data-filter="Formula 1" type="button">Formula 1</button><button class="filter" data-filter="Rugby" type="button">Rugby</button><button class="filter" data-filter="Cricket" type="button">Cricket</button><button class="filter" data-filter="More Sports" type="button">More sports</button></nav>
-    <main><div class="news-grid" id="news-grid"><article class="news-card" data-category="More Sports">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/football/articles/cm93z0l03n8vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4f6a/live/bd923d40-daf0-11f1-827e-c7e7ee102257.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">More Sports</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/football/articles/cm93z0l03n8vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Maresca&#x27;s dream start turns into nightmare as title hopes hit</a></h2>
-        <p class="description">Enzo Maresca left the City Ground on Saturday evening with chants of &quot;can we play you every week?&quot; ringing in his ears - the Italian&#x27;s dream start as Manchester City manager is rapidly turning into a nightmare.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/cm93z0l03n8vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="Football">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/football/articles/cqev3rdvyvm1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4e50/live/d7267220-db00-11f1-969c-27c4482e95aa.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">Football</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/football/articles/cqev3rdvyvm1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">&#x27;The worst conditions in my 35-year career&#x27; - commentating in the FA Cup fog</a></h2>
-        <p class="description">BBC Sport commentator Steve Bower gives an insight into trying to commentate when thick fog engulfs a stadium and you can barely see the action.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/cqev3rdvyvm1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="Rugby">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/rugby-league/articles/c6vg02klk084o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/732a/live/a00e5500-db4b-11f1-ad6a-794c57c0c23e.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">Rugby</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/rugby-league/articles/c6vg02klk084o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Australia reach World Cup final after Fiji scare</a></h2>
-        <p class="description">Australia have reached their fifth successive Women&#x27;s Rugby League World Cup final as they seek a fourth consecutive title - but they were made to work harder than anyone expected.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/rugby-league/articles/c6vg02klk084o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="Football">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/football/articles/cv8ez3pe5x41o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f765/live/7f024030-d860-11f1-85ab-b3cc3b5498c6.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">Football</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/football/articles/cv8ez3pe5x41o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">The oldest club in London making FA Cup history</a></h2>
-        <p class="description">Cray Wanderers host Stockport County in the FA Cup first round, with 112 league places separating the two sides.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/cv8ez3pe5x41o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="More Sports">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/football/articles/cmwyqzy934lxo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/054e/live/566a97f0-da93-11f1-8206-e519d24a9ca2.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">More Sports</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/football/articles/cmwyqzy934lxo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">&#x27;I can&#x27;t believe he is one of us&#x27; - inside Salah&#x27;s life in Trabzon</a></h2>
-        <p class="description">BBC Sport travels to Turkey to watch Mohamed Salah play for Trabzonspor and discover how the &#x27;Egyptian King&#x27; is settling into life by the Black Sea.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/cmwyqzy934lxo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="Formula 1">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/formula1/articles/cmde81d9nkxko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/85f6/live/ade06d60-db02-11f1-969c-27c4482e95aa.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">Formula 1</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/formula1/articles/cmde81d9nkxko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Qualifying conditions borderline - but Norris and Russell hoping for more rain</a></h2>
-        <p class="description">Polesitter Lando Norris says qualifying for the Sao Paulo Grand Prix brought &quot;some of the wettest conditions&quot; in which he had ever driven.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/formula1/articles/cmde81d9nkxko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="Football">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/football/articles/c6rmyg7xpnj1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f07a/live/a49461b0-daf0-11f1-827e-c7e7ee102257.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">Football</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/football/articles/c6rmyg7xpnj1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Another 1-0 for relentless Arsenal - but did Odegaard spare VAR blushes?</a></h2>
-        <p class="description">Arsenal move six points clear at the top of the Premier League after beating Hull City - but did Martin Odegaard&#x27;s goal save the blushes of the VAR?</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/c6rmyg7xpnj1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="More Sports">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/boxing/articles/cqx2vw8demexo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d2e3/live/7f200090-db01-11f1-969c-27c4482e95aa.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">More Sports</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/boxing/articles/cqx2vw8demexo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Hutchinson beats Buatsi to win WBC light-heavyweight title</a></h2>
-        <p class="description">Willy Hutchinson is crowned WBC light-heavyweight champion as he produces the performance of his career against Joshua Buatsi in Manchester.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/boxing/articles/cqx2vw8demexo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="More Sports">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/rugby-union/articles/crgj9323we9go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/75a5/live/106f6210-daef-11f1-874f-676ba8accebe.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">More Sports</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/rugby-union/articles/crgj9323we9go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Wales let themselves down despite win - Lake</a></h2>
-        <p class="description">Captain Dewi Lake knows there is plenty to improve following a lacklustre 28-21 Nations Championship victory over Japan.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/rugby-union/articles/crgj9323we9go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="More Sports">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/rugby-union/articles/c60rlkzwwk27o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/74d4/live/944d4e20-daeb-11f1-aac9-0789014bcc48.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">More Sports</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/rugby-union/articles/c60rlkzwwk27o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Scotland&#x27;s familiar frailties brutally exposed in All Blacks schooling</a></h2>
-        <p class="description">Hopes of a first-ever win over New Zealand were trampled along with Scotland&#x27;s mission statement, writes Tom English.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/rugby-union/articles/c60rlkzwwk27o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="Football">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/football/articles/cm0j033lnp5po?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b513/live/0e138ac0-d90d-11f1-94c6-3f8050561bf5.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">Football</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/football/articles/cm0j033lnp5po?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Why unique Brighton defence is so tricky to unpick</a></h2>
-        <p class="description">Brighton&#x27;s unique defensive shape has provided the platform for the Seagulls&#x27; superb start to the Premier League season.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/cm0j033lnp5po?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="news-card" data-category="Football">
-      <a class="image-link" href="https://www.bbc.co.uk/sport/football/videos/crp3gewxj77eo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3af7/live/d780fef0-dae4-11f1-a701-fddedf244c16.jpg" alt="" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85'">
-        <span class="image-badge">Football</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>Latest</span></p>
-        <h2><a href="https://www.bbc.co.uk/sport/football/videos/crp3gewxj77eo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Delap double inspires Forest to stunning win over Man City</a></h2>
-        <p class="description">Liam Delap scores a superb double as Nottingham Forest stun Manchester City 3-1 for their first Premier League win at the City Ground this season.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/videos/crp3gewxj77eo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article></div></main>
-  </div>
-  <footer><div class="wrap">Skysport · Global sports news · Headlines provided by BBC Sport RSS</div></footer>
+  <header><div class="wrap"><nav class="masthead" aria-label="Main navigation"><a class="brand" href="#top"><span class="mark" aria-hidden="true">S</span><h1>Skysport</h1></a><div class="nav-actions"><span class="live">World of sport</span><button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">☼</button></div></nav><section class="hero" id="top"><div class="hero-copy"><span class="eyebrow">The global sports desk</span><h2>Every moment.<br>Every sport.</h2><p>Big stories, match-day drama and the latest headlines from across the sporting world.</p></div></section></div></header>
+  <div class="ticker"><div class="wrap ticker-inner"><span class="ticker-label">TOP STORIES</span><span class="ticker-text">Fresh headlines from BBC Sport • Explore football, tennis, Formula 1, rugby and more</span></div></div>
+  <div class="wrap"><section class="toolbar"><div><h2>Latest headlines</h2><p class="updated">Live sports coverage · Photos and stories from BBC Sport</p></div><input class="search" type="search" id="news-search" placeholder="Search headlines…" aria-label="Search headlines"></section>
+    <nav class="filters" aria-label="Filter news by sport"><button class="filter active" data-filter="All" type="button">All sports</button><button class="filter" data-filter="Football" type="button">Football</button><button class="filter" data-filter="Tennis" type="button">Tennis</button><button class="filter" data-filter="Formula 1" type="button">Formula 1</button><button class="filter" data-filter="Rugby" type="button">Rugby</button><button class="filter" data-filter="Cricket" type="button">Cricket</button><button class="filter" data-filter="More Sports" type="button">More sports</button><button class="filter" data-filter="Saved" type="button">♡ Saved</button></nav>
+    <main><div class="news-grid" id="news-grid">
+      <article class="news-card" data-category="Football"><a class="image-link" href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img class="story-image" src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy"><span class="image-badge">Football</span></a><div class="story-content"><div class="meta-row"><p class="meta">BBC SPORT <span>Latest</span></p><button class="save-button" type="button" aria-label="Save story">♡</button></div><h2><a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Delap double inspires Forest to stunning win over Man City</a></h2><p class="description">The latest football headlines, match reports and analysis from around the world.</p><a class="read-more" href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Read story ↗</a></div></article>
+      <article class="news-card" data-category="Football"><a class="image-link" href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img class="story-image" src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy"><span class="image-badge">Football</span></a><div class="story-content"><div class="meta-row"><p class="meta">BBC SPORT <span>Latest</span></p><button class="save-button" type="button" aria-label="Save story">♡</button></div><h2><a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Arsenal beat Hull to extend lead at top of the table</a></h2><p class="description">Follow the biggest fixtures and breaking stories from the football season.</p><a class="read-more" href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Read story ↗</a></div></article>
+      <article class="news-card" data-category="More Sports"><a class="image-link" href="https://www.bbc.com/sport" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img class="story-image" src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy"><span class="image-badge">More Sports</span></a><div class="story-content"><div class="meta-row"><p class="meta">BBC SPORT <span>Latest</span></p><button class="save-button" type="button" aria-label="Save story">♡</button></div><h2><a href="https://www.bbc.com/sport" target="_blank" rel="noopener noreferrer">The latest stories from the world of sport</a></h2><p class="description">Discover major moments and updates across international sports.</p><a class="read-more" href="https://www.bbc.com/sport" target="_blank" rel="noopener noreferrer">Read story ↗</a></div></article>
+      <p class="empty-state" id="empty-state" hidden>No stories match. Try another search or category.</p>
+    </div></main>
+  </div><footer><div class="wrap">Skysport · Global sports news · Headlines provided by BBC Sport RSS</div></footer>
   <script>
-    const buttons = document.querySelectorAll('.filter');
-    const cards = [...document.querySelectorAll('.news-card')];
-    const search = document.getElementById('news-search');
-    let selected = 'All';
-    function updateCards() {
-      const query = search.value.trim().toLowerCase();
-      cards.forEach(card => {
-        const categoryMatch = selected === 'All' || card.dataset.category === selected;
-        const textMatch = card.textContent.toLowerCase().includes(query);
-        card.hidden = !(categoryMatch && textMatch);
-      });
-    }
-    buttons.forEach(button => button.addEventListener('click', () => {
-      buttons.forEach(item => item.classList.remove('active'));
-      button.classList.add('active');
-      selected = button.dataset.filter;
-      updateCards();
-    }));
-    search.addEventListener('input', updateCards);
+    const buttons=[...document.querySelectorAll('.filter')], cards=[...document.querySelectorAll('.news-card')], search=document.getElementById('news-search'), empty=document.getElementById('empty-state'); let selected='All';
+    let saved=new Set(JSON.parse(localStorage.getItem('skysport-saved')||'[]')); const key=card=>card.querySelector('h2')?.textContent.trim()||'';
+    cards.forEach(card=>{const button=card.querySelector('.save-button');if(!button)return;if(saved.has(key(card))){button.classList.add('saved');button.textContent='♥';}button.addEventListener('click',()=>{saved.has(key(card))?saved.delete(key(card)):saved.add(key(card));localStorage.setItem('skysport-saved',JSON.stringify([...saved]));button.classList.toggle('saved',saved.has(key(card)));button.textContent=saved.has(key(card))?'♥':'♡';updateCards();});});
+    function updateCards(){const query=search.value.trim().toLowerCase();let visible=0;cards.forEach(card=>{const category=selected==='All'||(selected==='Saved'?saved.has(key(card)):card.dataset.category===selected);card.hidden=!(category&&card.textContent.toLowerCase().includes(query));if(!card.hidden)visible++;});empty.hidden=visible!==0;}
+    buttons.forEach(button=>button.addEventListener('click',()=>{buttons.forEach(item=>item.classList.remove('active'));button.classList.add('active');selected=button.dataset.filter;updateCards();}));search.addEventListener('input',updateCards);
+    const theme=document.getElementById('theme-toggle');if(localStorage.getItem('skysport-theme')==='light')document.documentElement.classList.add('light');theme.addEventListener('click',()=>{document.documentElement.classList.toggle('light');localStorage.setItem('skysport-theme',document.documentElement.classList.contains('light')?'light':'dark');});
   </script>
 </body>
 </html>
