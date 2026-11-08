@@ -1,134 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skysport - Global Sports News</title>
-    <style>
-        :root {
-            --primary-color: #ff1801;
-            --bg-color: #0f1016;
-            --card-bg: #1a1c24;
-            --text-main: #ffffff;
-            --text-muted: #a0a5b8;
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-        }
-        header {
-            background: linear-gradient(135deg, #1a1c24, #0f1016);
-            color: #fff;
-            padding: 35px 20px;
-            text-align: center;
-            border-bottom: 3px solid var(--primary-color);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 800;
-        }
-        header p {
-            margin: 8px 0 0 0;
-            color: var(--text-muted);
-            font-size: 14px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .news-card {
-            background: var(--card-bg);
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-            border-left: 5px solid var(--primary-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .news-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(255,24,1,0.2);
-        }
-        .news-card h2 {
-            margin-top: 0;
-            color: #ffffff;
-            font-size: 22px;
-            line-height: 1.4;
-        }
-        .news-card p {
-            line-height: 1.7;
-            color: var(--text-muted);
-            font-size: 15px;
-            margin-bottom: 0;
-        }
-        .footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 13px;
-            color: var(--text-muted);
-            border-top: 1px solid #222;
-            margin-top: 50px;
-            background: #0b0c10;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The latest global sports headlines, with photos and stories updated automatically.">
+  <meta name="theme-color" content="#07101d">
+  <title>Skysport | Global Sports News</title>
+  <style>
+    :root { color-scheme:dark; --bg:#07101d; --panel:#101d30; --text:#f4f7fc; --muted:#a9b5c9; --red:#ff3b30; --line:#ffffff16; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    a { color:inherit; }
+    .wrap { width:min(1160px,calc(100% - 40px)); margin:auto; }
+    header { background:linear-gradient(90deg,rgba(5,12,23,.95),rgba(7,16,29,.68)),url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=2000&q=85") center 48%/cover; border-bottom:1px solid var(--line); }
+    .masthead { padding:22px 0; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
+    .mark { display:grid; place-items:center; width:42px; height:42px; border-radius:12px; background:var(--red); font-size:23px; font-weight:900; }
+    h1 { margin:0; font-size:1.55rem; letter-spacing:.11em; text-transform:uppercase; }
+    .live { color:#ffe2df; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    .live:before { content:""; display:inline-block; width:8px; height:8px; margin-right:8px; border-radius:50%; background:#4ade80; }
+    .hero { min-height:310px; display:flex; align-items:end; padding:45px 0 42px; }
+    .hero-copy { max-width:750px; text-shadow:0 2px 18px #000; }
+    .eyebrow { color:#ffb5af; font-size:.78rem; font-weight:800; letter-spacing:.18em; text-transform:uppercase; }
+    .hero h2 { margin:8px 0; font-size:clamp(2rem,6vw,4.1rem); line-height:1.06; letter-spacing:-.04em; }
+    .hero p { margin:0; max-width:600px; color:#d5dced; }
+    .toolbar { padding:26px 0 18px; display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap; }
+    .toolbar h2 { margin:0; font-size:1.3rem; }
+    .updated { margin:3px 0 0; color:var(--muted); font-size:.83rem; }
+    .search { width:min(300px,100%); padding:11px 14px; color:var(--text); background:#101d30; border:1px solid var(--line); border-radius:10px; font:inherit; outline:none; }
+    .search:focus { border-color:var(--red); }
+    .filters { display:flex; gap:8px; overflow-x:auto; padding:0 0 20px; }
+    .filter { flex:none; border:1px solid var(--line); border-radius:999px; padding:8px 14px; color:#cad4e5; background:#101d30; font:inherit; font-size:.85rem; font-weight:600; cursor:pointer; }
+    .filter.active,.filter:hover { color:#fff; border-color:#ff3b3080; background:#ff3b3026; }
+    main { padding-bottom:45px; }
+    .news-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+    .news-card { overflow:hidden; background:var(--panel); border:1px solid var(--line); border-radius:16px; box-shadow:0 12px 30px #0003; }
+    .image-link { position:relative; display:block; aspect-ratio:16/9; overflow:hidden; background:#17263d; }
+    .story-image { width:100%; height:100%; object-fit:cover; display:block; }
+    .image-badge { position:absolute; left:13px; bottom:12px; padding:5px 9px; border-radius:6px; background:var(--red); color:#fff; font-size:.7rem; font-weight:800; text-transform:uppercase; }
+    .story-content { padding:17px 18px 19px; }
+    .meta { display:flex; justify-content:space-between; gap:10px; margin:0 0 10px; color:#ffaaa3; font-size:.68rem; font-weight:800; letter-spacing:.1em; }
+    .meta span { color:var(--muted); font-weight:500; letter-spacing:normal; }
+    .news-card h2 { margin:0 0 9px; font-size:1.12rem; line-height:1.4; }
+    .news-card h2 a { text-decoration:none; }
+    .news-card h2 a:hover { color:#ffaaa3; }
+    .description { margin:0; color:var(--muted); font-size:.9rem; line-height:1.65; }
+    .read-more { display:inline-flex; gap:7px; margin-top:15px; color:#ff9e96; font-size:.83rem; font-weight:750; text-decoration:none; }
+    footer { border-top:1px solid var(--line); padding:25px 0 35px; color:var(--muted); text-align:center; font-size:.84rem; }
+    @media(max-width:900px) { .news-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:600px) { .wrap { width:min(100% - 28px,1160px); } .hero { min-height:260px; padding:35px 0; } .news-grid { grid-template-columns:1fr; gap:15px; } .toolbar { align-items:stretch; } .search { width:100%; } .news-card { display:grid; grid-template-columns:115px 1fr; } .image-link { aspect-ratio:auto; min-height:100%; } .story-content { padding:13px; } .news-card h2 { font-size:1rem; } .description { font-size:.82rem; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; } .meta { font-size:.62rem; } }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>SKYSPORT GLOBAL NEWS</h1>
-        <p>Your ultimate destination for live global sports headlines</p>
-    </header>
-    <div class="container">
-        
-                <article class="news-card">
-                    <h2>Delap double inspires Forest to stunning win over Man City</h2>
-                    <p>Liam Delap scores a superb double as Nottingham Forest stun Manchester City 3-1 for their first Premier League win at the City Ground this season.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Arsenal beat Hull to extend lead at top of the table </h2>
-                    <p>Arsenal captain Martin Odegaard scores the winner as his side beat Hull City to extend their lead at the top of the Premier League table.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Leeds beat Spurs to end five-game winless run</h2>
-                    <p>Noah Okafor scores the only goal of the game to give Leeds United their first win since the 14th of September, as Tottenham are beaten 1-0 at Elland Road in the Premier League.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Muniz strike denies Newcastle and Jaissle much-needed win</h2>
-                    <p>Rodrigo Muniz scores his first goal since the opening day of last season as Fulham deny Newcastle and head coach Matthias Jaissle a much-needed win at Craven Cottage.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Barry scores twice as Everton fight back to beat Coventry</h2>
-                    <p>In-form Thierno Barry scores twice as Everton came from behind to beat Coventry as the Toffees move into fifth in the Premier League table.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Maresca's dream start turns into nightmare as title hopes hit</h2>
-                    <p>Enzo Maresca left the City Ground on Saturday evening with chants of "can we play you every week?" ringing in his ears - the Italian's dream start as Manchester City manager is rapidly turning into a nightmare.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>'The worst conditions in my 35-year career' - commentating in the FA Cup fog</h2>
-                    <p>BBC Sport commentator Steve Bower gives an insight into trying to commentate when thick fog engulfs a stadium and you can barely see the action.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Another 1-0 for relentless Arsenal - but did Odegaard spare VAR blushes?</h2>
-                    <p>Arsenal move six points clear at the top of the Premier League after beating Hull City - but did Martin Odegaard's goal save the blushes of the VAR?</p>
-                </article>
-            
-    </div>
-    <div class="footer">
-        Auto-updated every hour via RSS Feeds & GitHub Actions. Designed for Sports Fans.
-    </div>
+  <header><div class="wrap">
+    <nav class="masthead" aria-label="Main navigation"><a class="brand" href="#top"><span class="mark" aria-hidden="true">S</span><h1>Skysport</h1></a><span class="live">World of sport</span></nav>
+    <section class="hero" id="top"><div class="hero-copy"><span class="eyebrow">The global sports desk</span><h2>Every moment.<br>Every sport.</h2><p>Big stories, match-day drama and the latest headlines from across the sporting world.</p></div></section>
+  </div></header>
+  <div class="wrap">
+    <section class="toolbar"><div><h2>Latest headlines</h2><p class="updated">Updated automatically · Photos and stories from BBC Sport</p></div><input class="search" type="search" id="news-search" placeholder="Search headlines…" aria-label="Search headlines"></section>
+    <nav class="filters" aria-label="Filter news by sport"><button class="filter active" data-filter="All" type="button">All sports</button><button class="filter" data-filter="Football" type="button">Football</button><button class="filter" data-filter="Tennis" type="button">Tennis</button><button class="filter" data-filter="Formula 1" type="button">Formula 1</button><button class="filter" data-filter="Rugby" type="button">Rugby</button><button class="filter" data-filter="Cricket" type="button">Cricket</button><button class="filter" data-filter="More Sports" type="button">More sports</button></nav>
+    <main><div class="news-grid" id="news-grid">
+      <article class="news-card" data-category="Football"><a class="image-link" href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img class="story-image" src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=85" alt="Football stadium" loading="lazy"><span class="image-badge">Football</span></a><div class="story-content"><p class="meta">BBC SPORT <span>Latest</span></p><h2><a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Delap double inspires Forest to stunning win over Man City</a></h2><p class="description">Liam Delap scores a superb double as Nottingham Forest stun Manchester City 3-1.</p><a class="read-more" href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Read story ↗</a></div></article>
+      <article class="news-card" data-category="Football"><a class="image-link" href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img class="story-image" src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=85" alt="Football pitch" loading="lazy"><span class="image-badge">Football</span></a><div class="story-content"><p class="meta">BBC SPORT <span>Latest</span></p><h2><a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Arsenal beat Hull to extend lead at top of the table</a></h2><p class="description">Arsenal captain Martin Odegaard scores the winner as his side extend their lead at the top.</p><a class="read-more" href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Read story ↗</a></div></article>
+      <article class="news-card" data-category="More Sports"><a class="image-link" href="https://www.bbc.com/sport" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img class="story-image" src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85" alt="Athlete running on a track" loading="lazy"><span class="image-badge">More Sports</span></a><div class="story-content"><p class="meta">BBC SPORT <span>Latest</span></p><h2><a href="https://www.bbc.com/sport" target="_blank" rel="noopener noreferrer">The latest stories from the world of sport</a></h2><p class="description">Explore the latest headlines and match-day stories from BBC Sport.</p><a class="read-more" href="https://www.bbc.com/sport" target="_blank" rel="noopener noreferrer">Read story ↗</a></div></article>
+    </div></main>
+  </div>
+  <footer><div class="wrap">Skysport · Global sports news · Headlines provided by BBC Sport RSS</div></footer>
+  <script>
+    const buttons = document.querySelectorAll('.filter');
+    const cards = [...document.querySelectorAll('.news-card')];
+    const search = document.getElementById('news-search');
+    let selected = 'All';
+    function updateCards() { const query = search.value.trim().toLowerCase(); cards.forEach(card => { card.hidden = !((selected === 'All' || card.dataset.category === selected) && card.textContent.toLowerCase().includes(query)); }); }
+    buttons.forEach(button => button.addEventListener('click', () => { buttons.forEach(item => item.classList.remove('active')); button.classList.add('active'); selected = button.dataset.filter; updateCards(); }));
+    search.addEventListener('input', updateCards);
+  </script>
 </body>
 </html>
