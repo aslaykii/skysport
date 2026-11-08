@@ -1,134 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skysport - Global Sports News</title>
-    <style>
-        :root {
-            --primary-color: #ff1801;
-            --bg-color: #0f1016;
-            --card-bg: #1a1c24;
-            --text-main: #ffffff;
-            --text-muted: #a0a5b8;
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-        }
-        header {
-            background: linear-gradient(135deg, #1a1c24, #0f1016);
-            color: #fff;
-            padding: 35px 20px;
-            text-align: center;
-            border-bottom: 3px solid var(--primary-color);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 800;
-        }
-        header p {
-            margin: 8px 0 0 0;
-            color: var(--text-muted);
-            font-size: 14px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .news-card {
-            background: var(--card-bg);
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-            border-left: 5px solid var(--primary-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .news-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(255,24,1,0.2);
-        }
-        .news-card h2 {
-            margin-top: 0;
-            color: #ffffff;
-            font-size: 22px;
-            line-height: 1.4;
-        }
-        .news-card p {
-            line-height: 1.7;
-            color: var(--text-muted);
-            font-size: 15px;
-            margin-bottom: 0;
-        }
-        .footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 13px;
-            color: var(--text-muted);
-            border-top: 1px solid #222;
-            margin-top: 50px;
-            background: #0b0c10;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The latest global sports headlines, updated automatically.">
+  <meta name="theme-color" content="#0b1220">
+  <title>Skysport | Global Sports News</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1220; --panel:#121e31; --text:#f4f7fc; --muted:#a9b5c9; --red:#ff3b30; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(ellipse at top,#172743,var(--bg) 55%); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header { border-bottom:1px solid #ffffff18; background:#0b1220cc; }
+    .wrap { width:min(920px,calc(100% - 32px)); margin:auto; }
+    .masthead { padding:30px 0 25px; }
+    .brand { display:flex; align-items:center; gap:13px; }
+    .mark { display:grid; place-items:center; width:45px; height:45px; border-radius:14px; background:var(--red); font-weight:900; font-size:24px; box-shadow:0 8px 25px #ff3b3040; }
+    h1 { margin:0; font-size:clamp(1.7rem,5vw,2.4rem); letter-spacing:.12em; text-transform:uppercase; }
+    .intro { padding:30px 0 18px; }
+    .intro h2 { margin:0 0 5px; font-size:clamp(1.35rem,4vw,2rem); }
+    .intro p,.description { color:var(--muted); }
+    .intro p { margin:0; }
+    main { padding:8px 0 40px; }
+    .news-card { margin:0 0 17px; padding:22px; background:linear-gradient(145deg,var(--panel),#101a2b); border:1px solid #ffffff12; border-left:4px solid var(--red); border-radius:15px; box-shadow:0 12px 30px #0003; }
+    .meta { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:0 0 10px; color:#ffb1ab; font-size:.75rem; font-weight:750; letter-spacing:.07em; }
+    .meta span { color:var(--muted); font-weight:500; letter-spacing:normal; }
+    .news-card h2 { margin:0 0 8px; font-size:clamp(1.15rem,3vw,1.5rem); line-height:1.35; }
+    .news-card a { color:var(--text); text-decoration:none; }
+    .news-card a:hover { color:#ffaaa4; }
+    .description { margin:0; }
+    .notice { border-left-color:#ffb020; }
+    footer { padding:10px 0 32px; text-align:center; color:var(--muted); font-size:.85rem; }
+    @media (prefers-reduced-motion:no-preference) { .news-card { transition:transform .18s ease,border-color .18s ease; } .news-card:hover { transform:translateY(-2px); } }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>SKYSPORT GLOBAL NEWS</h1>
-        <p>Your ultimate destination for live global sports headlines</p>
-    </header>
-    <div class="container">
-        
-                <article class="news-card">
-                    <h2>Delap double inspires Forest to stunning win over Man City</h2>
-                    <p>Liam Delap scores a superb double as Nottingham Forest stun Manchester City 3-1 for their first Premier League win at the City Ground this season.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Arsenal beat Hull to extend lead at top of the table </h2>
-                    <p>Arsenal captain Martin Odegaard scores the winner as his side beat Hull City to extend their lead at the top of the Premier League table.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Leeds beat Spurs to end five-game winless run</h2>
-                    <p>Noah Okafor scores the only goal of the game to give Leeds United their first win since the 14th of September, as Tottenham are beaten 1-0 at Elland Road in the Premier League.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Muniz strike denies Newcastle and Jaissle much-needed win</h2>
-                    <p>Rodrigo Muniz scores his first goal since the opening day of last season as Fulham deny Newcastle and head coach Matthias Jaissle a much-needed win at Craven Cottage.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Barry scores twice as Everton fight back to beat Coventry</h2>
-                    <p>In-form Thierno Barry scores twice as Everton came from behind to beat Coventry as the Toffees move into fifth in the Premier League table.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Maresca's dream start turns into nightmare as title hopes hit</h2>
-                    <p>Enzo Maresca left the City Ground on Saturday evening with chants of "can we play you every week?" ringing in his ears - the Italian's dream start as Manchester City manager is rapidly turning into a nightmare.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>'The worst conditions in my 35-year career' - commentating in the FA Cup fog</h2>
-                    <p>BBC Sport commentator Steve Bower gives an insight into trying to commentate when thick fog engulfs a stadium and you can barely see the action.</p>
-                </article>
-            
-                <article class="news-card">
-                    <h2>Another 1-0 for relentless Arsenal - but did Odegaard spare VAR blushes?</h2>
-                    <p>Arsenal move six points clear at the top of the Premier League after beating Hull City - but did Martin Odegaard's goal save the blushes of the VAR?</p>
-                </article>
-            
-    </div>
-    <div class="footer">
-        Auto-updated every hour via RSS Feeds & GitHub Actions. Designed for Sports Fans.
-    </div>
+  <header><div class="wrap masthead"><div class="brand"><div class="mark" aria-hidden="true">S</div><h1>Skysport</h1></div></div></header>
+  <section class="wrap intro"><h2>Global sports headlines</h2><p>Latest sports news, automatically refreshed. Last generated: 08 Nov 2026 at 09:08 UTC.</p></section>
+  <main class="wrap" aria-label="Latest sports news"><article class="news-card">
+      <p class="meta">BBC SPORT <span>Latest news</span></p>
+      <h2><a href="https://www.bbc.co.uk/sport/football/articles/cm93z0l03n8vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Maresca&#x27;s dream start turns into nightmare as title hopes hit</a></h2>
+      <p class="description">Enzo Maresca left the City Ground on Saturday evening with chants of &quot;can we play you every week?&quot; ringing in his ears - the Italian&#x27;s dream start as Manchester City manager is rapidly turning into a nightmare.</p>
+    </article>
+<article class="news-card">
+      <p class="meta">BBC SPORT <span>Latest news</span></p>
+      <h2><a href="https://www.bbc.co.uk/sport/football/articles/cqev3rdvyvm1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">&#x27;The worst conditions in my 35-year career&#x27; - commentating in the FA Cup fog</a></h2>
+      <p class="description">BBC Sport commentator Steve Bower gives an insight into trying to commentate when thick fog engulfs a stadium and you can barely see the action.</p>
+    </article>
+<article class="news-card">
+      <p class="meta">BBC SPORT <span>Latest news</span></p>
+      <h2><a href="https://www.bbc.co.uk/sport/football/articles/c6rmyg7xpnj1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Another 1-0 for relentless Arsenal - but did Odegaard spare VAR blushes?</a></h2>
+      <p class="description">Arsenal move six points clear at the top of the Premier League after beating Hull City - but did Martin Odegaard&#x27;s goal save the blushes of the VAR?</p>
+    </article>
+<article class="news-card">
+      <p class="meta">BBC SPORT <span>Latest news</span></p>
+      <h2><a href="https://www.bbc.co.uk/sport/rugby-league/articles/c6vg02klk084o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Australia reach World Cup final after Fiji scare</a></h2>
+      <p class="description">Australia have reached their fifth successive Women&#x27;s Rugby League World Cup final as they seek a fourth consecutive title - but they were made to work harder than anyone expected.</p>
+    </article>
+<article class="news-card">
+      <p class="meta">BBC SPORT <span>Latest news</span></p>
+      <h2><a href="https://www.bbc.co.uk/sport/football/articles/cv8ez3pe5x41o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">The oldest club in London making FA Cup history</a></h2>
+      <p class="description">Cray Wanderers host Stockport County in the FA Cup first round, with 112 league places separating the two sides.</p>
+    </article>
+<article class="news-card">
+      <p class="meta">BBC SPORT <span>Latest news</span></p>
+      <h2><a href="https://www.bbc.co.uk/sport/formula1/articles/cmde81d9nkxko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Qualifying conditions borderline - but Norris and Russell hoping for more rain</a></h2>
+      <p class="description">Polesitter Lando Norris says qualifying for the Sao Paulo Grand Prix brought &quot;some of the wettest conditions&quot; in which he had ever driven.</p>
+    </article>
+<article class="news-card">
+      <p class="meta">BBC SPORT <span>Latest news</span></p>
+      <h2><a href="https://www.bbc.co.uk/sport/boxing/articles/cqx2vw8demexo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Hutchinson beats Buatsi to win WBC light-heavyweight title</a></h2>
+      <p class="description">Willy Hutchinson is crowned WBC light-heavyweight champion as he produces the performance of his career against Joshua Buatsi in Manchester.</p>
+    </article>
+<article class="news-card">
+      <p class="meta">BBC SPORT <span>Latest news</span></p>
+      <h2><a href="https://www.bbc.co.uk/sport/rugby-union/articles/crgj9323we9go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Wales let themselves down despite win - Lake</a></h2>
+      <p class="description">Captain Dewi Lake knows there is plenty to improve following a lacklustre 28-21 Nations Championship victory over Japan.</p>
+    </article></main>
+  <footer class="wrap">Headlines provided by BBC Sport RSS • Automatically updated with GitHub Actions</footer>
 </body>
 </html>
