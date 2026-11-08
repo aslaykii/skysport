@@ -6,208 +6,125 @@ from datetime import datetime, timezone
 from urllib.parse import urlparse
 
 RSS_URL = "https://feeds.bbci.co.uk/sport/rss.xml"
-MAX_ITEMS = 12
-IMAGE_FALLBACKS = [
-    "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=85",
-    "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=85",
-    "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85",
-]
-NS = {"media": "http://search.yahoo.com/mrss/"}
+MAX_STORIES = 12
+MEDIA_NS = {"media": "http://search.yahoo.com/mrss/"}
+FALLBACK_IMAGES = (
+    "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80",
+)
 
 
 def clean_text(value):
-    """Convert RSS markup to safe, readable plain text."""
-    text = html.unescape(value or "")
-    text = re.sub(r"<[^>]*>", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
+    value = html.unescape(value or "")
+    value = re.sub(r"<[^>]*>", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
 
 
-def safe_image_url(url):
-    """Accept only secure image URLs from BBC or Unsplash."""
-    if not url:
-        return ""
-    parsed = urlparse(url.strip())
+def safe_story_link(value):
+    parsed = urlparse((value or "").strip())
     host = (parsed.hostname or "").lower()
-    allowed = host == "bbc.co.uk" or host.endswith(".bbc.co.uk") or host == "bbci.co.uk" or host.endswith(".bbci.co.uk") or host == "bbc.com" or host.endswith(".bbc.com") or host == "images.unsplash.com"
-    return url.strip() if parsed.scheme == "https" and allowed else ""
+    trusted = host in {"bbc.com", "bbc.co.uk"} or host.endswith((".bbc.com", ".bbc.co.uk"))
+    if parsed.scheme == "https" and trusted:
+        return parsed.geturl()
+    return "https://www.bbc.com/sport"
 
 
-def image_for(item, index):
+def story_image(item, index):
     candidates = []
     for tag in ("thumbnail", "content"):
-        for media in item.findall(f"media:{tag}", NS):
-            candidates.append(media.attrib.get("url", ""))
+        candidates.extend(node.get("url", "") for node in item.findall(f"media:{tag}", MEDIA_NS))
     enclosure = item.find("enclosure")
-    if enclosure is not None and "image" in enclosure.attrib.get("type", ""):
-        candidates.append(enclosure.attrib.get("url", ""))
-
-    # BBC sometimes embeds its image directly in the description HTML.
-    description = item.findtext("description", default="")
-    candidates.extend(re.findall(r'<img[^>]+src=[\"\']([^\"\']+)', description, flags=re.IGNORECASE))
+    if enclosure is not None and enclosure.get("type", "").startswith("image/"):
+        candidates.append(enclosure.get("url", ""))
     for candidate in candidates:
-        safe_url = safe_image_url(candidate)
-        if safe_url:
-            return safe_url
-    return IMAGE_FALLBACKS[index % len(IMAGE_FALLBACKS)]
+        parsed = urlparse(candidate)
+        host = (parsed.hostname or "").lower()
+        trusted = host.endswith("bbc.co.uk") or host.endswith("bbci.co.uk") or host.endswith("bbc.com")
+        if parsed.scheme == "https" and trusted:
+            return parsed.geturl()
+    return FALLBACK_IMAGES[index % len(FALLBACK_IMAGES)]
 
 
-def category_for(title, description):
+def sport_category(title, description):
     text = f"{title} {description}".lower()
-    categories = {
-        "Football": ("football", "premier league", "champions league", "fa cup", "goal", "arsenal", "chelsea", "liverpool", "man city", "united", "spurs"),
-        "Tennis": ("tennis", "wimbledon", "atp", "wta", "grand slam"),
+    groups = {
+        "Football": ("football", "premier league", "champions league", "arsenal", "chelsea", "liverpool", "man city"),
+        "Tennis": ("tennis", "wimbledon", "atp", "wta"),
         "Formula 1": ("formula 1", "formula one", "f1", "grand prix"),
-        "Rugby": ("rugby", "six nations", "premiership rugby"),
-        "Cricket": ("cricket", "test match", "ashes", "odi", "t20"),
+        "Cricket": ("cricket", "ashes", "test match", "t20"),
+        "Rugby": ("rugby", "six nations"),
     }
-    for category, terms in categories.items():
-        if any(term in text for term in terms):
-            return category
-    return "More Sports"
+    return next((name for name, terms in groups.items() if any(term in text for term in terms)), "Other sports")
 
 
-def news_card(item, index):
+def render_story(item, index):
     title = clean_text(item.findtext("title"))
-    description = clean_text(item.findtext("description"))
-    link = (item.findtext("link") or "").strip()
-    pub_date = item.findtext("pubDate") or ""
     if not title:
         return ""
-
-    parsed_link = urlparse(link)
-    if parsed_link.scheme != "https" or not (parsed_link.hostname or "").lower().endswith(("bbc.com", "bbc.co.uk")):
-        link = "https://www.bbc.com/sport"
-
+    description = clean_text(item.findtext("description")) or "Read the full report on BBC Sport."
+    link = html.escape(safe_story_link(item.findtext("link")), quote=True)
+    image = html.escape(story_image(item, index), quote=True)
+    category = sport_category(title, description)
     try:
-        date = datetime.strptime(pub_date, "%a, %d %b %Y %H:%M:%S %z")
-        date_text = date.astimezone(timezone.utc).strftime("%d %b %Y")
+        published = datetime.strptime(item.findtext("pubDate", ""), "%a, %d %b %Y %H:%M:%S %z")
+        date_label = published.astimezone(timezone.utc).strftime("%d %b %Y")
     except ValueError:
-        date_text = "Latest"
-
-    category = category_for(title, description)
-    image = image_for(item, index)
-    return f'''<article class="news-card" data-category="{html.escape(category, quote=True)}">
-      <a class="image-link" href="{html.escape(link, quote=True)}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-        <img class="story-image" src="{html.escape(image, quote=True)}" alt="" loading="lazy" onerror="this.src='{IMAGE_FALLBACKS[index % len(IMAGE_FALLBACKS)]}'">
-        <span class="image-badge">{html.escape(category)}</span>
-      </a>
-      <div class="story-content">
-        <p class="meta">BBC SPORT <span>{html.escape(date_text)}</span></p>
-        <h2><a href="{html.escape(link, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(title)}</a></h2>
-        <p class="description">{html.escape(description or "Read the full story on BBC Sport.")}</p>
-        <a class="read-more" href="{html.escape(link, quote=True)}" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
+        date_label = "Latest"
+    return f'''<article class="story-card" data-category="{html.escape(category, quote=True)}">
+      <a class="story-image" href="{link}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="{image}" alt="" loading="lazy"><span class="category">{html.escape(category)}</span></a>
+      <div class="story-body"><div class="story-meta"><span>BBC SPORT</span><time>{html.escape(date_label)}</time><button class="save-button" type="button" aria-label="Save story">♡</button></div>
+      <h2><a href="{link}" target="_blank" rel="noopener noreferrer">{html.escape(title)}</a></h2><p>{html.escape(description)}</p>
+      <a class="read-more" href="{link}" target="_blank" rel="noopener noreferrer">Read story ↗</a></div>
     </article>'''
 
 
-try:
-    request = urllib.request.Request(RSS_URL, headers={"User-Agent": "SkysportNews/1.0"})
+def fetch_stories():
+    request = urllib.request.Request(RSS_URL, headers={"User-Agent": "Skysport/1.0"})
     with urllib.request.urlopen(request, timeout=20) as response:
         root = ET.fromstring(response.read())
-    cards = [news_card(item, index) for index, item in enumerate(root.findall("./channel/item"))]
-    cards = [card for card in cards if card][:MAX_ITEMS]
-    if not cards:
-        raise ValueError("RSS feed contained no usable stories")
-    news_items_html = "\n".join(cards)
-except (OSError, ET.ParseError, ValueError) as error:
-    print(f"Could not update RSS news: {error}")
-    news_items_html = '''<article class="news-card notice" data-category="More Sports"><div class="story-content"><h2>News temporarily unavailable</h2><p class="description">We couldn't load the latest headlines. Please check back soon.</p></div></article>'''
+    stories = [render_story(item, index) for index, item in enumerate(root.findall("./channel/item"))]
+    stories = [story for story in stories if story][:MAX_STORIES]
+    if not stories:
+        raise ValueError("RSS feed returned no usable headlines")
+    return "\n".join(stories)
 
-updated = datetime.now(timezone.utc).strftime("%d %b %Y at %H:%M UTC")
-html_content = f'''<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The latest global sports headlines, with photos and stories updated automatically.">
-  <meta name="theme-color" content="#07101d">
-  <title>Skysport | Global Sports News</title>
-  <style>
-    :root {{ color-scheme:dark; --bg:#07101d; --panel:#101d30; --text:#f4f7fc; --muted:#a9b5c9; --red:#ff3b30; --line:#ffffff16; }}
-    * {{ box-sizing:border-box; }}
-    body {{ margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }}
-    a {{ color:inherit; }}
-    .wrap {{ width:min(1160px,calc(100% - 40px)); margin:auto; }}
-    header {{ position:relative; overflow:hidden; background:linear-gradient(90deg,rgba(5,12,23,.95),rgba(7,16,29,.68)),url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=2000&q=85") center 48%/cover; border-bottom:1px solid var(--line); }}
-    .masthead {{ padding:22px 0; display:flex; align-items:center; justify-content:space-between; gap:20px; }}
-    .brand {{ display:flex; align-items:center; gap:12px; text-decoration:none; }}
-    .mark {{ display:grid; place-items:center; width:42px; height:42px; border-radius:12px; background:var(--red); font-size:23px; font-weight:900; box-shadow:0 8px 25px #ff3b3040; }}
-    h1 {{ margin:0; font-size:1.55rem; letter-spacing:.11em; text-transform:uppercase; }}
-    .live {{ color:#ffe2df; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }}
-    .live:before {{ content:""; display:inline-block; width:8px; height:8px; margin-right:8px; border-radius:50%; background:#4ade80; box-shadow:0 0 12px #4ade80; }}
-    .hero {{ min-height:310px; display:flex; align-items:end; padding:45px 0 42px; }}
-    .hero-copy {{ max-width:750px; text-shadow:0 2px 18px #000; }}
-    .eyebrow {{ color:#ffb5af; font-size:.78rem; font-weight:800; letter-spacing:.18em; text-transform:uppercase; }}
-    .hero h2 {{ margin:8px 0; font-size:clamp(2rem,6vw,4.1rem); line-height:1.06; letter-spacing:-.04em; }}
-    .hero p {{ margin:0; max-width:600px; color:#d5dced; font-size:1.02rem; }}
-    .toolbar {{ padding:26px 0 18px; display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap; }}
-    .toolbar h2 {{ margin:0; font-size:1.3rem; }}
-    .updated {{ margin:3px 0 0; color:var(--muted); font-size:.83rem; }}
-    .search {{ width:min(300px,100%); padding:11px 14px; color:var(--text); background:#101d30; border:1px solid var(--line); border-radius:10px; font:inherit; outline:none; }}
-    .search:focus {{ border-color:var(--red); box-shadow:0 0 0 3px #ff3b3028; }}
-    .filters {{ display:flex; gap:8px; overflow-x:auto; padding:0 0 20px; scrollbar-width:thin; }}
-    .filter {{ flex:none; border:1px solid var(--line); border-radius:999px; padding:8px 14px; color:#cad4e5; background:#101d30; font:600 .85rem inherit; cursor:pointer; }}
-    .filter.active,.filter:hover {{ color:#fff; border-color:#ff3b3080; background:#ff3b3026; }}
-    main {{ padding-bottom:45px; }}
-    .news-grid {{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }}
-    .news-card {{ overflow:hidden; background:var(--panel); border:1px solid var(--line); border-radius:16px; box-shadow:0 12px 30px #0003; transition:transform .2s ease,border-color .2s ease; }}
-    .news-card:hover {{ transform:translateY(-4px); border-color:#ffffff38; }}
-    .image-link {{ position:relative; display:block; aspect-ratio:16/9; overflow:hidden; background:#17263d; }}
-    .story-image {{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease; }}
-    .news-card:hover .story-image {{ transform:scale(1.04); }}
-    .image-badge {{ position:absolute; left:13px; bottom:12px; padding:5px 9px; border-radius:6px; background:var(--red); color:#fff; font-size:.7rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; }}
-    .story-content {{ padding:17px 18px 19px; }}
-    .meta {{ display:flex; justify-content:space-between; gap:10px; margin:0 0 10px; color:#ffaaa3; font-size:.68rem; font-weight:800; letter-spacing:.1em; }}
-    .meta span {{ color:var(--muted); font-weight:500; letter-spacing:normal; }}
-    .news-card h2 {{ margin:0 0 9px; font-size:1.12rem; line-height:1.4; }}
-    .news-card h2 a {{ text-decoration:none; }}
-    .news-card h2 a:hover {{ color:#ffaaa3; }}
-    .description {{ margin:0; color:var(--muted); font-size:.9rem; line-height:1.65; }}
-    .read-more {{ display:inline-flex; gap:7px; margin-top:15px; color:#ff9e96; font-size:.83rem; font-weight:750; text-decoration:none; }}
-    .notice {{ grid-column:1/-1; }}
-    footer {{ border-top:1px solid var(--line); padding:25px 0 35px; color:var(--muted); text-align:center; font-size:.84rem; }}
-    @media(max-width:900px) {{ .news-grid {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} }}
-    @media(max-width:600px) {{ .wrap {{ width:min(100% - 28px,1160px); }} .masthead {{ padding:17px 0; }} .hero {{ min-height:260px; padding:35px 0; }} .news-grid {{ grid-template-columns:1fr; gap:15px; }} .toolbar {{ align-items:stretch; }} .search {{ width:100%; }} .news-card {{ display:grid; grid-template-columns:115px 1fr; }} .image-link {{ aspect-ratio:auto; min-height:100%; }} .story-content {{ padding:13px; }} .news-card h2 {{ font-size:1rem; }} .description {{ font-size:.82rem; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }} .meta {{ font-size:.62rem; }} .read-more {{ margin-top:10px; }} }}
-    @media(prefers-reduced-motion:reduce) {{ *,*::before,*::after {{ scroll-behavior:auto!important; transition:none!important; }} }}
-  </style>
-</head>
-<body>
-  <header><div class="wrap">
-    <nav class="masthead" aria-label="Main navigation"><a class="brand" href="#top"><span class="mark" aria-hidden="true">S</span><h1>Skysport</h1></a><span class="live">World of sport</span></nav>
-    <section class="hero" id="top"><div class="hero-copy"><span class="eyebrow">The global sports desk</span><h2>Every moment.<br>Every sport.</h2><p>Big stories, match-day drama and the latest headlines from across the sporting world.</p></div></section>
-  </div></header>
-  <div class="wrap">
-    <section class="toolbar" aria-label="News tools"><div><h2>Latest headlines</h2><p class="updated">Updated {html.escape(updated)} · Photos and stories from BBC Sport</p></div><input class="search" type="search" id="news-search" placeholder="Search headlines…" aria-label="Search headlines"></section>
-    <nav class="filters" aria-label="Filter news by sport"><button class="filter active" data-filter="All" type="button">All sports</button><button class="filter" data-filter="Football" type="button">Football</button><button class="filter" data-filter="Tennis" type="button">Tennis</button><button class="filter" data-filter="Formula 1" type="button">Formula 1</button><button class="filter" data-filter="Rugby" type="button">Rugby</button><button class="filter" data-filter="Cricket" type="button">Cricket</button><button class="filter" data-filter="More Sports" type="button">More sports</button></nav>
-    <main><div class="news-grid" id="news-grid">{news_items_html}</div></main>
-  </div>
-  <footer><div class="wrap">Skysport · Global sports news · Headlines provided by BBC Sport RSS</div></footer>
-  <script>
-    const buttons = document.querySelectorAll('.filter');
-    const cards = [...document.querySelectorAll('.news-card')];
-    const search = document.getElementById('news-search');
-    let selected = 'All';
-    function updateCards() {{
-      const query = search.value.trim().toLowerCase();
-      cards.forEach(card => {{
-        const categoryMatch = selected === 'All' || card.dataset.category === selected;
-        const textMatch = card.textContent.toLowerCase().includes(query);
-        card.hidden = !(categoryMatch && textMatch);
-      }});
-    }}
-    buttons.forEach(button => button.addEventListener('click', () => {{
-      buttons.forEach(item => item.classList.remove('active'));
-      button.classList.add('active');
-      selected = button.dataset.filter;
-      updateCards();
-    }}));
-    search.addEventListener('input', updateCards);
-  </script>
-</body>
-</html>
-'''
 
-with open("index.html", "w", encoding="utf-8") as file:
-    file.write(html_content)
+PAGE_TEMPLATE = '''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Latest global sports headlines, photos and reports from BBC Sport."><meta name="theme-color" content="#091321">
+<title>Skysport | Global Sports News</title><style>
+:root{color-scheme:dark;--bg:#091321;--panel:#111f32;--text:#f4f7fc;--muted:#a9b7ca;--red:#ff493d;--line:#ffffff18}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 32px));margin:auto}
+header{color:#fff;background:linear-gradient(90deg,#081321ed,#091321ad),url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1800&q=80") center/cover;border-bottom:1px solid var(--line)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}.logo{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--red),#ff8b42);font-size:22px}.live{font-size:.76rem;color:#c9ffd8;text-transform:uppercase;letter-spacing:.1em}.live:before{content:"";display:inline-block;width:8px;height:8px;background:#4ade80;border-radius:50%;margin-right:8px}.hero{padding:54px 0 62px}.eyebrow{font-size:.74rem;letter-spacing:.17em;text-transform:uppercase;color:#ffbcb6;font-weight:800}.hero h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.04;letter-spacing:-.05em;margin:12px 0;max-width:760px}.hero p{color:#d5deeb;max-width:600px;margin:0;font-size:1.03rem}
+.ticker{background:var(--red);color:white;font-size:.8rem;font-weight:700;padding:9px 0}.toolbar{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;padding:29px 0 17px}.toolbar h2{margin:0;font-size:1.5rem}.toolbar p{margin:3px 0 0;color:var(--muted);font-size:.83rem}.search{width:min(320px,100%);padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);font:inherit}.search:focus{outline:2px solid #ff493d77}.filters{display:flex;gap:8px;overflow:auto;padding-bottom:19px}.filter{flex:none;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--muted);font:inherit;font-size:.83rem;cursor:pointer}.filter.active,.filter:hover{color:var(--text);border-color:#ff493d88;background:#ff493d22}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:42px}.story-card{overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 30px #0003;transition:transform .2s}.story-card:hover{transform:translateY(-3px)}.story-image{display:block;position:relative;aspect-ratio:16/9;background:#172941;overflow:hidden}.story-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}.story-card:hover .story-image img{transform:scale(1.04)}.category{position:absolute;left:12px;bottom:12px;background:var(--red);padding:5px 9px;border-radius:5px;color:white;font-size:.68rem;font-weight:800;text-transform:uppercase}.story-body{padding:16px}.story-meta{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.7rem}.story-meta b,.story-meta>span{color:#ff857c;letter-spacing:.08em;font-weight:800}.story-meta time{margin-left:auto}.save-button{border:0;background:transparent;color:var(--muted);font-size:1.35rem;cursor:pointer}.save-button.saved,.save-button:hover{color:var(--red)}.story-body h2{font-size:1.1rem;line-height:1.4;margin:10px 0 7px}.story-body h2 a:hover,.read-more:hover{color:#ff938b}.story-body p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.65}.read-more{display:inline-block;margin-top:12px;color:#ff8e86;font-size:.83rem;font-weight:750}.empty{grid-column:1/-1;text-align:center;padding:32px;color:var(--muted);border:1px dashed var(--line);border-radius:14px}footer{border-top:1px solid var(--line);padding:23px 0 32px;text-align:center;color:var(--muted);font-size:.82rem}[hidden]{display:none!important}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.wrap{width:calc(100% - 26px)}.live{display:none}.hero{padding:42px 0}.toolbar{align-items:stretch}.search{width:100%}.grid{grid-template-columns:1fr;gap:13px}.story-card{display:grid;grid-template-columns:112px minmax(0,1fr)}.story-image{height:100%;min-height:165px;aspect-ratio:auto}.story-body{padding:12px}.story-body h2{font-size:.96rem;margin:8px 0 5px}.story-body p{font-size:.79rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.read-more{margin-top:8px}.story-meta{font-size:.59rem;gap:6px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style></head><body><header><div class="wrap"><nav class="nav"><a class="brand" href="#"><span class="logo">S</span>Skysport</a><span class="live">Sports desk</span></nav><section class="hero"><span class="eyebrow">The global sports desk</span><h1>Every moment.<br>Every sport.</h1><p>Match-day drama, big stories and the latest headlines from across the sporting world.</p></section></div></header>
+<div class="ticker"><div class="wrap">TOP STORIES &nbsp; · &nbsp; Football &nbsp; · &nbsp; Tennis &nbsp; · &nbsp; Formula 1 &nbsp; · &nbsp; Rugby &nbsp; · &nbsp; Cricket</div></div><main class="wrap"><section class="toolbar"><div><h2>Latest headlines</h2><p>Updated {{UPDATED}} · News from BBC Sport</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines"></section>
+<nav class="filters" aria-label="Filter sports"><button class="filter active" data-filter="All" type="button">All sports</button><button class="filter" data-filter="Football" type="button">Football</button><button class="filter" data-filter="Tennis" type="button">Tennis</button><button class="filter" data-filter="Formula 1" type="button">Formula 1</button><button class="filter" data-filter="Rugby" type="button">Rugby</button><button class="filter" data-filter="Cricket" type="button">Cricket</button><button class="filter" data-filter="Other sports" type="button">Other</button><button class="filter" data-filter="Saved" type="button">♡ Saved</button></nav>
+<div class="grid" id="grid">{{NEWS}}<p class="empty" id="empty" hidden>No headlines match. Try another search or filter.</p></div></main><footer><div class="wrap">Skysport · Headlines and reporting links provided by BBC Sport RSS</div></footer>
+<script>(()=>{{const buttons=[...document.querySelectorAll('.filter')],cards=[...document.querySelectorAll('.story-card')],search=document.getElementById('search'),empty=document.getElementById('empty');let selected='All',saved=new Set();try{{saved=new Set(JSON.parse(localStorage.getItem('skysport-saved')||'[]'))}}catch{{}}const key=c=>c.querySelector('h2')?.textContent.trim()||'';function update(){{let shown=0;const q=search.value.trim().toLowerCase();cards.forEach(c=>{{const b=c.querySelector('.save-button'),isSaved=saved.has(key(c));if(b){{b.textContent=isSaved?'♥':'♡';b.classList.toggle('saved',isSaved);b.setAttribute('aria-label',isSaved?'Remove saved story':'Save story')}}const match=selected==='All'||(selected==='Saved'?isSaved:c.dataset.category===selected);c.hidden=!(match&&c.textContent.toLowerCase().includes(q));if(!c.hidden)shown++}});empty.hidden=shown>0}}cards.forEach(c=>c.querySelector('.save-button')?.addEventListener('click',()=>{{saved.has(key(c))?saved.delete(key(c)):saved.add(key(c));try{{localStorage.setItem('skysport-saved',JSON.stringify([...saved]))}}catch{{}}update()}}));buttons.forEach(b=>b.addEventListener('click',()=>{{buttons.forEach(x=>x.classList.toggle('active',x===b));selected=b.dataset.filter;update()}}));search.addEventListener('input',update)}})();</script></body></html>'''
 
-print("Generated Skysport news page.")
+
+def main():
+    try:
+        stories = fetch_stories()
+    except (OSError, ET.ParseError, ValueError) as error:
+        print(f"RSS update failed; keeping existing page: {error}")
+        # Avoid replacing a working page when the external feed is temporarily down.
+        try:
+            with open("index.html", encoding="utf-8") as current:
+                if "<html" in current.read().lower():
+                    return
+        except OSError:
+            pass
+        stories = '<article class="story-card"><div class="story-body"><h2>News temporarily unavailable</h2><p>Please check back later.</p></div></article>'
+    updated = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
+    page = PAGE_TEMPLATE.replace("{{NEWS}}", stories).replace("{{UPDATED}}", html.escape(updated))
+    with open("index.html", "w", encoding="utf-8") as output:
+        output.write(page)
+    print("Skysport page updated successfully.")
+
+
+if __name__ == "__main__":
+    main()
