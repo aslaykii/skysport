@@ -209,8 +209,14 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn("dates=202612", requested[1])
 
     def test_build_page_escapes_dynamic_labels_and_includes_sections(self):
+        stories = "".join(
+            f'<article class="story-card" data-category="Football">'
+            + ('<img src="https://www.bbc.co.uk/feature.jpg">' if index == 2 else "")
+            + f'<div class="story-body"><h3><a href="https://www.bbc.co.uk/{index}">Story {index}</a></h3></div></article>'
+            for index in range(1, 7)
+        )
         page = sports_site.build_page(
-            '<article class="story-card"><h3>Story</h3></article>',
+            stories,
             "",
             sports_site.render_schedule([], set()),
             "Today",
@@ -226,6 +232,15 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn('href="#fixtures"', page)
         self.assertIn('class="mobile-nav"', page)
         self.assertIn("position:fixed;z-index:30", page)
+        self.assertIn('class="story-card lead-story"', page)
+        self.assertIn('class="story-card latest-story"', page)
+        featured = page[page.index('class="story-card lead-story"'):page.index('class="latest-panel"')]
+        self.assertIn("Story 2", featured)
+        self.assertNotIn("Story 1", featured)
+        self.assertIn("Story 6", page)
+        self.assertNotIn("Story 1", page[page.index('<div class="news-grid"'):])
+        self.assertIn("font-family:Georgia,serif", page)
+        self.assertIn(":root.dark", page)
         self.assertNotIn("@@STYLE@@", page)
 
     def test_read_cached_news_preserves_refresh_time(self):

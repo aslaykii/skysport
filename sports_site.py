@@ -449,11 +449,92 @@ footer{border-top:1px solid var(--line);padding:22px 0 32px;color:var(--muted);f
 @media(max-width:900px){.news-grid,.video-grid,.schedule-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-links{gap:14px}}
 @media(max-width:650px){body{padding-bottom:68px}.wrap{width:min(100% - 28px,1200px)}.nav{min-height:65px;padding:9px 0}.nav-links{display:none}.mobile-nav{position:fixed;z-index:30;right:0;bottom:0;left:0;display:flex;justify-content:space-around;gap:8px;padding:9px 14px calc(9px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--surface);box-shadow:0 -8px 24px #0003}.mobile-nav a{flex:1;padding:5px;color:var(--text);font-size:.82rem;font-weight:750;text-align:center;text-decoration:none}.mobile-nav a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:5px}.desk-label{display:none}.hero{padding:42px 0 48px}.hero-stats{gap:14px;flex-wrap:wrap}.section-head{align-items:stretch}.search{width:100%}.news-grid,.video-grid,.schedule-grid{grid-template-columns:1fr;gap:13px}.story-card{display:grid;grid-template-columns:112px minmax(0,1fr)}.story-image{height:100%;min-height:164px;aspect-ratio:auto}.story-body{padding:11px}.story-body h3{font-size:.96rem;margin:8px 0 5px}.story-body p{font-size:.78rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.story-meta{font-size:.56rem;gap:5px}.read-more{margin-top:7px}.schedule-wrap{padding:14px}.fixture-match{font-size:.86rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Editorial magazine treatment inspired by sports and industry news layouts. */
+:root{color-scheme:light;--bg:#fff;--surface:#fff;--surface2:#f2f4f6;--text:#111820;--muted:#66717d;--accent:#c9152b;--line:#dfe3e7;--green:#177b50}
+:root.dark{color-scheme:dark;--bg:#101820;--surface:#17222d;--surface2:#22313e;--text:#f4f7fc;--muted:#b0bdc9;--accent:#f05260;--line:#ffffff22}
+body{font-family:Arial,Helvetica,sans-serif}
+.wrap{width:min(1180px,calc(100% - 40px))}
+.masthead{background:var(--surface);border-bottom:1px solid var(--line)}
+.nav{min-height:66px}
+.brand-mark{width:35px;height:35px;border-radius:3px;background:var(--accent);font-size:19px}
+.brand-name{color:var(--text);font-size:1.35rem;letter-spacing:-.06em}
+.nav-links{color:var(--text);font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}
+.nav-links a:hover{color:var(--accent)}
+.theme-button{border-color:var(--line);color:var(--text);background:var(--surface2)}
+.desk-label{color:var(--muted)}
+.hero{padding:18px 0 22px;color:var(--text)}
+.eyebrow{color:var(--accent);font-size:.67rem}
+.hero h1{max-width:none;margin:4px 0;font-size:clamp(1.35rem,3vw,2rem);line-height:1.2;letter-spacing:-.035em}
+.hero p{color:var(--muted);font-size:.9rem}
+.hero-stats{display:none}
+.ticker{background:var(--surface);color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ticker .wrap{min-height:36px;overflow:hidden;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}
+.ticker-label{border:0;border-radius:0;padding:0;color:var(--accent);font-weight:850}
+.ticker-label,.ticker .wrap>span:last-child{flex:none;white-space:nowrap}
+.top-stories{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:28px;padding:30px 0 24px;border-bottom:1px solid var(--line)}
+.section-kicker{margin:0 0 10px;color:var(--accent);font-size:.7rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase}
+.lead-story{display:grid;grid-template-columns:1.1fr 1fr;align-items:stretch;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+.lead-story .story-image{height:100%;min-height:300px;aspect-ratio:auto}
+.lead-story .story-body{align-self:center;padding:clamp(18px,3vw,34px)}
+.lead-story .story-body h3{margin:12px 0;font-family:Georgia,serif;font-size:clamp(1.45rem,3vw,2.25rem);line-height:1.14;letter-spacing:-.025em}
+.lead-story .story-body p{font-size:.94rem}
+.latest-panel{border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+.latest-heading{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--line)}
+.latest-heading h2{margin:0;font-family:Georgia,serif;font-size:1.28rem}
+.latest-heading a{color:var(--accent);font-size:.76rem;font-weight:750;text-decoration:none}
+.latest-list{padding:0 16px}
+.latest-story{display:block;overflow:visible;border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;background:transparent}
+.latest-story:last-child{border-bottom:0}
+.latest-story .story-image,.latest-story .story-body p,.latest-story .read-more,.latest-story .save-button{display:none}
+.latest-story .story-body{padding:11px 0}
+.latest-story .story-meta{justify-content:space-between;color:var(--muted);font-size:.62rem}
+.latest-story .story-meta time{margin-left:auto}
+.latest-story .story-body h3{margin:4px 0 0;font-family:Georgia,serif;font-size:.97rem;line-height:1.3}
+.latest-story .story-body h3 a:hover{color:var(--accent)}
+.latest-story:before{content:attr(data-category);display:block;padding-top:10px;color:var(--accent);font-size:.58rem;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
+.section-head{padding:30px 0 13px;border-bottom:1px solid var(--line)}
+.section-head h2,.section-title h2{font-family:Georgia,serif}
+.section-head p{font-size:.75rem}
+.search{border-radius:3px;background:var(--surface);border-color:var(--line)}
+.filter{border-radius:3px;background:var(--surface);border-color:var(--line)}
+.filter:hover,.filter.active{color:var(--accent);border-color:var(--accent);background:transparent}
+.news-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 22px;padding-bottom:32px}
+.news-grid>.story-card{display:block;overflow:visible;border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;background:transparent}
+.news-grid>.story-card:hover{transform:none;border-color:var(--line)}
+.news-grid>.story-card .story-image{aspect-ratio:16/9}
+.news-grid>.story-card .story-body{padding:12px 0 18px}
+.news-grid>.story-card .story-body h3{font-family:Georgia,serif;font-size:1.2rem;line-height:1.25}
+.news-grid>.story-card .story-body p{font-size:.84rem}
+.story-meta{font-size:.62rem}
+.story-body h3 a:hover,.read-more{color:var(--accent)}
+.video-card,.fixture-card,.schedule-empty{border-radius:3px;box-shadow:none}
+.schedule-wrap{border-radius:3px;background:var(--surface2)}
+footer{background:var(--surface);border-color:var(--line)}
+@media(max-width:900px){.top-stories{grid-template-columns:minmax(0,1.35fr) minmax(230px,1fr);gap:18px}.lead-story{grid-template-columns:1fr}.lead-story .story-image{min-height:220px}.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.wrap{width:min(100% - 28px,1180px)}.nav{min-height:58px}.brand-name{font-size:1.2rem}.hero{padding:13px 0 17px}.hero p{font-size:.82rem}.top-stories{grid-template-columns:1fr;gap:14px;padding:18px 0}.lead-story{grid-template-columns:1fr}.lead-story .story-image{height:auto;min-height:0;aspect-ratio:16/9}.lead-story .story-body{padding:17px}.lead-story .story-body h3{font-size:1.55rem}.latest-list{padding:0 14px}.section-head{padding:24px 0 12px}.news-grid{grid-template-columns:1fr;gap:0}.news-grid>.story-card{display:block}.news-grid>.story-card .story-image{height:auto;min-height:0;aspect-ratio:16/9}.news-grid>.story-card .story-body{padding:11px 0 16px}.news-grid>.story-card .story-body h3{font-size:1.08rem}.news-grid>.story-card .story-body p{display:block;overflow:visible}.filters{padding-bottom:14px}.mobile-nav{background:var(--surface);border-color:var(--line)}}
 </style>
 """
 
 
 def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, fixture_status):
+    story_cards = re.findall(r'<article\b[^>]*class="story-card"[^>]*>.*?</article>', stories_html, re.DOTALL)
+    if story_cards:
+        featured_index = next(
+            (index for index, story in enumerate(story_cards) if re.search(r"<img\b[^>]*src=", story)),
+            0,
+        )
+        featured = story_cards.pop(featured_index)
+        featured_story = featured.replace('class="story-card"', 'class="story-card lead-story"', 1)
+        latest_stories = "".join(
+            story.replace('class="story-card"', 'class="story-card latest-story"', 1)
+            for story in story_cards[1:5]
+        ) or '<p class="section-empty">More headlines will appear after the next update.</p>'
+        remaining_stories = "\n".join(story_cards[5:])
+    else:
+        featured_story = '<p class="section-empty">Headlines are temporarily unavailable. Please check back after the next source update.</p>'
+        latest_stories = '<p class="section-empty">No recent headlines are available.</p>'
+        remaining_stories = ""
     page = """<!doctype html>
 <html lang="en">
 <head>
@@ -466,16 +547,17 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
   <header class="masthead"><div class="wrap">
     <nav class="nav" aria-label="Main navigation"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Skysport</span></a>
       <div class="nav-links"><a href="#news">News</a><a href="#videos">Videos</a><a href="#fixtures">Fixtures</a></div>
-      <div class="nav-right"><span class="desk-label">Sports desk</span><button class="theme-button" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">☼</button></div>
+      <div class="nav-right"><span class="desk-label">Sports desk</span><button class="theme-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">☼</button></div>
     </nav>
-    <section class="hero" id="top"><span class="eyebrow">The global sports desk</span><h1>Every moment.<br>Every sport.</h1><p>Big stories, video highlights and the upcoming fixtures that matter — gathered from sports publishers around the world.</p>
+    <section class="hero" id="top"><span class="eyebrow">Independent sports coverage</span><h1>The sports world, in focus.</h1><p>Headlines, highlights and match schedules from across the sporting world.</p>
       <div class="hero-stats"><span><strong>09</strong> sports</span><span><strong>04</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
     </section>
   </div></header>
   <nav class="mobile-nav" aria-label="Quick section navigation"><a href="#news">News</a><a href="#videos">Videos</a><a href="#fixtures">Fixtures</a></nav>
   <div class="ticker"><div class="wrap"><span class="ticker-label">SPORTS DESK</span><span>Football · Tennis · Formula 1 · Cricket · Rugby · Basketball · American football · Golf · Boxing &amp; MMA</span></div></div>
   <main class="wrap">
-    <section class="section-head" id="news"><div><h2>Latest headlines</h2><p>@@UPDATED@@ · Sources: @@NEWS_SOURCES@@</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines"></section>
+    <section class="top-stories" aria-label="Top stories"><div><p class="section-kicker">Top story</p>@@FEATURED_STORY@@</div><aside class="latest-panel"><div class="latest-heading"><h2>Latest</h2><a href="#news">All news ↓</a></div><div class="latest-list">@@LATEST_STORIES@@</div></aside></section>
+    <section class="section-head" id="news"><div><h2>More headlines</h2><p>Updated @@UPDATED@@ · Sources: @@NEWS_SOURCES@@</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines"></section>
     <nav class="filters" aria-label="Filter headlines by sport">@@FILTERS@@</nav>
     <div class="news-grid" id="news-grid">@@STORIES@@<p class="empty-state" id="empty-state" hidden>No stories found. Try a different search or filter.</p></div>
     <section class="content-section" id="videos"><div class="section-title"><div><h2>Video highlights</h2><p>Inline playback when publishers provide a video file; otherwise watch at source</p></div></div><div class="video-grid">@@VIDEOS@@</div></section>
@@ -530,12 +612,12 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
       }));
       search.addEventListener('input', updateCards);
       try {
-        if (localStorage.getItem('skysport-theme') === 'light') document.documentElement.classList.add('light');
+        if (localStorage.getItem('skysport-theme') === 'dark') document.documentElement.classList.add('dark');
       } catch {}
       themeButton.addEventListener('click', () => {
-        const light = document.documentElement.classList.toggle('light');
-        themeButton.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
-        try { localStorage.setItem('skysport-theme', light ? 'light' : 'dark'); } catch {}
+        const dark = document.documentElement.classList.toggle('dark');
+        themeButton.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+        try { localStorage.setItem('skysport-theme', dark ? 'dark' : 'light'); } catch {}
       });
     })();
   </script>
@@ -546,6 +628,9 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
         "@@UPDATED@@": html.escape(updated),
         "@@NEWS_SOURCES@@": html.escape(news_sources),
         "@@STORIES@@": stories_html,
+        "@@FEATURED_STORY@@": featured_story,
+        "@@LATEST_STORIES@@": latest_stories,
+        "@@STORIES@@": remaining_stories,
         "@@FILTERS@@": "".join(
             f'<button class="filter{" active" if category == "All" else ""}" type="button" data-filter="{html.escape(category, quote=True)}">{html.escape({"All": "All sports", "Saved": "♡ Saved"}.get(category, category))}</button>'
             for category in ("All", *NEWS_CATEGORIES, "Saved")
