@@ -1,8 +1,11 @@
 import json
 import os
+import re
 import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
+import xml.etree.ElementTree as ET
 
 import sports_site
 
@@ -268,7 +271,16 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn('data-i18n="liveScores"', page)
         self.assertIn('localStorage.setItem(\'skysport-language\'', page)
         self.assertIn('document.documentElement.dir = rtl ? \'rtl\' : \'ltr\'', page)
+        self.assertIn('<meta name="robots" content="index, follow, max-image-preview:large">', page)
+        self.assertIn(f'<link rel="canonical" href="{sports_site.SITE_URL}">', page)
+        self.assertIn('property="og:title"', page)
+        self.assertIn('type="application/ld+json"', page)
         self.assertNotIn("@@TRANSLATIONS@@", page)
+        self.assertNotIn("@@SITE_URL@@", page)
+        structured_data = re.search(
+            r'<script type="application/ld\+json">(.*?)</script>', page
+        )
+        self.assertEqual(json.loads(structured_data.group(1))["@type"], "WebSite")
         self.assertIn('class="story-card lead-story"', page)
         self.assertIn('class="story-card latest-story"', page)
         featured = page[page.index('class="story-card lead-story"'):page.index('class="latest-panel"')]
@@ -293,6 +305,16 @@ class SportsSiteTests(unittest.TestCase):
 
         self.assertIn("cached", cards)
         self.assertEqual(updated, "09 Nov 2026 · 08:16 UTC")
+
+    def test_sitemap_points_to_the_canonical_pages_site(self):
+        root = Path(__file__).resolve().parents[1]
+        sitemap = ET.parse(root / "sitemap.xml").getroot()
+        namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+
+        self.assertEqual(
+            [node.text for node in sitemap.findall("s:url/s:loc", namespace)],
+            [sports_site.SITE_URL],
+        )
 
 
 if __name__ == "__main__":

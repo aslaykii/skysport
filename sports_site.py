@@ -11,6 +11,7 @@ from urllib.parse import urlencode, urlparse
 
 
 USER_AGENT = "Skysport/2.0 (+https://github.com/aslaykii/skysport)"
+SITE_URL = "https://aslaykii.github.io/skysport/"
 MAX_STORIES = 36
 MAX_FIXTURES_PER_FEED = 100
 SCHEDULE_DAYS = 14
@@ -62,6 +63,7 @@ NEWS_CATEGORIES = (
 TRANSLATIONS = {
     "en": {
         "title": "Skysport — Sports news, video & live scores",
+        "metaDescription": "Global sports news from trusted publishers, with video highlights, live scores and upcoming fixtures. Follow football, basketball, tennis, Formula 1 and more.",
         "language": "Select language",
         "news": "News",
         "videos": "Videos",
@@ -109,6 +111,7 @@ TRANSLATIONS = {
     },
     "fr": {
         "title": "Skysport — Actualités sportives, vidéos et scores en direct",
+        "metaDescription": "Actualités sportives du monde entier, vidéos, scores en direct et calendrier des matchs issus de médias fiables.",
         "language": "Choisir la langue",
         "news": "Actualités",
         "videos": "Vidéos",
@@ -156,6 +159,7 @@ TRANSLATIONS = {
     },
     "ar": {
         "title": "سكاي سبورت — أخبار الرياضة والفيديو والنتائج المباشرة",
+        "metaDescription": "أخبار رياضية عالمية من مصادر موثوقة، مع فيديوهات ونتائج مباشرة ومواعيد المباريات.",
         "language": "اختيار اللغة",
         "news": "الأخبار",
         "videos": "الفيديوهات",
@@ -750,8 +754,19 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sports headlines, video highlights and upcoming fixtures from trusted public sources.">
-  <meta name="theme-color" content="#081321"><title>Skysport — Sports news, video & fixtures</title>
+  <meta name="description" content="Global sports news from trusted publishers, with video highlights, live scores and upcoming fixtures. Follow football, basketball, tennis, Formula 1 and more.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="@@SITE_URL@@">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="SkySport">
+  <meta property="og:url" content="@@SITE_URL@@">
+  <meta property="og:title" content="SkySport | Global Sports News, Live Scores &amp; Fixtures">
+  <meta property="og:description" content="Global sports news from trusted publishers, with video highlights, live scores and upcoming fixtures.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SkySport | Global Sports News, Live Scores &amp; Fixtures">
+  <meta name="twitter:description" content="Sports news, video highlights, verified live scores and upcoming fixtures from trusted publishers.">
+  <meta name="theme-color" content="#081321"><title>SkySport | Global Sports News, Live Scores &amp; Fixtures</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SkySport","url":"@@SITE_URL@@","description":"Global sports news from trusted publishers, with video highlights, live scores and upcoming fixtures.","inLanguage":["en","fr","ar"],"publisher":{"@type":"Organization","name":"SkySport","url":"@@SITE_URL@@"}}</script>
 @@STYLE@@
 </head>
 <body>
@@ -836,6 +851,11 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
         document.documentElement.lang = language;
         document.documentElement.dir = rtl ? 'rtl' : 'ltr';
         document.title = copy().title;
+        document.querySelector('meta[name="description"]').content = copy().metaDescription;
+        document.querySelector('meta[property="og:title"]').content = copy().title;
+        document.querySelector('meta[property="og:description"]').content = copy().metaDescription;
+        document.querySelector('meta[name="twitter:title"]').content = copy().title;
+        document.querySelector('meta[name="twitter:description"]').content = copy().metaDescription;
         languageSelect.value = language;
         languageSelect.setAttribute('aria-label', copy().language);
         document.querySelector('label[for="language-toggle"]').textContent = copy().language;
@@ -876,6 +896,7 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
 </body>
 </html>"""
     replacements = {
+        "@@SITE_URL@@": html.escape(SITE_URL, quote=True),
         "@@STYLE@@": STYLE,
         "@@UPDATED@@": html.escape(updated),
         "@@NEWS_SOURCES@@": html.escape(news_sources),
