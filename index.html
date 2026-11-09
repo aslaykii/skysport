@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sports headlines, video highlights and upcoming fixtures from trusted public sources.">
@@ -10,15 +10,15 @@
 :root.light{color-scheme:light;--bg:#f3f6fb;--surface:#fff;--surface2:#e8eef7;--text:#162238;--muted:#5e6d82;--line:#1327471a}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:18px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}button,input{font:inherit}.wrap{width:min(1200px,calc(100% - 40px));margin:auto}
 .masthead{background:linear-gradient(90deg,#06101deb,#081321a8),url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=2000&q=80") center 48%/cover;border-bottom:1px solid var(--line)}
-.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--accent),#ff8b42);font-size:22px;font-weight:900}.brand-name{color:#fff;font-size:1.13rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.nav-links{display:flex;gap:24px;color:#e3eaf5;font-size:.88rem;font-weight:650}.nav-links a{text-decoration:none}.nav-links a:hover{color:#ffbcb6}.nav-right{display:flex;align-items:center;gap:14px}.desk-label{color:#e4ffec;font-size:.73rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.desk-label:before{content:"";display:inline-block;width:8px;height:8px;margin-right:8px;border-radius:50%;background:var(--green)}.theme-button{width:39px;height:39px;border:1px solid #ffffff50;border-radius:50%;color:#fff;background:#07101d75;cursor:pointer}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--accent),#ff8b42);font-size:22px;font-weight:900}.brand-name{color:#fff;font-size:1.13rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.nav-links{display:flex;gap:24px;color:#e3eaf5;font-size:.88rem;font-weight:650}.nav-links a{text-decoration:none}.nav-links a:hover{color:#ffbcb6}.nav-right{display:flex;align-items:center;gap:14px}.desk-label{color:#e4ffec;font-size:.73rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.desk-label:before{content:"";display:inline-block;width:8px;height:8px;margin-right:8px;border-radius:50%;background:var(--green)}.theme-button{width:39px;height:39px;border:1px solid #ffffff50;border-radius:50%;color:#fff;background:#07101d75;cursor:pointer}.language-select{min-height:36px;padding:5px 9px;border:1px solid #ffffff50;border-radius:4px;color:#fff;background:#07101d75;font-size:.78rem}
 .hero{padding:55px 0 62px;color:#fff}.eyebrow{color:#ffbcb6;text-transform:uppercase;letter-spacing:.17em;font-weight:850;font-size:.73rem}.hero h1{max-width:780px;margin:12px 0;font-size:clamp(2.5rem,6.1vw,4.7rem);line-height:1.01;letter-spacing:-.055em}.hero p{max-width:620px;margin:0;color:#d5deeb;font-size:1.04rem}.hero-stats{display:flex;gap:22px;margin-top:27px;color:#e3eaf5;font-size:.78rem}.hero-stats strong{color:#fff;font-size:1rem}
 .ticker{background:var(--accent);color:#fff}.ticker .wrap{min-height:40px;display:flex;align-items:center;gap:12px;font-size:.8rem;font-weight:750}.ticker-label{border:1px solid #ffffff75;padding:2px 8px;border-radius:4px;font-size:.68rem;letter-spacing:.08em}
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:33px 0 16px}.section-head h2{margin:0;font-size:1.6rem;letter-spacing:-.025em}.section-head p{margin:3px 0 0;color:var(--muted);font-size:.82rem}.search{width:min(330px,100%);padding:11px 14px;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:11px;outline:none}.search:focus{border-color:var(--accent);box-shadow:0 0 0 3px #ff493d25}
 .filters{display:flex;gap:8px;overflow-x:auto;padding:0 0 19px}.filter{flex:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--muted);background:var(--surface);font-size:.82rem;font-weight:650;cursor:pointer}.filter:hover,.filter.active{color:var(--text);border-color:#ff493d88;background:#ff493d1c}
 .news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:24px}.story-card{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 32px #00000018;transition:transform .2s,border-color .2s}.story-card:hover{transform:translateY(-3px);border-color:#ff493d70}.story-image{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--surface2)}.story-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}.story-card:hover .story-image img{transform:scale(1.035)}.image-placeholder{display:grid;place-items:center;width:100%;height:100%;color:#71829a;font-weight:900;letter-spacing:.18em;background:linear-gradient(135deg,var(--surface2),var(--surface))}.category{position:absolute;left:12px;bottom:12px;padding:4px 9px;border-radius:6px;background:var(--accent);color:#fff;font-size:.66rem;font-weight:800;text-transform:uppercase}.video-badge{position:absolute;top:11px;right:11px;padding:4px 7px;border-radius:4px;background:#07101dcc;color:#fff;font-size:.62rem;font-weight:850;letter-spacing:.08em}.story-body{padding:15px 16px 17px}.story-meta{display:flex;align-items:center;gap:9px;color:#ff796f;font-size:.64rem;letter-spacing:.055em;font-weight:850}.story-meta a{color:inherit;text-decoration:underline;text-underline-offset:2px}.story-meta time{margin-left:auto;color:var(--muted);letter-spacing:0;font-weight:500;white-space:nowrap}.save-button{border:0;padding:0 2px;color:var(--muted);background:transparent;font-size:1.35rem;line-height:1;cursor:pointer}.save-button.saved,.save-button:hover{color:var(--accent)}.story-body h2,.story-body h3{margin:11px 0 7px;font-size:1.08rem;line-height:1.4}.story-body h2 a,.story-body h3 a,.video-info h3 a{text-decoration:none}.story-body h2 a:hover,.story-body h3 a:hover,.video-info h3 a:hover{color:#ff796f}.story-body p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.6}.read-more{display:inline-block;margin-top:11px;color:#ff796f;font-size:.8rem;font-weight:750;text-decoration:none}.read-more:hover{text-decoration:underline}.empty-state{grid-column:1/-1;padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
 .content-section{padding:12px 0 29px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:15px}.section-title h2{margin:0;font-size:1.55rem}.section-title p{margin:0;color:var(--muted);font-size:.8rem}.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.video-card{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:15px}.video-cover,.video-card>video{display:block;position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:var(--surface2)}.video-cover img{width:100%;height:100%;object-fit:cover}.video-card>video{object-fit:contain}.video-placeholder{display:grid;place-items:center;width:100%;height:100%;color:#ff796f;font-size:2rem}.play-button{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;color:#fff;background:var(--accent);box-shadow:0 5px 20px #0008;transform:translate(-50%,-50%);font-size:.92rem}.video-info{padding:12px 15px 15px}.video-info>span{color:#ff796f;font-size:.65rem;font-weight:850;letter-spacing:.07em}.video-info h3{margin:5px 0 0;font-size:.98rem;line-height:1.4}.section-empty{padding:25px;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:13px;text-align:center}
-.schedule-wrap{margin:4px 0 38px;padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,var(--surface),var(--bg))}.schedule-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.fixture-card,.schedule-empty{padding:15px;background:var(--surface);border:1px solid var(--line);border-radius:12px}.fixture-meta{display:flex;justify-content:space-between;gap:8px;color:#ff796f;font-size:.64rem;font-weight:850;letter-spacing:.045em;text-transform:uppercase}.fixture-match{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:17px 0;font-size:.9rem}.fixture-match strong{flex:1}.fixture-match strong:last-child{text-align:right}.versus{color:var(--muted);font-size:.65rem;font-weight:800}.fixture-footer{display:flex;justify-content:space-between;gap:8px;padding-top:10px;border-top:1px solid var(--line);color:var(--muted);font-size:.7rem}.fixture-footer a{color:var(--muted);text-decoration:none}.fixture-footer a:hover{color:var(--text)}.schedule-empty{display:flex;flex-direction:column;gap:4px;color:var(--muted);font-size:.77rem}.schedule-empty strong{color:var(--text);font-size:.9rem}.schedule-note{margin:10px 0 0;color:var(--muted);font-size:.74rem}
-.fixture-match .event-name{flex:none;text-align:left!important}.mobile-nav{display:none}
+.schedule-wrap{margin:4px 0 38px;padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,var(--surface),var(--bg))}.schedule-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.fixture-card,.schedule-empty{padding:15px;background:var(--surface);border:1px solid var(--line);border-radius:12px}.fixture-meta{display:flex;justify-content:space-between;gap:8px;color:#ff796f;font-size:.64rem;font-weight:850;letter-spacing:.045em;text-transform:uppercase}.fixture-match{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:17px 0;font-size:.9rem}.fixture-match strong{flex:1}.fixture-match strong:last-child{text-align:right}.versus{color:var(--muted);font-size:.65rem;font-weight:800}.fixture-footer{display:flex;justify-content:space-between;gap:8px;padding-top:10px;border-top:1px solid var(--line);color:var(--muted);font-size:.7rem}.fixture-footer a{color:var(--muted);text-decoration:none}.fixture-footer a:hover{color:var(--text)}.schedule-empty{display:flex;flex-direction:column;gap:4px;color:var(--muted);font-size:.77rem}.schedule-empty strong{color:var(--text);font-size:.9rem}.schedule-note{margin:10px 0 0;color:var(--muted);font-size:.74rem}.live-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.live-card{border-color:#c9152b55}.live-badge{padding:2px 6px;border-radius:3px;background:var(--accent);color:#fff;letter-spacing:.04em}.live-match{align-items:center}.live-match strong{font-size:.84rem}.live-score{white-space:nowrap;color:var(--accent);font-size:1.02rem;font-weight:900;font-variant-numeric:tabular-nums}.live-detail{font-weight:750}.live-card .fixture-footer{align-items:center}
+.fixture-match .event-name{flex:none;text-align:left!important}.mobile-nav{display:none}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 footer{border-top:1px solid var(--line);padding:22px 0 32px;color:var(--muted);font-size:.8rem;text-align:center}[hidden]{display:none!important}
 @media(max-width:900px){.news-grid,.video-grid,.schedule-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-links{gap:14px}}
 @media(max-width:650px){body{padding-bottom:68px}.wrap{width:min(100% - 28px,1200px)}.nav{min-height:65px;padding:9px 0}.nav-links{display:none}.mobile-nav{position:fixed;z-index:30;right:0;bottom:0;left:0;display:flex;justify-content:space-around;gap:8px;padding:9px 14px calc(9px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--surface);box-shadow:0 -8px 24px #0003}.mobile-nav a{flex:1;padding:5px;color:var(--text);font-size:.82rem;font-weight:750;text-align:center;text-decoration:none}.mobile-nav a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:5px}.desk-label{display:none}.hero{padding:42px 0 48px}.hero-stats{gap:14px;flex-wrap:wrap}.section-head{align-items:stretch}.search{width:100%}.news-grid,.video-grid,.schedule-grid{grid-template-columns:1fr;gap:13px}.story-card{display:grid;grid-template-columns:112px minmax(0,1fr)}.story-image{height:100%;min-height:164px;aspect-ratio:auto}.story-body{padding:11px}.story-body h3{font-size:.96rem;margin:8px 0 5px}.story-body p{font-size:.78rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.story-meta{font-size:.56rem;gap:5px}.read-more{margin-top:7px}.schedule-wrap{padding:14px}.fixture-match{font-size:.86rem}}
@@ -84,389 +84,975 @@ body{font-family:Arial,Helvetica,sans-serif}
 .story-body h3 a:hover,.read-more{color:var(--accent)}
 .video-card,.fixture-card,.schedule-empty{border-radius:3px;box-shadow:none}
 .schedule-wrap{border-radius:3px;background:var(--surface2)}
+.language-select{border-color:var(--line);color:var(--text);background:var(--surface);cursor:pointer}
+.language-select option{color:var(--text);background:var(--surface)}
+html[dir=rtl] body{text-align:right}
+html[dir=rtl] .nav-links,html[dir=rtl] .nav-right{direction:rtl}
+html[dir=rtl] .desk-label:before{margin-right:0;margin-left:8px}
+html[dir=rtl] .latest-story .story-meta{flex-direction:row-reverse}
+html[dir=rtl] .latest-story .story-meta time{margin-right:auto;margin-left:0}
+html[dir=rtl] .category{right:12px;left:auto}
+html[dir=rtl] .story-meta time{margin-right:auto;margin-left:0}
+html[dir=rtl] .fixture-match strong:last-child{text-align:left}
+html[dir=rtl] .fixture-match .event-name{text-align:right!important}
+html[dir=rtl] .fixture-footer{direction:rtl}
 footer{background:var(--surface);border-color:var(--line)}
-@media(max-width:900px){.top-stories{grid-template-columns:minmax(0,1.35fr) minmax(230px,1fr);gap:18px}.lead-story{grid-template-columns:1fr}.lead-story .story-image{min-height:220px}.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:650px){.wrap{width:min(100% - 28px,1180px)}.nav{min-height:58px}.brand-name{font-size:1.2rem}.hero{padding:13px 0 17px}.hero p{font-size:.82rem}.top-stories{grid-template-columns:1fr;gap:14px;padding:18px 0}.lead-story{grid-template-columns:1fr}.lead-story .story-image{height:auto;min-height:0;aspect-ratio:16/9}.lead-story .story-body{padding:17px}.lead-story .story-body h3{font-size:1.55rem}.latest-list{padding:0 14px}.section-head{padding:24px 0 12px}.news-grid{grid-template-columns:1fr;gap:0}.news-grid>.story-card{display:block}.news-grid>.story-card .story-image{height:auto;min-height:0;aspect-ratio:16/9}.news-grid>.story-card .story-body{padding:11px 0 16px}.news-grid>.story-card .story-body h3{font-size:1.08rem}.news-grid>.story-card .story-body p{display:block;overflow:visible}.filters{padding-bottom:14px}.mobile-nav{background:var(--surface);border-color:var(--line)}}
+@media(max-width:900px){.top-stories{grid-template-columns:minmax(0,1.35fr) minmax(230px,1fr);gap:18px}.lead-story{grid-template-columns:1fr}.lead-story .story-image{min-height:220px}.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.live-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.wrap{width:min(100% - 28px,1180px)}.nav{min-height:58px;gap:8px}.brand-name{font-size:1.2rem}.nav-right{gap:7px}.language-select{max-width:76px;padding:4px}.hero{padding:13px 0 17px}.hero p{font-size:.82rem}.top-stories{grid-template-columns:1fr;gap:14px;padding:18px 0}.lead-story{grid-template-columns:1fr}.lead-story .story-image{height:auto;min-height:0;aspect-ratio:16/9}.lead-story .story-body{padding:17px}.lead-story .story-body h3{font-size:1.55rem}.latest-list{padding:0 14px}.section-head{padding:24px 0 12px}.news-grid{grid-template-columns:1fr;gap:0}.news-grid>.story-card{display:block}.news-grid>.story-card .story-image{height:auto;min-height:0;aspect-ratio:16/9}.news-grid>.story-card .story-body{padding:11px 0 16px}.news-grid>.story-card .story-body h3{font-size:1.08rem}.news-grid>.story-card .story-body p{display:block;overflow:visible}.filters{padding-bottom:14px}.mobile-nav{background:var(--surface);border-color:var(--line)}.mobile-nav a{font-size:.74rem}.live-grid{grid-template-columns:1fr}}
 </style>
 
 </head>
 <body>
   <header class="masthead"><div class="wrap">
     <nav class="nav" aria-label="Main navigation"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Skysport</span></a>
-      <div class="nav-links"><a href="#news">News</a><a href="#videos">Videos</a><a href="#fixtures">Fixtures</a></div>
-      <div class="nav-right"><span class="desk-label">Sports desk</span><button class="theme-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">☼</button></div>
+      <div class="nav-links"><a href="#news" data-i18n="news">News</a><a href="#videos" data-i18n="videos">Videos</a><a href="#live" data-i18n="live">Live</a><a href="#fixtures" data-i18n="fixtures">Fixtures</a></div>
+      <div class="nav-right"><span class="desk-label" data-i18n="sportsDesk">Sports desk</span><label class="visually-hidden" for="language-toggle" data-i18n="language">Select language</label><select class="language-select" id="language-toggle" aria-label="Select language"><option value="en">English</option><option value="fr">Français</option><option value="ar">العربية</option></select><button class="theme-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">☼</button></div>
     </nav>
-    <section class="hero" id="top"><span class="eyebrow">Independent sports coverage</span><h1>The sports world, in focus.</h1><p>Headlines, highlights and match schedules from across the sporting world.</p>
-      <div class="hero-stats"><span><strong>09</strong> sports</span><span><strong>04</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
+    <section class="hero" id="top"><span class="eyebrow" data-i18n="eyebrow">Independent sports coverage</span><h1 data-i18n="headline">The sports world, in focus.</h1><p data-i18n="intro">Headlines, highlights and match schedules from across the sporting world.</p>
+      <div class="hero-stats">      <span><strong>10</strong> sports</span><span><strong>04</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
     </section>
   </div></header>
-  <nav class="mobile-nav" aria-label="Quick section navigation"><a href="#news">News</a><a href="#videos">Videos</a><a href="#fixtures">Fixtures</a></nav>
-  <div class="ticker"><div class="wrap"><span class="ticker-label">SPORTS DESK</span><span>Football · Tennis · Formula 1 · Cricket · Rugby · Basketball · American football · Golf · Boxing &amp; MMA</span></div></div>
+  <nav class="mobile-nav" aria-label="Quick section navigation"><a href="#news" data-i18n="news">News</a><a href="#videos" data-i18n="videos">Videos</a><a href="#live" data-i18n="live">Live</a><a href="#fixtures" data-i18n="fixtures">Fixtures</a></nav>
+  <div class="ticker"><div class="wrap"><span class="ticker-label" data-i18n="sportsDesk">SPORTS DESK</span><span>Football · Tennis · Formula 1 · Cricket · Rugby · Basketball · American football · Ice hockey · Golf · Boxing &amp; MMA</span></div></div>
   <main class="wrap">
-    <section class="top-stories" aria-label="Top stories"><div><p class="section-kicker">Top story</p><article class="story-card lead-story" data-category="Boxing &amp; MMA">
-      <a class="story-image" href="https://www.skysports.com/boxing/news/12040/13610156/caroline-dubois-throws-down-challenge-to-alycia-baumgardner-the-biggest-test-for-her-career-is-going-to-be-against-me" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e1.365dm.com/26/08/1920x1080/skysports-caroline-dubois-boxing_7318200.jpg?20260810130441" alt="" loading="lazy"><span class="category">Boxing &amp; MMA</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T13:00:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/boxing/news/12040/13610156/caroline-dubois-throws-down-challenge-to-alycia-baumgardner-the-biggest-test-for-her-career-is-going-to-be-against-me" target="_blank" rel="noopener noreferrer">Dubois: I&#x27;m the biggest test for Baumgardner&#x27;s career</a></h3><p>Caroline Dubois is confident she is one fight away from an undisputed showdown with her American rival Alycia Baumgardner.</p>
-        <a class="read-more" href="https://www.skysports.com/boxing/news/12040/13610156/caroline-dubois-throws-down-challenge-to-alycia-baumgardner-the-biggest-test-for-her-career-is-going-to-be-against-me" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+    <section class="top-stories" aria-label="Top stories"><div><p class="section-kicker" data-i18n="topStory">Top story</p><article class="story-card lead-story" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:46:41+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals" target="_blank" rel="noopener noreferrer">NFL Week 10 betting odds for every game</a></h3><p>Odds, spreads, totals and FPI predictions for every NFL game in Week 10.</p>
+        <a class="read-more" href="https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
-    </article></div><aside class="latest-panel"><div class="latest-heading"><h2>Latest</h2><a href="#news">All news ↓</a></div><div class="latest-list"><article class="story-card latest-story" data-category="Basketball">
-      <a class="story-image" href="https://www.espn.com/mens-college-basketball/story/_/id/50426371/jon-scheyer-duke-moving-loses" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Basketball</span></a>
-      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:27:08+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.espn.com/mens-college-basketball/story/_/id/50426371/jon-scheyer-duke-moving-loses" target="_blank" rel="noopener noreferrer">&#x27;Losing sucks:&#x27; How Jon Scheyer, Duke are using heartbreaking losses as fuel</a></h3><p>Is depth the secret sauce for Duke to avoid the devastating NCAA tournament exits of the past couple of years?</p>
-        <a class="read-more" href="https://www.espn.com/mens-college-basketball/story/_/id/50426371/jon-scheyer-duke-moving-loses" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article><article class="story-card latest-story" data-category="Football">
-      <a class="story-image" href="https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:26:22+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10" target="_blank" rel="noopener noreferrer">Free agents: Caleb Douglas, Aaron Rodgers lead top options</a></h3><p>Eric Karabell lists who he thinks are the top available players worth adding for the week ahead.</p>
-        <a class="read-more" href="https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+    </article></div><aside class="latest-panel"><div class="latest-heading"><h2 data-i18n="latest">Latest</h2><a href="#news" data-i18n="allNews">All news ↓</a></div><div class="latest-list"><article class="story-card latest-story" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50393510/nfl-week-9-fashionable-arrivals" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:46:37+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50393510/nfl-week-9-fashionable-arrivals" target="_blank" rel="noopener noreferrer">Caleb Williams dons Supreme zip-up before &#x27;SNF&#x27; to lead NFL Week 9 arrivals</a></h3><p>NFL stars continue to turn gameday arrivals into their own weekly fashion showcase.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50393510/nfl-week-9-fashionable-arrivals" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article><article class="story-card latest-story" data-category="Football">
-      <a class="story-image" href="https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:26:22+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings" target="_blank" rel="noopener noreferrer">Winners and losers: Walker, Lamb come up big; Gibbs, Taylor disappoint</a></h3><p>CeeDee Lamb and Kenneth Walker III came up big in Week 9, while Jahmyr Gibbs and Jonathan Taylor were quieter than usual.</p>
-        <a class="read-more" href="https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      <a class="story-image" href="https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:42:36+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick" target="_blank" rel="noopener noreferrer">Transfer rumors, news: Man United to hire USMNT&#x27;s Pochettino to replace Carrick?</a></h3><p>Manchester United are in the relegation zone and could turn to United States head coach Mauricio Pochettino to replace Michael Carrick. Transfer Talk has the latest.</p>
+        <a class="read-more" href="https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article><article class="story-card latest-story" data-category="Football">
+      <a class="story-image" href="https://www.bbc.co.uk/sport/football/articles/c6n9r93dnr9do?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T14:34:19+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.bbc.co.uk/sport/football/articles/c6n9r93dnr9do?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Incident-by-incident: Was it a bad weekend for VAR?</a></h3><p>Almost every game had a controversial VAR decision in the Premier League this weekend. But how many might go down as errors?</p>
+        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/c6n9r93dnr9do?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article><article class="story-card latest-story" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons" target="_blank" rel="noopener noreferrer">Sources: Jaguars bolster secondary, land safety Bates in trade with Falcons</a></h3><p>The Jaguars bolstered their secondary one day before the NFL trade deadline, acquiring veteran safety Jessie Bates III from the Falcons, sources told ESPN.</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:29:04+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers" target="_blank" rel="noopener noreferrer">Bears&#x27; Williams undeterred by career-high 4 INTs: &#x27;Going to keep grippin&#x27; it, keep rippin&#x27; it&#x27;</a></h3><p>Caleb Williams refused to let his four interceptions rattle his confidence as he put the Bears in position to beat the Buccaneers on a walk-off field goal.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article></div></aside></section>
-    <section class="section-head" id="news"><div><h2>More headlines</h2><p>Updated 09 Nov 2026 · 14:34 UTC · Sources: BBC Sport, The Guardian, ESPN, Sky Sports</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines"></section>
-    <nav class="filters" aria-label="Filter headlines by sport"><button class="filter active" type="button" data-filter="All">All sports</button><button class="filter" type="button" data-filter="Football">Football</button><button class="filter" type="button" data-filter="Tennis">Tennis</button><button class="filter" type="button" data-filter="Formula 1">Formula 1</button><button class="filter" type="button" data-filter="Cricket">Cricket</button><button class="filter" type="button" data-filter="Rugby">Rugby</button><button class="filter" type="button" data-filter="Basketball">Basketball</button><button class="filter" type="button" data-filter="American Football">American Football</button><button class="filter" type="button" data-filter="Golf">Golf</button><button class="filter" type="button" data-filter="Boxing &amp; MMA">Boxing &amp; MMA</button><button class="filter" type="button" data-filter="Other">Other</button><button class="filter" type="button" data-filter="Saved">♡ Saved</button></nav>
-    <div class="news-grid" id="news-grid"><article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor" target="_blank" rel="noopener noreferrer">Harbaugh: Giants pulled recent offer for RB Taylor but &#x27;things do change&#x27;</a></h3><p>The Giants pulled a recent trade offer for Jonathan Taylor, according to coach John Harbaugh, who added that doesn&#x27;t mean a deal is completely off the table.</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+    <section class="section-head" id="news"><div><h2 data-i18n="moreHeadlines">More headlines</h2><p>Updated 09 Nov 2026 · 14:50 UTC · Sources: BBC Sport, The Guardian, ESPN, Sky Sports</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines" data-i18n-placeholder="search"></section>
+    <nav class="filters" aria-label="Filter headlines by sport"><button class="filter active" type="button" data-filter="All">All sports</button><button class="filter" type="button" data-filter="Football">Football</button><button class="filter" type="button" data-filter="Tennis">Tennis</button><button class="filter" type="button" data-filter="Formula 1">Formula 1</button><button class="filter" type="button" data-filter="Cricket">Cricket</button><button class="filter" type="button" data-filter="Rugby">Rugby</button><button class="filter" type="button" data-filter="Basketball">Basketball</button><button class="filter" type="button" data-filter="American Football">American Football</button><button class="filter" type="button" data-filter="Ice Hockey">Ice Hockey</button><button class="filter" type="button" data-filter="Golf">Golf</button><button class="filter" type="button" data-filter="Boxing &amp; MMA">Boxing &amp; MMA</button><button class="filter" type="button" data-filter="Other">Other</button><button class="filter" type="button" data-filter="Saved">♡ Saved</button></nav>
+    <div class="news-grid" id="news-grid"><article class="story-card" data-category="Basketball">
+      <a class="story-image" href="https://www.espn.com/mens-college-basketball/story/_/id/50426371/jon-scheyer-duke-moving-loses" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Basketball">Basketball</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:27:08+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/mens-college-basketball/story/_/id/50426371/jon-scheyer-duke-moving-loses" target="_blank" rel="noopener noreferrer">&#x27;Losing sucks:&#x27; How Jon Scheyer, Duke are using heartbreaking losses as fuel</a></h3><p>Is depth the secret sauce for Duke to avoid the devastating NCAA tournament exits of the past couple of years?</p>
+        <a class="read-more" href="https://www.espn.com/mens-college-basketball/story/_/id/50426371/jon-scheyer-duke-moving-loses" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Football">
+      <a class="story-image" href="https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:26:22+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10" target="_blank" rel="noopener noreferrer">Free agents: Caleb Douglas, Aaron Rodgers lead top options</a></h3><p>Eric Karabell lists who he thinks are the top available players worth adding for the week ahead.</p>
+        <a class="read-more" href="https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Football">
+      <a class="story-image" href="https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:26:22+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings" target="_blank" rel="noopener noreferrer">Winners and losers: Walker, Lamb come up big; Gibbs, Taylor disappoint</a></h3><p>CeeDee Lamb and Kenneth Walker III came up big in Week 9, while Jahmyr Gibbs and Jonathan Taylor were quieter than usual.</p>
+        <a class="read-more" href="https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50432531/ohio-state-fires-special-teams-coordinator-discher" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons" target="_blank" rel="noopener noreferrer">Sources: Jaguars bolster secondary, land safety Bates in trade with Falcons</a></h3><p>The Jaguars bolstered their secondary one day before the NFL trade deadline, acquiring veteran safety Jessie Bates III from the Falcons, sources told ESPN.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor" target="_blank" rel="noopener noreferrer">Harbaugh: Giants pulled recent offer for RB Taylor but &#x27;things do change&#x27;</a></h3><p>The Giants pulled a recent trade offer for Jonathan Taylor, according to coach John Harbaugh, who added that doesn&#x27;t mean a deal is completely off the table.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50432531/ohio-state-fires-special-teams-coordinator-discher" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/college-football/story/_/id/50432531/ohio-state-fires-special-teams-coordinator-discher" target="_blank" rel="noopener noreferrer">Sources: Buckeyes fire coordinator Discher after multiple special teams gaffes</a></h3><p>Ohio State has fired special teams coordinator Robby Discher after back-to-back blowout losses with costly special teams errors and penalties, sources confirmed to ESPN.</p>
-        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50432531/ohio-state-fires-special-teams-coordinator-discher" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50432531/ohio-state-fires-special-teams-coordinator-discher" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Basketball">
-      <a class="story-image" href="https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Basketball</span></a>
+      <a class="story-image" href="https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Basketball">Basketball</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism" target="_blank" rel="noopener noreferrer">Giannis on Doc criticism: I won&#x27;t be thwarted by &#x27;bitterness or pettiness&#x27;</a></h3><p>Giannis Antetokounmpo said he was &quot;speechless&quot; over Doc Rivers&#x27; recent comments, adding that athletes should not be dismayed by &quot;bitterness or pettiness.&quot;</p>
-        <a class="read-more" href="https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50432695/jets-pass-rusher-mcdonald-iv-requests-trade" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50432695/jets-pass-rusher-mcdonald-iv-requests-trade" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.espn.com/nfl/story/_/id/50432695/jets-pass-rusher-mcdonald-iv-requests-trade" target="_blank" rel="noopener noreferrer">Sources: Jets DE McDonald IV, frustrated by playing time, requests trade</a></h3><p>Jets pass rusher Will McDonald IV, frustrated by lack of playing time, has requested a trade, sources told NFL Network&#x27;s Ian Rapoport.</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50432695/jets-pass-rusher-mcdonald-iv-requests-trade" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50432695/jets-pass-rusher-mcdonald-iv-requests-trade" target="_blank" rel="noopener noreferrer">Sources: Jets DE McDonald IV, frustrated by playing time, requests trade</a></h3><p>Jets pass rusher Will McDonald IV, frustrated by a lack of playing time, has requested a trade, sources told NFL Network&#x27;s Ian Rapoport.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50432695/jets-pass-rusher-mcdonald-iv-requests-trade" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast" target="_blank" rel="noopener noreferrer">Giants&#x27; Nabers takes issue with Fox telecast after body-language comments</a></h3><p>Malik Nabers took issue with Fox play-by-play man Joe Davis and analyst Greg Olsen for criticizing his body language during the Giants&#x27; win Sunday.</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Boxing &amp; MMA">
-      <a class="story-image" href="https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Boxing &amp; MMA</span></a>
+      <a class="story-image" href="https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Boxing &amp; MMA">Boxing &amp; MMA</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke" target="_blank" rel="noopener noreferrer">Trump &#x27;only kidding&#x27; with offer of press secretary job to UFC&#x27;s White</a></h3><p>President Donald Trump said he &quot;was only kidding&quot; when he announced he had offered the White House press secretary job to UFC CEO Dana White.</p>
-        <a class="read-more" href="https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50426400/nfl-week-9-trolls" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50426400/nfl-week-9-trolls" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nfl/story/_/id/50426400/nfl-week-9-trolls" target="_blank" rel="noopener noreferrer">🧌 Saints poke fun at Shedeur Sanders, reference quote to lead NFL Week 9 trolls</a></h3><p>The New Orleans Saints kept the receipts and poked fun at Shedeur Sanders to lead NFL Week 9 trolls.</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50426400/nfl-week-9-trolls" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50426400/nfl-week-9-trolls" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Football">
+      <a class="story-image" href="https://www.theguardian.com/football/2026/nov/09/rodrigo-mora-roma-lazio-rome-serie-a" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T14:18:45+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.theguardian.com/football/2026/nov/09/rodrigo-mora-roma-lazio-rome-serie-a" target="_blank" rel="noopener noreferrer">That’s a Mora: Rodrigo and Roma rise with Lazio to give Eternal City new life</a></h3><p>Roma and Lazio have both made unbeaten starts to the Serie A season, giving those in the Italian capital dreams of a Scudetto After nine games in 28 days, Gian Piero Gasperini finally got a moment to pause and reflect on Sunday night. The Roma manager was back in Liguria, where he worked for the best part of a decade across two stints at Genoa, to collect an award from Stelle Nello Sport – an association formed to promote sport in the region – celebrating his career achievements and commitment to courageous attacking football. The timing worked out well. Gasperini’s Roma thumped Sassuolo 3-0 on Saturday, bouncing back from a midweek loss to Manchester United . That result meant the Giallorossi had scored 31 times in 11 Serie A games. In the last 65 years only two Italian teams – the Juventus and Napoli sides of 2017-18 – had ever made a more prolific start to a top-flight campaign. More importantly, Roma’s victory meant they remained undefeated in domestic competition this season. Just like their neighbours Lazio, who drew 1-1 away to Napoli in Sunday’s early kick-off. Continue reading...</p>
+        <a class="read-more" href="https://www.theguardian.com/football/2026/nov/09/rodrigo-mora-roma-lazio-rome-serie-a" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Basketball">
-      <a class="story-image" href="https://www.espn.com/nba/story/_/id/50425453/miami-heat-giannis-antetokounmpo-erik-spoelstra" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Basketball</span></a>
+      <a class="story-image" href="https://www.espn.com/nba/story/_/id/50425453/miami-heat-giannis-antetokounmpo-erik-spoelstra" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Basketball">Basketball</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:15:29+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nba/story/_/id/50425453/miami-heat-giannis-antetokounmpo-erik-spoelstra" target="_blank" rel="noopener noreferrer">&#x27;Right now, we don&#x27;t trust one another&#x27;: What&#x27;s fueling the rocky start for Giannis and the Heat</a></h3><p>At 4-6, the Heat aren&#x27;t pointing fingers -- yet. But with each loss, the pressure rises on this season and next -- with Giannis&#x27; free agency looming.</p>
-        <a class="read-more" href="https://www.espn.com/nba/story/_/id/50425453/miami-heat-giannis-antetokounmpo-erik-spoelstra" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nba/story/_/id/50425453/miami-heat-giannis-antetokounmpo-erik-spoelstra" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Basketball">
-      <a class="story-image" href="https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Basketball</span></a>
+      <a class="story-image" href="https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Basketball">Basketball</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:15:29+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions" target="_blank" rel="noopener noreferrer">NBA core danger tiers: 19 teams with major roster decisions</a></h3><p>With tax and apron penalties lurking everywhere, Bobby Marks examines 19 teams barreling toward core-altering decisions.</p>
-        <a class="read-more" href="https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:14:27+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp" target="_blank" rel="noopener noreferrer">CFP top 12 projection: Who&#x27;s still standing after massive Week 10?</a></h3><p>We assess how the selection committee could stack the top teams in the country after Week 10.</p>
-        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50380155/countering-peanut-punch-james-cook-skattebo" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50380155/countering-peanut-punch-james-cook-skattebo" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:14:04+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nfl/story/_/id/50380155/countering-peanut-punch-james-cook-skattebo" target="_blank" rel="noopener noreferrer">The &#x27;Peanut Punch&#x27; has taken over the NFL. How are teams countering it?</a></h3><p>After Charles Tillman popularized the punch 14 years ago, it has really taken off this season.</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50380155/countering-peanut-punch-james-cook-skattebo" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50380155/countering-peanut-punch-james-cook-skattebo" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:14:03+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022" target="_blank" rel="noopener noreferrer">&#x27;The catch of his life!&#x27;: The inside story of Justin Jefferson&#x27;s epic one-handed grab</a></h3><p>In 2022 against the Bills, Jefferson leaped up and came down with one of &quot;the greatest catches of all time.&quot;</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:12:45+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10" target="_blank" rel="noopener noreferrer">Power Rankings: Utah jumps into top 2, LSU drops down</a></h3><p>Check out how an action-packed Week 10 caused major shifts in this week&#x27;s top 25.</p>
-        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:12:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won" target="_blank" rel="noopener noreferrer">How Week 10&#x27;s biggest games were won -- and whether CFP hopefuls can keep it up</a></h3><p>From Notre Dame&#x27;s CJ Carr to Alabama&#x27;s consistency, we examine the keys to victory on a statement Saturday.</p>
-        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Football">
+      <a class="story-image" href="https://www.theguardian.com/football/2026/nov/09/felix-nmecha-faith-borussia-dortmund-debate-bundesliga" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T14:10:43+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.theguardian.com/football/2026/nov/09/felix-nmecha-faith-borussia-dortmund-debate-bundesliga" target="_blank" rel="noopener noreferrer">Felix Nmecha’s faith is forcing Borussia Dortmund into an uncomfortable debate</a></h3><p>Midfielder’s spectacular strikes rescued a frustrating day, only for celebrations to reignite dialogue that has followed him through his career It was just what they needed at just the right time. For a tricky first half and beyond, Elversberg had been a stone in Borussia Dortmund’s shoe, the promoted side not just keeping the home team at bay but keeping them honest, nourishing ambitions of their own. “The fatigue was clearly visible,” said the sporting director, Ole Book, to Sky after a week which had contained Der Klassiker in Munich and a hard-fought Champions League victory over Betis. “We were a bit too focused on managing the game, which was understandable.” Enter Felix Nmecha. BVB have enjoyed a largely excellent start to the season, are unbeaten and level on points with Bayern Munich at the top; Bayern lead, unsurprisingly, thanks to their superior goal difference. It is a gap which has been widened by Dortmund being far from prolific, a facet which looked as if it might undercut their efforts to roll over their visitors on Saturday, especially in the absence of the injured centre-forward Serhou Guirassy. Continue reading...</p>
+        <a class="read-more" href="https://www.theguardian.com/football/2026/nov/09/felix-nmecha-faith-borussia-dortmund-debate-bundesliga" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50422009/week-9-barnwell-nfc-north-packers-lions-bears-vikings" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50422009/week-9-barnwell-nfc-north-packers-lions-bears-vikings" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:03:13+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nfl/story/_/id/50422009/week-9-barnwell-nfc-north-packers-lions-bears-vikings" target="_blank" rel="noopener noreferrer">Is the NFC North the best division ... ever? Barnwell on big wins for the Packers, Bears and Lions</a></h3><p>The Packers, Bears, Lions and Vikings are a combined 25-8 and all hold playoff spots right now. Can anyone stop the NFC North -- and who will win the division?</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50422009/week-9-barnwell-nfc-north-packers-lions-bears-vikings" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50422009/week-9-barnwell-nfc-north-packers-lions-bears-vikings" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:03:13+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys" target="_blank" rel="noopener noreferrer">Let&#x27;s overreact to NFL Week 9 -- with a trade deadline twist</a></h3><p>Time for the Bengals to make a push? Should the Giants go after a running back? Will the receiver market go wild?</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="American Football">American Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:01:53+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms" target="_blank" rel="noopener noreferrer">Tracking NFL trades: Catch up on all nine moves ahead of the deadline</a></h3><p>The NFL trade deadline is Tuesday, and deals are flying. We&#x27;re tracking all moves, including Jessie Bates III to Jacksonville.</p>
-        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/10/leihani-zoric-australian-surf-prodigy-surfing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Other</span></a>
+      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/10/leihani-zoric-australian-surf-prodigy-surfing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Other">Other</span></a>
       <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T14:00:13+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.theguardian.com/sport/2026/nov/10/leihani-zoric-australian-surf-prodigy-surfing" target="_blank" rel="noopener noreferrer">13-year-old surfing prodigy Leihani Zoric: ‘I don’t want to participate, I want to dominate’</a></h3><p>The Indigenous Australian grew up idolising Steph Gilmore and Tyler Wright. Now she has them – and an Olympic gold – in her sights Leihani Zoric, 13, grew up watching Australian surfers dominate on the world stage. Stephanie Gilmore, the greatest female surfer of all time, and Tyler Wright, a two-time World Surf League champion, were among her idols. “When I was little I always watched their surfing,” she says. “They inspired me in and out of the water.” Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/10/leihani-zoric-australian-surf-prodigy-surfing" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/10/leihani-zoric-australian-surf-prodigy-surfing" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
+      <a class="story-image" href="https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T13:56:50+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico" target="_blank" rel="noopener noreferrer">How Barça beat Atletico, Man City defensive woes, more</a></h3><p>Man United came back to draw Aston Villa, but that shouldn&#x27;t save Carrick&#x27;s job. Plus, Barça escape Atletico with victory, and Man City&#x27;s defensive woes continue.</p>
-        <a class="read-more" href="https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.espn.com/soccer/story/_/id/50430907/manchester-united-transfers-carrick-premier-league-ratcliffe" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
+      <a class="story-image" href="https://www.espn.com/soccer/story/_/id/50430907/manchester-united-transfers-carrick-premier-league-ratcliffe" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span></a>
       <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T13:56:50+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.espn.com/soccer/story/_/id/50430907/manchester-united-transfers-carrick-premier-league-ratcliffe" target="_blank" rel="noopener noreferrer">Ratcliffe appointed rookies, now Man United face relegation﻿ fight</a></h3><p>Sir Jim Ratcliffe&#x27;s naive backroom appointments have left Manchester United in their worst position for 40 years and staring relegation in the face.</p>
-        <a class="read-more" href="https://www.espn.com/soccer/story/_/id/50430907/manchester-united-transfers-carrick-premier-league-ratcliffe" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.espn.com/soccer/story/_/id/50430907/manchester-united-transfers-carrick-premier-league-ratcliffe" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Formula 1">
-      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/09/senna-was-senna-wolff-says-it-is-too-soon-to-compare-kimi-antonelli-to-f1-great" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Formula 1</span></a>
+      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/09/senna-was-senna-wolff-says-it-is-too-soon-to-compare-kimi-antonelli-to-f1-great" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Formula 1">Formula 1</span></a>
       <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T13:47:26+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.theguardian.com/sport/2026/nov/09/senna-was-senna-wolff-says-it-is-too-soon-to-compare-kimi-antonelli-to-f1-great" target="_blank" rel="noopener noreferrer">‘Senna was Senna’: Wolff says it is too soon to compare Kimi Antonelli to F1 great</a></h3><p>World champion idolises Brazilian who won three titles ‘He’s a Senninha and not a Senna yet,’ says Toto Wolff Toto Wolff has said it is too soon to compare his world champion driver Kimi Antonelli to Ayrton Senna but that the Italian might yet develop to be comparable to the Brazilian great whom Antonelli grew up idolising. Antonelli sealed his first Formula One world championship at the Mexican Grand Prix and with a fifth place at Sunday’s São Paulo Grand Prix helped Mercedes secure their ninth constructors’ championship and their first drivers’ and constructors’ double since 2020. Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/09/senna-was-senna-wolff-says-it-is-too-soon-to-compare-kimi-antonelli-to-f1-great" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/09/senna-was-senna-wolff-says-it-is-too-soon-to-compare-kimi-antonelli-to-f1-great" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Rugby">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/rugby-league/articles/c620r0n4yxw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Rugby</span></a>
+      <a class="story-image" href="https://www.bbc.co.uk/sport/rugby-league/articles/c620r0n4yxw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Rugby">Rugby</span></a>
       <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T13:38:28+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.bbc.co.uk/sport/rugby-league/articles/c620r0n4yxw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">USA &amp; Pacific Islands to host 2030 Rugby League World Cup</a></h3><p>The 2030 Rugby League World Cup tournament will be hosted by the USA and the Pacific Islands, but the five host cities are yet to be confirmed.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/rugby-league/articles/c620r0n4yxw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.bbc.co.uk/sport/rugby-league/articles/c620r0n4yxw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.theguardian.com/football/2026/nov/09/lens-como-marseille-pierre-sage-coupe-de-france-ligue-1" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
+      <a class="story-image" href="https://www.theguardian.com/football/2026/nov/09/lens-como-marseille-pierre-sage-coupe-de-france-ligue-1" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span></a>
       <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T13:37:45+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.theguardian.com/football/2026/nov/09/lens-como-marseille-pierre-sage-coupe-de-france-ligue-1" target="_blank" rel="noopener noreferrer">Lens were humiliated by Como. The pain continued against Marseille</a></h3><p>Pierre Sage led Lens to second and glory in the Coupe de France last season. A lot has changed in the last six months The Lens striker, Florian Sotoca, was completely motionless as he looked into the middle space from the bench. The game, finely poised at 2-1 with a few minutes remaining, was not beyond his side, but that is not the story his troubled face told. Marseille had just restored their lead thanks to a goal from substitute Keyliane Abdallah. Bruno Génésio’s men would go on to take all three points and continue their unlikely charge up the table, but the atmosphere at the Stade Bollaert-Delelis was morose before Marseille had even stepped on the pitch. The match did little to lift the mood at the end of a week in which Lens made unwanted history. Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/football/2026/nov/09/lens-como-marseille-pierre-sage-coupe-de-france-ligue-1" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.theguardian.com/football/2026/nov/09/lens-como-marseille-pierre-sage-coupe-de-france-ligue-1" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span><span class="video-badge">VIDEO</span></a>
+      <a class="story-image" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category" data-category="Football">Football</span><span class="video-badge">VIDEO</span></a>
       <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T13:29:14+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer">Could Old Trafford chaos keep Michael Carrick in the job? Football Weekly – video</a></h3><p>Max Rushden is joined by Barney Ronay , Jonathan Wilson and Dan Bardell as Manchester United twice come back from two goals down to draw 4-4 with Aston Villa, while trouble looms for Pierre Sage Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+        <a class="read-more" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
       </div>
-    </article>
-<article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T13:17:17+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick" target="_blank" rel="noopener noreferrer">Transfer rumors, news: Man United to hire USMNT&#x27;s Pochettino to replace Carrick?</a></h3><p>Manchester United are in the relegation zone and could turn to United States head coach Mauricio Pochettino to replace Michael Carrick. Transfer Talk has the latest.</p>
-        <a class="read-more" href="https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.espn.com/wwe/story/_/id/50412427/wwe-crown-jewel-2026-takeaways" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T13:07:05+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.espn.com/wwe/story/_/id/50412427/wwe-crown-jewel-2026-takeaways" target="_blank" rel="noopener noreferrer">Will Cody&#x27;s change in demeanor continue following Crown Jewel?</a></h3><p>Cody Rhodes and Tiffany Statton embraced underhanded tactics to win at Crown Jewel, what&#x27;s next for them?</p>
-        <a class="read-more" href="https://www.espn.com/wwe/story/_/id/50412427/wwe-crown-jewel-2026-takeaways" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Formula 1">
-      <a class="story-image" href="https://www.skysports.com/f1/news/12040/13610144/lando-norris-says-mclaren-are-still-not-at-the-level-to-fight-for-world-championship-in-2027-despite-sao-paulo-grand-prix-win" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e1.365dm.com/26/11/1920x1080/skysports-f1-lando-norris_7402085.jpg?20261109121814" alt="" loading="lazy"><span class="category">Formula 1</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T12:55:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/f1/news/12040/13610144/lando-norris-says-mclaren-are-still-not-at-the-level-to-fight-for-world-championship-in-2027-despite-sao-paulo-grand-prix-win" target="_blank" rel="noopener noreferrer">Norris: McLaren still not at championship level</a></h3><p>Lando Norris believes McLaren are &quot;not at the level to fight for a world championship&quot; despite his dominant win in mixed conditions at the Sao Paulo Grand Prix.</p>
-        <a class="read-more" href="https://www.skysports.com/f1/news/12040/13610144/lando-norris-says-mclaren-are-still-not-at-the-level-to-fight-for-world-championship-in-2027-despite-sao-paulo-grand-prix-win" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="American Football">
-      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50426276/notre-dame-miami-national-championship" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T12:45:04+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.espn.com/college-football/story/_/id/50426276/notre-dame-miami-national-championship" target="_blank" rel="noopener noreferrer">Is Notre Dame ready to party like it&#x27;s 1988?</a></h3><p>To prepare for the biggest game of the regular season, Marcus Freeman and the Irish looked to the past.</p>
-        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50426276/notre-dame-miami-national-championship" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/football/articles/c98rzr51rlvpo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T12:41:23+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/football/articles/c98rzr51rlvpo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Chelsea staff warned over Fantasy Premier League use</a></h3><p>Chelsea warn staff to be careful about revealing team news through Fantasy Premier League after Joao Pedro&#x27;s injury appeared to have been inadvertently disclosed through team selections.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/c98rzr51rlvpo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.skysports.com/football/news/12040/13610181/alisson-liverpool-goalkeeper-wants-to-stay-at-anfield-beyond-contract-expiry-at-the-end-of-this-season" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e0.365dm.com/26/11/1920x1080/skysports-alisson-liverpool_7402127.jpg?20261109125441" alt="" loading="lazy"><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports · <a href="https://www.bbc.co.uk/sport/football/articles/cw62ypepq2m7o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">BBC Sport</a></span><time datetime="2026-11-09T12:38:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/football/news/12040/13610181/alisson-liverpool-goalkeeper-wants-to-stay-at-anfield-beyond-contract-expiry-at-the-end-of-this-season" target="_blank" rel="noopener noreferrer">&#x27;My will is to stay&#x27; - Alisson wants new Liverpool contract</a></h3><p>Liverpool goalkeeper Alisson says he wants to stay at Anfield beyond the end of the season when his contract expires.</p>
-        <a class="read-more" href="https://www.skysports.com/football/news/12040/13610181/alisson-liverpool-goalkeeper-wants-to-stay-at-anfield-beyond-contract-expiry-at-the-end-of-this-season" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article><p class="empty-state" id="empty-state" hidden>No stories found. Try a different search or filter.</p></div>
-    <section class="content-section" id="videos"><div class="section-title"><div><h2>Video highlights</h2><p>Inline playback when publishers provide a video file; otherwise watch at source</p></div></div><div class="video-grid"><article class="video-card"><a class="video-cover" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer"><span class="video-placeholder" aria-hidden="true">▶</span><span class="play-button" aria-hidden="true">▶</span></a>
-      <div class="video-info"><span>The Guardian · VIDEO</span><h3><a href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer">Could Old Trafford chaos keep Michael Carrick in the job? Football Weekly – video</a></h3><a class="read-more" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer">Watch on The Guardian ↗</a></div>
+    </article><p class="empty-state" id="empty-state" hidden data-i18n="noStories">No stories found. Try a different search or filter.</p></div>
+    <section class="content-section" id="videos"><div class="section-title"><div><h2 data-i18n="videoHighlights">Video highlights</h2><p data-i18n="videoDescription">Videos open on their publisher's site unless a direct file is available.</p></div></div><div class="video-grid"><article class="video-card"><a class="video-cover" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer"><span class="video-placeholder" aria-hidden="true">▶</span><span class="play-button" aria-hidden="true">▶</span></a>
+      <div class="video-info"><span>The Guardian · VIDEO</span><h3><a href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer">Could Old Trafford chaos keep Michael Carrick in the job? Football Weekly – video</a></h3><a class="read-more" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer"><span data-i18n="watchOn">Watch on</span> The Guardian ↗</a></div>
     </article></div></section>
-    <section class="content-section" id="fixtures"><div class="section-title"><div><h2>Upcoming fixtures</h2><p>Public scoreboard data · Next 14 days · Times shown in UTC</p></div></div>
-      <div class="schedule-wrap"><div class="schedule-grid"><article class="fixture-card" data-sport="Tennis">
-      <div class="fixture-meta"><span>Tennis</span><span>ATP</span></div>
+    <section class="content-section" id="live"><div class="section-title"><div><h2 data-i18n="liveScores">Live scores</h2><p data-i18n="liveDescription">Live matches from ESPN public scoreboards. Updates about every 15 minutes.</p></div></div><div class="schedule-wrap"><div class="live-grid"><p class="section-empty" data-i18n="noLive">No matches are live at the latest update.</p></div></div></section>
+    <section class="content-section" id="fixtures"><div class="section-title"><div><h2 data-i18n="upcomingFixtures">Upcoming fixtures</h2><p data-i18n="fixtureDescription">Next 14 days · Times shown in UTC</p></div></div>
+      <div class="schedule-wrap"><div class="schedule-grid"><article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Atlanta Hawks</strong><span class="versus">VS</span><strong>Los Angeles Lakers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T00:00:00+00:00">Tue, 10 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909952/lakers-hawks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Charlotte Hornets</strong><span class="versus">VS</span><strong>Cleveland Cavaliers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T00:00:00+00:00">Tue, 10 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909953/cavaliers-hornets" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Detroit Pistons</strong><span class="versus">VS</span><strong>Washington Wizards</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T00:00:00+00:00">Tue, 10 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909954/wizards-pistons" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Toronto Raptors</strong><span class="versus">VS</span><strong>Memphis Grizzlies</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T00:30:00+00:00">Tue, 10 Nov · 00:30 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909955/grizzlies-raptors" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Dallas Mavericks</strong><span class="versus">VS</span><strong>Indiana Pacers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T01:00:00+00:00">Tue, 10 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909956/pacers-mavericks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Edmonton Oilers</strong><span class="versus">VS</span><strong>New York Rangers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T01:00:00+00:00">Tue, 10 Nov · 01:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892680/rangers-oilers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Minnesota Vikings</strong><span class="versus">VS</span><strong>Buffalo Bills</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T01:15:00+00:00">Tue, 10 Nov · 01:15 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873051/bills-vikings" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Houston Rockets</strong><span class="versus">VS</span><strong>Denver Nuggets</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T01:30:00+00:00">Tue, 10 Nov · 01:30 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909957/nuggets-rockets" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Phoenix Suns</strong><span class="versus">VS</span><strong>San Antonio Spurs</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T02:00:00+00:00">Tue, 10 Nov · 02:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909958/spurs-suns" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Vancouver Canucks</strong><span class="versus">VS</span><strong>Philadelphia Flyers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T02:30:00+00:00">Tue, 10 Nov · 02:30 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892681/flyers-canucks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Golden State Warriors</strong><span class="versus">VS</span><strong>New Orleans Pelicans</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T03:00:00+00:00">Tue, 10 Nov · 03:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909959/pelicans-warriors" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>San Jose Sharks</strong><span class="versus">VS</span><strong>New York Islanders</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-10T03:00:00+00:00">Tue, 10 Nov · 03:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892682/islanders-sharks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Toronto Maple Leafs</strong><span class="versus">VS</span><strong>Colorado Avalanche</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T00:00:00+00:00">Wed, 11 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892683/avalanche-maple-leafs" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Montreal Canadiens</strong><span class="versus">VS</span><strong>Minnesota Wild</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T00:00:00+00:00">Wed, 11 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892684/wild-canadiens" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Ottawa Senators</strong><span class="versus">VS</span><strong>Washington Capitals</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T00:00:00+00:00">Wed, 11 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892685/capitals-senators" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Winnipeg Jets</strong><span class="versus">VS</span><strong>New Jersey Devils</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T00:00:00+00:00">Wed, 11 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892688/devils-jets" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>New York Knicks</strong><span class="versus">VS</span><strong>Milwaukee Bucks</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T00:30:00+00:00">Wed, 11 Nov · 00:30 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909960/bucks-knicks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Columbus Blue Jackets</strong><span class="versus">VS</span><strong>Florida Panthers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T00:30:00+00:00">Wed, 11 Nov · 00:30 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892686/panthers-blue-jackets" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Philadelphia 76ers</strong><span class="versus">VS</span><strong>Boston Celtics</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T01:00:00+00:00">Wed, 11 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909961/celtics-76ers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>St. Louis Blues</strong><span class="versus">VS</span><strong>Detroit Red Wings</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T01:00:00+00:00">Wed, 11 Nov · 01:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892687/red-wings-blues" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Phoenix Suns</strong><span class="versus">VS</span><strong>LA Clippers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T02:00:00+00:00">Wed, 11 Nov · 02:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909962/clippers-suns" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Utah Jazz</strong><span class="versus">VS</span><strong>Miami Heat</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T02:00:00+00:00">Wed, 11 Nov · 02:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909963/heat-jazz" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Sacramento Kings</strong><span class="versus">VS</span><strong>Orlando Magic</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T03:00:00+00:00">Wed, 11 Nov · 03:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909964/magic-kings" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Los Angeles Kings</strong><span class="versus">VS</span><strong>Nashville Predators</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T03:00:00+00:00">Wed, 11 Nov · 03:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892689/predators-kings" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Portland Trail Blazers</strong><span class="versus">VS</span><strong>Oklahoma City Thunder</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-11T04:00:00+00:00">Wed, 11 Nov · 04:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909965/thunder-trail-blazers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Indiana Pacers</strong><span class="versus">VS</span><strong>Washington Wizards</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T00:00:00+00:00">Thu, 12 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909966/wizards-pacers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>New York Knicks</strong><span class="versus">VS</span><strong>Cleveland Cavaliers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T00:00:00+00:00">Thu, 12 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909967/cavaliers-knicks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Toronto Raptors</strong><span class="versus">VS</span><strong>Boston Celtics</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T00:00:00+00:00">Thu, 12 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909968/celtics-raptors" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Buffalo Sabres</strong><span class="versus">VS</span><strong>Tampa Bay Lightning</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T00:00:00+00:00">Thu, 12 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892690/lightning-sabres" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Calgary Flames</strong><span class="versus">VS</span><strong>New York Rangers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T00:30:00+00:00">Thu, 12 Nov · 00:30 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892691/rangers-flames" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Chicago Bulls</strong><span class="versus">VS</span><strong>San Antonio Spurs</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T01:00:00+00:00">Thu, 12 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909969/spurs-bulls" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Memphis Grizzlies</strong><span class="versus">VS</span><strong>Denver Nuggets</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T01:00:00+00:00">Thu, 12 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909970/nuggets-grizzlies" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Milwaukee Bucks</strong><span class="versus">VS</span><strong>Los Angeles Lakers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T01:00:00+00:00">Thu, 12 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909971/lakers-bucks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>New Orleans Pelicans</strong><span class="versus">VS</span><strong>Brooklyn Nets</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T01:00:00+00:00">Thu, 12 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909972/nets-pelicans" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Utah Jazz</strong><span class="versus">VS</span><strong>Orlando Magic</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T02:00:00+00:00">Thu, 12 Nov · 02:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909973/magic-jazz" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Edmonton Oilers</strong><span class="versus">VS</span><strong>Philadelphia Flyers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T02:00:00+00:00">Thu, 12 Nov · 02:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892692/flyers-oilers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Houston Rockets</strong><span class="versus">VS</span><strong>Golden State Warriors</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T02:30:00+00:00">Thu, 12 Nov · 02:30 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909974/warriors-rockets" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Vegas Golden Knights</strong><span class="versus">VS</span><strong>Utah Mammoth</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T02:30:00+00:00">Thu, 12 Nov · 02:30 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892693/mammoth-golden-knights" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Portland Trail Blazers</strong><span class="versus">VS</span><strong>Oklahoma City Thunder</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T03:00:00+00:00">Thu, 12 Nov · 03:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909975/thunder-trail-blazers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Anaheim Ducks</strong><span class="versus">VS</span><strong>Nashville Predators</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T03:00:00+00:00">Thu, 12 Nov · 03:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892694/predators-ducks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>San Jose Sharks</strong><span class="versus">VS</span><strong>Pittsburgh Penguins</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T03:00:00+00:00">Thu, 12 Nov · 03:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892695/penguins-sharks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Seattle Kraken</strong><span class="versus">VS</span><strong>Carolina Hurricanes</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-12T17:00:00+00:00">Thu, 12 Nov · 17:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401891808/hurricanes-kraken" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Philadelphia 76ers</strong><span class="versus">VS</span><strong>Toronto Raptors</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T00:00:00+00:00">Fri, 13 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909976/raptors-76ers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Washington Wizards</strong><span class="versus">VS</span><strong>Detroit Pistons</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T00:00:00+00:00">Fri, 13 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909977/pistons-wizards" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Boston Bruins</strong><span class="versus">VS</span><strong>Montreal Canadiens</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T00:00:00+00:00">Fri, 13 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892696/canadiens-bruins" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Toronto Maple Leafs</strong><span class="versus">VS</span><strong>Minnesota Wild</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T00:00:00+00:00">Fri, 13 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892697/wild-maple-leafs" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Ottawa Senators</strong><span class="versus">VS</span><strong>Colorado Avalanche</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T00:00:00+00:00">Fri, 13 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892698/avalanche-senators" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>New Jersey Devils</strong><span class="versus">VS</span><strong>Washington Capitals</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T00:00:00+00:00">Fri, 13 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892700/capitals-devils" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Columbus Blue Jackets</strong><span class="versus">VS</span><strong>Tampa Bay Lightning</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T00:00:00+00:00">Fri, 13 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892701/lightning-blue-jackets" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Florida Panthers</strong><span class="versus">VS</span><strong>Detroit Red Wings</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T00:30:00+00:00">Fri, 13 Nov · 00:30 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892699/red-wings-panthers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Minnesota Timberwolves</strong><span class="versus">VS</span><strong>Dallas Mavericks</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T01:00:00+00:00">Fri, 13 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909978/mavericks-timberwolves" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Chicago Blackhawks</strong><span class="versus">VS</span><strong>Buffalo Sabres</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T01:00:00+00:00">Fri, 13 Nov · 01:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892702/sabres-blackhawks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Dallas Stars</strong><span class="versus">VS</span><strong>Winnipeg Jets</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T01:00:00+00:00">Fri, 13 Nov · 01:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892703/jets-stars" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>New York Giants</strong><span class="versus">VS</span><strong>Washington Commanders</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T01:15:00+00:00">Fri, 13 Nov · 01:15 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873052/commanders-giants" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Phoenix Suns</strong><span class="versus">VS</span><strong>Charlotte Hornets</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T02:00:00+00:00">Fri, 13 Nov · 02:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909979/hornets-suns" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Utah Mammoth</strong><span class="versus">VS</span><strong>St. Louis Blues</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T02:00:00+00:00">Fri, 13 Nov · 02:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892704/blues-mammoth" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Los Angeles Kings</strong><span class="versus">VS</span><strong>New York Islanders</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-13T03:00:00+00:00">Fri, 13 Nov · 03:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892705/islanders-kings" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Indiana Pacers</strong><span class="versus">VS</span><strong>New York Knicks</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T00:00:00+00:00">Sat, 14 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909296/knicks-pacers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Orlando Magic</strong><span class="versus">VS</span><strong>Milwaukee Bucks</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T00:00:00+00:00">Sat, 14 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909297/bucks-magic" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Miami Heat</strong><span class="versus">VS</span><strong>Cleveland Cavaliers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T01:00:00+00:00">Sat, 14 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909298/cavaliers-heat" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Chicago Bulls</strong><span class="versus">VS</span><strong>Atlanta Hawks</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T01:00:00+00:00">Sat, 14 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909299/hawks-bulls" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>New Orleans Pelicans</strong><span class="versus">VS</span><strong>Memphis Grizzlies</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T01:00:00+00:00">Sat, 14 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909300/grizzlies-pelicans" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Houston Rockets</strong><span class="versus">VS</span><strong>Utah Jazz</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T01:30:00+00:00">Sat, 14 Nov · 01:30 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909301/jazz-rockets" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Vancouver Canucks</strong><span class="versus">VS</span><strong>New York Rangers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T02:00:00+00:00">Sat, 14 Nov · 02:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892706/rangers-canucks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>San Antonio Spurs</strong><span class="versus">VS</span><strong>Golden State Warriors</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T02:30:00+00:00">Sat, 14 Nov · 02:30 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909302/warriors-spurs" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Sacramento Kings</strong><span class="versus">VS</span><strong>Portland Trail Blazers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T03:00:00+00:00">Sat, 14 Nov · 03:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909303/trail-blazers-kings" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Vegas Golden Knights</strong><span class="versus">VS</span><strong>Nashville Predators</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T03:00:00+00:00">Sat, 14 Nov · 03:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892707/predators-golden-knights" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>LA Clippers</strong><span class="versus">VS</span><strong>Oklahoma City Thunder</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T03:30:00+00:00">Sat, 14 Nov · 03:30 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909304/thunder-clippers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Tennis">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Tennis">Tennis</span><span>ATP</span></div>
       <div class="fixture-match"><strong class="event-name">Nitto ATP Finals</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-14T05:00:00+00:00">Sat, 14 Nov · 05:00 UTC</time><a href="https://www.espn.com/" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Carolina Hurricanes</strong><span class="versus">VS</span><strong>Seattle Kraken</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T18:00:00+00:00">Sat, 14 Nov · 18:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401891809/kraken-hurricanes" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Chicago Blackhawks</strong><span class="versus">VS</span><strong>Winnipeg Jets</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-14T20:30:00+00:00">Sat, 14 Nov · 20:30 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892708/jets-blackhawks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>New Orleans Pelicans</strong><span class="versus">VS</span><strong>Denver Nuggets</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:00:00+00:00">Sun, 15 Nov · 00:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909980/nuggets-pelicans" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Boston Bruins</strong><span class="versus">VS</span><strong>Minnesota Wild</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:00:00+00:00">Sun, 15 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892709/wild-bruins" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Toronto Maple Leafs</strong><span class="versus">VS</span><strong>Edmonton Oilers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:00:00+00:00">Sun, 15 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892710/oilers-maple-leafs" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Montreal Canadiens</strong><span class="versus">VS</span><strong>Colorado Avalanche</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:00:00+00:00">Sun, 15 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892711/avalanche-canadiens" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Tampa Bay Lightning</strong><span class="versus">VS</span><strong>Detroit Red Wings</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:00:00+00:00">Sun, 15 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892712/red-wings-lightning" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Pittsburgh Penguins</strong><span class="versus">VS</span><strong>Ottawa Senators</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:00:00+00:00">Sun, 15 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892713/senators-penguins" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Washington Capitals</strong><span class="versus">VS</span><strong>New Jersey Devils</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:00:00+00:00">Sun, 15 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892714/devils-capitals" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Columbus Blue Jackets</strong><span class="versus">VS</span><strong>Philadelphia Flyers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:00:00+00:00">Sun, 15 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892715/flyers-blue-jackets" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>St. Louis Blues</strong><span class="versus">VS</span><strong>Florida Panthers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:00:00+00:00">Sun, 15 Nov · 00:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892716/panthers-blues" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Cleveland Cavaliers</strong><span class="versus">VS</span><strong>Dallas Mavericks</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T00:30:00+00:00">Sun, 15 Nov · 00:30 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909981/mavericks-cavaliers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Miami Heat</strong><span class="versus">VS</span><strong>Detroit Pistons</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T01:00:00+00:00">Sun, 15 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909982/pistons-heat" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Memphis Grizzlies</strong><span class="versus">VS</span><strong>Brooklyn Nets</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T01:00:00+00:00">Sun, 15 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909983/nets-grizzlies" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Basketball">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Basketball">Basketball</span><span>NBA</span></div>
+      <div class="fixture-match"><strong>Minnesota Timberwolves</strong><span class="versus">VS</span><strong>Chicago Bulls</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T01:00:00+00:00">Sun, 15 Nov · 01:00 UTC</time><a href="https://www.espn.com/nba/game/_/gameId/401909984/bulls-timberwolves" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Dallas Stars</strong><span class="versus">VS</span><strong>Buffalo Sabres</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T01:00:00+00:00">Sun, 15 Nov · 01:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892717/sabres-stars" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Utah Mammoth</strong><span class="versus">VS</span><strong>San Jose Sharks</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T02:00:00+00:00">Sun, 15 Nov · 02:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892718/sharks-mammoth" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Anaheim Ducks</strong><span class="versus">VS</span><strong>New York Islanders</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T03:00:00+00:00">Sun, 15 Nov · 03:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892719/islanders-ducks" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Los Angeles Kings</strong><span class="versus">VS</span><strong>Calgary Flames</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T03:00:00+00:00">Sun, 15 Nov · 03:00 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892720/flames-kings" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Detroit Lions</strong><span class="versus">VS</span><strong>New England Patriots</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T14:30:00+00:00">Sun, 15 Nov · 14:30 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873053/patriots-lions" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Atlanta Falcons</strong><span class="versus">VS</span><strong>Kansas City Chiefs</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T18:00:00+00:00">Sun, 15 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873058/chiefs-falcons" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Cleveland Browns</strong><span class="versus">VS</span><strong>Houston Texans</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T18:00:00+00:00">Sun, 15 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873056/texans-browns" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Green Bay Packers</strong><span class="versus">VS</span><strong>Minnesota Vikings</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T18:00:00+00:00">Sun, 15 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873060/vikings-packers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Tennessee Titans</strong><span class="versus">VS</span><strong>Jacksonville Jaguars</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T18:00:00+00:00">Sun, 15 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873057/jaguars-titans" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Indianapolis Colts</strong><span class="versus">VS</span><strong>Miami Dolphins</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T18:00:00+00:00">Sun, 15 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873059/dolphins-colts" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>New Orleans Saints</strong><span class="versus">VS</span><strong>Carolina Panthers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T18:00:00+00:00">Sun, 15 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873055/panthers-saints" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>New York Jets</strong><span class="versus">VS</span><strong>Buffalo Bills</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T18:00:00+00:00">Sun, 15 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873054/bills-jets" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Las Vegas Raiders</strong><span class="versus">VS</span><strong>Seattle Seahawks</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T21:05:00+00:00">Sun, 15 Nov · 21:05 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873062/seahawks-raiders" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Arizona Cardinals</strong><span class="versus">VS</span><strong>Los Angeles Rams</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T21:05:00+00:00">Sun, 15 Nov · 21:05 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873061/rams-cardinals" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Dallas Cowboys</strong><span class="versus">VS</span><strong>San Francisco 49ers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-15T21:25:00+00:00">Sun, 15 Nov · 21:25 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873063/49ers-cowboys" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Ice Hockey">
+      <div class="fixture-meta"><span class="sport-label" data-sport="Ice Hockey">Ice Hockey</span><span>NHL</span></div>
+      <div class="fixture-match"><strong>Philadelphia Flyers</strong><span class="versus">VS</span><strong>Edmonton Oilers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-16T00:30:00+00:00">Mon, 16 Nov · 00:30 UTC</time><a href="https://www.espn.com/nhl/game/_/gameId/401892721/oilers-flyers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Cincinnati Bengals</strong><span class="versus">VS</span><strong>Pittsburgh Steelers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-16T01:20:00+00:00">Mon, 16 Nov · 01:20 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873064/steelers-bengals" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
 <article class="fixture-card" data-sport="Tennis">
-      <div class="fixture-meta"><span>Tennis</span><span>WTA</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Tennis">Tennis</span><span>WTA</span></div>
       <div class="fixture-match"><strong class="event-name">LP Open by IND</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-16T05:00:00+00:00">Mon, 16 Nov · 05:00 UTC</time><a href="https://www.espn.com/tennis/scoreboard/tournament/_/eventId/904-2026/competitionType/2" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Baltimore Ravens</strong><span class="versus">VS</span><strong>Los Angeles Chargers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-17T01:15:00+00:00">Tue, 17 Nov · 01:15 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873065/chargers-ravens" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
 <article class="fixture-card" data-sport="Formula 1">
-      <div class="fixture-meta"><span>Formula 1</span><span>Formula 1</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Formula 1">Formula 1</span><span>Formula 1</span></div>
       <div class="fixture-match"><strong class="event-name">Heineken Las Vegas Grand Prix</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-20T00:30:00+00:00">Fri, 20 Nov · 00:30 UTC</time><a href="https://www.espn.com/f1/race/_/id/600057449" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Houston Texans</strong><span class="versus">VS</span><strong>Indianapolis Colts</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-20T01:15:00+00:00">Fri, 20 Nov · 01:15 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873066/colts-texans" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>La Liga</span></div>
       <div class="fixture-match"><strong>Athletic Club</strong><span class="versus">VS</span><strong>Espanyol</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-20T20:00:00+00:00">Fri, 20 Nov · 20:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882805/espanyol-athletic-club" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>Premier League</span></div>
       <div class="fixture-match"><strong>Manchester City</strong><span class="versus">VS</span><strong>Fulham</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T12:30:00+00:00">Sat, 21 Nov · 12:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879233/fulham-manchester-city" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>La Liga</span></div>
       <div class="fixture-match"><strong>Alavés</strong><span class="versus">VS</span><strong>Deportivo</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T13:00:00+00:00">Sat, 21 Nov · 13:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882806/deportivo-alaves" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>Premier League</span></div>
       <div class="fixture-match"><strong>AFC Bournemouth</strong><span class="versus">VS</span><strong>Nottingham Forest</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879238/nottingham-forest-afc-bournemouth" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>Premier League</span></div>
       <div class="fixture-match"><strong>Aston Villa</strong><span class="versus">VS</span><strong>Sunderland</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401878756/sunderland-aston-villa" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>Premier League</span></div>
       <div class="fixture-match"><strong>Chelsea</strong><span class="versus">VS</span><strong>Leeds United</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879236/leeds-united-chelsea" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>Premier League</span></div>
       <div class="fixture-match"><strong>Coventry City</strong><span class="versus">VS</span><strong>Crystal Palace</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879235/crystal-palace-coventry-city" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>Premier League</span></div>
       <div class="fixture-match"><strong>Tottenham Hotspur</strong><span class="versus">VS</span><strong>Ipswich Town</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401878754/ipswich-town-tottenham-hotspur" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>La Liga</span></div>
       <div class="fixture-match"><strong>Rayo Vallecano</strong><span class="versus">VS</span><strong>Valencia</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T15:15:00+00:00">Sat, 21 Nov · 15:15 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882799/valencia-rayo-vallecano" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>Premier League</span></div>
       <div class="fixture-match"><strong>Newcastle United</strong><span class="versus">VS</span><strong>Arsenal</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T17:30:00+00:00">Sat, 21 Nov · 17:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879232/arsenal-newcastle-united" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>La Liga</span></div>
       <div class="fixture-match"><strong>Sevilla</strong><span class="versus">VS</span><strong>Real Betis</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T17:30:00+00:00">Sat, 21 Nov · 17:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882797/real-betis-sevilla" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>La Liga</span></div>
       <div class="fixture-match"><strong>Real Madrid</strong><span class="versus">VS</span><strong>Celta Vigo</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-21T20:00:00+00:00">Sat, 21 Nov · 20:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882798/celta-vigo-real-madrid" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>La Liga</span></div>
       <div class="fixture-match"><strong>Barcelona</strong><span class="versus">VS</span><strong>Villarreal</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-22T13:00:00+00:00">Sun, 22 Nov · 13:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882804/villarreal-barcelona" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>Premier League</span></div>
       <div class="fixture-match"><strong>Hull City</strong><span class="versus">VS</span><strong>Brighton &amp; Hove Albion</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-22T14:00:00+00:00">Sun, 22 Nov · 14:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879234/brighton-hove-albion-hull-city" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>La Liga</span></div>
       <div class="fixture-match"><strong>Racing Santander</strong><span class="versus">VS</span><strong>Real Sociedad</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-22T15:15:00+00:00">Sun, 22 Nov · 15:15 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882800/real-sociedad-racing-santander" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>Premier League</span></div>
       <div class="fixture-match"><strong>Liverpool</strong><span class="versus">VS</span><strong>Manchester United</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-22T16:30:00+00:00">Sun, 22 Nov · 16:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401878755/manchester-united-liverpool" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>La Liga</span></div>
       <div class="fixture-match"><strong>Osasuna</strong><span class="versus">VS</span><strong>Málaga</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-22T17:30:00+00:00">Sun, 22 Nov · 17:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882801/malaga-osasuna" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Buffalo Bills</strong><span class="versus">VS</span><strong>Miami Dolphins</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T18:00:00+00:00">Sun, 22 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873070/dolphins-bills" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Chicago Bears</strong><span class="versus">VS</span><strong>New Orleans Saints</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T18:00:00+00:00">Sun, 22 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873071/saints-bears" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Dallas Cowboys</strong><span class="versus">VS</span><strong>Tennessee Titans</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T18:00:00+00:00">Sun, 22 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873073/titans-cowboys" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Detroit Lions</strong><span class="versus">VS</span><strong>Tampa Bay Buccaneers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T18:00:00+00:00">Sun, 22 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873072/buccaneers-lions" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Kansas City Chiefs</strong><span class="versus">VS</span><strong>Arizona Cardinals</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T18:00:00+00:00">Sun, 22 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873067/cardinals-chiefs" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>New York Giants</strong><span class="versus">VS</span><strong>Jacksonville Jaguars</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T18:00:00+00:00">Sun, 22 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873069/jaguars-giants" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Carolina Panthers</strong><span class="versus">VS</span><strong>Baltimore Ravens</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T18:00:00+00:00">Sun, 22 Nov · 18:00 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873068/ravens-panthers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
 <article class="fixture-card" data-sport="Football">
-      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Football">Football</span><span>La Liga</span></div>
       <div class="fixture-match"><strong>Getafe</strong><span class="versus">VS</span><strong>Atlético Madrid</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-22T20:00:00+00:00">Sun, 22 Nov · 20:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882803/atletico-madrid-getafe" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Los Angeles Chargers</strong><span class="versus">VS</span><strong>New York Jets</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T21:05:00+00:00">Sun, 22 Nov · 21:05 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873074/jets-chargers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Denver Broncos</strong><span class="versus">VS</span><strong>Las Vegas Raiders</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T21:25:00+00:00">Sun, 22 Nov · 21:25 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873075/raiders-broncos" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>Philadelphia Eagles</strong><span class="versus">VS</span><strong>Pittsburgh Steelers</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T21:25:00+00:00">Sun, 22 Nov · 21:25 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873076/steelers-eagles" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="American Football">
+      <div class="fixture-meta"><span class="sport-label" data-sport="American Football">American Football</span><span>NFL</span></div>
+      <div class="fixture-match"><strong>San Francisco 49ers</strong><span class="versus">VS</span><strong>Minnesota Vikings</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-23T01:20:00+00:00">Mon, 23 Nov · 01:20 UTC</time><a href="https://www.espn.com/nfl/game/_/gameId/401873077/vikings-49ers" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
 <article class="fixture-card" data-sport="Tennis">
-      <div class="fixture-meta"><span>Tennis</span><span>WTA</span></div>
+      <div class="fixture-meta"><span class="sport-label" data-sport="Tennis">Tennis</span><span>WTA</span></div>
       <div class="fixture-match"><strong class="event-name">IEB+ Argentina Open</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-23T05:00:00+00:00">Mon, 23 Nov · 05:00 UTC</time><a href="https://www.espn.com/tennis/scoreboard/tournament/_/eventId/867-2026/competitionType/2" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
-<article class="schedule-empty"><strong>Cricket</strong><span>Public fixture feed unavailable right now.</span></article>
-<article class="schedule-empty"><strong>Rugby</strong><span>Public fixture feed unavailable right now.</span></article></div><p class="schedule-note">Some sports do not have a currently available public schedule feed. Fixtures are supplied by ESPN’s public scoreboard feeds. Availability can vary by sport and competition.</p></div>
+<article class="schedule-empty"><strong class="sport-label" data-sport="Cricket">Cricket</strong><span data-i18n="feedUnavailable">Public fixture feed unavailable right now.</span></article>
+<article class="schedule-empty"><strong class="sport-label" data-sport="Rugby">Rugby</strong><span data-i18n="feedUnavailable">Public fixture feed unavailable right now.</span></article></div><p class="schedule-note">Some sports do not have a currently available public schedule feed. <span data-i18n="fixtureNote">Fixture data is supplied by ESPN public scoreboards. Availability varies by sport and competition.</span></p></div>
     </section>
   </main>
-  <footer><div class="wrap">Skysport · Headlines link to their publishers. Videos play here only when a publisher provides a direct video file; otherwise they open at source. Fixture data: ESPN public scoreboards.</div></footer>
+  <footer><div class="wrap" data-i18n="footer">Skysport · News headlines stay in their publisher's original language. Fixture data: ESPN public scoreboards.</div></footer>
   <script>
     (() => {
+      const translations = {"en": {"title": "Skysport — Sports news, video & live scores", "language": "Select language", "news": "News", "videos": "Videos", "live": "Live", "fixtures": "Fixtures", "sportsDesk": "Sports desk", "eyebrow": "Independent sports coverage", "headline": "The sports world, in focus.", "intro": "Headlines, highlights and match schedules from across the sporting world.", "topStory": "Top story", "latest": "Latest", "allNews": "All news ↓", "moreHeadlines": "More headlines", "search": "Search headlines", "allSports": "All sports", "saved": "♡ Saved", "saveStory": "Save story", "removeSaved": "Remove saved story", "readStory": "Read story", "noStories": "No stories found. Try a different search or filter.", "videoHighlights": "Video highlights", "videoDescription": "Videos open on their publisher's site unless a direct file is available.", "noVideos": "No video items were available from the active RSS feeds.", "playVideo": "Play video", "watchOn": "Watch on", "liveScores": "Live scores", "liveDescription": "Live matches from ESPN public scoreboards. Updates about every 15 minutes.", "noLive": "No matches are live at the latest update.", "liveNow": "LIVE", "upcomingFixtures": "Upcoming fixtures", "fixtureDescription": "Next 14 days · Times shown in UTC", "fixtureNote": "Fixture data is supplied by ESPN public scoreboards. Availability varies by sport and competition.", "noUpcoming": "No upcoming events in the next 14 days.", "feedUnavailable": "Public fixture feed unavailable right now.", "footer": "Skysport · News headlines stay in their publisher's original language. Fixture data: ESPN public scoreboards.", "themeLight": "Switch to light theme", "themeDark": "Switch to dark theme", "categories": {"All": "All sports", "Football": "Football", "Tennis": "Tennis", "Formula 1": "Formula 1", "Cricket": "Cricket", "Rugby": "Rugby", "Basketball": "Basketball", "American Football": "American Football", "Ice Hockey": "Ice Hockey", "Golf": "Golf", "Boxing & MMA": "Boxing & MMA", "Other": "Other", "Saved": "♡ Saved"}, "sports": {"Football": "Football", "Tennis": "Tennis", "Formula 1": "Formula 1", "Basketball": "Basketball", "American Football": "American Football", "Ice Hockey": "Ice Hockey", "Cricket": "Cricket", "Rugby": "Rugby"}}, "fr": {"title": "Skysport — Actualités sportives, vidéos et scores en direct", "language": "Choisir la langue", "news": "Actualités", "videos": "Vidéos", "live": "En direct", "fixtures": "Calendrier", "sportsDesk": "Actualités sportives", "eyebrow": "Le sport, en toute indépendance", "headline": "Toute l'actualité sportive.", "intro": "Actualités, résumés vidéo et calendrier des rencontres du monde entier.", "topStory": "À la une", "latest": "À suivre", "allNews": "Toutes les actualités ↓", "moreHeadlines": "Dernières actualités", "search": "Rechercher une actualité", "allSports": "Tous les sports", "saved": "♡ Enregistrés", "saveStory": "Enregistrer l'article", "removeSaved": "Retirer des articles enregistrés", "readStory": "Lire l'article", "noStories": "Aucun résultat. Essayez une autre recherche ou un autre filtre.", "videoHighlights": "Résumés vidéo", "videoDescription": "Les vidéos s'ouvrent sur le site de leur éditeur, sauf fichier directement disponible.", "noVideos": "Aucune vidéo n'est disponible dans les flux RSS actifs.", "playVideo": "Lire la vidéo", "watchOn": "Voir sur", "liveScores": "Scores en direct", "liveDescription": "Matchs en direct via les tableaux de scores publics d'ESPN. Actualisation environ toutes les 15 minutes.", "noLive": "Aucun match en direct lors de la dernière mise à jour.", "liveNow": "EN DIRECT", "upcomingFixtures": "Prochaines rencontres", "fixtureDescription": "14 prochains jours · Horaires en UTC", "fixtureNote": "Calendrier fourni par les tableaux de scores publics d'ESPN. La disponibilité varie selon le sport et la compétition.", "noUpcoming": "Aucun événement prévu dans les 14 prochains jours.", "feedUnavailable": "Flux public du calendrier momentanément indisponible.", "footer": "Skysport · Les titres restent dans la langue d'origine de leur éditeur. Calendrier : tableaux de scores publics d'ESPN.", "themeLight": "Passer au thème clair", "themeDark": "Passer au thème sombre", "categories": {"All": "Tous les sports", "Football": "Football", "Tennis": "Tennis", "Formula 1": "Formule 1", "Cricket": "Cricket", "Rugby": "Rugby", "Basketball": "Basket-ball", "American Football": "Football américain", "Ice Hockey": "Hockey sur glace", "Golf": "Golf", "Boxing & MMA": "Boxe et MMA", "Other": "Autres", "Saved": "♡ Enregistrés"}, "sports": {"Football": "Football", "Tennis": "Tennis", "Formula 1": "Formule 1", "Basketball": "Basket-ball", "American Football": "Football américain", "Ice Hockey": "Hockey sur glace", "Cricket": "Cricket", "Rugby": "Rugby"}}, "ar": {"title": "سكاي سبورت — أخبار الرياضة والفيديو والنتائج المباشرة", "language": "اختيار اللغة", "news": "الأخبار", "videos": "الفيديوهات", "live": "مباشر", "fixtures": "المباريات", "sportsDesk": "أخبار الرياضة", "eyebrow": "تغطية رياضية مستقلة", "headline": "عالم الرياضة في صدارة المشهد.", "intro": "أخبار وملخصات ومواعيد مباريات من مختلف الرياضات حول العالم.", "topStory": "الخبر الأبرز", "latest": "أحدث الأخبار", "allNews": "كل الأخبار ↓", "moreHeadlines": "المزيد من الأخبار", "search": "ابحث في الأخبار", "allSports": "كل الرياضات", "saved": "♡ المحفوظات", "saveStory": "حفظ الخبر", "removeSaved": "إزالة الخبر من المحفوظات", "readStory": "اقرأ الخبر", "noStories": "لا توجد نتائج. جرّب بحثاً أو تصنيفاً آخر.", "videoHighlights": "ملخصات الفيديو", "videoDescription": "تُعرض الفيديوهات على موقع الناشر ما لم يتوفر ملف مباشر.", "noVideos": "لا تتوفر فيديوهات في مصادر الأخبار الحالية.", "playVideo": "تشغيل الفيديو", "watchOn": "شاهد على", "liveScores": "النتائج المباشرة", "liveDescription": "المباريات المباشرة من لوحات ESPN العامة. تُحدّث البيانات كل 15 دقيقة تقريباً.", "noLive": "لا توجد مباريات مباشرة وقت آخر تحديث.", "liveNow": "مباشر", "upcomingFixtures": "المباريات القادمة", "fixtureDescription": "الأيام الـ14 القادمة · الأوقات بتوقيت UTC", "fixtureNote": "بيانات المباريات من لوحات ESPN العامة، وقد يختلف توفرها حسب الرياضة والبطولة.", "noUpcoming": "لا توجد مباريات خلال الأيام الـ14 القادمة.", "feedUnavailable": "جدول المباريات العام غير متاح حالياً.", "footer": "سكاي سبورت · عناوين الأخبار تبقى بلغة الناشر الأصلية. بيانات المباريات من لوحات ESPN العامة.", "themeLight": "التبديل إلى الوضع الفاتح", "themeDark": "التبديل إلى الوضع الداكن", "categories": {"All": "كل الرياضات", "Football": "كرة القدم", "Tennis": "التنس", "Formula 1": "فورمولا 1", "Cricket": "الكريكيت", "Rugby": "الرغبي", "Basketball": "كرة السلة", "American Football": "كرة القدم الأمريكية", "Ice Hockey": "هوكي الجليد", "Golf": "الغولف", "Boxing & MMA": "الملاكمة والفنون القتالية", "Other": "أخرى", "Saved": "♡ المحفوظات"}, "sports": {"Football": "كرة القدم", "Tennis": "التنس", "Formula 1": "فورمولا 1", "Basketball": "كرة السلة", "American Football": "كرة القدم الأمريكية", "Ice Hockey": "هوكي الجليد", "Cricket": "الكريكيت", "Rugby": "الرغبي"}}};
+      const languageSelect = document.getElementById('language-toggle');
+      let language = 'en';
+      try {
+        const storedLanguage = localStorage.getItem('skysport-language');
+        if (storedLanguage && translations[storedLanguage]) language = storedLanguage;
+      } catch {}
+      const copy = () => translations[language];
       const filters = [...document.querySelectorAll('.filter')];
       const cards = [...document.querySelectorAll('.story-card')];
       const search = document.getElementById('search');
@@ -482,7 +1068,7 @@ footer{background:var(--surface);border-color:var(--line)}
         const isSaved = saved.has(storyKey(card));
         button.classList.toggle('saved', isSaved);
         button.textContent = isSaved ? '♥' : '♡';
-        button.setAttribute('aria-label', isSaved ? 'Remove saved story' : 'Save story');
+        button.setAttribute('aria-label', isSaved ? copy().removeSaved : copy().saveStory);
       }
       cards.forEach(card => {
         updateSavedButton(card);
@@ -510,14 +1096,46 @@ footer{background:var(--surface);border-color:var(--line)}
         updateCards();
       }));
       search.addEventListener('input', updateCards);
+      function applyLanguage() {
+        const rtl = language === 'ar';
+        document.documentElement.lang = language;
+        document.documentElement.dir = rtl ? 'rtl' : 'ltr';
+        document.title = copy().title;
+        languageSelect.value = language;
+        languageSelect.setAttribute('aria-label', copy().language);
+        document.querySelector('label[for="language-toggle"]').textContent = copy().language;
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const value = copy()[element.dataset.i18n];
+          if (typeof value === 'string') element.textContent = value;
+        });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+          element.placeholder = copy()[element.dataset.i18nPlaceholder];
+        });
+        filters.forEach(button => {
+          button.textContent = copy().categories[button.dataset.filter] || button.dataset.filter;
+        });
+        document.querySelectorAll('.category, .sport-label').forEach(element => {
+          const sport = element.dataset.category || element.dataset.sport;
+          if (sport) element.textContent = copy().categories[sport] || copy().sports[sport] || sport;
+        });
+        cards.forEach(updateSavedButton);
+        const dark = document.documentElement.classList.contains('dark');
+        themeButton.setAttribute('aria-label', dark ? copy().themeLight : copy().themeDark);
+      }
+      languageSelect.addEventListener('change', () => {
+        language = translations[languageSelect.value] ? languageSelect.value : 'en';
+        try { localStorage.setItem('skysport-language', language); } catch {}
+        applyLanguage();
+      });
       try {
         if (localStorage.getItem('skysport-theme') === 'dark') document.documentElement.classList.add('dark');
       } catch {}
       themeButton.addEventListener('click', () => {
         const dark = document.documentElement.classList.toggle('dark');
-        themeButton.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
         try { localStorage.setItem('skysport-theme', dark ? 'dark' : 'light'); } catch {}
+        applyLanguage();
       });
+      applyLanguage();
     })();
   </script>
 </body>
