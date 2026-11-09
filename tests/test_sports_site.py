@@ -128,6 +128,62 @@ class SportsSiteTests(unittest.TestCase):
         self.assertEqual(len(failures), 1)
         self.assertIn("The Guardian", failures[0])
 
+    def test_collect_stories_keeps_a_story_from_each_available_source(self):
+        primary = sports_site.NEWS_FEEDS[0]
+        secondary = sports_site.NEWS_FEEDS[1]
+        payloads = {
+            primary.url: b"""<rss><channel>
+              <item><title>Newest primary story</title><link>https://www.bbc.co.uk/sport/football/newest</link><pubDate>Mon, 09 Nov 2026 15:00:00 GMT</pubDate></item>
+              <item><title>Second primary story</title><link>https://www.bbc.co.uk/sport/football/second</link><pubDate>Mon, 09 Nov 2026 14:00:00 GMT</pubDate></item>
+              <item><title>Third primary story</title><link>https://www.bbc.co.uk/sport/football/third</link><pubDate>Mon, 09 Nov 2026 13:00:00 GMT</pubDate></item>
+            </channel></rss>""",
+            secondary.url: b"""<rss><channel><item><title>Older secondary story</title>
+              <link>https://www.theguardian.com/sport/football/older</link>
+              <pubDate>Sun, 08 Nov 2026 12:00:00 GMT</pubDate></item></channel></rss>""",
+        }
+        max_stories = sports_site.MAX_STORIES
+        sports_site.MAX_STORIES = 2
+        try:
+            stories, available, failures = sports_site.collect_stories(
+                lambda url: payloads[url], (primary, secondary)
+            )
+        finally:
+            sports_site.MAX_STORIES = max_stories
+
+        self.assertEqual(available, ["BBC Sport", "The Guardian"])
+        self.assertEqual(failures, [])
+        self.assertEqual(len(stories), 2)
+        self.assertEqual({story["source"] for story in stories}, {"BBC Sport", "The Guardian"})
+
+    def test_parse_beinsports_news_extracts_official_story_and_largest_image(self):
+        feed = sports_site.NEWS_FEEDS[-1]
+        page = b"""<html><a href="/en-mena/football/premier-league/articles-video/match-report-2026-11-09">
+          <img src="https://prod-media.beinsports.com/image/small.jpg"
+            srcset="https://prod-media.beinsports.com/image/medium.jpg 640w, https://prod-media.beinsports.com/image/large.jpg 1080w"/>
+          <div title="2026-11-09T14:00:00.000Z"></div>
+          <div title="Premier League match report"></div>
+          <div title="The full match report summary."></div>
+        </a></html>"""
+
+        stories = sports_site.parse_beinsports_news(page, feed)
+
+        self.assertEqual(len(stories), 1)
+        self.assertEqual(stories[0]["source"], "beIN SPORTS")
+        self.assertEqual(stories[0]["title"], "Premier League match report")
+        self.assertEqual(stories[0]["description"], "The full match report summary.")
+        self.assertEqual(stories[0]["category"], "Football")
+        self.assertEqual(stories[0]["image"], "https://prod-media.beinsports.com/image/large.jpg")
+        self.assertEqual(stories[0]["published"], datetime(2026, 11, 9, 14, tzinfo=timezone.utc))
+        self.assertEqual(stories[0]["url"], "https://www.beinsports.com/en-mena/football/premier-league/articles-video/match-report-2026-11-09")
+
+    def test_parse_beinsports_news_rejects_nonpublisher_stories_and_images(self):
+        feed = sports_site.NEWS_FEEDS[-1]
+        page = b"""<a href="https://attacker.example/story">
+          <img src="https://attacker.example/photo.jpg"/>
+          <div title="Unsafe headline"></div></a>"""
+
+        self.assertEqual(sports_site.parse_beinsports_news(page, feed), [])
+
     def test_collect_espn_images_matches_story_ids_and_uses_largest_image(self):
         stories = [
             {"source": "ESPN", "category": "Basketball", "url": "https://www.espn.com/nba/story/_/id/12345/story", "image": ""},
@@ -311,7 +367,7 @@ class SportsSiteTests(unittest.TestCase):
             "",
             sports_site.render_schedule([], set()),
             "Today",
-            "<publisher>",
+            "<publisher>, BBC Sport, beIN SPORTS, ESPN, The Guardian",
             "Status",
         )
 
@@ -327,6 +383,7 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn('id="language-toggle"', page)
         self.assertIn('value="fr">Français', page)
         self.assertIn('value="ar">العربية', page)
+        self.assertIn("<strong>05</strong> news desks", page)
         self.assertIn('id="live"', page)
         self.assertIn('data-i18n="liveScores"', page)
         self.assertIn('localStorage.setItem(\'skysport-language\'', page)

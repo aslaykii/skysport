@@ -7,7 +7,8 @@ import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
-from urllib.parse import urlencode, urlparse
+from html.parser import HTMLParser
+from urllib.parse import urlencode, urljoin, urlparse
 
 
 USER_AGENT = "Skysport/2.0 (+https://github.com/aslaykii/skysport)"
@@ -24,6 +25,7 @@ class NewsFeed:
     url: str
     domains: tuple
     homepage: str
+    format: str = "rss"
 
 
 @dataclass(frozen=True)
@@ -38,6 +40,7 @@ NEWS_FEEDS = (
     NewsFeed("The Guardian", "https://www.theguardian.com/sport/rss", ("theguardian.com",), "https://www.theguardian.com/sport"),
     NewsFeed("ESPN", "https://www.espn.com/espn/rss/news", ("espn.com", "espn.co.uk"), "https://www.espn.com/"),
     NewsFeed("Sky Sports", "https://www.skysports.com/rss/12040", ("skysports.com",), "https://www.skysports.com/"),
+    NewsFeed("beIN SPORTS", "https://www.beinsports.com/en-mena/all-news", ("beinsports.com",), "https://www.beinsports.com/en-mena", "html"),
 )
 
 ESPN_API = "https://site.api.espn.com/apis/site/v2/sports"
@@ -278,7 +281,7 @@ def category_for(title, description, url=""):
         ("Boxing & MMA", ("/boxing/", "/mma/", "/ufc/")),
         ("Football", ("/football/", "/soccer/")),
         ("Tennis", ("/tennis/",)),
-        ("Formula 1", ("/f1/", "/formula-one/")),
+        ("Formula 1", ("/f1/", "/formula-one/", "/motorsports-formula-1/")),
         ("Cricket", ("/cricket/",)),
         ("Rugby", ("/rugby-", "/rugby/")),
     )
@@ -379,6 +382,105 @@ def parse_feed(xml_data, feed):
     return [story for story in stories if story]
 
 
+class BeinsportsNewsParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.stories = []
+        self.current = None
+        self.anchor_depth = 0
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == "a" and "/articles-video/" in attributes.get("href", ""):
+            if self.current is not None:
+                return
+            self.current = {
+                "url": attributes["href"],
+                "titles": [],
+                "images": [],
+                "text": [],
+            }
+            self.anchor_depth = 1
+            return
+        if self.current is None:
+            return
+        if tag == "a":
+            self.anchor_depth += 1
+        title = clean_text(attributes.get("title", ""))
+        if title:
+            self.current["titles"].append(title)
+        if tag == "img":
+            self.current["images"].append((attributes.get("src", ""), attributes.get("srcset", "")))
+
+    def handle_endtag(self, tag):
+        if self.current is None or tag != "a":
+            return
+        self.anchor_depth -= 1
+        if self.anchor_depth <= 0:
+            self.stories.append(self.current)
+            self.current = None
+            self.anchor_depth = 0
+
+    def handle_data(self, data):
+        if self.current is not None:
+            self.current["text"].append(data)
+
+
+def parse_beinsports_news(page_data, feed):
+    parser = BeinsportsNewsParser()
+    parser.feed(page_data.decode("utf-8", "replace") if isinstance(page_data, bytes) else page_data)
+    stories = []
+    for item in parser.stories:
+        title_values = [
+            value for value in item["titles"]
+            if parse_event_date(value) is None
+        ]
+        title = title_values[0] if title_values else ""
+        if not title:
+            text = clean_text(" ".join(item["text"]))
+            text = re.sub(r"\b\d{4}-\d{2}-\d{2}T[^\s]+\s*", "", text, count=1)
+            title = text
+        if not title:
+            continue
+        description = title_values[1] if len(title_values) > 1 else f"Read the full report from {feed.name}."
+        link = safe_feed_link(urljoin(feed.homepage, item["url"]), feed)
+        if link == feed.homepage:
+            continue
+        published_text = next((value for value in item["titles"] if parse_event_date(value)), "")
+        published = parse_event_date(published_text)
+
+        image_candidates = []
+        for src, srcset in item["images"]:
+            if src:
+                image_candidates.append((0, src))
+            for candidate in srcset.split(","):
+                parts = candidate.strip().rsplit(" ", 1)
+                if len(parts) != 2:
+                    continue
+                width = re.fullmatch(r"(\d+)w", parts[1])
+                if width:
+                    image_candidates.append((int(width.group(1)), parts[0]))
+        image = ""
+        if image_candidates:
+            _, image_url = max(image_candidates, key=lambda candidate: candidate[0])
+            if safe_feed_link(image_url, feed) != feed.homepage:
+                image = image_url
+
+        stories.append({
+            "title": title,
+            "description": description,
+            "url": link,
+            "image": image,
+            "category": category_for(title, description, link),
+            "published": published,
+            "source": feed.name,
+            "coverage": [],
+            "video": "/video" in urlparse(link).path.lower(),
+            "video_url": "",
+        })
+    return stories
+
+
 def request_bytes(url):
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, timeout=10) as response:
@@ -391,7 +493,8 @@ def collect_stories(fetcher=request_bytes, feeds=NEWS_FEEDS):
     failures = []
     for feed in feeds:
         try:
-            items = parse_feed(fetcher(feed.url), feed)
+            payload = fetcher(feed.url)
+            items = parse_beinsports_news(payload, feed) if feed.format == "html" else parse_feed(payload, feed)
             if not items:
                 raise ValueError("feed contained no usable stories")
             stories.extend(items)
@@ -412,7 +515,28 @@ def collect_stories(fetcher=request_bytes, feeds=NEWS_FEEDS):
                 match["coverage"].append({"name": story["source"], "url": story["url"]})
             continue
         deduplicated.append(story)
-    return deduplicated[:MAX_STORIES], available, failures
+    representatives = []
+    for source in available:
+        representative = next(
+            (
+                story for story in deduplicated
+                if story["source"] == source
+                or any(coverage["name"] == source for coverage in story["coverage"])
+            ),
+            None,
+        )
+        if representative is not None and representative not in representatives:
+            representatives.append(representative)
+    selected = representatives[:MAX_STORIES]
+    selected.extend(
+        story for story in deduplicated
+        if story not in representatives and len(selected) < MAX_STORIES
+    )
+    selected.sort(
+        key=lambda story: story["published"] or datetime.min.replace(tzinfo=timezone.utc),
+        reverse=True,
+    )
+    return selected[:MAX_STORIES], available, failures
 
 
 def collect_espn_images(stories, fetcher=request_bytes):
@@ -828,6 +952,7 @@ footer{background:var(--surface);border-color:var(--line)}
 
 
 def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, fixture_status, live_html=""):
+    source_count = 0 if news_sources == "No RSS source available" else len(news_sources.split(", "))
     story_cards = re.findall(r'<article\b[^>]*class="story-card"[^>]*>.*?</article>', stories_html, re.DOTALL)
     if story_cards:
         featured_index = next(
@@ -876,7 +1001,7 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
       <div class="nav-right"><span class="desk-label" data-i18n="sportsDesk">Sports desk</span><label class="visually-hidden" for="language-toggle" data-i18n="language">Select language</label><select class="language-select" id="language-toggle" aria-label="Select language"><option value="en">English</option><option value="fr">Français</option><option value="ar">العربية</option></select><button class="theme-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">☼</button></div>
     </nav>
     <section class="hero" id="top"><span class="eyebrow" data-i18n="eyebrow">Independent sports coverage</span><h1 data-i18n="headline">The sports world, in focus.</h1><p data-i18n="intro">Headlines, highlights and match schedules from across the sporting world.</p>
-      <div class="hero-stats">      <span><strong>10</strong> sports</span><span><strong>04</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
+      <div class="hero-stats">      <span><strong>10</strong> sports</span><span><strong>@@SOURCE_COUNT@@</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
     </section>
   </div></header>
   <nav class="mobile-nav" aria-label="Quick section navigation"><a href="#news" data-i18n="news">News</a><a href="#videos" data-i18n="videos">Videos</a><a href="#live" data-i18n="live">Live</a><a href="#fixtures" data-i18n="fixtures">Fixtures</a></nav>
@@ -1004,6 +1129,7 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
         "@@STYLE@@": STYLE,
         "@@UPDATED@@": html.escape(updated),
         "@@NEWS_SOURCES@@": html.escape(news_sources),
+        "@@SOURCE_COUNT@@": f"{source_count:02d}",
         "@@STORIES@@": stories_html,
         "@@FEATURED_STORY@@": featured_story,
         "@@LATEST_STORIES@@": latest_stories,
