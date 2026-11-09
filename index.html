@@ -15,14 +15,78 @@
 .ticker{background:var(--accent);color:#fff}.ticker .wrap{min-height:40px;display:flex;align-items:center;gap:12px;font-size:.8rem;font-weight:750}.ticker-label{border:1px solid #ffffff75;padding:2px 8px;border-radius:4px;font-size:.68rem;letter-spacing:.08em}
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:33px 0 16px}.section-head h2{margin:0;font-size:1.6rem;letter-spacing:-.025em}.section-head p{margin:3px 0 0;color:var(--muted);font-size:.82rem}.search{width:min(330px,100%);padding:11px 14px;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:11px;outline:none}.search:focus{border-color:var(--accent);box-shadow:0 0 0 3px #ff493d25}
 .filters{display:flex;gap:8px;overflow-x:auto;padding:0 0 19px}.filter{flex:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--muted);background:var(--surface);font-size:.82rem;font-weight:650;cursor:pointer}.filter:hover,.filter.active{color:var(--text);border-color:#ff493d88;background:#ff493d1c}
-.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:24px}.story-card{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 32px #00000018;transition:transform .2s,border-color .2s}.story-card:hover{transform:translateY(-3px);border-color:#ff493d70}.story-image{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--surface2)}.story-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}.story-card:hover .story-image img{transform:scale(1.035)}.image-placeholder{display:grid;place-items:center;width:100%;height:100%;color:#71829a;font-weight:900;letter-spacing:.18em;background:linear-gradient(135deg,var(--surface2),var(--surface))}.category{position:absolute;left:12px;bottom:12px;padding:4px 9px;border-radius:6px;background:var(--accent);color:#fff;font-size:.66rem;font-weight:800;text-transform:uppercase}.video-badge{position:absolute;top:11px;right:11px;padding:4px 7px;border-radius:4px;background:#07101dcc;color:#fff;font-size:.62rem;font-weight:850;letter-spacing:.08em}.story-body{padding:15px 16px 17px}.story-meta{display:flex;align-items:center;gap:9px;color:#ff796f;font-size:.64rem;letter-spacing:.055em;font-weight:850}.story-meta time{margin-left:auto;color:var(--muted);letter-spacing:0;font-weight:500;white-space:nowrap}.save-button{border:0;padding:0 2px;color:var(--muted);background:transparent;font-size:1.35rem;line-height:1;cursor:pointer}.save-button.saved,.save-button:hover{color:var(--accent)}.story-body h2,.story-body h3{margin:11px 0 7px;font-size:1.08rem;line-height:1.4}.story-body h2 a,.story-body h3 a,.video-info h3 a{text-decoration:none}.story-body h2 a:hover,.story-body h3 a:hover,.video-info h3 a:hover{color:#ff796f}.story-body p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.6}.read-more{display:inline-block;margin-top:11px;color:#ff796f;font-size:.8rem;font-weight:750;text-decoration:none}.read-more:hover{text-decoration:underline}.empty-state{grid-column:1/-1;padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
-.content-section{padding:12px 0 29px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:15px}.section-title h2{margin:0;font-size:1.55rem}.section-title p{margin:0;color:var(--muted);font-size:.8rem}.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.video-card{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:15px}.video-cover{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--surface2)}.video-cover img{width:100%;height:100%;object-fit:cover}.video-placeholder{display:grid;place-items:center;width:100%;height:100%;color:#ff796f;font-size:2rem}.play-button{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;color:#fff;background:var(--accent);box-shadow:0 5px 20px #0008;transform:translate(-50%,-50%);font-size:.92rem}.video-info{padding:12px 15px 15px}.video-info>span{color:#ff796f;font-size:.65rem;font-weight:850;letter-spacing:.07em}.video-info h3{margin:5px 0 0;font-size:.98rem;line-height:1.4}.section-empty{padding:25px;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:13px;text-align:center}
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:24px}.story-card{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 32px #00000018;transition:transform .2s,border-color .2s}.story-card:hover{transform:translateY(-3px);border-color:#ff493d70}.story-image{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--surface2)}.story-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}.story-card:hover .story-image img{transform:scale(1.035)}.image-placeholder{display:grid;place-items:center;width:100%;height:100%;color:#71829a;font-weight:900;letter-spacing:.18em;background:linear-gradient(135deg,var(--surface2),var(--surface))}.category{position:absolute;left:12px;bottom:12px;padding:4px 9px;border-radius:6px;background:var(--accent);color:#fff;font-size:.66rem;font-weight:800;text-transform:uppercase}.video-badge{position:absolute;top:11px;right:11px;padding:4px 7px;border-radius:4px;background:#07101dcc;color:#fff;font-size:.62rem;font-weight:850;letter-spacing:.08em}.story-body{padding:15px 16px 17px}.story-meta{display:flex;align-items:center;gap:9px;color:#ff796f;font-size:.64rem;letter-spacing:.055em;font-weight:850}.story-meta a{color:inherit;text-decoration:underline;text-underline-offset:2px}.story-meta time{margin-left:auto;color:var(--muted);letter-spacing:0;font-weight:500;white-space:nowrap}.save-button{border:0;padding:0 2px;color:var(--muted);background:transparent;font-size:1.35rem;line-height:1;cursor:pointer}.save-button.saved,.save-button:hover{color:var(--accent)}.story-body h2,.story-body h3{margin:11px 0 7px;font-size:1.08rem;line-height:1.4}.story-body h2 a,.story-body h3 a,.video-info h3 a{text-decoration:none}.story-body h2 a:hover,.story-body h3 a:hover,.video-info h3 a:hover{color:#ff796f}.story-body p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.6}.read-more{display:inline-block;margin-top:11px;color:#ff796f;font-size:.8rem;font-weight:750;text-decoration:none}.read-more:hover{text-decoration:underline}.empty-state{grid-column:1/-1;padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
+.content-section{padding:12px 0 29px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:15px}.section-title h2{margin:0;font-size:1.55rem}.section-title p{margin:0;color:var(--muted);font-size:.8rem}.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.video-card{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:15px}.video-cover,.video-card>video{display:block;position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:var(--surface2)}.video-cover img{width:100%;height:100%;object-fit:cover}.video-card>video{object-fit:contain}.video-placeholder{display:grid;place-items:center;width:100%;height:100%;color:#ff796f;font-size:2rem}.play-button{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;color:#fff;background:var(--accent);box-shadow:0 5px 20px #0008;transform:translate(-50%,-50%);font-size:.92rem}.video-info{padding:12px 15px 15px}.video-info>span{color:#ff796f;font-size:.65rem;font-weight:850;letter-spacing:.07em}.video-info h3{margin:5px 0 0;font-size:.98rem;line-height:1.4}.section-empty{padding:25px;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:13px;text-align:center}
 .schedule-wrap{margin:4px 0 38px;padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,var(--surface),var(--bg))}.schedule-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.fixture-card,.schedule-empty{padding:15px;background:var(--surface);border:1px solid var(--line);border-radius:12px}.fixture-meta{display:flex;justify-content:space-between;gap:8px;color:#ff796f;font-size:.64rem;font-weight:850;letter-spacing:.045em;text-transform:uppercase}.fixture-match{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:17px 0;font-size:.9rem}.fixture-match strong{flex:1}.fixture-match strong:last-child{text-align:right}.versus{color:var(--muted);font-size:.65rem;font-weight:800}.fixture-footer{display:flex;justify-content:space-between;gap:8px;padding-top:10px;border-top:1px solid var(--line);color:var(--muted);font-size:.7rem}.fixture-footer a{color:var(--muted);text-decoration:none}.fixture-footer a:hover{color:var(--text)}.schedule-empty{display:flex;flex-direction:column;gap:4px;color:var(--muted);font-size:.77rem}.schedule-empty strong{color:var(--text);font-size:.9rem}.schedule-note{margin:10px 0 0;color:var(--muted);font-size:.74rem}
-.fixture-match .event-name{flex:none;text-align:left!important}
+.fixture-match .event-name{flex:none;text-align:left!important}.mobile-nav{display:none}
 footer{border-top:1px solid var(--line);padding:22px 0 32px;color:var(--muted);font-size:.8rem;text-align:center}[hidden]{display:none!important}
 @media(max-width:900px){.news-grid,.video-grid,.schedule-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-links{gap:14px}}
-@media(max-width:650px){.wrap{width:min(100% - 28px,1200px)}.nav{min-height:65px}.nav-links{display:none}.desk-label{display:none}.hero{padding:42px 0 48px}.hero-stats{gap:14px;flex-wrap:wrap}.section-head{align-items:stretch}.search{width:100%}.news-grid,.video-grid,.schedule-grid{grid-template-columns:1fr;gap:13px}.story-card{display:grid;grid-template-columns:112px minmax(0,1fr)}.story-image{height:100%;min-height:164px;aspect-ratio:auto}.story-body{padding:11px}.story-body h3{font-size:.96rem;margin:8px 0 5px}.story-body p{font-size:.78rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.story-meta{font-size:.56rem;gap:5px}.read-more{margin-top:7px}.schedule-wrap{padding:14px}.fixture-match{font-size:.86rem}}
+@media(max-width:650px){body{padding-bottom:68px}.wrap{width:min(100% - 28px,1200px)}.nav{min-height:65px;padding:9px 0}.nav-links{display:none}.mobile-nav{position:fixed;z-index:30;right:0;bottom:0;left:0;display:flex;justify-content:space-around;gap:8px;padding:9px 14px calc(9px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--surface);box-shadow:0 -8px 24px #0003}.mobile-nav a{flex:1;padding:5px;color:var(--text);font-size:.82rem;font-weight:750;text-align:center;text-decoration:none}.mobile-nav a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:5px}.desk-label{display:none}.hero{padding:42px 0 48px}.hero-stats{gap:14px;flex-wrap:wrap}.section-head{align-items:stretch}.search{width:100%}.news-grid,.video-grid,.schedule-grid{grid-template-columns:1fr;gap:13px}.story-card{display:grid;grid-template-columns:112px minmax(0,1fr)}.story-image{height:100%;min-height:164px;aspect-ratio:auto}.story-body{padding:11px}.story-body h3{font-size:.96rem;margin:8px 0 5px}.story-body p{font-size:.78rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.story-meta{font-size:.56rem;gap:5px}.read-more{margin-top:7px}.schedule-wrap{padding:14px}.fixture-match{font-size:.86rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Editorial magazine treatment inspired by sports and industry news layouts. */
+:root{color-scheme:light;--bg:#fff;--surface:#fff;--surface2:#f2f4f6;--text:#111820;--muted:#66717d;--accent:#c9152b;--line:#dfe3e7;--green:#177b50}
+:root.dark{color-scheme:dark;--bg:#101820;--surface:#17222d;--surface2:#22313e;--text:#f4f7fc;--muted:#b0bdc9;--accent:#f05260;--line:#ffffff22}
+body{font-family:Arial,Helvetica,sans-serif}
+.wrap{width:min(1180px,calc(100% - 40px))}
+.masthead{background:var(--surface);border-bottom:1px solid var(--line)}
+.nav{min-height:66px}
+.brand-mark{width:35px;height:35px;border-radius:3px;background:var(--accent);font-size:19px}
+.brand-name{color:var(--text);font-size:1.35rem;letter-spacing:-.06em}
+.nav-links{color:var(--text);font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}
+.nav-links a:hover{color:var(--accent)}
+.theme-button{border-color:var(--line);color:var(--text);background:var(--surface2)}
+.desk-label{color:var(--muted)}
+.hero{padding:18px 0 22px;color:var(--text)}
+.eyebrow{color:var(--accent);font-size:.67rem}
+.hero h1{max-width:none;margin:4px 0;font-size:clamp(1.35rem,3vw,2rem);line-height:1.2;letter-spacing:-.035em}
+.hero p{color:var(--muted);font-size:.9rem}
+.hero-stats{display:none}
+.ticker{background:var(--surface);color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ticker .wrap{min-height:36px;overflow:hidden;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}
+.ticker-label{border:0;border-radius:0;padding:0;color:var(--accent);font-weight:850}
+.ticker-label,.ticker .wrap>span:last-child{flex:none;white-space:nowrap}
+.top-stories{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(260px,1fr);gap:28px;padding:30px 0 24px;border-bottom:1px solid var(--line)}
+.section-kicker{margin:0 0 10px;color:var(--accent);font-size:.7rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase}
+.lead-story{display:grid;grid-template-columns:1.1fr 1fr;align-items:stretch;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+.lead-story .story-image{height:100%;min-height:300px;aspect-ratio:auto}
+.lead-story .story-body{align-self:center;padding:clamp(18px,3vw,34px)}
+.lead-story .story-body h3{margin:12px 0;font-family:Georgia,serif;font-size:clamp(1.45rem,3vw,2.25rem);line-height:1.14;letter-spacing:-.025em}
+.lead-story .story-body p{font-size:.94rem}
+.latest-panel{border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+.latest-heading{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--line)}
+.latest-heading h2{margin:0;font-family:Georgia,serif;font-size:1.28rem}
+.latest-heading a{color:var(--accent);font-size:.76rem;font-weight:750;text-decoration:none}
+.latest-list{padding:0 16px}
+.latest-story{display:block;overflow:visible;border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;background:transparent}
+.latest-story:last-child{border-bottom:0}
+.latest-story .story-image,.latest-story .story-body p,.latest-story .read-more,.latest-story .save-button{display:none}
+.latest-story .story-body{padding:11px 0}
+.latest-story .story-meta{justify-content:space-between;color:var(--muted);font-size:.62rem}
+.latest-story .story-meta time{margin-left:auto}
+.latest-story .story-body h3{margin:4px 0 0;font-family:Georgia,serif;font-size:.97rem;line-height:1.3}
+.latest-story .story-body h3 a:hover{color:var(--accent)}
+.latest-story:before{content:attr(data-category);display:block;padding-top:10px;color:var(--accent);font-size:.58rem;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
+.section-head{padding:30px 0 13px;border-bottom:1px solid var(--line)}
+.section-head h2,.section-title h2{font-family:Georgia,serif}
+.section-head p{font-size:.75rem}
+.search{border-radius:3px;background:var(--surface);border-color:var(--line)}
+.filter{border-radius:3px;background:var(--surface);border-color:var(--line)}
+.filter:hover,.filter.active{color:var(--accent);border-color:var(--accent);background:transparent}
+.news-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 22px;padding-bottom:32px}
+.news-grid>.story-card{display:block;overflow:visible;border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;background:transparent}
+.news-grid>.story-card:hover{transform:none;border-color:var(--line)}
+.news-grid>.story-card .story-image{aspect-ratio:16/9}
+.news-grid>.story-card .story-body{padding:12px 0 18px}
+.news-grid>.story-card .story-body h3{font-family:Georgia,serif;font-size:1.2rem;line-height:1.25}
+.news-grid>.story-card .story-body p{font-size:.84rem}
+.story-meta{font-size:.62rem}
+.story-body h3 a:hover,.read-more{color:var(--accent)}
+.video-card,.fixture-card,.schedule-empty{border-radius:3px;box-shadow:none}
+.schedule-wrap{border-radius:3px;background:var(--surface2)}
+footer{background:var(--surface);border-color:var(--line)}
+@media(max-width:900px){.top-stories{grid-template-columns:minmax(0,1.35fr) minmax(230px,1fr);gap:18px}.lead-story{grid-template-columns:1fr}.lead-story .story-image{min-height:220px}.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.wrap{width:min(100% - 28px,1180px)}.nav{min-height:58px}.brand-name{font-size:1.2rem}.hero{padding:13px 0 17px}.hero p{font-size:.82rem}.top-stories{grid-template-columns:1fr;gap:14px;padding:18px 0}.lead-story{grid-template-columns:1fr}.lead-story .story-image{height:auto;min-height:0;aspect-ratio:16/9}.lead-story .story-body{padding:17px}.lead-story .story-body h3{font-size:1.55rem}.latest-list{padding:0 14px}.section-head{padding:24px 0 12px}.news-grid{grid-template-columns:1fr;gap:0}.news-grid>.story-card{display:block}.news-grid>.story-card .story-image{height:auto;min-height:0;aspect-ratio:16/9}.news-grid>.story-card .story-body{padding:11px 0 16px}.news-grid>.story-card .story-body h3{font-size:1.08rem}.news-grid>.story-card .story-body p{display:block;overflow:visible}.filters{padding-bottom:14px}.mobile-nav{background:var(--surface);border-color:var(--line)}}
 </style>
 
 </head>
@@ -30,42 +94,228 @@ footer{border-top:1px solid var(--line);padding:22px 0 32px;color:var(--muted);f
   <header class="masthead"><div class="wrap">
     <nav class="nav" aria-label="Main navigation"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Skysport</span></a>
       <div class="nav-links"><a href="#news">News</a><a href="#videos">Videos</a><a href="#fixtures">Fixtures</a></div>
-      <div class="nav-right"><span class="desk-label">Sports desk</span><button class="theme-button" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">☼</button></div>
+      <div class="nav-right"><span class="desk-label">Sports desk</span><button class="theme-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">☼</button></div>
     </nav>
-    <section class="hero" id="top"><span class="eyebrow">The global sports desk</span><h1>Every moment.<br>Every sport.</h1><p>Big stories, video highlights and the upcoming fixtures that matter — gathered from sports publishers around the world.</p>
-      <div class="hero-stats"><span><strong>05</strong> sports</span><span><strong>04</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
+    <section class="hero" id="top"><span class="eyebrow">Independent sports coverage</span><h1>The sports world, in focus.</h1><p>Headlines, highlights and match schedules from across the sporting world.</p>
+      <div class="hero-stats"><span><strong>09</strong> sports</span><span><strong>04</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
     </section>
   </div></header>
-  <div class="ticker"><div class="wrap"><span class="ticker-label">SPORTS DESK</span><span>Football · Tennis · Formula 1 · Cricket · Rugby</span></div></div>
+  <nav class="mobile-nav" aria-label="Quick section navigation"><a href="#news">News</a><a href="#videos">Videos</a><a href="#fixtures">Fixtures</a></nav>
+  <div class="ticker"><div class="wrap"><span class="ticker-label">SPORTS DESK</span><span>Football · Tennis · Formula 1 · Cricket · Rugby · Basketball · American football · Golf · Boxing &amp; MMA</span></div></div>
   <main class="wrap">
-    <section class="section-head" id="news"><div><h2>Latest headlines</h2><p>09 Nov 2026 · 14:31 UTC · Sources: BBC Sport, The Guardian, Sky Sports</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines"></section>
-    <nav class="filters" aria-label="Filter headlines by sport"><button class="filter active" type="button" data-filter="All">All sports</button><button class="filter" type="button" data-filter="Football">Football</button><button class="filter" type="button" data-filter="Tennis">Tennis</button><button class="filter" type="button" data-filter="Formula 1">Formula 1</button><button class="filter" type="button" data-filter="Cricket">Cricket</button><button class="filter" type="button" data-filter="Rugby">Rugby</button><button class="filter" type="button" data-filter="Other">Other</button><button class="filter" type="button" data-filter="Saved">♡ Saved</button></nav>
-    <div class="news-grid" id="news-grid"><article class="story-card" data-category="Formula 1">
-      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/09/senna-was-senna-wolff-says-it-is-too-soon-to-compare-kimi-antonelli-to-f1-great" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://i.guim.co.uk/img/media/a0323648c8f65f04787b27a21d0308ccc55a3ba3/480_0_4781_3827/master/4781.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=632c2d968b237b3250603a9eb1c50955" alt="" loading="lazy"><span class="category">Formula 1</span></a>
+    <section class="top-stories" aria-label="Top stories"><div><p class="section-kicker">Top story</p><article class="story-card lead-story" data-category="Boxing &amp; MMA">
+      <a class="story-image" href="https://www.skysports.com/boxing/news/12040/13610156/caroline-dubois-throws-down-challenge-to-alycia-baumgardner-the-biggest-test-for-her-career-is-going-to-be-against-me" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e1.365dm.com/26/08/1920x1080/skysports-caroline-dubois-boxing_7318200.jpg?20260810130441" alt="" loading="lazy"><span class="category">Boxing &amp; MMA</span></a>
+      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T13:00:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.skysports.com/boxing/news/12040/13610156/caroline-dubois-throws-down-challenge-to-alycia-baumgardner-the-biggest-test-for-her-career-is-going-to-be-against-me" target="_blank" rel="noopener noreferrer">Dubois: I&#x27;m the biggest test for Baumgardner&#x27;s career</a></h3><p>Caroline Dubois is confident she is one fight away from an undisputed showdown with her American rival Alycia Baumgardner.</p>
+        <a class="read-more" href="https://www.skysports.com/boxing/news/12040/13610156/caroline-dubois-throws-down-challenge-to-alycia-baumgardner-the-biggest-test-for-her-career-is-going-to-be-against-me" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article></div><aside class="latest-panel"><div class="latest-heading"><h2>Latest</h2><a href="#news">All news ↓</a></div><div class="latest-list"><article class="story-card latest-story" data-category="Basketball">
+      <a class="story-image" href="https://www.espn.com/mens-college-basketball/story/_/id/50426371/jon-scheyer-duke-moving-loses" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Basketball</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:27:08+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/mens-college-basketball/story/_/id/50426371/jon-scheyer-duke-moving-loses" target="_blank" rel="noopener noreferrer">&#x27;Losing sucks:&#x27; How Jon Scheyer, Duke are using heartbreaking losses as fuel</a></h3><p>Is depth the secret sauce for Duke to avoid the devastating NCAA tournament exits of the past couple of years?</p>
+        <a class="read-more" href="https://www.espn.com/mens-college-basketball/story/_/id/50426371/jon-scheyer-duke-moving-loses" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article><article class="story-card latest-story" data-category="Football">
+      <a class="story-image" href="https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:26:22+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10" target="_blank" rel="noopener noreferrer">Free agents: Caleb Douglas, Aaron Rodgers lead top options</a></h3><p>Eric Karabell lists who he thinks are the top available players worth adding for the week ahead.</p>
+        <a class="read-more" href="https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article><article class="story-card latest-story" data-category="Football">
+      <a class="story-image" href="https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:26:22+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings" target="_blank" rel="noopener noreferrer">Winners and losers: Walker, Lamb come up big; Gibbs, Taylor disappoint</a></h3><p>CeeDee Lamb and Kenneth Walker III came up big in Week 9, while Jahmyr Gibbs and Jonathan Taylor were quieter than usual.</p>
+        <a class="read-more" href="https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article><article class="story-card latest-story" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons" target="_blank" rel="noopener noreferrer">Sources: Jaguars bolster secondary, land safety Bates in trade with Falcons</a></h3><p>The Jaguars bolstered their secondary one day before the NFL trade deadline, acquiring veteran safety Jessie Bates III from the Falcons, sources told ESPN.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article></div></aside></section>
+    <section class="section-head" id="news"><div><h2>More headlines</h2><p>Updated 09 Nov 2026 · 14:34 UTC · Sources: BBC Sport, The Guardian, ESPN, Sky Sports</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines"></section>
+    <nav class="filters" aria-label="Filter headlines by sport"><button class="filter active" type="button" data-filter="All">All sports</button><button class="filter" type="button" data-filter="Football">Football</button><button class="filter" type="button" data-filter="Tennis">Tennis</button><button class="filter" type="button" data-filter="Formula 1">Formula 1</button><button class="filter" type="button" data-filter="Cricket">Cricket</button><button class="filter" type="button" data-filter="Rugby">Rugby</button><button class="filter" type="button" data-filter="Basketball">Basketball</button><button class="filter" type="button" data-filter="American Football">American Football</button><button class="filter" type="button" data-filter="Golf">Golf</button><button class="filter" type="button" data-filter="Boxing &amp; MMA">Boxing &amp; MMA</button><button class="filter" type="button" data-filter="Other">Other</button><button class="filter" type="button" data-filter="Saved">♡ Saved</button></nav>
+    <div class="news-grid" id="news-grid"><article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor" target="_blank" rel="noopener noreferrer">Harbaugh: Giants pulled recent offer for RB Taylor but &#x27;things do change&#x27;</a></h3><p>The Giants pulled a recent trade offer for Jonathan Taylor, according to coach John Harbaugh, who added that doesn&#x27;t mean a deal is completely off the table.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50432531/ohio-state-fires-special-teams-coordinator-discher" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/college-football/story/_/id/50432531/ohio-state-fires-special-teams-coordinator-discher" target="_blank" rel="noopener noreferrer">Sources: Buckeyes fire coordinator Discher after multiple special teams gaffes</a></h3><p>Ohio State has fired special teams coordinator Robby Discher after back-to-back blowout losses with costly special teams errors and penalties, sources confirmed to ESPN.</p>
+        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50432531/ohio-state-fires-special-teams-coordinator-discher" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Basketball">
+      <a class="story-image" href="https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Basketball</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism" target="_blank" rel="noopener noreferrer">Giannis on Doc criticism: I won&#x27;t be thwarted by &#x27;bitterness or pettiness&#x27;</a></h3><p>Giannis Antetokounmpo said he was &quot;speechless&quot; over Doc Rivers&#x27; recent comments, adding that athletes should not be dismayed by &quot;bitterness or pettiness.&quot;</p>
+        <a class="read-more" href="https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50432695/jets-pass-rusher-mcdonald-iv-requests-trade" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50432695/jets-pass-rusher-mcdonald-iv-requests-trade" target="_blank" rel="noopener noreferrer">Sources: Jets DE McDonald IV, frustrated by playing time, requests trade</a></h3><p>Jets pass rusher Will McDonald IV, frustrated by lack of playing time, has requested a trade, sources told NFL Network&#x27;s Ian Rapoport.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50432695/jets-pass-rusher-mcdonald-iv-requests-trade" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast" target="_blank" rel="noopener noreferrer">Giants&#x27; Nabers takes issue with Fox telecast after body-language comments</a></h3><p>Malik Nabers took issue with Fox play-by-play man Joe Davis and analyst Greg Olsen for criticizing his body language during the Giants&#x27; win Sunday.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Boxing &amp; MMA">
+      <a class="story-image" href="https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Boxing &amp; MMA</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke" target="_blank" rel="noopener noreferrer">Trump &#x27;only kidding&#x27; with offer of press secretary job to UFC&#x27;s White</a></h3><p>President Donald Trump said he &quot;was only kidding&quot; when he announced he had offered the White House press secretary job to UFC CEO Dana White.</p>
+        <a class="read-more" href="https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50426400/nfl-week-9-trolls" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:23:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50426400/nfl-week-9-trolls" target="_blank" rel="noopener noreferrer">🧌 Saints poke fun at Shedeur Sanders, reference quote to lead NFL Week 9 trolls</a></h3><p>The New Orleans Saints kept the receipts and poked fun at Shedeur Sanders to lead NFL Week 9 trolls.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50426400/nfl-week-9-trolls" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Basketball">
+      <a class="story-image" href="https://www.espn.com/nba/story/_/id/50425453/miami-heat-giannis-antetokounmpo-erik-spoelstra" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Basketball</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:15:29+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nba/story/_/id/50425453/miami-heat-giannis-antetokounmpo-erik-spoelstra" target="_blank" rel="noopener noreferrer">&#x27;Right now, we don&#x27;t trust one another&#x27;: What&#x27;s fueling the rocky start for Giannis and the Heat</a></h3><p>At 4-6, the Heat aren&#x27;t pointing fingers -- yet. But with each loss, the pressure rises on this season and next -- with Giannis&#x27; free agency looming.</p>
+        <a class="read-more" href="https://www.espn.com/nba/story/_/id/50425453/miami-heat-giannis-antetokounmpo-erik-spoelstra" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Basketball">
+      <a class="story-image" href="https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Basketball</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:15:29+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions" target="_blank" rel="noopener noreferrer">NBA core danger tiers: 19 teams with major roster decisions</a></h3><p>With tax and apron penalties lurking everywhere, Bobby Marks examines 19 teams barreling toward core-altering decisions.</p>
+        <a class="read-more" href="https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:14:27+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp" target="_blank" rel="noopener noreferrer">CFP top 12 projection: Who&#x27;s still standing after massive Week 10?</a></h3><p>We assess how the selection committee could stack the top teams in the country after Week 10.</p>
+        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50380155/countering-peanut-punch-james-cook-skattebo" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:14:04+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50380155/countering-peanut-punch-james-cook-skattebo" target="_blank" rel="noopener noreferrer">The &#x27;Peanut Punch&#x27; has taken over the NFL. How are teams countering it?</a></h3><p>After Charles Tillman popularized the punch 14 years ago, it has really taken off this season.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50380155/countering-peanut-punch-james-cook-skattebo" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:14:03+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022" target="_blank" rel="noopener noreferrer">&#x27;The catch of his life!&#x27;: The inside story of Justin Jefferson&#x27;s epic one-handed grab</a></h3><p>In 2022 against the Bills, Jefferson leaped up and came down with one of &quot;the greatest catches of all time.&quot;</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:12:45+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10" target="_blank" rel="noopener noreferrer">Power Rankings: Utah jumps into top 2, LSU drops down</a></h3><p>Check out how an action-packed Week 10 caused major shifts in this week&#x27;s top 25.</p>
+        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:12:44+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won" target="_blank" rel="noopener noreferrer">How Week 10&#x27;s biggest games were won -- and whether CFP hopefuls can keep it up</a></h3><p>From Notre Dame&#x27;s CJ Carr to Alabama&#x27;s consistency, we examine the keys to victory on a statement Saturday.</p>
+        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50422009/week-9-barnwell-nfc-north-packers-lions-bears-vikings" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:03:13+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50422009/week-9-barnwell-nfc-north-packers-lions-bears-vikings" target="_blank" rel="noopener noreferrer">Is the NFC North the best division ... ever? Barnwell on big wins for the Packers, Bears and Lions</a></h3><p>The Packers, Bears, Lions and Vikings are a combined 25-8 and all hold playoff spots right now. Can anyone stop the NFC North -- and who will win the division?</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50422009/week-9-barnwell-nfc-north-packers-lions-bears-vikings" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:03:13+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys" target="_blank" rel="noopener noreferrer">Let&#x27;s overreact to NFL Week 9 -- with a trade deadline twist</a></h3><p>Time for the Bengals to make a push? Should the Giants go after a running back? Will the receiver market go wild?</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T14:01:53+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms" target="_blank" rel="noopener noreferrer">Tracking NFL trades: Catch up on all nine moves ahead of the deadline</a></h3><p>The NFL trade deadline is Tuesday, and deals are flying. We&#x27;re tracking all moves, including Jessie Bates III to Jacksonville.</p>
+        <a class="read-more" href="https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Other">
+      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/10/leihani-zoric-australian-surf-prodigy-surfing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Other</span></a>
+      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T14:00:13+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.theguardian.com/sport/2026/nov/10/leihani-zoric-australian-surf-prodigy-surfing" target="_blank" rel="noopener noreferrer">13-year-old surfing prodigy Leihani Zoric: ‘I don’t want to participate, I want to dominate’</a></h3><p>The Indigenous Australian grew up idolising Steph Gilmore and Tyler Wright. Now she has them – and an Olympic gold – in her sights Leihani Zoric, 13, grew up watching Australian surfers dominate on the world stage. Stephanie Gilmore, the greatest female surfer of all time, and Tyler Wright, a two-time World Surf League champion, were among her idols. “When I was little I always watched their surfing,” she says. “They inspired me in and out of the water.” Continue reading...</p>
+        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/10/leihani-zoric-australian-surf-prodigy-surfing" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Football">
+      <a class="story-image" href="https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T13:56:50+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico" target="_blank" rel="noopener noreferrer">How Barça beat Atletico, Man City defensive woes, more</a></h3><p>Man United came back to draw Aston Villa, but that shouldn&#x27;t save Carrick&#x27;s job. Plus, Barça escape Atletico with victory, and Man City&#x27;s defensive woes continue.</p>
+        <a class="read-more" href="https://www.espn.com/soccer/story/_/id/50428521/premier-league-laliga-analysis-marcotti-man-united-carrick-barcelona-atletico" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Football">
+      <a class="story-image" href="https://www.espn.com/soccer/story/_/id/50430907/manchester-united-transfers-carrick-premier-league-ratcliffe" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T13:56:50+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/soccer/story/_/id/50430907/manchester-united-transfers-carrick-premier-league-ratcliffe" target="_blank" rel="noopener noreferrer">Ratcliffe appointed rookies, now Man United face relegation﻿ fight</a></h3><p>Sir Jim Ratcliffe&#x27;s naive backroom appointments have left Manchester United in their worst position for 40 years and staring relegation in the face.</p>
+        <a class="read-more" href="https://www.espn.com/soccer/story/_/id/50430907/manchester-united-transfers-carrick-premier-league-ratcliffe" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Formula 1">
+      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/09/senna-was-senna-wolff-says-it-is-too-soon-to-compare-kimi-antonelli-to-f1-great" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Formula 1</span></a>
       <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T13:47:26+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.theguardian.com/sport/2026/nov/09/senna-was-senna-wolff-says-it-is-too-soon-to-compare-kimi-antonelli-to-f1-great" target="_blank" rel="noopener noreferrer">‘Senna was Senna’: Wolff says it is too soon to compare Kimi Antonelli to F1 great</a></h3><p>World champion idolises Brazilian who won three titles ‘He’s a Senninha and not a Senna yet,’ says Toto Wolff Toto Wolff has said it is too soon to compare his world champion driver Kimi Antonelli to Ayrton Senna but that the Italian might yet develop to be comparable to the Brazilian great whom Antonelli grew up idolising. Antonelli sealed his first Formula One world championship at the Mexican Grand Prix and with a fifth place at Sunday’s São Paulo Grand Prix helped Mercedes secure their ninth constructors’ championship and their first drivers’ and constructors’ double since 2020. Continue reading...</p>
         <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/09/senna-was-senna-wolff-says-it-is-too-soon-to-compare-kimi-antonelli-to-f1-great" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Rugby">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/rugby-league/articles/c620r0n4yxw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dd63/live/ab201c90-dc0d-11f1-9f85-c35529b8c4b9.jpg" alt="" loading="lazy"><span class="category">Rugby</span></a>
+      <a class="story-image" href="https://www.bbc.co.uk/sport/rugby-league/articles/c620r0n4yxw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Rugby</span></a>
       <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T13:38:28+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.bbc.co.uk/sport/rugby-league/articles/c620r0n4yxw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">USA &amp; Pacific Islands to host 2030 Rugby League World Cup</a></h3><p>The 2030 Rugby League World Cup tournament will be hosted by the USA and the Pacific Islands, but the five host cities are yet to be confirmed.</p>
         <a class="read-more" href="https://www.bbc.co.uk/sport/rugby-league/articles/c620r0n4yxw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
       </div>
     </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.theguardian.com/football/2026/nov/09/lens-como-marseille-pierre-sage-coupe-de-france-ligue-1" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://i.guim.co.uk/img/media/53b5b89f8aabc1e0f4a493e03871042823313ccb/1221_217_5006_4005/master/5006.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=551b930c759dd800ec05ae3436ec0183" alt="" loading="lazy"><span class="category">Other</span></a>
+<article class="story-card" data-category="Football">
+      <a class="story-image" href="https://www.theguardian.com/football/2026/nov/09/lens-como-marseille-pierre-sage-coupe-de-france-ligue-1" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
       <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T13:37:45+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.theguardian.com/football/2026/nov/09/lens-como-marseille-pierre-sage-coupe-de-france-ligue-1" target="_blank" rel="noopener noreferrer">Lens were humiliated by Como. The pain continued against Marseille</a></h3><p>Pierre Sage led Lens to second and glory in the Coupe de France last season. A lot has changed in the last six months The Lens striker, Florian Sotoca, was completely motionless as he looked into the middle space from the bench. The game, finely poised at 2-1 with a few minutes remaining, was not beyond his side, but that is not the story his troubled face told. Marseille had just restored their lead thanks to a goal from substitute Keyliane Abdallah. Bruno Génésio’s men would go on to take all three points and continue their unlikely charge up the table, but the atmosphere at the Stade Bollaert-Delelis was morose before Marseille had even stepped on the pitch. The match did little to lift the mood at the end of a week in which Lens made unwanted history. Continue reading...</p>
         <a class="read-more" href="https://www.theguardian.com/football/2026/nov/09/lens-como-marseille-pierre-sage-coupe-de-france-ligue-1" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
       </div>
     </article>
+<article class="story-card" data-category="Football">
+      <a class="story-image" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span><span class="video-badge">VIDEO</span></a>
+      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T13:29:14+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer">Could Old Trafford chaos keep Michael Carrick in the job? Football Weekly – video</a></h3><p>Max Rushden is joined by Barney Ronay , Jonathan Wilson and Dan Bardell as Manchester United twice come back from two goals down to draw 4-4 with Aston Villa, while trouble looms for Pierre Sage Continue reading...</p>
+        <a class="read-more" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+<article class="story-card" data-category="Football">
+      <a class="story-image" href="https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T13:17:17+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick" target="_blank" rel="noopener noreferrer">Transfer rumors, news: Man United to hire USMNT&#x27;s Pochettino to replace Carrick?</a></h3><p>Manchester United are in the relegation zone and could turn to United States head coach Mauricio Pochettino to replace Michael Carrick. Transfer Talk has the latest.</p>
+        <a class="read-more" href="https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
 <article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.skysports.com/boxing/news/12040/13610156/caroline-dubois-throws-down-challenge-to-alycia-baumgardner-the-biggest-test-for-her-career-is-going-to-be-against-me" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e1.365dm.com/26/08/1920x1080/skysports-caroline-dubois-boxing_7318200.jpg?20260810130441" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T13:00:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/boxing/news/12040/13610156/caroline-dubois-throws-down-challenge-to-alycia-baumgardner-the-biggest-test-for-her-career-is-going-to-be-against-me" target="_blank" rel="noopener noreferrer">Dubois: I&#x27;m the biggest test for Baumgardner&#x27;s career</a></h3><p>Caroline Dubois is confident she is one fight away from an undisputed showdown with her American rival Alycia Baumgardner.</p>
-        <a class="read-more" href="https://www.skysports.com/boxing/news/12040/13610156/caroline-dubois-throws-down-challenge-to-alycia-baumgardner-the-biggest-test-for-her-career-is-going-to-be-against-me" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      <a class="story-image" href="https://www.espn.com/wwe/story/_/id/50412427/wwe-crown-jewel-2026-takeaways" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Other</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T13:07:05+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/wwe/story/_/id/50412427/wwe-crown-jewel-2026-takeaways" target="_blank" rel="noopener noreferrer">Will Cody&#x27;s change in demeanor continue following Crown Jewel?</a></h3><p>Cody Rhodes and Tiffany Statton embraced underhanded tactics to win at Crown Jewel, what&#x27;s next for them?</p>
+        <a class="read-more" href="https://www.espn.com/wwe/story/_/id/50412427/wwe-crown-jewel-2026-takeaways" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
       </div>
     </article>
 <article class="story-card" data-category="Formula 1">
@@ -75,8 +325,15 @@ footer{border-top:1px solid var(--line);padding:22px 0 32px;color:var(--muted);f
         <a class="read-more" href="https://www.skysports.com/f1/news/12040/13610144/lando-norris-says-mclaren-are-still-not-at-the-level-to-fight-for-world-championship-in-2027-despite-sao-paulo-grand-prix-win" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
       </div>
     </article>
+<article class="story-card" data-category="American Football">
+      <a class="story-image" href="https://www.espn.com/college-football/story/_/id/50426276/notre-dame-miami-national-championship" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">American Football</span></a>
+      <div class="story-body"><div class="story-meta"><span>ESPN</span><time datetime="2026-11-09T12:45:04+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+        <h3><a href="https://www.espn.com/college-football/story/_/id/50426276/notre-dame-miami-national-championship" target="_blank" rel="noopener noreferrer">Is Notre Dame ready to party like it&#x27;s 1988?</a></h3><p>To prepare for the biggest game of the regular season, Marcus Freeman and the Irish looked to the past.</p>
+        <a class="read-more" href="https://www.espn.com/college-football/story/_/id/50426276/notre-dame-miami-national-championship" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
 <article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/football/articles/c98rzr51rlvpo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/824c/live/4f7c8740-dc33-11f1-958b-3f65a8ba2dc3.jpg" alt="" loading="lazy"><span class="category">Football</span></a>
+      <a class="story-image" href="https://www.bbc.co.uk/sport/football/articles/c98rzr51rlvpo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span class="image-placeholder" aria-hidden="true">SPORT</span><span class="category">Football</span></a>
       <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T12:41:23+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.bbc.co.uk/sport/football/articles/c98rzr51rlvpo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Chelsea staff warned over Fantasy Premier League use</a></h3><p>Chelsea warn staff to be careful about revealing team news through Fantasy Premier League after Joao Pedro&#x27;s injury appeared to have been inadvertently disclosed through team selections.</p>
         <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/c98rzr51rlvpo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
@@ -84,228 +341,13 @@ footer{border-top:1px solid var(--line);padding:22px 0 32px;color:var(--muted);f
     </article>
 <article class="story-card" data-category="Football">
       <a class="story-image" href="https://www.skysports.com/football/news/12040/13610181/alisson-liverpool-goalkeeper-wants-to-stay-at-anfield-beyond-contract-expiry-at-the-end-of-this-season" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e0.365dm.com/26/11/1920x1080/skysports-alisson-liverpool_7402127.jpg?20261109125441" alt="" loading="lazy"><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T12:38:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
+      <div class="story-body"><div class="story-meta"><span>Sky Sports · <a href="https://www.bbc.co.uk/sport/football/articles/cw62ypepq2m7o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">BBC Sport</a></span><time datetime="2026-11-09T12:38:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="https://www.skysports.com/football/news/12040/13610181/alisson-liverpool-goalkeeper-wants-to-stay-at-anfield-beyond-contract-expiry-at-the-end-of-this-season" target="_blank" rel="noopener noreferrer">&#x27;My will is to stay&#x27; - Alisson wants new Liverpool contract</a></h3><p>Liverpool goalkeeper Alisson says he wants to stay at Anfield beyond the end of the season when his contract expires.</p>
         <a class="read-more" href="https://www.skysports.com/football/news/12040/13610181/alisson-liverpool-goalkeeper-wants-to-stay-at-anfield-beyond-contract-expiry-at-the-end-of-this-season" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
       </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/09/chicago-bears-tampa-bay-buccaneers-sunday-night-football" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://i.guim.co.uk/img/media/83b8b344567cea8d1202771cb8f2540ded9d50d4/0_27_4000_3202/master/4000.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=22c49988e7aeffa23b361a068b9cd5ed" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T12:32:20+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.theguardian.com/sport/2026/nov/09/chicago-bears-tampa-bay-buccaneers-sunday-night-football" target="_blank" rel="noopener noreferrer">Bears edge Bucs with game-winning field goal despite Caleb Williams’s sloppy night</a></h3><p>Chicago QB throws career-high four interceptions Mayfield leads Tampa Bay rally that falls short Caleb Williams and the Chicago Bears played one of their worst games of the season – and won. That last part was the only thing that mattered to them Sunday night. Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/09/chicago-bears-tampa-bay-buccaneers-sunday-night-football" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.skysports.com/golf/news/12040/13610163/the-open-carnoustie-announced-by-ra-as-host-venue-for-the-157th-open-in-2029" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e1.365dm.com/26/11/1920x1080/skysports-the-open-carnoustie_7402088.jpg?20261109122007" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T12:08:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/golf/news/12040/13610163/the-open-carnoustie-announced-by-ra-as-host-venue-for-the-157th-open-in-2029" target="_blank" rel="noopener noreferrer">&#x27;Tremendous news for Scotland&#x27; - Date revealed for Carnoustie to host The Open</a></h3><p>The Open will return to Carnoustie in 2029, the R&amp;A has announced.</p>
-        <a class="read-more" href="https://www.skysports.com/golf/news/12040/13610163/the-open-carnoustie-announced-by-ra-as-host-venue-for-the-157th-open-in-2029" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/football/articles/cmwyq8x6nx5lo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/32ab/live/cd34dd80-dc34-11f1-a701-fddedf244c16.png" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T12:06:19+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/football/articles/cmwyq8x6nx5lo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Burn replaces injured Guehi in England squad</a></h3><p>Newcastle&#x27;s Dan Burn is added to the England squad to play Croatia and Spain in the Nations League this week after Marc Guehi pulls out with a hip injury.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/cmwyq8x6nx5lo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/09/uncapped-spinner-patterson-white-england-test-call-up-south-africa-cricket" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://i.guim.co.uk/img/media/31b24b28e5cb18653fe8a90d8b8844e4d2e69bd2/522_0_4252_3402/master/4252.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=7d933973ced8b2495c253826e590adb7" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T12:03:42+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.theguardian.com/sport/2026/nov/09/uncapped-spinner-patterson-white-england-test-call-up-south-africa-cricket" target="_blank" rel="noopener noreferrer">Uncapped Notts spinner Patterson-White earns England Test call-up for South Africa</a></h3><p>28-year-old rewarded for county performances Bashir to tour with Lions along with seamer Carse The uncapped Nottinghamshire spinner Liam Patterson-White has been rewarded for his most productive County Championship season with a call-up to England’s squad for their first red-ball assignment of the winter, the three Tests against South Africa that start in Johannesburg next month. The potential importance of spin bowling in South Africa was demonstrated in their recent home series against Australia, which the hosts won to propel themselves to No 1 in the ICC rankings and in which their most successful bowler was Simon Harmer, who took 14 wickets at 29.35. Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/09/uncapped-spinner-patterson-white-england-test-call-up-south-africa-cricket" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/american-football/videos/c60mem12x7zyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ee3c/live/4cf232e0-dc33-11f1-b441-2b33b063138f.jpg" alt="" loading="lazy"><span class="category">Other</span><span class="video-badge">VIDEO</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T12:01:51+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/american-football/videos/c60mem12x7zyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">&#x27;Spectacular&#x27; catches and toe-tapping skills - NFL best plays</a></h3><p>&quot;Spectacular&quot; Ja&#x27;Marr Chase catch and Luther Burden III&#x27;s 56-yard touchdown feature in the best plays from week nine in the NFL.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/american-football/videos/c60mem12x7zyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/golf/articles/cq4g1glv87pjo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8ff6/live/2b2b6180-dc25-11f1-a5b1-adf9c8e8d692.jpg" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T12:01:34+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/golf/articles/cq4g1glv87pjo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Open Championship returns to Carnoustie in 2029</a></h3><p>The Open Championship will return to Carnoustie in 2029, for the first time in 11 years.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/golf/articles/cq4g1glv87pjo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Cricket">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/cricket/articles/cw8dzd953nq5o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1bb6/live/f5827880-dc32-11f1-958b-3f65a8ba2dc3.jpg" alt="" loading="lazy"><span class="category">Cricket</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T12:00:30+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/cricket/articles/cw8dzd953nq5o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">England clear way for Carse return and drop Bashir</a></h3><p>England open the door for Brydon Carse to return to Test cricket for the tour of South Africa by naming him in the Lions squad.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/cricket/articles/cw8dzd953nq5o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/football/articles/cw62ypepq2m7o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b046/live/a4de1f60-dbb5-11f1-b35d-8ff000e4934a.jpg" alt="" loading="lazy"><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T12:00:11+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/football/articles/cw62ypepq2m7o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Alisson wants to sign new Liverpool contract</a></h3><p>Liverpool goalkeeper Alisson Becker wants to stay at the club beyond the end of the season, when his current contract is set to expire.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/cw62ypepq2m7o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.skysports.com/cricket/news/12040/13609716/england-test-squad-for-south-africa-uncapped-spinner-liam-patterson-white-called-up-and-jacob-bethell-returns" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e2.365dm.com/26/11/1920x1080/skysports-liam-patterson-white_7401939.jpg?20261109102146" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T12:00:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/cricket/news/12040/13609716/england-test-squad-for-south-africa-uncapped-spinner-liam-patterson-white-called-up-and-jacob-bethell-returns" target="_blank" rel="noopener noreferrer">Fleming turns to uncapped spinner for first Test series as England coach</a></h3><p>England have called up uncapped left-arm finger spinner Liam Patterson-White for this winter&#x27;s three-Test series in South Africa, while Shoaib Bashir has dropped down to the Lions squad.</p>
-        <a class="read-more" href="https://www.skysports.com/cricket/news/12040/13609716/england-test-squad-for-south-africa-uncapped-spinner-liam-patterson-white-called-up-and-jacob-bethell-returns" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.skysports.com/football/news/12040/13610133/gary-neville" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e2.365dm.com/26/11/1920x1080/skysports-man-city-gianluigi-donnarumma_7402053.jpg?20261109114753" alt="" loading="lazy"><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T11:55:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/football/news/12040/13610133/gary-neville" target="_blank" rel="noopener noreferrer">Neville: Is Man City charges spotlight seeping into performances?</a></h3><p>Gary Neville has questioned whether the recent attention over Manchester City being charged by the Premier League has begun to seep into the team&#x27;s performances.</p>
-        <a class="read-more" href="https://www.skysports.com/football/news/12040/13610133/gary-neville" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/rugby-union/articles/ck79p9d3gv2yo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0264/live/512f5240-dc31-11f1-958b-3f65a8ba2dc3.jpg" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T11:44:10+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/rugby-union/articles/ck79p9d3gv2yo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Ireland&#x27;s Jansen ruled out of Fiji and Bok games</a></h3><p>Sean Jansen is ruled out of the remainder of Ireland&#x27;s Nations Championship campaign with a knee injury, further depleting head coach Andy Farrell&#x27;s options at number eight.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/rugby-union/articles/ck79p9d3gv2yo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.skysports.com/football/news/12040/13610080/scottish-premiership-celtic-rangers-lead-the-way-but-are-falkirk-the-surprise-package-as-aberdeen-consider-another-change" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e1.365dm.com/26/11/1920x1080/skysports-scottish-premiership_7401940.jpg?20261109102202" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T11:30:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/football/news/12040/13610080/scottish-premiership-celtic-rangers-lead-the-way-but-are-falkirk-the-surprise-package-as-aberdeen-consider-another-change" target="_blank" rel="noopener noreferrer">Old Firm the top two, but are Falkirk this season&#x27;s surprise package?</a></h3><p>It is as you were at the top of the Scottish Premiership heading into the second international break, but Falkirk&#x27;s incredible rise has taken many by surprise.</p>
-        <a class="read-more" href="https://www.skysports.com/football/news/12040/13610080/scottish-premiership-celtic-rangers-lead-the-way-but-are-falkirk-the-surprise-package-as-aberdeen-consider-another-change" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.theguardian.com/football/2026/nov/09/wsl-talking-points-khadija-shaw-manchester-city-phallon-tullis-joyce" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://i.guim.co.uk/img/media/bf295c07350add58ada1b0ab1859a57908f1c98a/0_0_5000_4000/master/5000.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=a1510b6542a9722d6c9b2aaf643d3ba2" alt="" loading="lazy"><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T11:24:37+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.theguardian.com/football/2026/nov/09/wsl-talking-points-khadija-shaw-manchester-city-phallon-tullis-joyce" target="_blank" rel="noopener noreferrer">WSL talking points: Tullis-Joyce takes charge and is Shaw the perfect striker?</a></h3><p>The City striker hit a WSL hat-trick for the ninth time while Eva Olid’s United have found defensive stability Not only did Khadija “Bunny” Shaw score a record-extending ninth WSL hat-trick, she scored a “perfect hat-trick” for the fourth time in the competition, something nobody else has managed more than once. Against West Ham the Jamaica striker opened the scoring with her left foot, headed home her second off the underside of the crossbar and tucked in her third with her right foot late on. It helped her side towards a 5-0 win that opened up a two-point gap at the top of the table and stretched Shaw’s lead in the race to be the top division’s top scorer to a five-goal advantage over her nearest challenger, Océane Hurtré. Can anybody stop her relentless pursuit of another Golden Boot? It would appear not. Tom Garry Match report: Liverpool 1-2 Arsenal Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/football/2026/nov/09/wsl-talking-points-khadija-shaw-manchester-city-phallon-tullis-joyce" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.skysports.com/watch/video/13610143/kai-havertz-penalty-appeal-did-var-come-to-an-incorrect-decision-in-arsenal-game-against-hull-city" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e1.365dm.com/26/11/1920x1080/skysports-football-havertz_7402044.jpg?20261109113738" alt="" loading="lazy"><span class="category">Football</span><span class="video-badge">VIDEO</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T11:21:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/watch/video/13610143/kai-havertz-penalty-appeal-did-var-come-to-an-incorrect-decision-in-arsenal-game-against-hull-city" target="_blank" rel="noopener noreferrer">Did VAR come to an incorrect decision for Havertz penalty appeal?</a></h3><p>The Ref Watch panel discuss VAR&#x27;s decision to not award Arsenal a penalty against Hull.</p>
-        <a class="read-more" href="https://www.skysports.com/watch/video/13610143/kai-havertz-penalty-appeal-did-var-come-to-an-incorrect-decision-in-arsenal-game-against-hull-city" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.skysports.com/watch/video/13610141/ref-watch-why-didnt-var-look-at-leny-yoros-bad-tackle-on-johan-manzambi" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e1.365dm.com/26/11/1920x1080/skysports-yoro-manzambi-aston-villa_7402039.jpg?20261109113325" alt="" loading="lazy"><span class="category">Other</span><span class="video-badge">VIDEO</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T11:18:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/watch/video/13610141/ref-watch-why-didnt-var-look-at-leny-yoros-bad-tackle-on-johan-manzambi" target="_blank" rel="noopener noreferrer">&#x27;He&#x27;s very fortunate&#x27; - Why didn&#x27;t VAR look at Yoro&#x27;s &#x27;bad tackle&#x27; on Manzambi?</a></h3><p>The Ref Watch panel take a look at Leny Yoro&#x27;s bad tackle on Johan Manzambi and ask why didn&#x27;t VAR look at it?</p>
-        <a class="read-more" href="https://www.skysports.com/watch/video/13610141/ref-watch-why-didnt-var-look-at-leny-yoros-bad-tackle-on-johan-manzambi" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.skysports.com/watch/video/13610140/ref-watch-should-manchester-uniteds-late-equaliser-against-aston-villa-have-been-disallowed-because-of-contact-on-zion-suzuki" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e1.365dm.com/26/11/1920x1080/skysports-ref-watch-dermot_7402024.jpg?20261109111949" alt="" loading="lazy"><span class="category">Other</span><span class="video-badge">VIDEO</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T11:11:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/watch/video/13610140/ref-watch-should-manchester-uniteds-late-equaliser-against-aston-villa-have-been-disallowed-because-of-contact-on-zion-suzuki" target="_blank" rel="noopener noreferrer">&#x27;Should&#x27;ve been ruled out!&#x27; - Did Lammens foul Suzuki for Man Utd&#x27;s late equaliser?</a></h3><p>The Ref Watch panel debate whether or not Manchester United&#x27;s late equaliser against Aston Villa in their 4-4 draw should have been disallowed because of contact on Zion Suzuki.</p>
-        <a class="read-more" href="https://www.skysports.com/watch/video/13610140/ref-watch-should-manchester-uniteds-late-equaliser-against-aston-villa-have-been-disallowed-because-of-contact-on-zion-suzuki" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/football/articles/cw78p8dp0keeo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b3e7/live/0f5454a0-dc2d-11f1-958b-3f65a8ba2dc3.jpg" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T11:01:09+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/football/articles/cw78p8dp0keeo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Musiala may never return to his best - Hoeness</a></h3><p>Bayern Munich honorary president Uli Hoeness questions whether forward Jamal Musiala will ever &quot;regain the performance level he once had&quot;.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/football/articles/cw78p8dp0keeo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.theguardian.com/football/2026/nov/09/football-comes-together-spain-honour-jesus-de-miguel-tenerife" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://i.guim.co.uk/img/media/b446224064a98c05a560cdd81d8b1d688a5e85b6/662_0_6440_5152/master/6440.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e4ff9f19274f20ebc1a253c932894cb6" alt="" loading="lazy"><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T11:00:13+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.theguardian.com/football/2026/nov/09/football-comes-together-spain-honour-jesus-de-miguel-tenerife" target="_blank" rel="noopener noreferrer">Football comes together across Spain to honour Jesús de Miguel: ‘We’ve seen how fragile life is’</a></h3><p>Across La Liga and beyond this weekend, footballers took to the field knowing it could have been them In the final few minutes before stepping into the arena once more, heading out for his 199th Osasuna match on Saturday evening, the man who has scored more first division goals than anyone in their history stopped his teammates for a moment and told them what it meant to wear the shirt. “This is very important,” Ante Budimir began as the dressing room, their sanctuary, fell silent around him. “We don’t have this shirt today for the sake of it. He was not chosen, and nor are we. It could have happened to anyone, anyone. Let us go knowing that we’re grateful to be on the pitch: playing, watching, warming up, sitting on the bench, whatever it may be. Boys, we were not chosen: not us, not him. Let us go, gratefully. Without thought. We have a grand day before us.” With that, Osasuna’s players turned left out of the room, where they were joined in the tunnel by footballers from Athletic Club, rivals from the north, and together they went out past the little shrine of Saint Fermin on to the field. They carried white lilies and all wore the same white shirts with a No 9 on the back, a black ribbon and the name of Jesús de Miguel, the Tenerife striker who died after a collision on the pitch five days earlier at the age of 30. At almost exactly the same time, 2,000km away to the west, Tenerife’s squad were walking out at the Heliodoro Rodríguez López in Santa Cruz. They did not have anyone alongside them, wore black suits not white shirts and did not have a game to play either, not this week. Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/football/2026/nov/09/football-comes-together-spain-honour-jesus-de-miguel-tenerife" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Formula 1">
-      <a class="story-image" href="https://www.skysports.com/f1/news/12040/13610108/oscar-piastri-mclaren-driver-splits-from-mark-webber-management-after-sao-paulo-grand-prix-in-brazil" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e2.365dm.com/26/11/1920x1080/skysports-f1-oscar-piastri_7401995.jpg?20261109105916" alt="" loading="lazy"><span class="category">Formula 1</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T11:00:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/f1/news/12040/13610108/oscar-piastri-mclaren-driver-splits-from-mark-webber-management-after-sao-paulo-grand-prix-in-brazil" target="_blank" rel="noopener noreferrer">Piastri splits from manager Webber</a></h3><p>Oscar Piastri has split from his management team, led by former Red Bull driver and nine-time Formula 1 winner Mark Webber and his partner Ann Webber.</p>
-        <a class="read-more" href="https://www.skysports.com/f1/news/12040/13610108/oscar-piastri-mclaren-driver-splits-from-mark-webber-management-after-sao-paulo-grand-prix-in-brazil" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/boxing/articles/cqkglg1y4jwwo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d850/live/0bf15150-dc1e-11f1-8244-051a160372a2.jpg" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T10:38:17+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/boxing/articles/cqkglg1y4jwwo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Ali weeps as world title dream realised in Texas</a></h3><p>Ramla Ali dedicated her win to her late father as she defeated Mikiah Kreps to become the unified super-bantamweight world champion.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/boxing/articles/cqkglg1y4jwwo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/golf/articles/cqkgkgz7gx21o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a7e2/live/eb1f7b60-dc1c-11f1-8244-051a160372a2.jpg" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T10:19:06+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/golf/articles/cqkgkgz7gx21o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Brown, 19, becomes youngest PGA winner in 95 years</a></h3><p>Teenager Blades Brown beats Ben James at the World Wide Technology Championship in Mexico to become the youngest PGA Tour tournament winner since 1938.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/golf/articles/cqkgkgz7gx21o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/09/donald-trump-dana-white-ufc-midterms-sports-politics" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://i.guim.co.uk/img/media/3a09384ab1da6070107a4577c58b6d6f5e56cc97/509_0_4927_3940/master/4927.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=271b4223b7699e6f2c7f71eb1df66964" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T10:00:06+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.theguardian.com/sport/2026/nov/09/donald-trump-dana-white-ufc-midterms-sports-politics" target="_blank" rel="noopener noreferrer">Trump’s pathetic Dana White gambit could not mask his midterm humiliation | Howard Bryant</a></h3><p>Trump has long relied on sports to project strength and fuel his culture wars. But after a crushing midterm defeat, even his UFC ally cannot distract from the political fallout In the wake of being destroyed in the midterm elections , it was only a matter of time before Donald Trump did something outrageous in an attempt to misdirect public attention away from his catastrophic losses. Before the midterms, published reports suggested the possibility of apocalypse, global or domestic – a nuclear strike on Iran, martial law to suspend last week’s, the invalidation of individual races, such as in Alaska – but Trump opted for banality over Armageddon, offering his vacant press secretary opening to Ultimate Fighting Championship CEO Dana White. It was absurd, and widely posited that a confused Trump had erroneously conflated UFC’s White with the Dana White who made more sense, former Heritage Foundation staffer Dana White. Because the public reactions made him look even more lost, confirming the sentiments of recklessness and disorder, utter chaos and buffoonery that led to the Republicans being routed in the midterm elections, the president said his offer to White was all a joke . As a disciple of the notorious McCarthyite Roy Cohn, who taught Trump one of his main political pillars – never apologize or admit wrongdoing. Ever. – Trump should not, of course, be taken at his word. Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/09/donald-trump-dana-white-ufc-midterms-sports-politics" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.skysports.com/cricket/news/12040/13610084/australia-sandpapergate-david-warner-backs-usman-khawajas-claim-entire-team-knew-about-2018-ball-tampering-plan-in-south-africa" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e0.365dm.com/26/11/1920x1080/skysports-david-warner-usman-khawaja_7401929.jpg?20261109101138" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T09:45:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/cricket/news/12040/13610084/australia-sandpapergate-david-warner-backs-usman-khawajas-claim-entire-team-knew-about-2018-ball-tampering-plan-in-south-africa" target="_blank" rel="noopener noreferrer">Warner: Khawaja&#x27;s Australia Sandpapergate claims &#x27;100 per cent accurate&#x27;</a></h3><p>David Warner has thrown his full support behind former Australia opener Usman Khawaja, who claimed that the side&#x27;s entire dressing room knew about the ball-tampering scheme in Cape Town in 2018.</p>
-        <a class="read-more" href="https://www.skysports.com/cricket/news/12040/13610084/australia-sandpapergate-david-warner-backs-usman-khawajas-claim-entire-team-knew-about-2018-ball-tampering-plan-in-south-africa" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Rugby">
-      <a class="story-image" href="https://www.skysports.com/rugby-league/news/12040/13610092/rugby-league-world-cup-england-wheelchair-ready-for-australia-showdown-as-defence-on-line-in-semi-finals" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e0.365dm.com/26/11/1920x1080/skysports-rugby-league-world-cup_7402047.jpg?20261109114219" alt="" loading="lazy"><span class="category">Rugby</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T09:38:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/rugby-league/news/12040/13610092/rugby-league-world-cup-england-wheelchair-ready-for-australia-showdown-as-defence-on-line-in-semi-finals" target="_blank" rel="noopener noreferrer">England Wheelchair ready for Australia showdown in RLWC semis</a></h3><p>If England Wheelchair want to continue the defence of their Rugby League World Cup title, the task is simple: defeat Australia in the semi-finals in their own backyard.</p>
-        <a class="read-more" href="https://www.skysports.com/rugby-league/news/12040/13610092/rugby-league-world-cup-england-wheelchair-ready-for-australia-showdown-as-defence-on-line-in-semi-finals" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.skysports.com/watch/video/13610085/ramla-ali-vs-mikiah-kreps-fight-highlights" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e0.365dm.com/26/11/1920x1080/skysports-ali-kreps_7401874.jpg?20261109092725" alt="" loading="lazy"><span class="category">Other</span><span class="video-badge">VIDEO</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T09:23:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/watch/video/13610085/ramla-ali-vs-mikiah-kreps-fight-highlights" target="_blank" rel="noopener noreferrer">Ali lands big knockdown on route to WBO, IBF world title win!</a></h3><p>Highlights of the WBO and IBF super-bantamweight world title fight between Ramla Ali and Mikiah Kreps.</p>
-        <a class="read-more" href="https://www.skysports.com/watch/video/13610085/ramla-ali-vs-mikiah-kreps-fight-highlights" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.bbc.co.uk/sport/cricket/articles/c5wyry9gmz4ko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/50c9/live/d36d8f80-dc16-11f1-a631-078d47c5aafb.jpg" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>BBC Sport</span><time datetime="2026-11-09T09:21:09+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.bbc.co.uk/sport/cricket/articles/c5wyry9gmz4ko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Khawaja 100% accurate on ball-tampering - Warner</a></h3><p>David Warner says he throws his &quot;full support&quot; behind former team-mate Usman Khawaja following his claim that all the Australia players knew about ball-tampering.</p>
-        <a class="read-more" href="https://www.bbc.co.uk/sport/cricket/articles/c5wyry9gmz4ko?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Cricket">
-      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/09/australia-face-fresh-questions-usman-khawaja-autobiography-ball-tampering-ntwnfb" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://i.guim.co.uk/img/media/2d4cdd2155a2465747bb26f7b6ace416e61bdf36/284_0_2840_2272/master/2840.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=ea2bb39d910b45ae2ca4801666495ef2" alt="" loading="lazy"><span class="category">Cricket</span></a>
-      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T09:08:08+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.theguardian.com/sport/2026/nov/09/australia-face-fresh-questions-usman-khawaja-autobiography-ball-tampering-ntwnfb" target="_blank" rel="noopener noreferrer">‘100% accurate’: Warner backs Khawaja over explosive ball-tampering claims</a></h3><p>Former vice-captain breaks his eight-year silence Test captain Pat Cummins is expected to face questioning this week David Warner has broken his eight-year silence and says it is “100% accurate” that every player knew of the sandpaper plot, giving “full support” to Usman Khawaja. The former vice-captain of the Test team also claimed Cricket Australia’s investigation was “rushed and botched”, as he backed his former teammate’s account in a social media video shared on Monday evening. Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/09/australia-face-fresh-questions-usman-khawaja-autobiography-ball-tampering-ntwnfb" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Football">
-      <a class="story-image" href="https://www.theguardian.com/sport/2026/nov/09/joe-burrow-bengals-nfl-mvp-race-frontrunners" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://i.guim.co.uk/img/media/ad1b7c3e393b16c97ddc4e7ca94ff77139b16751/1314_0_6749_5403/master/6749.jpg?width=140&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=6d820d1b6d1505aad88c72805ea80217" alt="" loading="lazy"><span class="category">Football</span></a>
-      <div class="story-body"><div class="story-meta"><span>The Guardian</span><time datetime="2026-11-09T09:00:04+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.theguardian.com/sport/2026/nov/09/joe-burrow-bengals-nfl-mvp-race-frontrunners" target="_blank" rel="noopener noreferrer">Joe Burrow is reviving the Bengals and pulling away in the race for MVP</a></h3><p>The quarterback has led Cincinnati to four straight wins with stat lines that put him in the company of Tom Brady. At this rate, the trophy seems his to lose At the end of the 2021 season, the Cincinnati Bengals came up three points short in Super Bowl LVI against the Los Angeles Rams. Near the end of the 2022 season, the Bengals came up three points short – a 23-20 score line again in the AFC championship game against the Kansas City Chiefs. But from 2023 through 2025, those Bengals had to walk the desert for a while. Between injuries to quarterback Joe Burrow, an offensive line that was problematic at best, and one of the NFL’s worst defenses from year to year, Cincinnati had a combined regular-season record of 24-27, and no playoff appearances. Now, the new Bengals are 6-2 after their 34-17 shellacking of the Atlanta Falcons on Sunday at the Santiago Bernabéu stadium in Madrid. And Burrow is on a tear we’ve rarely seen from any quarterback. Over the last four weeks, his 16 touchdown passes is the most in a four-game span in Bengals history (which goes back to 1968). He is the second quarterback in pro football history with 16 or more passing touchdowns and two or more rushing touchdowns in any four-game span, putting him up with Tom Brady in 2007 – the season in which the New England Patriots’ offense scored 36.8 points per game, and Brady was at his best. Burrow has been pressured on just 30.2% of his dropbacks this season, as opposed to 33.8% in 2025 and 34.2% in 2024. Continue reading...</p>
-        <a class="read-more" href="https://www.theguardian.com/sport/2026/nov/09/joe-burrow-bengals-nfl-mvp-race-frontrunners" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-<article class="story-card" data-category="Other">
-      <a class="story-image" href="https://www.skysports.com/golf/news/12040/13610074/wtgl-los-angeles-golf-club-make-history-by-winning-inaugural-match-against-new-york-at-sofi-center" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="https://e2.365dm.com/26/11/1920x1080/skysports-michelle-wie-west_7401845.jpg?20261109093907" alt="" loading="lazy"><span class="category">Other</span></a>
-      <div class="story-body"><div class="story-meta"><span>Sky Sports</span><time datetime="2026-11-09T08:57:00+00:00">09 Nov 2026</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
-        <h3><a href="https://www.skysports.com/golf/news/12040/13610074/wtgl-los-angeles-golf-club-make-history-by-winning-inaugural-match-against-new-york-at-sofi-center" target="_blank" rel="noopener noreferrer">Los Angeles Golf Club make history by winning inaugural WTGL match</a></h3><p>Los Angeles Golf Club sealed a 3-1 victory over New York in an historic first WTGL match at SoFi Center.</p>
-        <a class="read-more" href="https://www.skysports.com/golf/news/12040/13610074/wtgl-los-angeles-golf-club-make-history-by-winning-inaugural-match-against-new-york-at-sofi-center" target="_blank" rel="noopener noreferrer">Read story <span aria-hidden="true">↗</span></a>
-      </div>
-    </article><p class="empty-state" id="empty-state" hidden>No headlines are available. Please check back after the next source update.</p></div>
-    <section class="content-section" id="videos"><div class="section-title"><div><h2>Video highlights</h2><p>Watch on the publisher’s site</p></div></div><div class="video-grid"><article class="video-card"><a class="video-cover" href="https://www.bbc.co.uk/sport/american-football/videos/c60mem12x7zyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ee3c/live/4cf232e0-dc33-11f1-b441-2b33b063138f.jpg" alt="" loading="lazy"><span class="play-button" aria-hidden="true">▶</span></a>
-      <div class="video-info"><span>BBC Sport · VIDEO</span><h3><a href="https://www.bbc.co.uk/sport/american-football/videos/c60mem12x7zyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">&#x27;Spectacular&#x27; catches and toe-tapping skills - NFL best plays</a></h3><a class="read-more" href="https://www.bbc.co.uk/sport/american-football/videos/c60mem12x7zyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Watch on BBC Sport ↗</a></div>
-    </article>
-<article class="video-card"><a class="video-cover" href="https://www.skysports.com/watch/video/13610143/kai-havertz-penalty-appeal-did-var-come-to-an-incorrect-decision-in-arsenal-game-against-hull-city" target="_blank" rel="noopener noreferrer"><img src="https://e1.365dm.com/26/11/1920x1080/skysports-football-havertz_7402044.jpg?20261109113738" alt="" loading="lazy"><span class="play-button" aria-hidden="true">▶</span></a>
-      <div class="video-info"><span>Sky Sports · VIDEO</span><h3><a href="https://www.skysports.com/watch/video/13610143/kai-havertz-penalty-appeal-did-var-come-to-an-incorrect-decision-in-arsenal-game-against-hull-city" target="_blank" rel="noopener noreferrer">Did VAR come to an incorrect decision for Havertz penalty appeal?</a></h3><a class="read-more" href="https://www.skysports.com/watch/video/13610143/kai-havertz-penalty-appeal-did-var-come-to-an-incorrect-decision-in-arsenal-game-against-hull-city" target="_blank" rel="noopener noreferrer">Watch on Sky Sports ↗</a></div>
-    </article>
-<article class="video-card"><a class="video-cover" href="https://www.skysports.com/watch/video/13610141/ref-watch-why-didnt-var-look-at-leny-yoros-bad-tackle-on-johan-manzambi" target="_blank" rel="noopener noreferrer"><img src="https://e1.365dm.com/26/11/1920x1080/skysports-yoro-manzambi-aston-villa_7402039.jpg?20261109113325" alt="" loading="lazy"><span class="play-button" aria-hidden="true">▶</span></a>
-      <div class="video-info"><span>Sky Sports · VIDEO</span><h3><a href="https://www.skysports.com/watch/video/13610141/ref-watch-why-didnt-var-look-at-leny-yoros-bad-tackle-on-johan-manzambi" target="_blank" rel="noopener noreferrer">&#x27;He&#x27;s very fortunate&#x27; - Why didn&#x27;t VAR look at Yoro&#x27;s &#x27;bad tackle&#x27; on Manzambi?</a></h3><a class="read-more" href="https://www.skysports.com/watch/video/13610141/ref-watch-why-didnt-var-look-at-leny-yoros-bad-tackle-on-johan-manzambi" target="_blank" rel="noopener noreferrer">Watch on Sky Sports ↗</a></div>
-    </article>
-<article class="video-card"><a class="video-cover" href="https://www.skysports.com/watch/video/13610140/ref-watch-should-manchester-uniteds-late-equaliser-against-aston-villa-have-been-disallowed-because-of-contact-on-zion-suzuki" target="_blank" rel="noopener noreferrer"><img src="https://e1.365dm.com/26/11/1920x1080/skysports-ref-watch-dermot_7402024.jpg?20261109111949" alt="" loading="lazy"><span class="play-button" aria-hidden="true">▶</span></a>
-      <div class="video-info"><span>Sky Sports · VIDEO</span><h3><a href="https://www.skysports.com/watch/video/13610140/ref-watch-should-manchester-uniteds-late-equaliser-against-aston-villa-have-been-disallowed-because-of-contact-on-zion-suzuki" target="_blank" rel="noopener noreferrer">&#x27;Should&#x27;ve been ruled out!&#x27; - Did Lammens foul Suzuki for Man Utd&#x27;s late equaliser?</a></h3><a class="read-more" href="https://www.skysports.com/watch/video/13610140/ref-watch-should-manchester-uniteds-late-equaliser-against-aston-villa-have-been-disallowed-because-of-contact-on-zion-suzuki" target="_blank" rel="noopener noreferrer">Watch on Sky Sports ↗</a></div>
-    </article>
-<article class="video-card"><a class="video-cover" href="https://www.skysports.com/watch/video/13610085/ramla-ali-vs-mikiah-kreps-fight-highlights" target="_blank" rel="noopener noreferrer"><img src="https://e0.365dm.com/26/11/1920x1080/skysports-ali-kreps_7401874.jpg?20261109092725" alt="" loading="lazy"><span class="play-button" aria-hidden="true">▶</span></a>
-      <div class="video-info"><span>Sky Sports · VIDEO</span><h3><a href="https://www.skysports.com/watch/video/13610085/ramla-ali-vs-mikiah-kreps-fight-highlights" target="_blank" rel="noopener noreferrer">Ali lands big knockdown on route to WBO, IBF world title win!</a></h3><a class="read-more" href="https://www.skysports.com/watch/video/13610085/ramla-ali-vs-mikiah-kreps-fight-highlights" target="_blank" rel="noopener noreferrer">Watch on Sky Sports ↗</a></div>
+    </article><p class="empty-state" id="empty-state" hidden>No stories found. Try a different search or filter.</p></div>
+    <section class="content-section" id="videos"><div class="section-title"><div><h2>Video highlights</h2><p>Inline playback when publishers provide a video file; otherwise watch at source</p></div></div><div class="video-grid"><article class="video-card"><a class="video-cover" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer"><span class="video-placeholder" aria-hidden="true">▶</span><span class="play-button" aria-hidden="true">▶</span></a>
+      <div class="video-info"><span>The Guardian · VIDEO</span><h3><a href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer">Could Old Trafford chaos keep Michael Carrick in the job? Football Weekly – video</a></h3><a class="read-more" href="https://www.theguardian.com/football/video/2026/nov/09/could-old-trafford-chaos-keep-michael-carrick-in-the-job-football-weekly-video" target="_blank" rel="noopener noreferrer">Watch on The Guardian ↗</a></div>
     </article></div></section>
     <section class="content-section" id="fixtures"><div class="section-title"><div><h2>Upcoming fixtures</h2><p>Public scoreboard data · Next 14 days · Times shown in UTC</p></div></div>
       <div class="schedule-wrap"><div class="schedule-grid"><article class="fixture-card" data-sport="Tennis">
@@ -323,17 +365,106 @@ footer{border-top:1px solid var(--line);padding:22px 0 32px;color:var(--muted);f
       <div class="fixture-match"><strong class="event-name">Heineken Las Vegas Grand Prix</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-20T00:30:00+00:00">Fri, 20 Nov · 00:30 UTC</time><a href="https://www.espn.com/f1/race/_/id/600057449" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-match"><strong>Athletic Club</strong><span class="versus">VS</span><strong>Espanyol</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-20T20:00:00+00:00">Fri, 20 Nov · 20:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882805/espanyol-athletic-club" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-match"><strong>Manchester City</strong><span class="versus">VS</span><strong>Fulham</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T12:30:00+00:00">Sat, 21 Nov · 12:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879233/fulham-manchester-city" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-match"><strong>Alavés</strong><span class="versus">VS</span><strong>Deportivo</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T13:00:00+00:00">Sat, 21 Nov · 13:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882806/deportivo-alaves" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-match"><strong>AFC Bournemouth</strong><span class="versus">VS</span><strong>Nottingham Forest</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879238/nottingham-forest-afc-bournemouth" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-match"><strong>Aston Villa</strong><span class="versus">VS</span><strong>Sunderland</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401878756/sunderland-aston-villa" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-match"><strong>Chelsea</strong><span class="versus">VS</span><strong>Leeds United</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879236/leeds-united-chelsea" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-match"><strong>Coventry City</strong><span class="versus">VS</span><strong>Crystal Palace</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879235/crystal-palace-coventry-city" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-match"><strong>Tottenham Hotspur</strong><span class="versus">VS</span><strong>Ipswich Town</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T15:00:00+00:00">Sat, 21 Nov · 15:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401878754/ipswich-town-tottenham-hotspur" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-match"><strong>Rayo Vallecano</strong><span class="versus">VS</span><strong>Valencia</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T15:15:00+00:00">Sat, 21 Nov · 15:15 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882799/valencia-rayo-vallecano" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-match"><strong>Newcastle United</strong><span class="versus">VS</span><strong>Arsenal</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T17:30:00+00:00">Sat, 21 Nov · 17:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879232/arsenal-newcastle-united" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-match"><strong>Sevilla</strong><span class="versus">VS</span><strong>Real Betis</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T17:30:00+00:00">Sat, 21 Nov · 17:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882797/real-betis-sevilla" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-match"><strong>Real Madrid</strong><span class="versus">VS</span><strong>Celta Vigo</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-21T20:00:00+00:00">Sat, 21 Nov · 20:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882798/celta-vigo-real-madrid" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-match"><strong>Barcelona</strong><span class="versus">VS</span><strong>Villarreal</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T13:00:00+00:00">Sun, 22 Nov · 13:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882804/villarreal-barcelona" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-match"><strong>Hull City</strong><span class="versus">VS</span><strong>Brighton &amp; Hove Albion</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T14:00:00+00:00">Sun, 22 Nov · 14:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401879234/brighton-hove-albion-hull-city" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-match"><strong>Racing Santander</strong><span class="versus">VS</span><strong>Real Sociedad</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T15:15:00+00:00">Sun, 22 Nov · 15:15 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882800/real-sociedad-racing-santander" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>Premier League</span></div>
+      <div class="fixture-match"><strong>Liverpool</strong><span class="versus">VS</span><strong>Manchester United</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T16:30:00+00:00">Sun, 22 Nov · 16:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401878755/manchester-united-liverpool" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-match"><strong>Osasuna</strong><span class="versus">VS</span><strong>Málaga</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T17:30:00+00:00">Sun, 22 Nov · 17:30 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882801/malaga-osasuna" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
+<article class="fixture-card" data-sport="Football">
+      <div class="fixture-meta"><span>Football</span><span>La Liga</span></div>
+      <div class="fixture-match"><strong>Getafe</strong><span class="versus">VS</span><strong>Atlético Madrid</strong></div>
+      <div class="fixture-footer"><time datetime="2026-11-22T20:00:00+00:00">Sun, 22 Nov · 20:00 UTC</time><a href="https://www.espn.com/soccer/match/_/gameId/401882803/atletico-madrid-getafe" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
+    </article>
 <article class="fixture-card" data-sport="Tennis">
       <div class="fixture-meta"><span>Tennis</span><span>WTA</span></div>
       <div class="fixture-match"><strong class="event-name">IEB+ Argentina Open</strong></div>
       <div class="fixture-footer"><time datetime="2026-11-23T05:00:00+00:00">Mon, 23 Nov · 05:00 UTC</time><a href="https://www.espn.com/tennis/scoreboard/tournament/_/eventId/867-2026/competitionType/2" target="_blank" rel="noopener noreferrer">ESPN ↗</a></div>
     </article>
-<article class="schedule-empty"><strong>Football</strong><span>Public fixture feed unavailable right now.</span></article>
 <article class="schedule-empty"><strong>Cricket</strong><span>Public fixture feed unavailable right now.</span></article>
 <article class="schedule-empty"><strong>Rugby</strong><span>Public fixture feed unavailable right now.</span></article></div><p class="schedule-note">Some sports do not have a currently available public schedule feed. Fixtures are supplied by ESPN’s public scoreboard feeds. Availability can vary by sport and competition.</p></div>
     </section>
   </main>
-  <footer><div class="wrap">Skysport · Headlines and videos link to their publishers. Fixture data: ESPN public scoreboards.</div></footer>
+  <footer><div class="wrap">Skysport · Headlines link to their publishers. Videos play here only when a publisher provides a direct video file; otherwise they open at source. Fixture data: ESPN public scoreboards.</div></footer>
   <script>
     (() => {
       const filters = [...document.querySelectorAll('.filter')];
@@ -380,12 +511,12 @@ footer{border-top:1px solid var(--line);padding:22px 0 32px;color:var(--muted);f
       }));
       search.addEventListener('input', updateCards);
       try {
-        if (localStorage.getItem('skysport-theme') === 'light') document.documentElement.classList.add('light');
+        if (localStorage.getItem('skysport-theme') === 'dark') document.documentElement.classList.add('dark');
       } catch {}
       themeButton.addEventListener('click', () => {
-        const light = document.documentElement.classList.toggle('light');
-        themeButton.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
-        try { localStorage.setItem('skysport-theme', light ? 'light' : 'dark'); } catch {}
+        const dark = document.documentElement.classList.toggle('dark');
+        themeButton.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+        try { localStorage.setItem('skysport-theme', dark ? 'dark' : 'light'); } catch {}
       });
     })();
   </script>
