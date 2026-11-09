@@ -2,7 +2,7 @@ name: Auto Update RSS News
 
 on:
   schedule:
-    - cron: '0 * * * *' # Kithddam kola sa3a otomatiqan
+    - cron: '*/15 * * * *' # Refresh news and live scoreboards every 15 minutes.
   workflow_dispatch:      # Bach t9ad tkhddmo b yddk wqtma bghiti
 
 permissions:
