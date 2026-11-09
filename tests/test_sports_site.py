@@ -36,6 +36,52 @@ class SportsSiteTests(unittest.TestCase):
 
         self.assertEqual(story["url"], feed.homepage)
 
+    def test_category_uses_publisher_path_for_more_sports(self):
+        self.assertEqual(
+            sports_site.category_for("NFL best plays", "", "https://www.bbc.co.uk/sport/american-football/videos/clip"),
+            "American Football",
+        )
+        self.assertEqual(sports_site.category_for("Open Championship", "", "https://www.bbc.co.uk/sport/golf/story"), "Golf")
+        self.assertEqual(sports_site.category_for("World title fight", "", "https://www.skysports.com/boxing/news/story"), "Boxing & MMA")
+
+    def test_collect_stories_merges_cross_source_near_duplicates(self):
+        bbc, sky = sports_site.NEWS_FEEDS[0], sports_site.NEWS_FEEDS[3]
+        payloads = {
+            bbc.url: b"""<rss><channel><item><title>Alisson wants to sign new Liverpool contract</title>
+              <description>Liverpool goalkeeper Alisson wants to stay at the club.</description>
+              <link>https://www.bbc.co.uk/sport/football/articles/alisson-contract</link>
+              <pubDate>Mon, 09 Nov 2026 10:00:00 GMT</pubDate></item></channel></rss>""",
+            sky.url: b"""<rss><channel><item><title>My will is to stay - Alisson wants new Liverpool contract</title>
+              <description>The Liverpool goalkeeper wants a new deal.</description>
+              <link>https://www.skysports.com/football/news/alisson-contract</link>
+              <pubDate>Mon, 09 Nov 2026 11:00:00 GMT</pubDate></item></channel></rss>""",
+        }
+
+        stories, _, _ = sports_site.collect_stories(lambda url: payloads[url], (bbc, sky))
+
+        self.assertEqual(len(stories), 1)
+        self.assertEqual(stories[0]["source"], "Sky Sports")
+        self.assertEqual(stories[0]["coverage"], [{
+            "name": "BBC Sport",
+            "url": "https://www.bbc.co.uk/sport/football/articles/alisson-contract",
+        }])
+        self.assertIn("BBC Sport", sports_site.render_story(stories[0]))
+
+    def test_parse_feed_embeds_only_publisher_hosted_mp4(self):
+        feed = sports_site.NEWS_FEEDS[0]
+        trusted = b"""<rss><channel><item><title>Official highlight video</title>
+          <link>https://www.bbc.co.uk/sport/football/videos/clip</link>
+          <enclosure url="https://cdn.bbci.co.uk/sport/clip.mp4" type="video/mp4"/>
+        </item></channel></rss>"""
+        untrusted = trusted.replace(b"https://cdn.bbci.co.uk/sport/clip.mp4", b"https://media.example/clip.mp4")
+
+        story = sports_site.parse_feed(trusted, feed)[0]
+        unsafe_story = sports_site.parse_feed(untrusted, feed)[0]
+
+        self.assertEqual(story["video_url"], "https://cdn.bbci.co.uk/sport/clip.mp4")
+        self.assertIn("<video controls", sports_site.render_video(story))
+        self.assertEqual(unsafe_story["video_url"], "")
+
     def test_collect_stories_keeps_successful_sources_when_one_fails(self):
         good_feed = sports_site.NEWS_FEEDS[0]
         bad_feed = sports_site.NEWS_FEEDS[1]
@@ -121,6 +167,47 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn("North FC", markup)
         self.assertIn("Public fixture feed unavailable right now.", markup)
 
+    def test_collect_fixtures_queries_month_and_filters_to_window(self):
+        now = datetime(2026, 11, 9, 12, tzinfo=timezone.utc)
+        feed = sports_site.FixtureFeed("Football", "Premier League", "soccer/eng.1")
+        requested = []
+        upcoming = {
+            "id": "future",
+            "date": (now + timedelta(days=2)).isoformat(),
+            "name": "North FC vs South FC",
+        }
+        outside_window = {
+            "id": "later",
+            "date": (now + timedelta(days=20)).isoformat(),
+            "name": "Later match",
+        }
+
+        def fetcher(url):
+            requested.append(url)
+            return json.dumps({"events": [upcoming, outside_window]}).encode()
+
+        fixtures, available, failures = sports_site.collect_fixtures(fetcher, (feed,), now)
+
+        self.assertIn("dates=202611", requested[0])
+        self.assertEqual([fixture["id"] for fixture in fixtures], ["future"])
+        self.assertEqual(available, {"Football"})
+        self.assertEqual(failures, [])
+
+    def test_collect_fixtures_queries_both_months_for_cross_month_window(self):
+        now = datetime(2026, 11, 25, 12, tzinfo=timezone.utc)
+        feed = sports_site.FixtureFeed("Football", "Premier League", "soccer/eng.1")
+        requested = []
+
+        def fetcher(url):
+            requested.append(url)
+            return b'{"events":[]}'
+
+        sports_site.collect_fixtures(fetcher, (feed,), now)
+
+        self.assertEqual(len(requested), 2)
+        self.assertIn("dates=202611", requested[0])
+        self.assertIn("dates=202612", requested[1])
+
     def test_build_page_escapes_dynamic_labels_and_includes_sections(self):
         page = sports_site.build_page(
             '<article class="story-card"><h3>Story</h3></article>',
@@ -135,6 +222,10 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn('id="videos"', page)
         self.assertIn('id="fixtures"', page)
         self.assertIn("No video items were available", page)
+        self.assertIn('data-filter="American Football"', page)
+        self.assertIn('href="#fixtures"', page)
+        self.assertIn('class="mobile-nav"', page)
+        self.assertIn("position:fixed;z-index:30", page)
         self.assertNotIn("@@STYLE@@", page)
 
     def test_read_cached_news_preserves_refresh_time(self):
