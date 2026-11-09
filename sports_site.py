@@ -72,8 +72,8 @@ NEWS_CATEGORIES = (
 
 TRANSLATIONS = {
     "en": {
-        "title": "Skysport — Sports news, video & live scores",
-        "metaDescription": "Global sports news from trusted publishers, with video highlights, live scores and upcoming fixtures. Follow football, basketball, tennis, Formula 1 and more.",
+        "title": "SkySport | Sports News, Live Scores & Fixtures",
+        "metaDescription": "Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.",
         "language": "Select language",
         "news": "News",
         "videos": "Videos",
@@ -120,8 +120,8 @@ TRANSLATIONS = {
         "sports": {"Football": "Football", "Tennis": "Tennis", "Formula 1": "Formula 1", "Basketball": "Basketball", "American Football": "American Football", "Ice Hockey": "Ice Hockey", "Cricket": "Cricket", "Rugby": "Rugby"},
     },
     "fr": {
-        "title": "Skysport — Actualités sportives, vidéos et scores en direct",
-        "metaDescription": "Actualités sportives du monde entier, vidéos, scores en direct et calendrier des matchs issus de médias fiables.",
+        "title": "SkySport — Actualités sportives, scores et calendrier",
+        "metaDescription": "Les dernières actualités du football, du basketball, du tennis et de la Formule 1, avec vidéos, scores en direct et calendrier.",
         "language": "Choisir la langue",
         "news": "Actualités",
         "videos": "Vidéos",
@@ -168,8 +168,8 @@ TRANSLATIONS = {
         "sports": {"Football": "Football", "Tennis": "Tennis", "Formula 1": "Formule 1", "Basketball": "Basket-ball", "American Football": "Football américain", "Ice Hockey": "Hockey sur glace", "Cricket": "Cricket", "Rugby": "Rugby"},
     },
     "ar": {
-        "title": "سكاي سبورت — أخبار الرياضة والفيديو والنتائج المباشرة",
-        "metaDescription": "أخبار رياضية عالمية من مصادر موثوقة، مع فيديوهات ونتائج مباشرة ومواعيد المباريات.",
+        "title": "سكاي سبورت | أخبار الرياضة والنتائج والمباريات",
+        "metaDescription": "آخر أخبار كرة القدم والسلة والتنس والفورمولا 1، مع فيديوهات ونتائج مباشرة ومواعيد المباريات من مصادر رياضية موثوقة.",
         "language": "اختيار اللغة",
         "news": "الأخبار",
         "videos": "الفيديوهات",
@@ -951,8 +951,27 @@ footer{background:var(--surface);border-color:var(--line)}
 """
 
 
-def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, fixture_status, live_html=""):
+def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, fixture_status, live_html="", stories=None):
     source_count = 0 if news_sources == "No RSS source available" else len(news_sources.split(", "))
+    story_list_schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Latest sports news",
+        "numberOfItems": sum(
+            1 for story in stories or [] if story.get("url", "").startswith("https://")
+        ),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": position,
+                "name": story["title"],
+                "url": story["url"],
+            }
+            for position, story in enumerate(stories or [], start=1)
+            if story.get("url", "").startswith("https://")
+        ],
+    }
+    story_list_json = json.dumps(story_list_schema, ensure_ascii=False).replace("<", "\\u003c")
     story_cards = re.findall(r'<article\b[^>]*class="story-card"[^>]*>.*?</article>', stories_html, re.DOTALL)
     if story_cards:
         featured_index = next(
@@ -979,20 +998,24 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Global sports news from trusted publishers, with video highlights, live scores and upcoming fixtures. Follow football, basketball, tennis, Formula 1 and more.">
+  <meta name="description" content="Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="@@SITE_URL@@">
   <meta property="og:type" content="website"><meta property="og:site_name" content="SkySport">
   <meta property="og:url" content="@@SITE_URL@@">
-  <meta property="og:title" content="SkySport | Global Sports News, Live Scores &amp; Fixtures">
-  <meta property="og:description" content="Global sports news from trusted publishers, with video highlights, live scores and upcoming fixtures.">
+  <meta property="og:title" content="SkySport | Sports News, Live Scores &amp; Fixtures">
+  <meta property="og:description" content="Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta property="og:image:alt" content="Football match under stadium lights">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SkySport | Global Sports News, Live Scores &amp; Fixtures">
-  <meta name="twitter:description" content="Sports news, video highlights, verified live scores and upcoming fixtures from trusted publishers.">
-  <meta name="theme-color" content="#081321"><title>SkySport | Global Sports News, Live Scores &amp; Fixtures</title>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SkySport","url":"@@SITE_URL@@","description":"Global sports news from trusted publishers, with video highlights, live scores and upcoming fixtures.","inLanguage":["en","fr","ar"],"publisher":{"@type":"Organization","name":"SkySport","url":"@@SITE_URL@@"}}</script>
+  <meta name="twitter:title" content="SkySport | Sports News, Live Scores &amp; Fixtures">
+  <meta name="twitter:description" content="Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta name="twitter:image:alt" content="Football match under stadium lights">
+  <meta name="theme-color" content="#081321"><title>SkySport | Sports News, Live Scores &amp; Fixtures</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SkySport","url":"@@SITE_URL@@","description":"Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.","inLanguage":["en","fr","ar"],"publisher":{"@type":"Organization","name":"SkySport","url":"@@SITE_URL@@"}}</script>
 @@STYLE@@
+  <script type="application/ld+json">@@STORY_LIST_SCHEMA@@</script>
 </head>
 <body>
   <header class="masthead"><div class="wrap">
@@ -1127,6 +1150,7 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
     replacements = {
         "@@SITE_URL@@": html.escape(SITE_URL, quote=True),
         "@@STYLE@@": STYLE,
+        "@@STORY_LIST_SCHEMA@@": story_list_json,
         "@@UPDATED@@": html.escape(updated),
         "@@NEWS_SOURCES@@": html.escape(news_sources),
         "@@SOURCE_COUNT@@": f"{source_count:02d}",
@@ -1206,6 +1230,7 @@ def main():
         source_label,
         fixture_status,
         render_live(live_fixtures),
+        stories,
     )
     with open("index.html", "w", encoding="utf-8") as output:
         output.write(page)

@@ -369,6 +369,7 @@ class SportsSiteTests(unittest.TestCase):
             "Today",
             "<publisher>, BBC Sport, beIN SPORTS, ESPN, The Guardian",
             "Status",
+            stories=[{"title": "Verified football story", "url": "https://publisher.example/football-story"}],
         )
 
         self.assertIn("&lt;publisher&gt;", page)
@@ -398,6 +399,16 @@ class SportsSiteTests(unittest.TestCase):
             r'<script type="application/ld\+json">(.*?)</script>', page
         )
         self.assertEqual(json.loads(structured_data.group(1))["@type"], "WebSite")
+        structured_blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', page)
+        story_list = json.loads(structured_blocks[1])
+        self.assertEqual(story_list["@type"], "ItemList")
+        self.assertEqual(story_list["numberOfItems"], 1)
+        self.assertEqual(story_list["itemListElement"][0]["name"], "Verified football story")
+        self.assertEqual(
+            story_list["itemListElement"][0]["url"],
+            "https://publisher.example/football-story",
+        )
+        self.assertIn('name="twitter:image:alt"', page)
         self.assertIn('class="story-card lead-story"', page)
         self.assertIn('loading="eager" fetchpriority="high"', page)
         self.assertIn('class="story-card latest-story"', page)
@@ -433,6 +444,9 @@ class SportsSiteTests(unittest.TestCase):
             [node.text for node in sitemap.findall("s:url/s:loc", namespace)],
             [sports_site.SITE_URL],
         )
+        robots = (root / "robots.txt").read_text(encoding="utf-8")
+        self.assertIn("Allow: /", robots)
+        self.assertIn(f"Sitemap: {sports_site.SITE_URL}sitemap.xml", robots)
 
 
 if __name__ == "__main__":
