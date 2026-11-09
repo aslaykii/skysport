@@ -55,6 +55,13 @@ FIXTURE_FEEDS = (
     FixtureFeed("Rugby", "Rugby union", "rugby/union"),
 )
 SPORTS = ("Football", "Tennis", "Formula 1", "Basketball", "American Football", "Ice Hockey", "Cricket", "Rugby")
+ESPN_NEWS_PATHS = {
+    "Football": "soccer/eng.1",
+    "Basketball": "basketball/nba",
+    "Formula 1": "racing/f1",
+    "American Football": "football/nfl",
+    "Ice Hockey": "hockey/nhl",
+}
 NEWS_CATEGORIES = (
     "Football", "Tennis", "Formula 1", "Cricket", "Rugby",
     "Basketball", "American Football", "Ice Hockey", "Golf", "Boxing & MMA", "Other",
@@ -241,6 +248,13 @@ def safe_feed_link(value, feed):
     return feed.homepage
 
 
+def image_source_url(value):
+    parsed = urlparse(value)
+    if parsed.hostname == "ichef.bbci.co.uk":
+        return re.sub(r"(/standard/)\d+/", r"\g<1>1024/", value, count=1)
+    return value
+
+
 def category_for(title, description, url=""):
     text = f"{title} {description} {url}".lower()
     keywords = {
@@ -298,21 +312,37 @@ def parse_story(item, feed):
         link = atom_link.get("href", "") if atom_link is not None else ""
 
     image = ""
+    image_candidates = []
     video_url = ""
     is_video = "/video" in urlparse(link).path.lower()
     for element in item.iter():
-        if local_name(element) in ("thumbnail", "content"):
+        element_name = local_name(element)
+        if element_name in ("thumbnail", "content"):
             media_url = element.get("url", "")
             media_type = element.get("type", "").lower()
             medium = element.get("medium", "").lower()
+            image_path = urlparse(media_url).path.lower()
+            is_image = (
+                element_name == "thumbnail"
+                or medium == "image"
+                or media_type.startswith("image/")
+                or (
+                    element_name == "content"
+                    and image_path.endswith((".jpg", ".jpeg", ".png", ".webp", ".gif"))
+                )
+            )
             if medium == "video" or media_type.startswith("video/"):
                 is_video = True
                 if media_type == "video/mp4":
                     safe_url = safe_feed_link(media_url, feed)
                     if safe_url != feed.homepage:
                         video_url = safe_url
-            if not image and (medium == "image" or media_type.startswith("image/")) and urlparse(media_url).scheme == "https":
-                image = media_url
+            if is_image and urlparse(media_url).scheme == "https":
+                try:
+                    width = int(element.get("width", "0"))
+                except ValueError:
+                    width = 0
+                image_candidates.append((width, image_source_url(media_url)))
     enclosure = next((child for child in list(item) if local_name(child) == "enclosure"), None)
     if enclosure is not None:
         media_type = enclosure.get("type", "").lower()
@@ -322,8 +352,10 @@ def parse_story(item, feed):
             safe_url = safe_feed_link(media_url, feed)
             if safe_url != feed.homepage:
                 video_url = safe_url
-        if not image and media_type.startswith("image/") and urlparse(media_url).scheme == "https":
-            image = media_url
+        if media_type.startswith("image/") and urlparse(media_url).scheme == "https":
+            image_candidates.append((0, image_source_url(media_url)))
+    if image_candidates:
+        image = max(image_candidates, key=lambda candidate: candidate[0])[1]
 
     published = parse_published(child_text(item, {"pubdate", "published", "updated"}))
     return {
@@ -381,6 +413,64 @@ def collect_stories(fetcher=request_bytes, feeds=NEWS_FEEDS):
             continue
         deduplicated.append(story)
     return deduplicated[:MAX_STORIES], available, failures
+
+
+def collect_espn_images(stories, fetcher=request_bytes):
+    story_by_id = {}
+    paths = set()
+    for story in stories:
+        if story["source"] != "ESPN" or story.get("image"):
+            continue
+        match = re.search(r"/id/(\d+)", story["url"])
+        path = ESPN_NEWS_PATHS.get(story["category"])
+        if match and path:
+            story_by_id[match.group(1)] = story
+            paths.add(path)
+
+    failures = []
+    for path in sorted(paths):
+        url = f"{ESPN_API}/{path}/news"
+        try:
+            payload = json.loads(fetcher(url))
+            if not isinstance(payload, dict) or not isinstance(payload.get("articles", []), list):
+                raise ValueError("unexpected ESPN news response")
+            for article in payload.get("articles", []):
+                if not isinstance(article, dict):
+                    continue
+                links = article.get("links") or {}
+                hrefs = [
+                    link.get("href", "")
+                    for link in links.values()
+                    if isinstance(link, dict)
+                ] if isinstance(links, dict) else []
+                identifiers = {
+                    match.group(1)
+                    for href in hrefs
+                    if (match := re.search(r"(?:/id/|[?&]storyId=)(\d+)", href))
+                }
+                images = article.get("images") or []
+                if not isinstance(images, list):
+                    continue
+                candidates = []
+                for image in images:
+                    if not isinstance(image, dict):
+                        continue
+                    image_url = image.get("url", "")
+                    host = (urlparse(image_url).hostname or "").lower()
+                    if (
+                        urlparse(image_url).scheme == "https"
+                        and (host.endswith(".espncdn.com") or host == "espnmedia-cdn.akamaized.net")
+                    ):
+                        candidates.append((int(image.get("width", 0) or 0), image_url))
+                if not candidates:
+                    continue
+                for identifier in identifiers:
+                    story = story_by_id.get(identifier)
+                    if story:
+                        story["image"] = max(candidates, key=lambda candidate: candidate[0])[1]
+        except (OSError, urllib.error.URLError, json.JSONDecodeError, TypeError, ValueError) as error:
+            failures.append(f"ESPN images / {path}: {error}")
+    return failures
 
 
 def title_tokens(title):
@@ -519,7 +609,12 @@ def render_story(story):
     published = story["published"]
     date_label = published.strftime("%d %b %Y") if published else "Latest"
     iso_date = published.isoformat() if published else ""
-    image_markup = f'<img src="{image}" alt="" loading="lazy">' if image else '<span class="image-placeholder" aria-hidden="true">SPORT</span>'
+    image_markup = (
+        f'<span class="image-placeholder" data-category="{category}" aria-hidden="true">{category}</span>'
+        f'<img src="{image}" alt="" loading="lazy" decoding="async">'
+        if image else
+        f'<span class="image-placeholder" data-category="{category}" aria-hidden="true">{category}</span>'
+    )
     video_badge = '<span class="video-badge">VIDEO</span>' if story["video"] else ""
     return f'''<article class="story-card" data-category="{category}">
       <a class="story-image" href="{link}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">{image_markup}<span class="category" data-category="{category}">{category}</span>{video_badge}</a>
@@ -644,7 +739,7 @@ STYLE = """
 .ticker{background:var(--accent);color:#fff}.ticker .wrap{min-height:40px;display:flex;align-items:center;gap:12px;font-size:.8rem;font-weight:750}.ticker-label{border:1px solid #ffffff75;padding:2px 8px;border-radius:4px;font-size:.68rem;letter-spacing:.08em}
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:33px 0 16px}.section-head h2{margin:0;font-size:1.6rem;letter-spacing:-.025em}.section-head p{margin:3px 0 0;color:var(--muted);font-size:.82rem}.search{width:min(330px,100%);padding:11px 14px;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:11px;outline:none}.search:focus{border-color:var(--accent);box-shadow:0 0 0 3px #ff493d25}
 .filters{display:flex;gap:8px;overflow-x:auto;padding:0 0 19px}.filter{flex:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--muted);background:var(--surface);font-size:.82rem;font-weight:650;cursor:pointer}.filter:hover,.filter.active{color:var(--text);border-color:#ff493d88;background:#ff493d1c}
-.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:24px}.story-card{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 32px #00000018;transition:transform .2s,border-color .2s}.story-card:hover{transform:translateY(-3px);border-color:#ff493d70}.story-image{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--surface2)}.story-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}.story-card:hover .story-image img{transform:scale(1.035)}.image-placeholder{display:grid;place-items:center;width:100%;height:100%;color:#71829a;font-weight:900;letter-spacing:.18em;background:linear-gradient(135deg,var(--surface2),var(--surface))}.category{position:absolute;left:12px;bottom:12px;padding:4px 9px;border-radius:6px;background:var(--accent);color:#fff;font-size:.66rem;font-weight:800;text-transform:uppercase}.video-badge{position:absolute;top:11px;right:11px;padding:4px 7px;border-radius:4px;background:#07101dcc;color:#fff;font-size:.62rem;font-weight:850;letter-spacing:.08em}.story-body{padding:15px 16px 17px}.story-meta{display:flex;align-items:center;gap:9px;color:#ff796f;font-size:.64rem;letter-spacing:.055em;font-weight:850}.story-meta a{color:inherit;text-decoration:underline;text-underline-offset:2px}.story-meta time{margin-left:auto;color:var(--muted);letter-spacing:0;font-weight:500;white-space:nowrap}.save-button{border:0;padding:0 2px;color:var(--muted);background:transparent;font-size:1.35rem;line-height:1;cursor:pointer}.save-button.saved,.save-button:hover{color:var(--accent)}.story-body h2,.story-body h3{margin:11px 0 7px;font-size:1.08rem;line-height:1.4}.story-body h2 a,.story-body h3 a,.video-info h3 a{text-decoration:none}.story-body h2 a:hover,.story-body h3 a:hover,.video-info h3 a:hover{color:#ff796f}.story-body p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.6}.read-more{display:inline-block;margin-top:11px;color:#ff796f;font-size:.8rem;font-weight:750;text-decoration:none}.read-more:hover{text-decoration:underline}.empty-state{grid-column:1/-1;padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:24px}.story-card{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 32px #00000018;transition:transform .2s,border-color .2s}.story-card:hover{transform:translateY(-3px);border-color:#ff493d70}.story-image{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--surface2)}.story-image img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center;transition:transform .35s}.story-card:hover .story-image img{transform:scale(1.035)}.image-placeholder{position:absolute;inset:0;display:grid;place-items:center;width:100%;height:100%;padding:20px;color:#71829a;font-size:.72rem;font-weight:900;letter-spacing:.18em;text-align:center;text-transform:uppercase;background:radial-gradient(ellipse at 75% 15%,#c9152b22,transparent 45%),linear-gradient(135deg,var(--surface2),var(--surface))}.category{position:absolute;left:12px;bottom:12px;padding:4px 9px;border-radius:6px;background:var(--accent);color:#fff;font-size:.66rem;font-weight:800;text-transform:uppercase}.video-badge{position:absolute;top:11px;right:11px;padding:4px 7px;border-radius:4px;background:#07101dcc;color:#fff;font-size:.62rem;font-weight:850;letter-spacing:.08em}.story-body{padding:15px 16px 17px}.story-meta{display:flex;align-items:center;gap:9px;color:#ff796f;font-size:.64rem;letter-spacing:.055em;font-weight:850}.story-meta a{color:inherit;text-decoration:underline;text-underline-offset:2px}.story-meta time{margin-left:auto;color:var(--muted);letter-spacing:0;font-weight:500;white-space:nowrap}.save-button{border:0;padding:0 2px;color:var(--muted);background:transparent;font-size:1.35rem;line-height:1;cursor:pointer}.save-button.saved,.save-button:hover{color:var(--accent)}.story-body h2,.story-body h3{margin:11px 0 7px;font-size:1.08rem;line-height:1.4}.story-body h2 a,.story-body h3 a,.video-info h3 a{text-decoration:none}.story-body h2 a:hover,.story-body h3 a:hover,.video-info h3 a:hover{color:#ff796f}.story-body p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.6}.read-more{display:inline-block;margin-top:11px;color:#ff796f;font-size:.8rem;font-weight:750;text-decoration:none}.read-more:hover{text-decoration:underline}.empty-state{grid-column:1/-1;padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
 .content-section{padding:12px 0 29px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:15px}.section-title h2{margin:0;font-size:1.55rem}.section-title p{margin:0;color:var(--muted);font-size:.8rem}.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.video-card{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:15px}.video-cover,.video-card>video{display:block;position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:var(--surface2)}.video-cover img{width:100%;height:100%;object-fit:cover}.video-card>video{object-fit:contain}.video-placeholder{display:grid;place-items:center;width:100%;height:100%;color:#ff796f;font-size:2rem}.play-button{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;color:#fff;background:var(--accent);box-shadow:0 5px 20px #0008;transform:translate(-50%,-50%);font-size:.92rem}.video-info{padding:12px 15px 15px}.video-info>span{color:#ff796f;font-size:.65rem;font-weight:850;letter-spacing:.07em}.video-info h3{margin:5px 0 0;font-size:.98rem;line-height:1.4}.section-empty{padding:25px;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:13px;text-align:center}
 .schedule-wrap{margin:4px 0 38px;padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,var(--surface),var(--bg))}.schedule-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.fixture-card,.schedule-empty{padding:15px;background:var(--surface);border:1px solid var(--line);border-radius:12px}.fixture-meta{display:flex;justify-content:space-between;gap:8px;color:#ff796f;font-size:.64rem;font-weight:850;letter-spacing:.045em;text-transform:uppercase}.fixture-match{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:17px 0;font-size:.9rem}.fixture-match strong{flex:1}.fixture-match strong:last-child{text-align:right}.versus{color:var(--muted);font-size:.65rem;font-weight:800}.fixture-footer{display:flex;justify-content:space-between;gap:8px;padding-top:10px;border-top:1px solid var(--line);color:var(--muted);font-size:.7rem}.fixture-footer a{color:var(--muted);text-decoration:none}.fixture-footer a:hover{color:var(--text)}.schedule-empty{display:flex;flex-direction:column;gap:4px;color:var(--muted);font-size:.77rem}.schedule-empty strong{color:var(--text);font-size:.9rem}.schedule-note{margin:10px 0 0;color:var(--muted);font-size:.74rem}.live-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.live-card{border-color:#c9152b55}.live-badge{padding:2px 6px;border-radius:3px;background:var(--accent);color:#fff;letter-spacing:.04em}.live-match{align-items:center}.live-match strong{font-size:.84rem}.live-score{white-space:nowrap;color:var(--accent);font-size:1.02rem;font-weight:900;font-variant-numeric:tabular-nums}.live-detail{font-weight:750}.live-card .fixture-footer{align-items:center}
 .fixture-match .event-name{flex:none;text-align:left!important}.mobile-nav{display:none}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -741,6 +836,11 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
         )
         featured = story_cards.pop(featured_index)
         featured_story = featured.replace('class="story-card"', 'class="story-card lead-story"', 1)
+        featured_story = featured_story.replace(
+            'loading="lazy" decoding="async"',
+            'loading="eager" fetchpriority="high" decoding="async"',
+            1,
+        )
         latest_stories = "".join(
             story.replace('class="story-card"', 'class="story-card latest-story"', 1)
             for story in story_cards[1:5]
@@ -822,6 +922,10 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
       }
       cards.forEach(card => {
         updateSavedButton(card);
+        card.querySelectorAll('.story-image img').forEach(image => {
+          image.addEventListener('error', () => { image.hidden = true; }, {once: true});
+          if (image.complete && image.naturalWidth === 0) image.hidden = true;
+        });
         card.querySelector('.save-button')?.addEventListener('click', () => {
           const key = storyKey(card);
           saved.has(key) ? saved.delete(key) : saved.add(key);
@@ -869,7 +973,7 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
         filters.forEach(button => {
           button.textContent = copy().categories[button.dataset.filter] || button.dataset.filter;
         });
-        document.querySelectorAll('.category, .sport-label').forEach(element => {
+        document.querySelectorAll('.category, .sport-label, .image-placeholder').forEach(element => {
           const sport = element.dataset.category || element.dataset.sport;
           if (sport) element.textContent = copy().categories[sport] || copy().sports[sport] || sport;
         });
@@ -935,9 +1039,11 @@ def read_cached_news(path="index.html"):
 
 def main():
     stories, news_sources, news_failures = collect_stories()
+    image_failures = collect_espn_images(stories)
     stories_html = "\n".join(render_story(story) for story in stories)
-    if news_failures:
-        print("Some news feeds could not be updated: " + "; ".join(news_failures))
+    failures = news_failures + image_failures
+    if failures:
+        print("Some news feeds or images could not be updated: " + "; ".join(failures))
     if not stories:
         print("No news feed returned usable stories; retaining previously generated headlines if available.")
         stories_html, cached_updated = read_cached_news()

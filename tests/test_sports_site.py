@@ -19,7 +19,7 @@ class SportsSiteTests(unittest.TestCase):
           <description>A big match</description>
           <link>https://www.bbc.co.uk/sport/football/videos/story</link>
           <pubDate>Mon, 02 Nov 2026 10:00:00 GMT</pubDate>
-          <media:content url="https://ichef.bbci.co.uk/photo.jpg" medium="image" />
+          <media:content url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/photo.jpg" medium="image" />
         </item></channel></rss>"""
 
         story = sports_site.parse_feed(payload, feed)[0]
@@ -27,8 +27,33 @@ class SportsSiteTests(unittest.TestCase):
         self.assertEqual(story["title"], "Football: <Final> preview")
         self.assertEqual(story["category"], "Football")
         self.assertEqual(story["source"], "BBC Sport")
+        self.assertEqual(story["image"], "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/photo.jpg")
         self.assertTrue(story["video"])
         self.assertEqual(story["url"], "https://www.bbc.co.uk/sport/football/videos/story")
+
+    def test_parse_feed_uses_thumbnail_without_media_type_and_largest_image(self):
+        feed = sports_site.NEWS_FEEDS[0]
+        payload = b"""<rss xmlns:media="http://search.yahoo.com/mrss/"><channel><item>
+          <title>Match report</title><link>https://www.bbc.co.uk/sport/football/story</link>
+          <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/240/small.jpg"/>
+          <media:content width="700" url="https://ichef.bbci.co.uk/700/large.jpg">Photo credit</media:content>
+          <media:content width="460" url="https://ichef.bbci.co.uk/460/medium.jpg">Photo credit</media:content>
+        </item></channel></rss>"""
+
+        story = sports_site.parse_feed(payload, feed)[0]
+
+        self.assertEqual(story["image"], "https://ichef.bbci.co.uk/700/large.jpg")
+
+    def test_render_story_shows_a_styled_category_fallback(self):
+        feed = sports_site.NEWS_FEEDS[0]
+        payload = b"""<rss><channel><item><title>Match report</title>
+          <link>https://www.bbc.co.uk/sport/football/story</link></item></channel></rss>"""
+        story = sports_site.parse_feed(payload, feed)[0]
+
+        markup = sports_site.render_story(story)
+
+        self.assertIn('class="image-placeholder" data-category="Football"', markup)
+        self.assertNotIn("<img", markup)
 
     def test_parse_feed_rejects_non_publisher_links(self):
         feed = sports_site.NEWS_FEEDS[0]
@@ -102,6 +127,41 @@ class SportsSiteTests(unittest.TestCase):
         self.assertEqual(available, ["BBC Sport"])
         self.assertEqual(len(failures), 1)
         self.assertIn("The Guardian", failures[0])
+
+    def test_collect_espn_images_matches_story_ids_and_uses_largest_image(self):
+        stories = [
+            {"source": "ESPN", "category": "Basketball", "url": "https://www.espn.com/nba/story/_/id/12345/story", "image": ""},
+            {"source": "ESPN", "category": "Basketball", "url": "https://www.espn.com/nba/story/_/id/67890/other", "image": ""},
+        ]
+        payload = {
+            "articles": [{
+                "links": {"web": {"href": "https://www.espn.com/nba/story/_/id/12345/story"}},
+                "images": [
+                    {"url": "https://a.espncdn.com/photo-small.jpg", "width": 320},
+                    {"url": "https://a.espncdn.com/photo-large.jpg", "width": 1200},
+                    {"url": "http://a.espncdn.com/insecure.jpg", "width": 2400},
+                ],
+            }],
+        }
+
+        failures = sports_site.collect_espn_images(stories, lambda _: json.dumps(payload).encode())
+
+        self.assertEqual(failures, [])
+        self.assertEqual(stories[0]["image"], "https://a.espncdn.com/photo-large.jpg")
+        self.assertEqual(stories[1]["image"], "")
+
+    def test_collect_espn_images_ignores_unmatched_articles(self):
+        story = {"source": "ESPN", "category": "American Football", "url": "https://www.espn.com/nfl/story/_/id/12345/story", "image": ""}
+        payload = {
+            "articles": [{
+                "links": {"web": {"href": "https://www.espn.com/nfl/story/_/id/99999/unrelated"}},
+                "images": [{"url": "https://a.espncdn.com/unrelated.jpg", "width": 1200}],
+            }],
+        }
+
+        sports_site.collect_espn_images([story], lambda _: json.dumps(payload).encode())
+
+        self.assertEqual(story["image"], "")
 
     def test_normalize_event_keeps_upcoming_sourced_match_only(self):
         now = datetime(2026, 11, 9, 12, tzinfo=timezone.utc)
@@ -242,7 +302,7 @@ class SportsSiteTests(unittest.TestCase):
     def test_build_page_escapes_dynamic_labels_and_includes_sections(self):
         stories = "".join(
             f'<article class="story-card" data-category="Football">'
-            + ('<img src="https://www.bbc.co.uk/feature.jpg">' if index == 2 else "")
+            + ('<img src="https://www.bbc.co.uk/feature.jpg" loading="lazy" decoding="async">' if index == 2 else "")
             + f'<div class="story-body"><h3><a href="https://www.bbc.co.uk/{index}">Story {index}</a></h3></div></article>'
             for index in range(1, 7)
         )
@@ -282,6 +342,7 @@ class SportsSiteTests(unittest.TestCase):
         )
         self.assertEqual(json.loads(structured_data.group(1))["@type"], "WebSite")
         self.assertIn('class="story-card lead-story"', page)
+        self.assertIn('loading="eager" fetchpriority="high"', page)
         self.assertIn('class="story-card latest-story"', page)
         featured = page[page.index('class="story-card lead-story"'):page.index('class="latest-panel"')]
         self.assertIn("Story 2", featured)
