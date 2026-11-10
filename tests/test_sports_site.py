@@ -394,6 +394,8 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn(f'<link rel="canonical" href="{sports_site.SITE_URL}">', page)
         self.assertIn('property="og:title"', page)
         self.assertIn('type="application/ld+json"', page)
+        self.assertIn('type="application/rss+xml"', page)
+        self.assertIn('href="https://aslaykii.github.io/skysport/feed.xml"', page)
         self.assertNotIn("@@TRANSLATIONS@@", page)
         self.assertNotIn("@@SITE_URL@@", page)
         structured_data = re.search(
@@ -415,6 +417,7 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn(".mobile-nav a{min-height:44px", page)
         self.assertIn(".theme-button,.language-select{min-width:44px;min-height:44px}", page)
         self.assertIn("structuredDataElement.textContent = JSON.stringify(structuredData)", page)
+        self.assertIn("navigator.share(shareData)", page)
         self.assertIn("font-family:Georgia,serif", page)
         self.assertIn(":root.dark", page)
         self.assertNotIn("@@STYLE@@", page)
@@ -494,6 +497,51 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn("cached", cards)
         self.assertEqual(updated, "09 Nov 2026 · 08:16 UTC")
 
+    def test_build_rss_feed_links_to_sky_sport_story_anchors(self):
+        story = {
+            "title": "Football & more",
+            "description": "A verified <report> & update.",
+            "url": "https://www.bbc.co.uk/sport/football/report",
+            "source": "BBC Sport",
+            "category": "Football",
+            "published": datetime(2026, 11, 9, tzinfo=timezone.utc),
+            "image": "",
+            "category": "Football",
+            "coverage": [],
+            "video": False,
+        }
+
+        feed = ET.fromstring(sports_site.build_rss_feed(
+            [story], datetime(2026, 11, 10, tzinfo=timezone.utc)
+        ))
+        channel = feed.find("channel")
+        item = channel.find("item")
+        expected_link = f"{sports_site.SITE_URL}news.html#story-{sports_site.story_anchor(story)}"
+
+        self.assertEqual(feed.tag, "rss")
+        self.assertEqual(channel.findtext("title"), "SkySport | Latest Sports News")
+        self.assertEqual(item.findtext("title"), "Football & more")
+        self.assertEqual(item.findtext("link"), expected_link)
+        self.assertEqual(item.findtext("guid"), expected_link)
+        self.assertEqual(item.findtext("description"), "A verified <report> & update. Source: BBC Sport.")
+        self.assertEqual(item.findtext("category"), "Football")
+        self.assertIsNotNone(item.findtext("pubDate"))
+        rendered_story = sports_site.render_story(story)
+        self.assertIn(f'id="story-{sports_site.story_anchor(story)}"', rendered_story)
+        self.assertIn(f'data-share-url="{expected_link}"', rendered_story)
+        self.assertIn('data-i18n="shareStory">Share</span>', rendered_story)
+
+    def test_sitemap_includes_last_modified_dates(self):
+        sitemap = ET.fromstring(sports_site.build_sitemap(
+            datetime(2026, 11, 10, 8, 30, tzinfo=timezone.utc)
+        ))
+        namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+
+        self.assertEqual(
+            [node.text for node in sitemap.findall("s:url/s:lastmod", namespace)],
+            ["2026-11-10"] * len(sports_site.PAGE_FILES),
+        )
+
     def test_sitemap_points_to_the_canonical_pages_site(self):
         root = Path(__file__).resolve().parents[1]
         sitemap = ET.parse(root / "sitemap.xml").getroot()
@@ -506,6 +554,10 @@ class SportsSiteTests(unittest.TestCase):
                 else f"{sports_site.SITE_URL}{filename}"
                 for filename in sports_site.PAGE_FILES.values()
             ],
+        )
+        self.assertEqual(
+            len(sitemap.findall("s:url/s:lastmod", namespace)),
+            len(sports_site.PAGE_FILES),
         )
         robots = (root / "robots.txt").read_text(encoding="utf-8")
         self.assertIn("Allow: /", robots)
