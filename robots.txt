@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aslaykii.github.io/skysport/sitemap.xml
