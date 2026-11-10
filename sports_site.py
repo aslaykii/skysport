@@ -797,6 +797,22 @@ def story_anchor(story):
     return hashlib.sha256(story["url"].encode("utf-8")).hexdigest()[:16]
 
 
+def story_hashtags(story):
+    sport_tag = {
+        "Football": "#Football",
+        "Tennis": "#Tennis",
+        "Formula 1": "#F1",
+        "Cricket": "#Cricket",
+        "Rugby": "#Rugby",
+        "Basketball": "#Basketball",
+        "American Football": "#AmericanFootball",
+        "Ice Hockey": "#Hockey",
+        "Golf": "#Golf",
+        "Boxing & MMA": "#Boxing #MMA",
+    }.get(story.get("category"), "#Sports")
+    return f"#SkySport #SportsNews #رياضة {sport_tag}"
+
+
 def render_story(story):
     title = html.escape(story["title"])
     description = html.escape(story["description"])
@@ -824,7 +840,7 @@ def render_story(story):
       <a class="story-image" href="{link}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">{image_markup}<span class="category" data-category="{category}">{category}</span>{video_badge}</a>
       <div class="story-body"><div class="story-meta"><span>{source}{coverage}</span><time datetime="{html.escape(iso_date, quote=True)}">{date_label}</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="{link}" target="_blank" rel="noopener noreferrer">{title}</a></h3><p>{description}</p>
-        <div class="story-actions"><a class="read-more" href="{link}" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a><button class="share-button" type="button" data-share-url="{share_url}" data-share-title="{html.escape(story['title'], quote=True)}"><span data-i18n="shareStory">Share</span></button><span class="share-status" aria-live="polite"></span></div>
+        <div class="story-actions"><a class="read-more" href="{link}" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a><button class="share-button" type="button" data-share-url="{share_url}" data-share-title="{html.escape(story['title'], quote=True)}" data-share-text="{html.escape(story_hashtags(story), quote=True)}"><span data-i18n="shareStory">Share</span></button><span class="share-status" aria-live="polite"></span></div>
       </div>
     </article>'''
 
@@ -1331,12 +1347,18 @@ def build_page(
         card.querySelector('.share-button')?.addEventListener('click', async event => {
           const button = event.currentTarget;
           const status = card.querySelector('.share-status');
-          const shareData = {title: button.dataset.shareTitle, url: button.dataset.shareUrl};
+          const shareData = {
+            title: button.dataset.shareTitle,
+            text: button.dataset.shareText,
+            url: button.dataset.shareUrl
+          };
           try {
             if (navigator.share) {
               await navigator.share(shareData);
             } else if (navigator.clipboard?.writeText) {
-              await navigator.clipboard.writeText(shareData.url);
+              await navigator.clipboard.writeText(
+                `${shareData.title}\n${shareData.text}\n${shareData.url}`
+              );
               status.textContent = copy().shareCopied;
             } else {
               status.textContent = copy().shareUnavailable;

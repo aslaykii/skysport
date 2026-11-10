@@ -530,6 +530,21 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn(f'id="story-{sports_site.story_anchor(story)}"', rendered_story)
         self.assertIn(f'data-share-url="{expected_link}"', rendered_story)
         self.assertIn('data-i18n="shareStory">Share</span>', rendered_story)
+        self.assertIn('data-share-text="#SkySport #SportsNews #رياضة #Football"', rendered_story)
+
+    def test_story_hashtags_match_the_sport_category(self):
+        self.assertEqual(
+            sports_site.story_hashtags({"category": "Formula 1"}),
+            "#SkySport #SportsNews #رياضة #F1",
+        )
+        self.assertEqual(
+            sports_site.story_hashtags({"category": "Boxing & MMA"}),
+            "#SkySport #SportsNews #رياضة #Boxing #MMA",
+        )
+        self.assertEqual(
+            sports_site.story_hashtags({"category": "Unknown"}),
+            "#SkySport #SportsNews #رياضة #Sports",
+        )
 
     def test_sitemap_includes_last_modified_dates(self):
         sitemap = ET.fromstring(sports_site.build_sitemap(
