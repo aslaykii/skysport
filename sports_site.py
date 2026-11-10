@@ -1,4 +1,5 @@
 import html
+import hashlib
 import json
 import re
 import urllib.error
@@ -6,7 +7,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
-from email.utils import parsedate_to_datetime
+from email.utils import format_datetime, parsedate_to_datetime
 from html.parser import HTMLParser
 from urllib.parse import urlencode, urljoin, urlparse
 
@@ -109,6 +110,10 @@ TRANSLATIONS = {
         "headline": "The sports world, in focus.",
         "intro": "Headlines, highlights and match schedules from across the sporting world.",
         "topStory": "Top story",
+        "subscribe": "Subscribe",
+        "shareStory": "Share",
+        "shareCopied": "SkySport link copied",
+        "shareUnavailable": "Sharing is unavailable in this browser.",
         "latest": "Latest",
         "allNews": "All news ↓",
         "moreHeadlines": "More headlines",
@@ -175,6 +180,10 @@ TRANSLATIONS = {
         "headline": "Toute l'actualité sportive.",
         "intro": "Actualités, résumés vidéo et calendrier des rencontres du monde entier.",
         "topStory": "À la une",
+        "subscribe": "S'abonner",
+        "shareStory": "Partager",
+        "shareCopied": "Lien SkySport copié",
+        "shareUnavailable": "Le partage n'est pas disponible dans ce navigateur.",
         "latest": "À suivre",
         "allNews": "Toutes les actualités ↓",
         "moreHeadlines": "Dernières actualités",
@@ -241,6 +250,10 @@ TRANSLATIONS = {
         "headline": "عالم الرياضة في صدارة المشهد.",
         "intro": "أخبار وملخصات ومواعيد مباريات من مختلف الرياضات حول العالم.",
         "topStory": "الخبر الأبرز",
+        "subscribe": "اشترك",
+        "shareStory": "شارك",
+        "shareCopied": "تم نسخ رابط سكاي سبورت",
+        "shareUnavailable": "المشاركة غير متاحة في هذا المتصفح.",
         "latest": "أحدث الأخبار",
         "allNews": "كل الأخبار ↓",
         "moreHeadlines": "المزيد من الأخبار",
@@ -780,6 +793,26 @@ def collect_fixtures(fetcher=request_bytes, feeds=FIXTURE_FEEDS, now=None):
     return sorted(unique.values(), key=lambda fixture: fixture["start"]), available_sports, failures
 
 
+def story_anchor(story):
+    return hashlib.sha256(story["url"].encode("utf-8")).hexdigest()[:16]
+
+
+def story_hashtags(story):
+    sport_tag = {
+        "Football": "#Football",
+        "Tennis": "#Tennis",
+        "Formula 1": "#F1",
+        "Cricket": "#Cricket",
+        "Rugby": "#Rugby",
+        "Basketball": "#Basketball",
+        "American Football": "#AmericanFootball",
+        "Ice Hockey": "#Hockey",
+        "Golf": "#Golf",
+        "Boxing & MMA": "#Boxing #MMA",
+    }.get(story.get("category"), "#Sports")
+    return f"#SkySport #SportsNews #رياضة {sport_tag}"
+
+
 def render_story(story):
     title = html.escape(story["title"])
     description = html.escape(story["description"])
@@ -794,6 +827,8 @@ def render_story(story):
     published = story["published"]
     date_label = published.strftime("%d %b %Y") if published else "Latest"
     iso_date = published.isoformat() if published else ""
+    story_id = story_anchor(story)
+    share_url = html.escape(urljoin(SITE_URL, f"news.html#story-{story_id}"), quote=True)
     image_markup = (
         f'<span class="image-placeholder" data-category="{category}" aria-hidden="true">{category}</span>'
         f'<img src="{image}" alt="" loading="lazy" decoding="async">'
@@ -801,13 +836,60 @@ def render_story(story):
         f'<span class="image-placeholder" data-category="{category}" aria-hidden="true">{category}</span>'
     )
     video_badge = '<span class="video-badge">VIDEO</span>' if story["video"] else ""
-    return f'''<article class="story-card" data-category="{category}">
+    return f'''<article class="story-card" id="story-{story_id}" data-category="{category}">
       <a class="story-image" href="{link}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">{image_markup}<span class="category" data-category="{category}">{category}</span>{video_badge}</a>
       <div class="story-body"><div class="story-meta"><span>{source}{coverage}</span><time datetime="{html.escape(iso_date, quote=True)}">{date_label}</time><button class="save-button" type="button" aria-label="Save story" title="Save story">♡</button></div>
         <h3><a href="{link}" target="_blank" rel="noopener noreferrer">{title}</a></h3><p>{description}</p>
-        <a class="read-more" href="{link}" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a>
+        <div class="story-actions"><a class="read-more" href="{link}" target="_blank" rel="noopener noreferrer"><span data-i18n="readStory">Read story</span> <span aria-hidden="true">↗</span></a><button class="share-button" type="button" data-share-url="{share_url}" data-share-title="{html.escape(story['title'], quote=True)}" data-share-text="{html.escape(story_hashtags(story), quote=True)}"><span data-i18n="shareStory">Share</span></button><span class="share-status" aria-live="polite"></span></div>
       </div>
     </article>'''
+
+
+def build_rss_feed(stories, last_build=None):
+    last_build = last_build or datetime.now(timezone.utc)
+    if last_build.tzinfo is None:
+        last_build = last_build.replace(tzinfo=timezone.utc)
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+    ET.SubElement(channel, "title").text = "SkySport | Latest Sports News"
+    ET.SubElement(channel, "link").text = SITE_URL
+    ET.SubElement(channel, "description").text = (
+        "Recent sports headlines from trusted publishers, curated by SkySport."
+    )
+    ET.SubElement(channel, "lastBuildDate").text = format_datetime(last_build)
+    for story in stories:
+        item = ET.SubElement(channel, "item")
+        story_id = story_anchor(story)
+        ET.SubElement(item, "title").text = story["title"]
+        ET.SubElement(item, "link").text = urljoin(SITE_URL, f"news.html#story-{story_id}")
+        ET.SubElement(item, "guid", isPermaLink="true").text = urljoin(
+            SITE_URL, f"news.html#story-{story_id}"
+        )
+        ET.SubElement(item, "description").text = (
+            f'{story["description"]} Source: {story["source"]}.'
+        )
+        ET.SubElement(item, "category").text = story["category"]
+        if story.get("published"):
+            published = story["published"]
+            if published.tzinfo is None:
+                published = published.replace(tzinfo=timezone.utc)
+            ET.SubElement(item, "pubDate").text = format_datetime(published)
+    ET.indent(rss, space="  ")
+    return ET.tostring(rss, encoding="utf-8", xml_declaration=True)
+
+
+def build_sitemap(lastmod=None):
+    lastmod = lastmod or datetime.now(timezone.utc)
+    if lastmod.tzinfo is None:
+        lastmod = lastmod.replace(tzinfo=timezone.utc)
+    sitemap = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+    for page_file in PAGE_FILES.values():
+        location = SITE_URL if page_file == "index.html" else urljoin(SITE_URL, page_file)
+        url_node = ET.SubElement(sitemap, "url")
+        ET.SubElement(url_node, "loc").text = location
+        ET.SubElement(url_node, "lastmod").text = lastmod.astimezone(timezone.utc).date().isoformat()
+    ET.indent(sitemap, space="  ")
+    return ET.tostring(sitemap, encoding="UTF-8", xml_declaration=True)
 
 
 def render_video(story):
@@ -1048,6 +1130,14 @@ footer{background:var(--surface);border-color:var(--line)}
   .nav-right{gap:4px}
   .section-card-grid{grid-template-columns:1fr}
 }
+.story-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.share-button,.rss-subscribe{min-height:36px;border:1px solid var(--line);border-radius:3px;padding:6px 11px;color:var(--text);background:var(--surface);font-size:.76rem;font-weight:750;text-decoration:none;cursor:pointer}
+.share-button:hover,.rss-subscribe:hover{border-color:var(--accent);color:var(--accent)}
+.share-status{color:var(--muted);font-size:.72rem}
+.news-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.news-actions .search{flex:1;min-width:190px}
+.rss-subscribe{flex:none;color:var(--accent)}
+@media(max-width:650px){.news-actions{width:100%}.news-actions .search{min-width:120px}.story-actions{gap:9px}}
 </style>
 """
 
@@ -1143,7 +1233,7 @@ def build_page(
         "fixtures": "fixturesPageIntro",
     }.get(page_kind, "intro")
     if page_kind == "news":
-        page_content = f'''<section class="section-head"><div><h2 data-i18n="moreHeadlines">{english_page["heading"]}</h2><p data-i18n="{page_intro}">{TRANSLATIONS["en"]["newsPageIntro"].replace("__UPDATED__", html.escape(updated)).replace("__SOURCES__", html.escape(news_sources))}</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines" data-i18n-placeholder="search"></section>
+        page_content = f'''<section class="section-head"><div><h2 data-i18n="moreHeadlines">{english_page["heading"]}</h2><p data-i18n="{page_intro}">{TRANSLATIONS["en"]["newsPageIntro"].replace("__UPDATED__", html.escape(updated)).replace("__SOURCES__", html.escape(news_sources))}</p></div><div class="news-actions"><a class="rss-subscribe" href="feed.xml" data-i18n="subscribe">Subscribe</a><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines" data-i18n-placeholder="search"></div></section>
           <nav class="filters" aria-label="Filter headlines by sport">@@FILTERS@@</nav>
           <div class="news-grid" id="news-grid">{stories_html or '<p class="empty-state">Headlines are temporarily unavailable.</p>'}<p class="empty-state" id="empty-state" hidden data-i18n="noStories">No stories found. Try a different search or filter.</p></div>'''
     elif page_kind == "videos":
@@ -1187,6 +1277,7 @@ def build_page(
   <meta name="description" content="@@PAGE_DESCRIPTION@@">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="@@PAGE_URL@@">
+  <link rel="alternate" type="application/rss+xml" title="SkySport Latest Sports News" href="@@FEED_URL@@">
   <meta property="og:type" content="website"><meta property="og:site_name" content="SkySport">
   <meta property="og:url" content="@@PAGE_URL@@">
   <meta property="og:title" content="@@PAGE_TITLE@@">
@@ -1253,6 +1344,29 @@ def build_page(
       }
       cards.forEach(card => {
         updateSavedButton(card);
+        card.querySelector('.share-button')?.addEventListener('click', async event => {
+          const button = event.currentTarget;
+          const status = card.querySelector('.share-status');
+          const shareData = {
+            title: button.dataset.shareTitle,
+            text: button.dataset.shareText,
+            url: button.dataset.shareUrl
+          };
+          try {
+            if (navigator.share) {
+              await navigator.share(shareData);
+            } else if (navigator.clipboard?.writeText) {
+              await navigator.clipboard.writeText(
+                `${shareData.title}\n${shareData.text}\n${shareData.url}`
+              );
+              status.textContent = copy().shareCopied;
+            } else {
+              status.textContent = copy().shareUnavailable;
+            }
+          } catch (error) {
+            if (error.name !== 'AbortError') status.textContent = copy().shareUnavailable;
+          }
+        });
         card.querySelectorAll('.story-image img').forEach(image => {
           image.addEventListener('error', () => { image.hidden = true; }, {once: true});
           if (image.complete && image.naturalWidth === 0) image.hidden = true;
@@ -1352,6 +1466,7 @@ def build_page(
     replacements = {
         "@@SITE_URL@@": html.escape(SITE_URL, quote=True),
         "@@PAGE_URL@@": html.escape(page_url, quote=True),
+        "@@FEED_URL@@": html.escape(urljoin(SITE_URL, "feed.xml"), quote=True),
         "@@PAGE_TITLE@@": html.escape(english_page["title"]),
         "@@PAGE_DESCRIPTION@@": html.escape(english_page["description"], quote=True),
         "@@PAGE_HEADING@@": html.escape(english_page["heading"]),
@@ -1457,13 +1572,11 @@ def main():
         with open(page_file, "w", encoding="utf-8") as output:
             output.write(page)
 
-    sitemap = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    for page_file in PAGE_FILES.values():
-        location = SITE_URL if page_file == "index.html" else urljoin(SITE_URL, page_file)
-        url_node = ET.SubElement(sitemap, "url")
-        ET.SubElement(url_node, "loc").text = location
-    ET.indent(sitemap, space="  ")
-    ET.ElementTree(sitemap).write("sitemap.xml", encoding="UTF-8", xml_declaration=True)
+    if stories or not os.path.exists("feed.xml"):
+        with open("feed.xml", "wb") as output:
+            output.write(build_rss_feed(stories))
+    with open("sitemap.xml", "wb") as output:
+        output.write(build_sitemap())
     print(f"Generated {len(PAGE_FILES)} Skysport pages and sitemap successfully.")
 
 
