@@ -373,20 +373,21 @@ class SportsSiteTests(unittest.TestCase):
         )
 
         self.assertIn("&lt;publisher&gt;", page)
-        self.assertIn('id="videos"', page)
-        self.assertIn('id="fixtures"', page)
-        self.assertIn("No video items were available", page)
-        self.assertIn('data-filter="American Football"', page)
-        self.assertIn('data-filter="Ice Hockey"', page)
-        self.assertIn('href="#fixtures"', page)
+        self.assertIn('href="news.html"', page)
+        self.assertIn('href="videos.html"', page)
+        self.assertIn('href="live.html"', page)
+        self.assertIn('href="fixtures.html"', page)
+        self.assertIn('data-section-card="news"', page)
+        self.assertIn('data-section-card="videos"', page)
+        self.assertNotIn('id="news-grid"', page)
+        self.assertNotIn('id="live"', page)
+        self.assertNotIn('id="fixtures"', page)
         self.assertIn('class="mobile-nav"', page)
         self.assertIn("position:fixed;z-index:30", page)
         self.assertIn('id="language-toggle"', page)
         self.assertIn('value="fr">Français', page)
         self.assertIn('value="ar">العربية', page)
         self.assertIn("<strong>05</strong> news desks", page)
-        self.assertIn('id="live"', page)
-        self.assertIn('data-i18n="liveScores"', page)
         self.assertIn('localStorage.setItem(\'skysport-language\'', page)
         self.assertIn('document.documentElement.dir = rtl ? \'rtl\' : \'ltr\'', page)
         self.assertIn('<meta name="robots" content="index, follow, max-image-preview:large">', page)
@@ -398,28 +399,86 @@ class SportsSiteTests(unittest.TestCase):
         structured_data = re.search(
             r'<script type="application/ld\+json">(.*?)</script>', page
         )
-        self.assertEqual(json.loads(structured_data.group(1))["@type"], "WebSite")
-        structured_blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', page)
-        story_list = json.loads(structured_blocks[1])
-        self.assertEqual(story_list["@type"], "ItemList")
-        self.assertEqual(story_list["numberOfItems"], 1)
-        self.assertEqual(story_list["itemListElement"][0]["name"], "Verified football story")
-        self.assertEqual(
-            story_list["itemListElement"][0]["url"],
-            "https://publisher.example/football-story",
-        )
+        graph = json.loads(structured_data.group(1))["@graph"]
+        self.assertIn("WebSite", [item["@type"] for item in graph])
+        self.assertIn("WebPage", [item["@type"] for item in graph])
+        self.assertIn("BreadcrumbList", [item["@type"] for item in graph])
+        self.assertEqual(len(re.findall(r'<script type="application/ld\+json">', page)), 1)
         self.assertIn('name="twitter:image:alt"', page)
-        self.assertIn('class="story-card lead-story"', page)
-        self.assertIn('loading="eager" fetchpriority="high"', page)
-        self.assertIn('class="story-card latest-story"', page)
-        featured = page[page.index('class="story-card lead-story"'):page.index('class="latest-panel"')]
-        self.assertIn("Story 2", featured)
-        self.assertNotIn("Story 1", featured)
-        self.assertIn("Story 6", page)
-        self.assertNotIn("Story 1", page[page.index('<div class="news-grid"'):])
+        self.assertIn("Story 1", page)
+        self.assertIn("Story 2", page)
+        self.assertIn("Story 3", page)
+        self.assertNotIn("Story 4", page)
+        self.assertIn('data-i18n="topStory">Top story</span><a class="ticker-headline"', page)
+        self.assertIn("Verified football story</a>", page)
+        self.assertIn('fetchpriority="high"', page)
+        self.assertIn(".mobile-nav a{min-height:44px", page)
+        self.assertIn(".theme-button,.language-select{min-width:44px;min-height:44px}", page)
+        self.assertIn("structuredDataElement.textContent = JSON.stringify(structuredData)", page)
         self.assertIn("font-family:Georgia,serif", page)
         self.assertIn(":root.dark", page)
         self.assertNotIn("@@STYLE@@", page)
+
+    def test_build_page_creates_separate_news_video_live_and_fixture_pages(self):
+        story = {
+            "title": "Latest football report",
+            "description": "A verified sports update.",
+            "url": "https://www.bbc.co.uk/sport/football/report",
+            "image": "",
+            "category": "Football",
+            "source": "BBC Sport",
+            "published": datetime(2026, 11, 9, tzinfo=timezone.utc),
+            "coverage": [],
+            "video": True,
+            "video_url": "",
+        }
+        stories_html = sports_site.render_story(story)
+        videos_html = sports_site.render_video(story)
+
+        pages = {
+            kind: sports_site.build_page(
+                stories_html,
+                videos_html,
+                '<article class="fixture-card">Upcoming match</article>',
+                "09 Nov 2026",
+                "BBC Sport",
+                "Schedule status",
+                '<article class="fixture-card live-card">Live match</article>',
+                [story],
+                kind,
+            )
+            for kind in ("home", "news", "videos", "live", "fixtures")
+        }
+        expected_urls = {
+            "home": sports_site.SITE_URL,
+            "news": sports_site.SITE_URL + "news.html",
+            "videos": sports_site.SITE_URL + "videos.html",
+            "live": sports_site.SITE_URL + "live.html",
+            "fixtures": sports_site.SITE_URL + "fixtures.html",
+        }
+
+        self.assertIn('href="news.html"', pages["home"])
+        self.assertNotIn('id="news-grid"', pages["home"])
+        self.assertNotIn('<article class="fixture-card live-card">Live match</article>', pages["home"])
+        self.assertIn('id="news-grid"', pages["news"])
+        self.assertIn("Latest football report", pages["news"])
+        news_schema = json.loads(re.search(
+            r'<script type="application/ld\+json">(.*?)</script>', pages["news"]
+        ).group(1))
+        self.assertIn("ItemList", [item["@type"] for item in news_schema["@graph"]])
+        self.assertIn("CollectionPage", [item["@type"] for item in news_schema["@graph"]])
+        self.assertIn('href="news.html" data-i18n="news" data-page-link="news" aria-current="page"', pages["news"])
+        self.assertNotIn('<article class="fixture-card">Upcoming match</article>', pages["news"])
+        self.assertIn("video-card", pages["videos"])
+        self.assertNotIn("Latest football report</h3>", pages["videos"])
+        self.assertNotIn('<article class="fixture-card live-card">Live match</article>', pages["videos"])
+        self.assertIn('<article class="fixture-card live-card">Live match</article>', pages["live"])
+        self.assertNotIn('<article class="fixture-card">Upcoming match</article>', pages["live"])
+        self.assertIn("Upcoming match", pages["fixtures"])
+        self.assertNotIn('<article class="fixture-card live-card">Live match</article>', pages["fixtures"])
+        for kind, page in pages.items():
+            self.assertIn(f'<link rel="canonical" href="{expected_urls[kind]}">', page)
+            self.assertNotRegex(page, r"@@[A-Z_]+@@")
 
     def test_read_cached_news_preserves_refresh_time(self):
         page = '<p>Updated 09 Nov 2026 · 08:16 UTC · Sources: BBC Sport</p><article class="story-card">cached</article>'
@@ -442,7 +501,11 @@ class SportsSiteTests(unittest.TestCase):
 
         self.assertEqual(
             [node.text for node in sitemap.findall("s:url/s:loc", namespace)],
-            [sports_site.SITE_URL],
+            [
+                sports_site.SITE_URL if filename == "index.html"
+                else f"{sports_site.SITE_URL}{filename}"
+                for filename in sports_site.PAGE_FILES.values()
+            ],
         )
         robots = (root / "robots.txt").read_text(encoding="utf-8")
         self.assertIn("Allow: /", robots)

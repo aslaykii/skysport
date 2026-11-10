@@ -69,11 +69,36 @@ NEWS_CATEGORIES = (
     "Football", "Tennis", "Formula 1", "Cricket", "Rugby",
     "Basketball", "American Football", "Ice Hockey", "Golf", "Boxing & MMA", "Other",
 )
+PAGE_FILES = {
+    "home": "index.html",
+    "news": "news.html",
+    "videos": "videos.html",
+    "live": "live.html",
+    "fixtures": "fixtures.html",
+}
 
 TRANSLATIONS = {
     "en": {
         "title": "SkySport | Sports News, Live Scores & Fixtures",
         "metaDescription": "Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.",
+        "pages": {
+            "home": {"title": "SkySport | Sports News, Live Scores & Fixtures", "description": "Sports headlines, trusted sources, video highlights, live scores and upcoming fixtures.", "heading": "The sports world, in focus.", "intro": "Follow the latest headlines, watch highlights, check live scores and find upcoming fixtures."},
+            "news": {"title": "Sports News | SkySport", "description": "The latest sports headlines from BBC Sport, The Guardian, ESPN, Sky Sports and beIN SPORTS.", "heading": "Latest sports news", "intro": "A dedicated feed of the latest headlines from trusted sports publishers."},
+            "videos": {"title": "Sports Videos & Highlights | SkySport", "description": "Watch the latest sports video highlights from trusted publishers.", "heading": "Sports videos", "intro": "Video highlights and reports from across the sporting world."},
+            "live": {"title": "Live Sports Scores | SkySport", "description": "Follow current live sports scores and match status from ESPN public scoreboards.", "heading": "Live scores", "intro": "Follow matches in progress with live scores and status updates."},
+            "fixtures": {"title": "Upcoming Sports Fixtures | SkySport", "description": "Browse upcoming sports fixtures and event schedules for the next 14 days.", "heading": "Upcoming fixtures", "intro": "Plan ahead with upcoming fixtures and events for the next 14 days."},
+        },
+        "newsPageIntro": "Updated __UPDATED__ · Sources: __SOURCES__",
+        "videosPageIntro": "Official highlights and publisher video reports.",
+        "livePageIntro": "Scores and match status from ESPN public scoreboards.",
+        "fixturesPageIntro": "Upcoming events · Times shown in UTC.",
+        "exploreSection": "Explore SkySport",
+        "sectionCards": {
+            "news": {"title": "Latest news", "description": "Headlines from five trusted sports news sources.", "action": "Browse all news"},
+            "videos": {"title": "Video highlights", "description": "Watch recent sports clips and publisher reports.", "action": "Watch videos"},
+            "live": {"title": "Live scores", "description": "See which matches are in progress and follow the scores.", "action": "View live scores"},
+            "fixtures": {"title": "Match schedule", "description": "Find upcoming fixtures and events for the next 14 days.", "action": "View schedule"},
+        },
         "language": "Select language",
         "news": "News",
         "videos": "Videos",
@@ -122,6 +147,24 @@ TRANSLATIONS = {
     "fr": {
         "title": "SkySport — Actualités sportives, scores et calendrier",
         "metaDescription": "Les dernières actualités du football, du basketball, du tennis et de la Formule 1, avec vidéos, scores en direct et calendrier.",
+        "pages": {
+            "home": {"title": "SkySport — Actualités sportives, scores et calendrier", "description": "Actualités, vidéos, scores en direct et calendrier sportif.", "heading": "Le sport, au cœur de l'actualité.", "intro": "Suivez l'actualité, regardez les vidéos, consultez les scores et les rencontres à venir."},
+            "news": {"title": "Actualités sportives | SkySport", "description": "Les dernières actualités sportives de BBC Sport, The Guardian, ESPN, Sky Sports et beIN SPORTS.", "heading": "Dernières actualités sportives", "intro": "Les derniers titres des principaux médias sportifs."},
+            "videos": {"title": "Vidéos et résumés sportifs | SkySport", "description": "Regardez les derniers résumés sportifs des médias de référence.", "heading": "Vidéos sportives", "intro": "Résumés vidéo et reportages du monde sportif."},
+            "live": {"title": "Scores sportifs en direct | SkySport", "description": "Suivez les scores et l'état des matchs en direct.", "heading": "Scores en direct", "intro": "Suivez les matchs en cours avec leurs scores et leur état."},
+            "fixtures": {"title": "Calendrier des rencontres sportives | SkySport", "description": "Consultez les rencontres et événements sportifs des 14 prochains jours.", "heading": "Prochaines rencontres", "intro": "Préparez-vous avec les rencontres prévues dans les 14 prochains jours."},
+        },
+        "newsPageIntro": "Mis à jour __UPDATED__ · Sources : __SOURCES__",
+        "videosPageIntro": "Résumés et reportages vidéo des éditeurs.",
+        "livePageIntro": "Scores et état des matchs via les tableaux publics d'ESPN.",
+        "fixturesPageIntro": "Prochains événements · Horaires en UTC.",
+        "exploreSection": "Explorer SkySport",
+        "sectionCards": {
+            "news": {"title": "Dernières actualités", "description": "Les titres de cinq sources sportives fiables.", "action": "Toutes les actualités"},
+            "videos": {"title": "Résumés vidéo", "description": "Les dernières vidéos et reportages sportifs.", "action": "Voir les vidéos"},
+            "live": {"title": "Scores en direct", "description": "Consultez les matchs en cours et leurs scores.", "action": "Voir les scores"},
+            "fixtures": {"title": "Calendrier des matchs", "description": "Les rencontres et événements des 14 prochains jours.", "action": "Voir le calendrier"},
+        },
         "language": "Choisir la langue",
         "news": "Actualités",
         "videos": "Vidéos",
@@ -170,6 +213,24 @@ TRANSLATIONS = {
     "ar": {
         "title": "سكاي سبورت | أخبار الرياضة والنتائج والمباريات",
         "metaDescription": "آخر أخبار كرة القدم والسلة والتنس والفورمولا 1، مع فيديوهات ونتائج مباشرة ومواعيد المباريات من مصادر رياضية موثوقة.",
+        "pages": {
+            "home": {"title": "سكاي سبورت | أخبار الرياضة والنتائج والمباريات", "description": "أخبار رياضية وفيديوهات ونتائج مباشرة ومواعيد المباريات.", "heading": "عالم الرياضة في صدارة المشهد.", "intro": "تابع آخر الأخبار وشاهد الملخصات وتعرّف على النتائج والمباريات القادمة."},
+            "news": {"title": "آخر الأخبار الرياضية | سكاي سبورت", "description": "آخر الأخبار الرياضية من BBC Sport وThe Guardian وESPN وSky Sports وbeIN SPORTS.", "heading": "آخر الأخبار الرياضية", "intro": "أحدث العناوين من مصادر رياضية موثوقة."},
+            "videos": {"title": "فيديوهات وملخصات رياضية | سكاي سبورت", "description": "شاهد أحدث الفيديوهات والملخصات الرياضية من الناشرين.", "heading": "فيديوهات رياضية", "intro": "ملخصات ومقاطع رياضية من مختلف الرياضات."},
+            "live": {"title": "النتائج الرياضية المباشرة | سكاي سبورت", "description": "تابع النتائج وحالة المباريات الرياضية المباشرة.", "heading": "النتائج المباشرة", "intro": "تابع المباريات الجارية ونتائجها وحالتها."},
+            "fixtures": {"title": "مواعيد المباريات القادمة | سكاي سبورت", "description": "تعرّف على مواعيد المباريات والفعاليات الرياضية خلال الأيام الـ14 القادمة.", "heading": "المباريات القادمة", "intro": "خطط لمتابعة المباريات والفعاليات خلال الأيام الـ14 القادمة."},
+        },
+        "newsPageIntro": "آخر تحديث __UPDATED__ · المصادر: __SOURCES__",
+        "videosPageIntro": "ملخصات وتقارير فيديو من الناشرين.",
+        "livePageIntro": "النتائج وحالة المباريات من لوحات ESPN العامة.",
+        "fixturesPageIntro": "المباريات القادمة · الأوقات بتوقيت UTC.",
+        "exploreSection": "استكشف سكاي سبورت",
+        "sectionCards": {
+            "news": {"title": "آخر الأخبار", "description": "أخبار رياضية من خمسة مصادر موثوقة.", "action": "تصفح الأخبار"},
+            "videos": {"title": "ملخصات الفيديو", "description": "شاهد أحدث المقاطع والتقارير الرياضية.", "action": "شاهد الفيديوهات"},
+            "live": {"title": "النتائج المباشرة", "description": "تابع المباريات الجارية ونتائجها.", "action": "عرض النتائج"},
+            "fixtures": {"title": "جدول المباريات", "description": "مواعيد المباريات والفعاليات خلال الأيام الـ14 القادمة.", "action": "عرض الجدول"},
+        },
         "language": "اختيار اللغة",
         "news": "الأخبار",
         "videos": "الفيديوهات",
@@ -947,16 +1008,71 @@ html[dir=rtl] .fixture-footer{direction:rtl}
 footer{background:var(--surface);border-color:var(--line)}
 @media(max-width:900px){.top-stories{grid-template-columns:minmax(0,1.35fr) minmax(230px,1fr);gap:18px}.lead-story{grid-template-columns:1fr}.lead-story .story-image{min-height:220px}.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.live-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.wrap{width:min(100% - 28px,1180px)}.nav{min-height:58px;gap:8px}.brand-name{font-size:1.2rem}.nav-right{gap:7px}.language-select{max-width:76px;padding:4px}.hero{padding:13px 0 17px}.hero p{font-size:.82rem}.top-stories{grid-template-columns:1fr;gap:14px;padding:18px 0}.lead-story{grid-template-columns:1fr}.lead-story .story-image{height:auto;min-height:0;aspect-ratio:16/9}.lead-story .story-body{padding:17px}.lead-story .story-body h3{font-size:1.55rem}.latest-list{padding:0 14px}.section-head{padding:24px 0 12px}.news-grid{grid-template-columns:1fr;gap:0}.news-grid>.story-card{display:block}.news-grid>.story-card .story-image{height:auto;min-height:0;aspect-ratio:16/9}.news-grid>.story-card .story-body{padding:11px 0 16px}.news-grid>.story-card .story-body h3{font-size:1.08rem}.news-grid>.story-card .story-body p{display:block;overflow:visible}.filters{padding-bottom:14px}.mobile-nav{background:var(--surface);border-color:var(--line)}.mobile-nav a{font-size:.74rem}.live-grid{grid-template-columns:1fr}}
+.nav-links a[aria-current="page"]{color:#ffbcb6;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:8px}
+.hero-stats[hidden]{display:none}
+.page-section-title{padding:32px 0 8px}
+.page-section-title h2,.home-sections>h2{font-family:Georgia,serif;font-size:1.8rem;letter-spacing:-.03em}
+.home-sections,.home-latest{padding:28px 0}
+.section-card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.section-card{position:relative;display:flex;min-height:196px;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:9px;padding:20px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,var(--surface),var(--bg));color:var(--text);text-decoration:none;box-shadow:0 10px 28px #00000012;transition:transform .2s,border-color .2s}
+.section-card:hover{transform:translateY(-3px);border-color:#ff493d88}
+.section-card-icon{position:absolute;top:17px;left:19px;color:var(--accent);font-size:1.7rem;font-weight:900}
+.section-card h3{margin:0;font-family:Georgia,serif;font-size:1.24rem}
+.section-card p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.5}
+.section-card-action{color:#ff796f;font-size:.8rem;font-weight:800}
+.home-story-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.home-story .story-image{aspect-ratio:16/9}
+.home-latest .section-title{align-items:center}
+.home-latest .section-title>a{white-space:nowrap}
+@media(max-width:900px){.section-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.section-card-grid,.home-story-grid{grid-template-columns:1fr}.section-card{min-height:150px}.section-card-icon{font-size:1.4rem}.home-story .story-image{height:auto;min-height:0;aspect-ratio:16/9}.home-latest .section-title{align-items:flex-start}}
+.ticker .wrap{min-width:0}
+.ticker-headline{min-width:0;overflow:hidden;color:var(--text);text-overflow:ellipsis;text-decoration:none;white-space:nowrap}
+.ticker-headline:hover{text-decoration:underline;text-underline-offset:3px}
+.section-card:focus-visible,.ticker-headline:focus-visible,.mobile-nav a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:650px){
+  body{padding-bottom:78px}
+  .theme-button,.language-select{min-width:44px;min-height:44px}
+  .language-select{max-width:84px}
+  .mobile-nav{min-height:70px;align-items:center;padding-top:8px}
+  .mobile-nav a{min-height:44px;display:grid;place-items:center;padding:6px 3px}
+  .filter{min-height:44px}
+  .section-card{min-height:144px}
+  .story-card,.fixture-card,.video-card{min-width:0}
+  .story-body,.video-info{min-width:0}
+  .story-meta{flex-wrap:wrap}
+}
+@media(max-width:360px){
+  .wrap{width:calc(100% - 24px)}
+  .brand-name{font-size:1.08rem}
+  .nav-right{gap:4px}
+  .section-card-grid{grid-template-columns:1fr}
+}
 </style>
 """
 
 
-def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, fixture_status, live_html="", stories=None):
+def build_page(
+    stories_html,
+    videos_html,
+    fixtures_html,
+    updated,
+    news_sources,
+    fixture_status,
+    live_html="",
+    stories=None,
+    page_kind="home",
+):
+    if page_kind not in PAGE_FILES:
+        raise ValueError(f"Unknown page kind: {page_kind}")
     source_count = 0 if news_sources == "No RSS source available" else len(news_sources.split(", "))
+    page_url = SITE_URL if page_kind == "home" else urljoin(SITE_URL, PAGE_FILES[page_kind])
+    english_page = TRANSLATIONS["en"]["pages"][page_kind]
     story_list_schema = {
+        "@id": f"{page_url}#news-list",
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Latest sports news",
+        "name": english_page["heading"],
         "numberOfItems": sum(
             1 for story in stories or [] if story.get("url", "").startswith("https://")
         ),
@@ -971,74 +1087,135 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
             if story.get("url", "").startswith("https://")
         ],
     }
-    story_list_json = json.dumps(story_list_schema, ensure_ascii=False).replace("<", "\\u003c")
+    if page_kind != "news":
+        story_list_schema = {}
+    website_schema = {
+        "@type": "WebSite",
+        "@id": f"{SITE_URL}#website",
+        "name": "SkySport",
+        "url": SITE_URL,
+        "description": "Sports news, videos, live scores and fixtures from trusted publishers.",
+        "inLanguage": ["en", "fr", "ar"],
+        "publisher": {"@type": "Organization", "name": "SkySport", "url": SITE_URL},
+    }
+    breadcrumb_items = [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": SITE_URL,
+    }]
+    if page_kind != "home":
+        breadcrumb_items.append({
+            "@type": "ListItem",
+            "position": 2,
+            "name": english_page["heading"],
+            "item": page_url,
+        })
+    page_schema = {
+        "@type": "CollectionPage" if page_kind in {"news", "videos", "fixtures"} else "WebPage",
+        "@id": f"{page_url}#webpage",
+        "url": page_url,
+        "name": english_page["title"],
+        "description": english_page["description"],
+        "inLanguage": "en",
+        "isPartOf": {"@id": f"{SITE_URL}#website"},
+        "breadcrumb": {"@id": f"{page_url}#breadcrumb"},
+    }
+    if page_kind == "news":
+        page_schema["mainEntity"] = {"@id": story_list_schema["@id"]}
+    structured_data = {"@context": "https://schema.org", "@graph": [
+        website_schema,
+        page_schema,
+        {
+            "@type": "BreadcrumbList",
+            "@id": f"{page_url}#breadcrumb",
+            "itemListElement": breadcrumb_items,
+        },
+    ]}
+    if story_list_schema:
+        structured_data["@graph"].append(story_list_schema)
+    structured_data_json = json.dumps(structured_data, ensure_ascii=False).replace("<", "\\u003c")
     story_cards = re.findall(r'<article\b[^>]*class="story-card"[^>]*>.*?</article>', stories_html, re.DOTALL)
-    if story_cards:
-        featured_index = next(
-            (index for index, story in enumerate(story_cards) if re.search(r"<img\b[^>]*src=", story)),
-            0,
-        )
-        featured = story_cards.pop(featured_index)
-        featured_story = featured.replace('class="story-card"', 'class="story-card lead-story"', 1)
-        featured_story = featured_story.replace(
-            'loading="lazy" decoding="async"',
-            'loading="eager" fetchpriority="high" decoding="async"',
-            1,
-        )
-        latest_stories = "".join(
-            story.replace('class="story-card"', 'class="story-card latest-story"', 1)
-            for story in story_cards[1:5]
-        ) or '<p class="section-empty">More headlines will appear after the next update.</p>'
-        remaining_stories = "\n".join(story_cards[5:])
+    page_intro = {
+        "news": "newsPageIntro",
+        "videos": "videosPageIntro",
+        "live": "livePageIntro",
+        "fixtures": "fixturesPageIntro",
+    }.get(page_kind, "intro")
+    if page_kind == "news":
+        page_content = f'''<section class="section-head"><div><h2 data-i18n="moreHeadlines">{english_page["heading"]}</h2><p data-i18n="{page_intro}">{TRANSLATIONS["en"]["newsPageIntro"].replace("__UPDATED__", html.escape(updated)).replace("__SOURCES__", html.escape(news_sources))}</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines" data-i18n-placeholder="search"></section>
+          <nav class="filters" aria-label="Filter headlines by sport">@@FILTERS@@</nav>
+          <div class="news-grid" id="news-grid">{stories_html or '<p class="empty-state">Headlines are temporarily unavailable.</p>'}<p class="empty-state" id="empty-state" hidden data-i18n="noStories">No stories found. Try a different search or filter.</p></div>'''
+    elif page_kind == "videos":
+        page_content = f'''<section class="section-title page-section-title"><div><h2 data-i18n="videoHighlights">{english_page["heading"]}</h2><p data-i18n="{page_intro}">{TRANSLATIONS["en"][page_intro]}</p></div></section><div class="video-grid">@@VIDEOS@@</div>'''
+    elif page_kind == "live":
+        page_content = f'''<section class="section-title page-section-title"><div><h2 data-i18n="liveScores">{english_page["heading"]}</h2><p data-i18n="{page_intro}">{TRANSLATIONS["en"][page_intro]}</p></div></section><div class="schedule-wrap"><div class="live-grid">@@LIVE@@</div></div>'''
+    elif page_kind == "fixtures":
+        page_content = f'''<section class="section-title page-section-title"><div><h2 data-i18n="upcomingFixtures">{english_page["heading"]}</h2><p data-i18n="{page_intro}">{TRANSLATIONS["en"][page_intro]}</p></div></section><div class="schedule-wrap"><div class="schedule-grid">@@FIXTURES@@</div><p class="schedule-note">@@FIXTURE_STATUS@@ <span data-i18n="fixtureNote">{TRANSLATIONS["en"]["fixtureNote"]}</span></p></div>'''
     else:
-        featured_story = '<p class="section-empty">Headlines are temporarily unavailable. Please check back after the next source update.</p>'
-        latest_stories = '<p class="section-empty">No recent headlines are available.</p>'
-        remaining_stories = ""
+        story_preview = "".join(
+            story.replace('class="story-card"', 'class="story-card home-story"', 1)
+            for story in story_cards[:3]
+        ) or '<p class="section-empty">Latest headlines will appear after the next update.</p>'
+        story_preview = re.sub(
+            r'loading="lazy" decoding="async"',
+            'loading="eager" fetchpriority="high" decoding="async"',
+            story_preview,
+            count=1,
+        )
+        page_content = f'''<section class="home-sections" aria-labelledby="explore-heading"><h2 id="explore-heading" data-i18n="exploreSection">Explore SkySport</h2><div class="section-card-grid">@@SECTION_CARDS@@</div></section>
+          <section class="home-latest"><div class="section-title"><div><h2 data-i18n="latest">{TRANSLATIONS["en"]["latest"]}</h2><p>{html.escape(updated)} · {html.escape(news_sources)}</p></div><a class="read-more" href="news.html" data-i18n="allNews">Browse all news</a></div><div class="home-story-grid">{story_preview}</div></section>'''
+    top_story = (stories or [None])[0]
+    if top_story:
+        ticker_markup = (
+            f'<a class="ticker-headline" href="{html.escape(top_story["url"], quote=True)}" '
+            f'target="_blank" rel="noopener noreferrer">{html.escape(top_story["title"])}</a>'
+        )
+        ticker_label = '<span class="ticker-label" data-i18n="topStory">Top story</span>'
+    else:
+        ticker_markup = '<span>Football · Tennis · Formula 1 · Cricket · Rugby · Basketball · American football · Ice hockey · Golf · Boxing &amp; MMA</span>'
+        ticker_label = '<span class="ticker-label" data-i18n="sportsDesk">SPORTS DESK</span>'
+    section_cards = "".join(
+        f'<a class="section-card" href="{PAGE_FILES[key]}" data-section-card="{key}"><span class="section-card-icon" aria-hidden="true">{icon}</span><h3 data-section-copy="{key}.title">{copy["title"]}</h3><p data-section-copy="{key}.description">{copy["description"]}</p><span class="section-card-action" data-section-copy="{key}.action">{copy["action"]} ↗</span></a>'
+        for key, icon in (("news", "N"), ("videos", "▶"), ("live", "●"), ("fixtures", "▦"))
+        for copy in (TRANSLATIONS["en"]["sectionCards"][key],)
+    )
     page = """<!doctype html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.">
+  <meta name="description" content="@@PAGE_DESCRIPTION@@">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="@@SITE_URL@@">
+  <link rel="canonical" href="@@PAGE_URL@@">
   <meta property="og:type" content="website"><meta property="og:site_name" content="SkySport">
-  <meta property="og:url" content="@@SITE_URL@@">
-  <meta property="og:title" content="SkySport | Sports News, Live Scores &amp; Fixtures">
-  <meta property="og:description" content="Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.">
+  <meta property="og:url" content="@@PAGE_URL@@">
+  <meta property="og:title" content="@@PAGE_TITLE@@">
+  <meta property="og:description" content="@@PAGE_DESCRIPTION@@">
   <meta property="og:image" content="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
   <meta property="og:image:alt" content="Football match under stadium lights">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SkySport | Sports News, Live Scores &amp; Fixtures">
-  <meta name="twitter:description" content="Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.">
+  <meta name="twitter:title" content="@@PAGE_TITLE@@">
+  <meta name="twitter:description" content="@@PAGE_DESCRIPTION@@">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
   <meta name="twitter:image:alt" content="Football match under stadium lights">
-  <meta name="theme-color" content="#081321"><title>SkySport | Sports News, Live Scores &amp; Fixtures</title>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SkySport","url":"@@SITE_URL@@","description":"Latest football, basketball, tennis and Formula 1 news, with live scores, videos and upcoming fixtures from trusted sports publishers.","inLanguage":["en","fr","ar"],"publisher":{"@type":"Organization","name":"SkySport","url":"@@SITE_URL@@"}}</script>
+  <meta name="theme-color" content="#081321"><title>@@PAGE_TITLE@@</title>
+  <script type="application/ld+json">@@STRUCTURED_DATA@@</script>
 @@STYLE@@
-  <script type="application/ld+json">@@STORY_LIST_SCHEMA@@</script>
-</head>
+  </head>
 <body>
   <header class="masthead"><div class="wrap">
-    <nav class="nav" aria-label="Main navigation"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Skysport</span></a>
-      <div class="nav-links"><a href="#news" data-i18n="news">News</a><a href="#videos" data-i18n="videos">Videos</a><a href="#live" data-i18n="live">Live</a><a href="#fixtures" data-i18n="fixtures">Fixtures</a></div>
+    <nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Skysport</span></a>
+      <div class="nav-links"><a href="news.html" data-i18n="news" data-page-link="news" @@NAV_NEWS@@>News</a><a href="videos.html" data-i18n="videos" data-page-link="videos" @@NAV_VIDEOS@@>Videos</a><a href="live.html" data-i18n="live" data-page-link="live" @@NAV_LIVE@@>Live</a><a href="fixtures.html" data-i18n="fixtures" data-page-link="fixtures" @@NAV_FIXTURES@@>Fixtures</a></div>
       <div class="nav-right"><span class="desk-label" data-i18n="sportsDesk">Sports desk</span><label class="visually-hidden" for="language-toggle" data-i18n="language">Select language</label><select class="language-select" id="language-toggle" aria-label="Select language"><option value="en">English</option><option value="fr">Français</option><option value="ar">العربية</option></select><button class="theme-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">☼</button></div>
     </nav>
-    <section class="hero" id="top"><span class="eyebrow" data-i18n="eyebrow">Independent sports coverage</span><h1 data-i18n="headline">The sports world, in focus.</h1><p data-i18n="intro">Headlines, highlights and match schedules from across the sporting world.</p>
-      <div class="hero-stats">      <span><strong>10</strong> sports</span><span><strong>@@SOURCE_COUNT@@</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
+    <section class="hero"><span class="eyebrow" data-i18n="eyebrow">Independent sports coverage</span><h1 data-page-heading>@@PAGE_HEADING@@</h1><p data-page-intro>@@PAGE_INTRO@@</p>
+      <div class="hero-stats" @@HOME_STATS_HIDDEN@@><span><strong>10</strong> sports</span><span><strong>@@SOURCE_COUNT@@</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
     </section>
   </div></header>
-  <nav class="mobile-nav" aria-label="Quick section navigation"><a href="#news" data-i18n="news">News</a><a href="#videos" data-i18n="videos">Videos</a><a href="#live" data-i18n="live">Live</a><a href="#fixtures" data-i18n="fixtures">Fixtures</a></nav>
-  <div class="ticker"><div class="wrap"><span class="ticker-label" data-i18n="sportsDesk">SPORTS DESK</span><span>Football · Tennis · Formula 1 · Cricket · Rugby · Basketball · American football · Ice hockey · Golf · Boxing &amp; MMA</span></div></div>
+  <nav class="mobile-nav" aria-label="Quick section navigation"><a href="news.html" data-i18n="news" data-page-link="news" @@NAV_NEWS@@>News</a><a href="videos.html" data-i18n="videos" data-page-link="videos" @@NAV_VIDEOS@@>Videos</a><a href="live.html" data-i18n="live" data-page-link="live" @@NAV_LIVE@@>Live</a><a href="fixtures.html" data-i18n="fixtures" data-page-link="fixtures" @@NAV_FIXTURES@@>Fixtures</a></nav>
+  <div class="ticker"><div class="wrap">@@TICKER_LABEL@@@@TICKER_CONTENT@@</div></div>
   <main class="wrap">
-    <section class="top-stories" aria-label="Top stories"><div><p class="section-kicker" data-i18n="topStory">Top story</p>@@FEATURED_STORY@@</div><aside class="latest-panel"><div class="latest-heading"><h2 data-i18n="latest">Latest</h2><a href="#news" data-i18n="allNews">All news ↓</a></div><div class="latest-list">@@LATEST_STORIES@@</div></aside></section>
-    <section class="section-head" id="news"><div><h2 data-i18n="moreHeadlines">More headlines</h2><p>Updated @@UPDATED@@ · Sources: @@NEWS_SOURCES@@</p></div><input class="search" id="search" type="search" placeholder="Search headlines…" aria-label="Search headlines" data-i18n-placeholder="search"></section>
-    <nav class="filters" aria-label="Filter headlines by sport">@@FILTERS@@</nav>
-    <div class="news-grid" id="news-grid">@@STORIES@@<p class="empty-state" id="empty-state" hidden data-i18n="noStories">No stories found. Try a different search or filter.</p></div>
-    <section class="content-section" id="videos"><div class="section-title"><div><h2 data-i18n="videoHighlights">Video highlights</h2><p data-i18n="videoDescription">Videos open on their publisher's site unless a direct file is available.</p></div></div><div class="video-grid">@@VIDEOS@@</div></section>
-    <section class="content-section" id="live"><div class="section-title"><div><h2 data-i18n="liveScores">Live scores</h2><p data-i18n="liveDescription">Live matches from ESPN public scoreboards. Updates about every 15 minutes.</p></div></div><div class="schedule-wrap"><div class="live-grid">@@LIVE@@</div></div></section>
-    <section class="content-section" id="fixtures"><div class="section-title"><div><h2 data-i18n="upcomingFixtures">Upcoming fixtures</h2><p data-i18n="fixtureDescription">Next 14 days · Times shown in UTC</p></div></div>
-      <div class="schedule-wrap"><div class="schedule-grid">@@FIXTURES@@</div><p class="schedule-note">@@FIXTURE_STATUS@@ <span data-i18n="fixtureNote">Fixture data is supplied by ESPN public scoreboards. Availability varies by sport and competition.</span></p></div>
-    </section>
+    @@MAIN_CONTENT@@
   </main>
   <footer><div class="wrap" data-i18n="footer">Skysport · News headlines stay in their publisher's original language. Fixture data: ESPN public scoreboards.</div></footer>
   <script>
@@ -1056,6 +1233,12 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
       const search = document.getElementById('search');
       const empty = document.getElementById('empty-state');
       const themeButton = document.getElementById('theme-toggle');
+      const pageKind = '@@PAGE_KIND@@';
+      const pageUrl = @@PAGE_URL_JSON@@;
+      const pageUpdated = @@UPDATED_JSON@@;
+      const pageSources = @@SOURCES_JSON@@;
+      const structuredDataElement = document.querySelector('script[type="application/ld+json"]');
+      const structuredData = JSON.parse(structuredDataElement.textContent);
       let selected = 'All';
       let saved = new Set();
       try { saved = new Set(JSON.parse(localStorage.getItem('skysport-saved') || '[]')); } catch {}
@@ -1083,6 +1266,7 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
         });
       });
       function updateCards() {
+        if (!search || !empty) return;
         const query = search.value.trim().toLocaleLowerCase();
         let count = 0;
         cards.forEach(card => {
@@ -1097,26 +1281,44 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
         selected = button.dataset.filter;
         updateCards();
       }));
-      search.addEventListener('input', updateCards);
+      search?.addEventListener('input', updateCards);
       function applyLanguage() {
         const rtl = language === 'ar';
+        const page = copy().pages[pageKind];
         document.documentElement.lang = language;
         document.documentElement.dir = rtl ? 'rtl' : 'ltr';
-        document.title = copy().title;
-        document.querySelector('meta[name="description"]').content = copy().metaDescription;
-        document.querySelector('meta[property="og:title"]').content = copy().title;
-        document.querySelector('meta[property="og:description"]').content = copy().metaDescription;
-        document.querySelector('meta[name="twitter:title"]').content = copy().title;
-        document.querySelector('meta[name="twitter:description"]').content = copy().metaDescription;
-        languageSelect.value = language;
-        languageSelect.setAttribute('aria-label', copy().language);
+        document.title = page.title;
+        document.querySelector('meta[name="description"]').content = page.description;
+        document.querySelector('meta[property="og:title"]').content = page.title;
+        document.querySelector('meta[property="og:description"]').content = page.description;
+        document.querySelector('meta[name="twitter:title"]').content = page.title;
+        document.querySelector('meta[name="twitter:description"]').content = page.description;
+        const pageData = structuredData['@graph'].find(item => item['@id'] === `${pageUrl}#webpage`);
+        pageData.name = page.title;
+        pageData.description = page.description;
+        pageData.inLanguage = language;
+        structuredDataElement.textContent = JSON.stringify(structuredData);
+        document.querySelector('[data-page-heading]').textContent = page.heading;
+        document.querySelector('[data-page-intro]').textContent = page.intro;
+        if (languageSelect) {
+          languageSelect.value = language;
+          languageSelect.setAttribute('aria-label', copy().language);
+        }
         document.querySelector('label[for="language-toggle"]').textContent = copy().language;
         document.querySelectorAll('[data-i18n]').forEach(element => {
           const value = copy()[element.dataset.i18n];
           if (typeof value === 'string') element.textContent = value;
         });
+        if (pageKind === 'news') {
+          const newsIntro = document.querySelector('[data-i18n="newsPageIntro"]');
+          if (newsIntro) newsIntro.textContent = copy().newsPageIntro.replace('__UPDATED__', pageUpdated).replace('__SOURCES__', pageSources);
+        }
         document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
           element.placeholder = copy()[element.dataset.i18nPlaceholder];
+        });
+        document.querySelectorAll('[data-section-copy]').forEach(element => {
+          const [section, key] = element.dataset.sectionCopy.split('.');
+          element.textContent = copy().sectionCards[section][key] + (key === 'action' ? ' ↗' : '');
         });
         filters.forEach(button => {
           button.textContent = copy().categories[button.dataset.filter] || button.dataset.filter;
@@ -1129,7 +1331,7 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
         const dark = document.documentElement.classList.contains('dark');
         themeButton.setAttribute('aria-label', dark ? copy().themeLight : copy().themeDark);
       }
-      languageSelect.addEventListener('change', () => {
+      languageSelect?.addEventListener('change', () => {
         language = translations[languageSelect.value] ? languageSelect.value : 'en';
         try { localStorage.setItem('skysport-language', language); } catch {}
         applyLanguage();
@@ -1137,7 +1339,7 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
       try {
         if (localStorage.getItem('skysport-theme') === 'dark') document.documentElement.classList.add('dark');
       } catch {}
-      themeButton.addEventListener('click', () => {
+      themeButton?.addEventListener('click', () => {
         const dark = document.documentElement.classList.toggle('dark');
         try { localStorage.setItem('skysport-theme', dark ? 'dark' : 'light'); } catch {}
         applyLanguage();
@@ -1149,15 +1351,28 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
 </html>"""
     replacements = {
         "@@SITE_URL@@": html.escape(SITE_URL, quote=True),
+        "@@PAGE_URL@@": html.escape(page_url, quote=True),
+        "@@PAGE_TITLE@@": html.escape(english_page["title"]),
+        "@@PAGE_DESCRIPTION@@": html.escape(english_page["description"], quote=True),
+        "@@PAGE_HEADING@@": html.escape(english_page["heading"]),
+        "@@PAGE_INTRO@@": html.escape(english_page["intro"]),
+        "@@PAGE_INTRO_KEY@@": "intro",
+        "@@PAGE_KIND@@": page_kind,
+        "@@UPDATED_JSON@@": json.dumps(updated, ensure_ascii=False),
+        "@@SOURCES_JSON@@": json.dumps(news_sources, ensure_ascii=False),
+        "@@HOME_STATS_HIDDEN@@": "" if page_kind == "home" else "hidden",
+        "@@MAIN_CONTENT@@": page_content,
+        "@@SECTION_CARDS@@": section_cards,
+        "@@NAV_NEWS@@": 'aria-current="page"' if page_kind == "news" else "",
+        "@@NAV_VIDEOS@@": 'aria-current="page"' if page_kind == "videos" else "",
+        "@@NAV_LIVE@@": 'aria-current="page"' if page_kind == "live" else "",
+        "@@NAV_FIXTURES@@": 'aria-current="page"' if page_kind == "fixtures" else "",
         "@@STYLE@@": STYLE,
-        "@@STORY_LIST_SCHEMA@@": story_list_json,
-        "@@UPDATED@@": html.escape(updated),
-        "@@NEWS_SOURCES@@": html.escape(news_sources),
+        "@@STRUCTURED_DATA@@": structured_data_json,
+        "@@PAGE_URL_JSON@@": json.dumps(page_url, ensure_ascii=False),
+        "@@TICKER_LABEL@@": ticker_label,
+        "@@TICKER_CONTENT@@": ticker_markup,
         "@@SOURCE_COUNT@@": f"{source_count:02d}",
-        "@@STORIES@@": stories_html,
-        "@@FEATURED_STORY@@": featured_story,
-        "@@LATEST_STORIES@@": latest_stories,
-        "@@STORIES@@": remaining_stories,
         "@@FILTERS@@": "".join(
             f'<button class="filter{" active" if category == "All" else ""}" type="button" data-filter="{html.escape(category, quote=True)}">{html.escape({"All": "All sports", "Saved": "♡ Saved"}.get(category, category))}</button>'
             for category in ("All", *NEWS_CATEGORIES, "Saved")
@@ -1173,11 +1388,16 @@ def build_page(stories_html, videos_html, fixtures_html, updated, news_sources, 
     return page
 
 
-def read_cached_news(path="index.html"):
-    try:
-        with open(path, encoding="utf-8") as existing:
-            current = existing.read()
-    except OSError:
+def read_cached_news(path="news.html"):
+    current = ""
+    for candidate in (path, "index.html") if path != "index.html" else (path,):
+        try:
+            with open(candidate, encoding="utf-8") as existing:
+                current = existing.read()
+                break
+        except OSError:
+            continue
+    if not current:
         return "", ""
     cards = re.findall(r'<article\b[^>]*class="story-card"[^>]*>.*?</article>', current, re.DOTALL)
     updated = re.search(r"(?:Updated|Last cached update:?)\s+([^<]+?)\s*·\s*(?:News source|Sources|Source):", current)
@@ -1222,19 +1442,29 @@ def main():
     else:
         fixture_status = ""
     source_label = ", ".join(news_sources) if news_sources else "No RSS source available"
-    page = build_page(
-        stories_html,
-        videos_html,
-        fixtures_html,
-        updated,
-        source_label,
-        fixture_status,
-        render_live(live_fixtures),
-        stories,
-    )
-    with open("index.html", "w", encoding="utf-8") as output:
-        output.write(page)
-    print("Generated Skysport page successfully.")
+    for page_kind, page_file in PAGE_FILES.items():
+        page = build_page(
+            stories_html,
+            videos_html,
+            fixtures_html,
+            updated,
+            source_label,
+            fixture_status,
+            render_live(live_fixtures),
+            stories,
+            page_kind,
+        )
+        with open(page_file, "w", encoding="utf-8") as output:
+            output.write(page)
+
+    sitemap = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+    for page_file in PAGE_FILES.values():
+        location = SITE_URL if page_file == "index.html" else urljoin(SITE_URL, page_file)
+        url_node = ET.SubElement(sitemap, "url")
+        ET.SubElement(url_node, "loc").text = location
+    ET.indent(sitemap, space="  ")
+    ET.ElementTree(sitemap).write("sitemap.xml", encoding="UTF-8", xml_declaration=True)
+    print(f"Generated {len(PAGE_FILES)} Skysport pages and sitemap successfully.")
 
 
 if __name__ == "__main__":
