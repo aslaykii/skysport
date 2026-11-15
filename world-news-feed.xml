@@ -5,10 +5,28 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 17:13:41 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 17:50:04 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>‘No such thing as a free lunch,’ says Milburn as he warns it will take a decade for UK benefits bill to come down</title>
+      <title>Iran launches drone attacks against US military base in Bahrain</title>
+      <link>https://www.theguardian.com/world/2026/nov/15/iran-launches-drone-attacks-against-us-military-base-in-bahrain</link>
+      <guid isPermaLink="false">c019bab26c7ebf0e9ecd</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 15 Nov 2026 17:36:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Czechs rally against plan to switch funding of public media</title>
+      <link>https://www.bbc.co.uk/news/articles/cm8e0knr7604o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">d3a2c471fef7377be207</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 15 Nov 2026 17:23:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>Burnham pledges early intervention and ‘benefits backstop’ to tackle youth jobs crisis</title>
       <link>https://www.theguardian.com/society/2026/nov/15/no-free-lunch-milburn-mcfadden-kuenssberg-uk-benefits-youth-unemployment-neet</link>
       <guid isPermaLink="false">dfae51ed5be18fa866ce</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
@@ -33,15 +51,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Sun, 15 Nov 2026 16:40:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Czechs rally against plan to switch funding of public media</title>
-      <link>https://www.bbc.co.uk/news/articles/cm8e0knr7604o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">d3a2c471fef7377be207</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Sun, 15 Nov 2026 16:36:42 +0000</pubDate>
     </item>
     <item>
       <title>Transportation secretary Sean Duffy blames prior presidents and Congress for flight stoppage</title>
@@ -159,15 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Sun, 15 Nov 2026 13:37:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘Shameless venality’: how a flurry of lawsuits has thwarted Trump’s self-enrichment schemes</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/15/trump-self-enrichment-lawsuits</link>
-      <guid isPermaLink="false">b29bc64576757a926366</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 13:00:15 +0000</pubDate>
     </item>
   </channel>
 </rss>
