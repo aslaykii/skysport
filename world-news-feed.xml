@@ -5,35 +5,8 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 10:13:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 10:17:26 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
-    <item>
-      <title>Iran targets Bahrain airbase as strikes resume in Gulf - Middle East crisis live</title>
-      <link>https://www.theguardian.com/world/live/2026/nov/15/middle-east-crisis-live-iran-bahrain-strikes-gulf-donald-trump-us-israel-yemen-houthis</link>
-      <guid isPermaLink="false">03d8964b94784ab9ccb0</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 10:02:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>Lucy Beaumont thought she’d never work in TV again after speaking up on David Walliams. Something different happened</title>
-      <link>https://www.theguardian.com/tv-and-radio/2026/nov/15/lucy-beaumont-work-tv-david-walliams</link>
-      <guid isPermaLink="false">a026a77f8140aee77b69</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 10:00:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>Troubled Scottish steel supplier raises questions over Royal Navy contracts</title>
-      <link>https://www.theguardian.com/business/2026/nov/15/liberty-steel-dalzell-scotland-royal-navy-contracts-warships</link>
-      <guid isPermaLink="false">9925ff36db6fe5b123c9</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 10:00:10 +0000</pubDate>
-    </item>
     <item>
       <title>Russell Brand accuser waives anonymity to call for consent law change</title>
       <link>https://www.theguardian.com/law/2026/nov/15/uk-government-to-consider-changing-age-of-consent-after-allegations-against-russell-brand</link>
@@ -125,6 +98,15 @@
       <pubDate>Sun, 15 Nov 2026 06:00:05 +0000</pubDate>
     </item>
     <item>
+      <title>Planned asylum seeker detention centre next to Oxfordshire sewage works criticised</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/15/planned-asylum-seeker-detention-centre-next-to-oxfordshire-sewage-works-criticised</link>
+      <guid isPermaLink="false">42b3b1b034ec1cb5781f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 15 Nov 2026 06:00:05 +0000</pubDate>
+    </item>
+    <item>
       <title>World leaders head to Asia for back-to-back diplomatic summits</title>
       <link>https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean</link>
       <guid isPermaLink="false">48c060ca9d409921abfa</guid>
@@ -168,6 +150,24 @@
       <category>Climate</category>
       <source>The Guardian</source>
       <pubDate>Sun, 15 Nov 2026 01:52:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>My mother told me I would die if I sought treatment for Ebola - I am proof you can survive</title>
+      <link>https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">a62b82539253fb0ea723</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 15 Nov 2026 00:06:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Judo champion shakes up French presidential race with surprise candidacy</title>
+      <link>https://www.bbc.co.uk/news/articles/c6dj1e8wyykmo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">9c404fd939f59376d73f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 15 Nov 2026 00:06:51 +0000</pubDate>
     </item>
   </channel>
 </rss>
