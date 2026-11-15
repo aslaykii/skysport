@@ -77,6 +77,7 @@ PAGE_FILES = {
     "live": "live.html",
     "fixtures": "fixtures.html",
 }
+WORLD_NEWS_PAGE = "world-news.html"
 
 TRANSLATIONS = {
     "en": {
@@ -883,7 +884,7 @@ def build_sitemap(lastmod=None):
     if lastmod.tzinfo is None:
         lastmod = lastmod.replace(tzinfo=timezone.utc)
     sitemap = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    for page_file in PAGE_FILES.values():
+    for page_file in (*PAGE_FILES.values(), WORLD_NEWS_PAGE):
         location = SITE_URL if page_file == "index.html" else urljoin(SITE_URL, page_file)
         url_node = ET.SubElement(sitemap, "url")
         ET.SubElement(url_node, "loc").text = location
@@ -1296,14 +1297,14 @@ def build_page(
 <body>
   <header class="masthead"><div class="wrap">
     <nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">Skysport</span></a>
-      <div class="nav-links"><a href="news.html" data-i18n="news" data-page-link="news" @@NAV_NEWS@@>News</a><a href="videos.html" data-i18n="videos" data-page-link="videos" @@NAV_VIDEOS@@>Videos</a><a href="live.html" data-i18n="live" data-page-link="live" @@NAV_LIVE@@>Live</a><a href="fixtures.html" data-i18n="fixtures" data-page-link="fixtures" @@NAV_FIXTURES@@>Fixtures</a></div>
+      <div class="nav-links"><a href="news.html" data-i18n="news" data-page-link="news" @@NAV_NEWS@@>News</a><a href="videos.html" data-i18n="videos" data-page-link="videos" @@NAV_VIDEOS@@>Videos</a><a href="live.html" data-i18n="live" data-page-link="live" @@NAV_LIVE@@>Live</a><a href="fixtures.html" data-i18n="fixtures" data-page-link="fixtures" @@NAV_FIXTURES@@>Fixtures</a><a href="world-news.html">World News</a></div>
       <div class="nav-right"><span class="desk-label" data-i18n="sportsDesk">Sports desk</span><label class="visually-hidden" for="language-toggle" data-i18n="language">Select language</label><select class="language-select" id="language-toggle" aria-label="Select language"><option value="en">English</option><option value="fr">Français</option><option value="ar">العربية</option></select><button class="theme-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">☼</button></div>
     </nav>
     <section class="hero"><span class="eyebrow" data-i18n="eyebrow">Independent sports coverage</span><h1 data-page-heading>@@PAGE_HEADING@@</h1><p data-page-intro>@@PAGE_INTRO@@</p>
       <div class="hero-stats" @@HOME_STATS_HIDDEN@@><span><strong>10</strong> sports</span><span><strong>@@SOURCE_COUNT@@</strong> news desks</span><span><strong>14 days</strong> fixture window</span></div>
     </section>
   </div></header>
-  <nav class="mobile-nav" aria-label="Quick section navigation"><a href="news.html" data-i18n="news" data-page-link="news" @@NAV_NEWS@@>News</a><a href="videos.html" data-i18n="videos" data-page-link="videos" @@NAV_VIDEOS@@>Videos</a><a href="live.html" data-i18n="live" data-page-link="live" @@NAV_LIVE@@>Live</a><a href="fixtures.html" data-i18n="fixtures" data-page-link="fixtures" @@NAV_FIXTURES@@>Fixtures</a></nav>
+  <nav class="mobile-nav" aria-label="Quick section navigation"><a href="news.html" data-i18n="news" data-page-link="news" @@NAV_NEWS@@>News</a><a href="videos.html" data-i18n="videos" data-page-link="videos" @@NAV_VIDEOS@@>Videos</a><a href="live.html" data-i18n="live" data-page-link="live" @@NAV_LIVE@@>Live</a><a href="fixtures.html" data-i18n="fixtures" data-page-link="fixtures" @@NAV_FIXTURES@@>Fixtures</a><a href="world-news.html">World</a></nav>
   <div class="ticker"><div class="wrap">@@TICKER_LABEL@@@@TICKER_CONTENT@@</div></div>
   <main class="wrap">
     @@MAIN_CONTENT@@
