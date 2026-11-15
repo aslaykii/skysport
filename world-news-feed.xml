@@ -5,8 +5,35 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 21:28:30 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 22:10:09 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Sydney Sweeney has great jeans. Who made them? (Psst: Workers)</title>
+      <link>https://www.npr.org/2026/11/15/nx-s1-6013327/sydney-sweeney-jeans-american-eagle-garment-industry</link>
+      <guid isPermaLink="false">03436ed514b09073933f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>NPR</source>
+      <pubDate>Sun, 15 Nov 2026 22:07:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Prince Harry tells Ukrainians they are ‘going to win war’ on surprise trip to Lviv</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/15/prince-harry-ukraine-war-surprise-trip-invictus-games</link>
+      <guid isPermaLink="false">dbfc3f12b4e01a2187b1</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 15 Nov 2026 22:00:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>Australia, UK, Canada and Italy urge Israel to allow critical aid to Gaza ahead of winter</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/16/australia-uk-canada-italy-urge-israel-critical-aid-gaza-winter-ntwnfb</link>
+      <guid isPermaLink="false">c3d4650f814460b7d796</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 15 Nov 2026 21:57:21 +0000</pubDate>
+    </item>
     <item>
       <title>Somali-American Uber driver brutally assaulted in alleged hate crime in Minnesota</title>
       <link>https://www.theguardian.com/us-news/2026/nov/15/somali-american-uber-driver-attack-minnesota</link>
@@ -141,33 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Sun, 15 Nov 2026 18:20:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>Iran launches drone attacks against US military base in Bahrain</title>
-      <link>https://www.theguardian.com/world/2026/nov/15/iran-launches-drone-attacks-against-us-military-base-in-bahrain</link>
-      <guid isPermaLink="false">c019bab26c7ebf0e9ecd</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 18:03:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>Burnham pledges early intervention and ‘benefits backstop’ to tackle youth jobs crisis</title>
-      <link>https://www.theguardian.com/society/2026/nov/15/no-free-lunch-milburn-mcfadden-kuenssberg-uk-benefits-youth-unemployment-neet</link>
-      <guid isPermaLink="false">dfae51ed5be18fa866ce</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 17:04:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>Planned asylum seeker detention centre next to Oxfordshire sewage works criticised</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/15/planned-asylum-seeker-detention-centre-next-to-oxfordshire-sewage-works-criticised</link>
-      <guid isPermaLink="false">42b3b1b034ec1cb5781f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 16:47:39 +0000</pubDate>
     </item>
   </channel>
 </rss>
