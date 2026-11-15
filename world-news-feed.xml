@@ -5,16 +5,34 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 11:09:40 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 11:50:42 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>Iran targets Bahrain airbase as strikes resume in Gulf - Middle East crisis live</title>
       <link>https://www.theguardian.com/world/live/2026/nov/15/middle-east-crisis-live-iran-bahrain-strikes-gulf-donald-trump-us-israel-yemen-houthis</link>
       <guid isPermaLink="false">03d8964b94784ab9ccb0</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Science &amp; Technology</category>
+      <category>World</category>
       <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 10:42:53 +0000</pubDate>
+      <pubDate>Sun, 15 Nov 2026 11:30:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>Protest in Prague over media freedom expected to be one of biggest in Czechia’s history</title>
+      <link>https://www.theguardian.com/world/2026/nov/15/czechia-protest-prague-media-freedom</link>
+      <guid isPermaLink="false">bc033adbd8215c3fdcbc</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 15 Nov 2026 11:17:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Three men sentenced to death in Jordan over fatal church mass shooting</title>
+      <link>https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">c397a88bd18fc3c070df</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 15 Nov 2026 11:06:32 +0000</pubDate>
     </item>
     <item>
       <title>Lucy Beaumont thought she’d never work in TV again after speaking up on David Walliams. Something different happened</title>
@@ -150,24 +168,6 @@
       <category>Politics</category>
       <source>BBC News</source>
       <pubDate>Sun, 15 Nov 2026 03:21:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Katherine Deves among four NSW upper house candidates revealed by One Nation</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/15/katherine-deves-among-four-nsw-upper-house-candidates-revealed-by-one-nation-ntwnfb</link>
-      <guid isPermaLink="false">4b28d2675e6fa5a06034</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 02:13:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>Thunderstorms, giant hail and powerful winds forecast for NSW as wild weather hits east coast</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/15/australia-weather-east-coast-thunderstorms-giant-hail-and-powerful-winds-ettalong-beach-swimmer-lightning-strike</link>
-      <guid isPermaLink="false">b35f6f3df58264a8525e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Climate</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 15 Nov 2026 01:52:37 +0000</pubDate>
     </item>
   </channel>
 </rss>
