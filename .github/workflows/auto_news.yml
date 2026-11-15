@@ -26,8 +26,13 @@ jobs:
       - name: Run News Script
         run: python update_news.py
 
+      - name: Update World News
+        run: python world_news.py
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-update live sports news from RSS"
-          file_pattern: "*.html sitemap.xml feed.xml"
+          commit_message: "Auto-update sports and world news from RSS"
+          file_pattern: "*.html sitemap.xml feed.xml world-news.html world-news-feed.xml world-news-cache.json"

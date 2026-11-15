@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Automated world news, grounded in trusted publisher feeds, with concise summaries and links to original reporting.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://aslaykii.github.io/skysport/world-news.html">
+  <link rel="alternate" type="application/rss+xml" title="SkySport World News" href="world-news-feed.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="World News | SkySport">
+  <meta property="og:description" content="Automated world news, grounded in trusted publisher feeds, with concise summaries and links to original reporting.">
+  <meta name="theme-color" content="#081321">
+  <title>World News | SkySport</title>
+  <style>
+    :root{color-scheme:dark;--bg:#081321;--surface:#101e31;--text:#f4f7fc;--muted:#a9b7ca;--accent:#ff594e;--line:#ffffff20}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit}.wrap{width:min(1040px,calc(100% - 36px));margin:auto}
+    header{border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 80% 10%,#ff594e22,transparent 45%),linear-gradient(130deg,#101e31,#081321)}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.brand{font-weight:850;letter-spacing:.1em;text-decoration:none;text-transform:uppercase}
+    nav a:last-child{color:#ff9b94;font-size:.9rem}.hero{padding:38px 0 42px}.eyebrow{color:#ff9b94;font-size:.75rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+    h1{margin:9px 0;font:700 clamp(2.5rem,7vw,4.7rem)/1 Georgia,serif;letter-spacing:-.05em}.hero p{max-width:660px;color:#d5deeb}
+    .status{color:var(--muted);font-size:.77rem}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:26px 0 13px}
+    .section-head h2{margin:0;font:700 1.65rem Georgia,serif}.section-head p{margin:4px 0 0;color:var(--muted);font-size:.8rem}
+    .controls{display:flex;gap:8px;flex-wrap:wrap}input,select{min-height:42px;border:1px solid var(--line);border-radius:8px;padding:8px 11px;background:var(--surface);color:var(--text);font:inherit}
+    input:focus,select:focus{outline:2px solid #ff594e}.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;padding-bottom:38px}
+    .story-card{padding:19px;background:var(--surface);border:1px solid var(--line);border-radius:14px}.story-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;color:var(--muted);font-size:.7rem}
+    .story-meta time{margin-left:auto}.category{border-radius:999px;padding:3px 9px;background:#ff594e22;color:#ff9b94;font-weight:800}
+    .story-card h2{margin:13px 0 8px;font-size:1.16rem;line-height:1.35}.story-card h2 a{text-decoration:none}.story-card h2 a:hover{color:#ff9b94}
+    .summary{color:#d2dbea;font-size:.91rem}.story-footer{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
+    .summary-kind{color:var(--muted);font-size:.68rem;text-transform:capitalize}.source-link{color:#ff9b94;font-size:.78rem;font-weight:750;text-decoration:none}
+    .also-reported{display:block;margin-top:10px;color:var(--muted);font-size:.75rem}.also-reported a{margin-left:7px}.empty-state{grid-column:1/-1;padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
+    footer{padding:22px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.75rem}footer a{color:#ff9b94}
+    @media(max-width:680px){.stories{grid-template-columns:1fr}.story-meta time{margin-left:0}.story-footer{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <nav aria-label="Main navigation"><a class="brand" href="index.html">SkySport</a><a href="index.html">Sports coverage</a></nav>
+    <div class="hero"><span class="eyebrow">Independent world desk</span><h1>World news, clearly told.</h1>
+      <p>Source-linked updates from established international newsrooms, with concise AI summaries when configured. Read the original report for full context.</p>
+      <p class="status">Last generated 15 Nov 2026 · 09:56 UTC · Sources: BBC News, The Guardian, NPR</p>
+    </div>
+  </div></header>
+  <main class="wrap">
+    <section class="section-head"><div><h2>Latest headlines</h2><p>Every story links to its original publisher and shows its publication time.</p></div>
+      <div class="controls"><input id="search" type="search" placeholder="Search headlines" aria-label="Search headlines">
+        <select id="category" aria-label="Filter by topic"><option value="">All topics</option></select></div>
+    </section>
+    <section class="stories" id="stories" aria-label="Latest world news"><article class="story-card" data-category="Politics">
+      <div class="story-meta"><span class="category">Politics</span><span>The Guardian</span><time datetime="2026-11-15T09:31:32+00:00">15 Nov 2026 · 09:31 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/law/2026/nov/15/uk-government-to-consider-changing-age-of-consent-after-allegations-against-russell-brand" target="_blank" rel="noopener noreferrer">UK government to consider changing age of consent after allegations against Russell Brand</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/law/2026/nov/15/uk-government-to-consider-changing-age-of-consent-after-allegations-against-russell-brand" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="World">
+      <div class="story-meta"><span class="category">World</span><span>BBC News</span><time datetime="2026-11-15T09:26:37+00:00">15 Nov 2026 · 09:26 UTC</time></div>
+      <h2><a href="https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Fifth Canadian soldier dies from injuries caused by large fire at military base</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Business">
+      <div class="story-meta"><span class="category">Business</span><span>The Guardian</span><time datetime="2026-11-15T09:22:39+00:00">15 Nov 2026 · 09:22 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/society/2026/nov/15/digital-finance-products-abuse-against-young-women-and-girls-report" target="_blank" rel="noopener noreferrer">Digital finance products used to abuse almost 20% of young women and girls, UK report finds</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/society/2026/nov/15/digital-finance-products-abuse-against-young-women-and-girls-report" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="World">
+      <div class="story-meta"><span class="category">World</span><span>The Guardian</span><time datetime="2026-11-15T08:56:11+00:00">15 Nov 2026 · 08:56 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam" target="_blank" rel="noopener noreferrer">160 questions, only one wrong: top scorer in South Korea tax exam admits AI cheating</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="World">
+      <div class="story-meta"><span class="category">World</span><span>BBC News</span><time datetime="2026-11-15T08:17:41+00:00">15 Nov 2026 · 08:17 UTC</time></div>
+      <h2><a href="https://www.bbc.co.uk/news/articles/cqrkg4r6mg7xo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Israel kills Hamas commander in strike on Gaza camp, officials say</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.bbc.co.uk/news/articles/cqrkg4r6mg7xo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Politics">
+      <div class="story-meta"><span class="category">Politics</span><span>BBC News</span><time datetime="2026-11-15T07:10:31+00:00">15 Nov 2026 · 07:10 UTC</time></div>
+      <h2><a href="https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Copper wire upgrade behind US flight suspension, transport secretary says</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Politics">
+      <div class="story-meta"><span class="category">Politics</span><span>The Guardian</span><time datetime="2026-11-15T06:22:32+00:00">15 Nov 2026 · 06:22 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/australia-news/2026/nov/15/anthony-albanese-welcomes-trump-xi-putin-summit-even-as-european-leaders-express-reservations" target="_blank" rel="noopener noreferrer">Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/australia-news/2026/nov/15/anthony-albanese-welcomes-trump-xi-putin-summit-even-as-european-leaders-express-reservations" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Business">
+      <div class="story-meta"><span class="category">Business</span><span>The Guardian</span><time datetime="2026-11-15T06:00:07+00:00">15 Nov 2026 · 06:00 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/law/2026/nov/15/gymshark-trademark-battle-the-conditioning-club-gloucestershire" target="_blank" rel="noopener noreferrer">Gymshark in trademark battle that threatens future of small fitness business</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/law/2026/nov/15/gymshark-trademark-battle-the-conditioning-club-gloucestershire" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="World">
+      <div class="story-meta"><span class="category">World</span><span>The Guardian</span><time datetime="2026-11-15T06:00:05+00:00">15 Nov 2026 · 06:00 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/world/2026/nov/15/myanmar-rohingya-genocide-icj" target="_blank" rel="noopener noreferrer">World’s top court to rule if Myanmar committed genocide against Rohingya</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/world/2026/nov/15/myanmar-rohingya-genocide-icj" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Business">
+      <div class="story-meta"><span class="category">Business</span><span>The Guardian</span><time datetime="2026-11-15T06:00:05+00:00">15 Nov 2026 · 06:00 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/uk-news/2026/nov/15/planned-asylum-seeker-detention-centre-next-to-oxfordshire-sewage-works-criticised" target="_blank" rel="noopener noreferrer">Planned asylum seeker detention centre next to Oxfordshire sewage works criticised</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/uk-news/2026/nov/15/planned-asylum-seeker-detention-centre-next-to-oxfordshire-sewage-works-criticised" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Politics">
+      <div class="story-meta"><span class="category">Politics</span><span>The Guardian</span><time datetime="2026-11-15T04:00:02+00:00">15 Nov 2026 · 04:00 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean" target="_blank" rel="noopener noreferrer">World leaders head to Asia for back-to-back diplomatic summits</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Politics">
+      <div class="story-meta"><span class="category">Politics</span><span>The Guardian</span><time datetime="2026-11-15T03:49:21+00:00">15 Nov 2026 · 03:49 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/australia-news/2026/nov/15/anthony-albanese-apologises-for-hot-mic-gaffe-after-coalition-criticises-locker-room-talk" target="_blank" rel="noopener noreferrer">Anthony Albanese apologises for hot-mic gaffe after Coalition criticises ‘locker-room talk’</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/australia-news/2026/nov/15/anthony-albanese-apologises-for-hot-mic-gaffe-after-coalition-criticises-locker-room-talk" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Politics">
+      <div class="story-meta"><span class="category">Politics</span><span>BBC News</span><time datetime="2026-11-15T03:21:04+00:00">15 Nov 2026 · 03:21 UTC</time></div>
+      <h2><a href="https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Judge temporarily blocks Trump from closing Washington DC golf course for renovation</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="World">
+      <div class="story-meta"><span class="category">World</span><span>BBC News</span><time datetime="2026-11-15T02:49:45+00:00">15 Nov 2026 · 02:49 UTC</time></div>
+      <h2><a href="https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Pope Leo speaks of community &#x27;suffering&#x27; on visit to remote Andes town</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Politics">
+      <div class="story-meta"><span class="category">Politics</span><span>The Guardian</span><time datetime="2026-11-15T02:13:20+00:00">15 Nov 2026 · 02:13 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/australia-news/2026/nov/15/katherine-deves-among-four-nsw-upper-house-candidates-revealed-by-one-nation-ntwnfb" target="_blank" rel="noopener noreferrer">Katherine Deves among four NSW upper house candidates revealed by One Nation</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/australia-news/2026/nov/15/katherine-deves-among-four-nsw-upper-house-candidates-revealed-by-one-nation-ntwnfb" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Climate">
+      <div class="story-meta"><span class="category">Climate</span><span>The Guardian</span><time datetime="2026-11-15T01:52:37+00:00">15 Nov 2026 · 01:52 UTC</time></div>
+      <h2><a href="https://www.theguardian.com/australia-news/2026/nov/15/australia-weather-east-coast-thunderstorms-giant-hail-and-powerful-winds-ettalong-beach-swimmer-lightning-strike" target="_blank" rel="noopener noreferrer">Thunderstorms, giant hail and powerful winds forecast for NSW as wild weather hits east coast</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.theguardian.com/australia-news/2026/nov/15/australia-weather-east-coast-thunderstorms-giant-hail-and-powerful-winds-ettalong-beach-swimmer-lightning-strike" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="World">
+      <div class="story-meta"><span class="category">World</span><span>BBC News</span><time datetime="2026-11-15T00:06:55+00:00">15 Nov 2026 · 00:06 UTC</time></div>
+      <h2><a href="https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">My mother told me I would die if I sought treatment for Ebola - I am proof you can survive</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article>
+<article class="story-card" data-category="Politics">
+      <div class="story-meta"><span class="category">Politics</span><span>BBC News</span><time datetime="2026-11-15T00:06:51+00:00">15 Nov 2026 · 00:06 UTC</time></div>
+      <h2><a href="https://www.bbc.co.uk/news/articles/c6dj1e8wyykmo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Judo champion shakes up French presidential race with surprise candidacy</a></h2>
+      <p class="summary">AI summary unavailable. Open the source report for context.</p>
+      <div class="story-footer"><span class="summary-kind">AI summary unavailable</span><a class="source-link" href="https://www.bbc.co.uk/news/articles/c6dj1e8wyykmo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">Read original report ↗</a></div>
+
+    </article></section>
+  </main>
+  <footer><div class="wrap">Source reporting remains with its publisher. <a href="world-news-feed.xml">Subscribe to the RSS feed</a> · <a href="index.html">SkySport home</a></div></footer>
+  <script>
+    (() => {
+      const cards = [...document.querySelectorAll('.story-card')];
+      const search = document.getElementById('search');
+      const category = document.getElementById('category');
+      [...new Set(cards.map(card => card.dataset.category))].sort().forEach(topic => {
+        const option = document.createElement('option');
+        option.value = topic;
+        option.textContent = topic;
+        category.append(option);
+      });
+      const filter = () => {
+        const query = search.value.trim().toLocaleLowerCase();
+        cards.forEach(card => {
+          card.hidden = (category.value && card.dataset.category !== category.value)
+            || (query && !card.textContent.toLocaleLowerCase().includes(query));
+        });
+      };
+      search.addEventListener('input', filter);
+      category.addEventListener('change', filter);
+    })();
+  </script>
+</body>
+</html>

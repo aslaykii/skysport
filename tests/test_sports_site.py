@@ -377,6 +377,7 @@ class SportsSiteTests(unittest.TestCase):
         self.assertIn('href="videos.html"', page)
         self.assertIn('href="live.html"', page)
         self.assertIn('href="fixtures.html"', page)
+        self.assertIn('href="world-news.html">World News</a>', page)
         self.assertIn('data-section-card="news"', page)
         self.assertIn('data-section-card="videos"', page)
         self.assertNotIn('id="news-grid"', page)
@@ -554,7 +555,7 @@ class SportsSiteTests(unittest.TestCase):
 
         self.assertEqual(
             [node.text for node in sitemap.findall("s:url/s:lastmod", namespace)],
-            ["2026-11-10"] * len(sports_site.PAGE_FILES),
+            ["2026-11-10"] * (len(sports_site.PAGE_FILES) + 1),
         )
 
     def test_sitemap_points_to_the_canonical_pages_site(self):
@@ -567,12 +568,12 @@ class SportsSiteTests(unittest.TestCase):
             [
                 sports_site.SITE_URL if filename == "index.html"
                 else f"{sports_site.SITE_URL}{filename}"
-                for filename in sports_site.PAGE_FILES.values()
+                for filename in (*sports_site.PAGE_FILES.values(), sports_site.WORLD_NEWS_PAGE)
             ],
         )
         self.assertEqual(
             len(sitemap.findall("s:url/s:lastmod", namespace)),
-            len(sports_site.PAGE_FILES),
+            len(sports_site.PAGE_FILES) + 1,
         )
         robots = (root / "robots.txt").read_text(encoding="utf-8")
         self.assertIn("Allow: /", robots)
