@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 02:01:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 02:56:34 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO</title>
@@ -14,16 +14,34 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>BBC News</source>
-      <pubDate>Tue, 17 Nov 2026 01:49:26 +0000</pubDate>
+      <pubDate>Tue, 17 Nov 2026 02:37:53 +0000</pubDate>
     </item>
     <item>
-      <title>Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – live</title>
+      <title>Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – as it happened</title>
       <link>https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates</link>
       <guid isPermaLink="false">e0c2c1aa9501e96797d5</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
+      <category>Business</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 17 Nov 2026 01:41:01 +0000</pubDate>
+      <pubDate>Tue, 17 Nov 2026 02:31:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>David Jones’ total debt is over $400m including millions owed to staff, administrators confirm</title>
+      <link>https://www.theguardian.com/business/2026/nov/17/david-jones-creditors-meeting-debt-administrators</link>
+      <guid isPermaLink="false">64753fba297cf7c7b927</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 17 Nov 2026 02:11:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Rio Tinto agrees to pay US$250m to begin repairing ‘devastation’ left by Panguna mine</title>
+      <link>https://www.theguardian.com/world/2026/nov/17/rio-tinto-250m-panguna-mine-clean-up-bougainville-png</link>
+      <guid isPermaLink="false">ef579e332aa23dc0dc26</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 17 Nov 2026 02:02:30 +0000</pubDate>
     </item>
     <item>
       <title>Truck driver fired for ‘unsafe’ use of smartglasses in first reported sacking over device in Australia</title>
@@ -134,15 +152,6 @@
       <pubDate>Mon, 16 Nov 2026 22:30:55 +0000</pubDate>
     </item>
     <item>
-      <title>Mid-year budget update will ‘cut enough, but not too much’, Jim Chalmers says</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/17/myefo-mid-year-budget-update-australia-treasurer-jim-chalmers</link>
-      <guid isPermaLink="false">3fbfaaf4424cc666f3fb</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 16 Nov 2026 22:21:10 +0000</pubDate>
-    </item>
-    <item>
       <title>Houthi rebel advance in Yemen may further destabilise global economy</title>
       <link>https://www.bbc.co.uk/news/articles/cmy97qperq9eo?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">74dca108d80eb27cbdb7</guid>
@@ -159,15 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Mon, 16 Nov 2026 21:13:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>Forensic expert says his analysis of autopsy photos suggests Epstein was killed</title>
-      <link>https://www.bbc.co.uk/news/articles/c5n4exg1kkmyo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">c919c34fce7334aca0f3</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Mon, 16 Nov 2026 20:33:57 +0000</pubDate>
     </item>
   </channel>
 </rss>
