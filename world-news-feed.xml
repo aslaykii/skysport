@@ -5,8 +5,26 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 00:33:14 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 01:58:21 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>White House pulls nomination of Heidi Overton to lead Food and Drug Administration – US politics live</title>
+      <link>https://www.theguardian.com/us-news/live/2026/nov/17/donald-trump-alaska-senate-race-midterms-democrats-republicans-latest-news-updates</link>
+      <guid isPermaLink="false">5613e1047e1fdb9dba5f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Wed, 18 Nov 2026 01:41:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>White House withdraws nomination of Heidi Overton to lead FDA</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/17/white-house-withdraws-heidi-overton-fda</link>
+      <guid isPermaLink="false">945460e233292eb84411</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Health</category>
+      <source>The Guardian</source>
+      <pubDate>Wed, 18 Nov 2026 01:26:15 +0000</pubDate>
+    </item>
     <item>
       <title>Nvidia says it won't reinstate Huang as firm reports bumper results</title>
       <link>https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo?at_medium=RSS&amp;at_campaign=rss</link>
@@ -14,7 +32,16 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>BBC News</source>
-      <pubDate>Wed, 18 Nov 2026 00:28:01 +0000</pubDate>
+      <pubDate>Wed, 18 Nov 2026 01:18:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>One Nation says it would cut Australia’s refugee intake by 90% under ‘tough stance’</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/18/one-nation-refugee-intake-immigration-ntwnfb</link>
+      <guid isPermaLink="false">1051bc06538413e43681</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Wed, 18 Nov 2026 00:53:51 +0000</pubDate>
     </item>
     <item>
       <title>Pakistani man sentenced to 27 years in US prison over Trump murder plot</title>
@@ -35,16 +62,7 @@
       <pubDate>Wed, 18 Nov 2026 00:16:07 +0000</pubDate>
     </item>
     <item>
-      <title>Trump brushes off NSA internal network outage: ‘it’s like that when you’re big and powerful’ – live</title>
-      <link>https://www.theguardian.com/us-news/live/2026/nov/17/donald-trump-alaska-senate-race-midterms-democrats-republicans-latest-news-updates</link>
-      <guid isPermaLink="false">5613e1047e1fdb9dba5f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Wed, 18 Nov 2026 00:15:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>Man accused of destroying US military plane at Shannon airport in Ireland</title>
+      <title>Man armed with axe accused of destroying US military plane at Shannon airport in Ireland</title>
       <link>https://www.theguardian.com/us-news/2026/nov/18/man-accused-of-destroying-us-military-plane-at-shannon-airport-in-ireland</link>
       <guid isPermaLink="false">62d4f8b8b1364b6495dd</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
@@ -125,15 +143,6 @@
       <pubDate>Tue, 17 Nov 2026 23:28:22 +0000</pubDate>
     </item>
     <item>
-      <title>California bans Waymo self-driving cars from freeways</title>
-      <link>https://www.theguardian.com/technology/2026/nov/17/california-waymo-banned-freeways</link>
-      <guid isPermaLink="false">806c10152d87f265e052</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 17 Nov 2026 23:14:12 +0000</pubDate>
-    </item>
-    <item>
       <title>As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal</title>
       <link>https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">2d20c91af3ce8bf68240</guid>
@@ -159,15 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Tue, 17 Nov 2026 22:50:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>American soldier arrested by UK police on suspicion of spying taken into US military custody</title>
-      <link>https://www.bbc.co.uk/news/articles/c6x284ez38vdo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">35ec7fce43bd571d36aa</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Tue, 17 Nov 2026 22:46:30 +0000</pubDate>
     </item>
   </channel>
 </rss>
