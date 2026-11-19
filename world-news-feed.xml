@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Nov 2026 15:50:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 16:55:33 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Susan Smith denied parole again 32 years after drowning her two sons</title>
+      <link>https://www.bbc.co.uk/news/articles/ckdd1y09eqjmo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">20aed2f8500b9a486ea1</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Thu, 19 Nov 2026 16:53:29 +0000</pubDate>
+    </item>
     <item>
       <title>Ukraine’s allies meet in Berlin with air defence, energy and financial support on the agenda – Europe live</title>
       <link>https://www.theguardian.com/world/live/2026/nov/19/russia-ukraine-war-coalition-of-the-willing-europe-latest-news-updates</link>
@@ -14,16 +23,7 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 15:38:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘New page in history?’ Xi, Trump and Putin summit was more of a footnote</title>
-      <link>https://www.theguardian.com/world/2026/nov/19/new-page-in-history-xi-trump-and-putin-summit-was-more-of-a-footnote</link>
-      <guid isPermaLink="false">2d45dd075896a4c6fe0f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 15:35:01 +0000</pubDate>
+      <pubDate>Thu, 19 Nov 2026 16:40:13 +0000</pubDate>
     </item>
     <item>
       <title>Election date? Brexit reset outcome? Farage’s survival chances? Andrew Sparrow answers your questions</title>
@@ -32,7 +32,34 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 15:32:28 +0000</pubDate>
+      <pubDate>Thu, 19 Nov 2026 16:28:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘Take temperature down’ over guidance on single-sex spaces, head of UK equalities body urges</title>
+      <link>https://www.theguardian.com/society/2026/nov/19/ehrc-guidance-single-sex-spaces-transgender-supreme-court</link>
+      <guid isPermaLink="false">56936158d9e52af29d6c</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Science &amp; Technology</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 16:27:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>Southern California braced for fierce storm after record rain in San Francisco</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/19/california-atmospheric-river-san-francisco-rain-record</link>
+      <guid isPermaLink="false">19861338f9ac32848587</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 16:21:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>Myanmar committed genocide against Rohingya minority, top UN court rules</title>
+      <link>https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">968ebb26e1aec61ee16e</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Thu, 19 Nov 2026 16:19:23 +0000</pubDate>
     </item>
     <item>
       <title>Hakeem Jeffries on brink of House history as he tells Democrats to ‘fight Maga, not each other’ – US politics live</title>
@@ -41,7 +68,88 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 15:30:34 +0000</pubDate>
+      <pubDate>Thu, 19 Nov 2026 16:16:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘Everyone struggled for this justice’: tears in court as Rohingya vindicated in Myanmar genocide ruling</title>
+      <link>https://www.theguardian.com/global-development/2026/nov/19/everyone-struggled-for-this-justice-tears-in-court-as-rohingya-vindicated-in-myanmar-genocide-ruling</link>
+      <guid isPermaLink="false">e867d5490daa2007556b</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 16:15:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>Prosecutors allege British woman ‘trying to find someone who would kill her’ lured to US and murdered</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/19/british-woman-florida-murder-case-sonia-exelby</link>
+      <guid isPermaLink="false">05a204ce870b357e7001</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 16:08:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Four UK men convicted of sexual assault and rape of drugged woman at invitation of husband</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/19/men-convicted-sexual-assault-and-rape-woman-at-invitation-of-husband</link>
+      <guid isPermaLink="false">73edb84bb2669777d589</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 16:08:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Spiked nightcaps and invitations to strangers: how Philip Young sexually abused his wife for 15 years</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/19/philip-young-sexual-abuse-spiked-nightcaps-strangers-joanne-young</link>
+      <guid isPermaLink="false">70926eaa1c03b0698be3</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 16:00:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘It stings to come close’: Louisiana Democrat’s narrow failure to make it 57 Senate seats</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/19/louisiana-senate-seat-democrats-jamie-davis</link>
+      <guid isPermaLink="false">6727ca623d4a99f09dfc</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 16:00:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dozens missing after boat carrying migrants sinks off Senegal's coast</title>
+      <link>https://www.bbc.co.uk/news/articles/c58j484089ewo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">1548d446c7c63613fa8f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Thu, 19 Nov 2026 15:52:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>China, Russia and US agree peace declaration with no mention of Ukraine and Iran wars</title>
+      <link>https://www.theguardian.com/world/2026/nov/19/china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars</link>
+      <guid isPermaLink="false">09ca9a5a658a5ee8e511</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 15:50:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘Pot luck service’: Royal Mail on course to miss delivery targets for fourth year in a row</title>
+      <link>https://www.theguardian.com/business/2026/nov/19/royal-mail-to-miss-delivery-targets-fourth-year-in-row</link>
+      <guid isPermaLink="false">0e699aa10f9cb37bee12</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 15:42:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>New page in history? Xi, Trump and Putin summit was more of a footnote</title>
+      <link>https://www.theguardian.com/world/2026/nov/19/new-page-in-history-xi-trump-and-putin-summit-was-more-of-a-footnote</link>
+      <guid isPermaLink="false">2d45dd075896a4c6fe0f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 15:35:01 +0000</pubDate>
     </item>
     <item>
       <title>Trump, Putin and Xi release 'peace declaration' after historic meeting</title>
@@ -53,15 +161,6 @@
       <pubDate>Thu, 19 Nov 2026 15:23:34 +0000</pubDate>
     </item>
     <item>
-      <title>San Francisco breaks rain record as atmospheric river buffets California</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/19/california-atmospheric-river-san-francisco-rain-record</link>
-      <guid isPermaLink="false">19861338f9ac32848587</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Climate</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 15:21:54 +0000</pubDate>
-    </item>
-    <item>
       <title>UK-EU reset talks will go ‘down to the wire’ as crunch summit approaches</title>
       <link>https://www.theguardian.com/world/2026/nov/19/uk-eu-reset-talks-andy-burnham-food-farming-tuition-fees</link>
       <guid isPermaLink="false">9f0d0855b9da81ff460e</guid>
@@ -69,105 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Thu, 19 Nov 2026 15:18:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI demand will push up interest rates around the world, IMF head warns</title>
-      <link>https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec</link>
-      <guid isPermaLink="false">6173566945507db228b1</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 15:15:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Four UK men convicted of sexual assault and rape of drugged woman at invitation of husband</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/19/men-convicted-sexual-assault-and-rape-woman-at-invitation-of-husband</link>
-      <guid isPermaLink="false">73edb84bb2669777d589</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 15:02:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘We don’t produce Neets’: the London school recognised at World’s Best School awards</title>
-      <link>https://www.theguardian.com/education/2026/nov/19/london-swiss-cottage-school-worlds-best-school-awards</link>
-      <guid isPermaLink="false">70c4d5f86d52797af03d</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 14:46:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump takes 500 actions to weaken cancer protections, new report says</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/05/trump-cancer-carcinogen-regulation</link>
-      <guid isPermaLink="false">053acf46c70803e14704</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 14:15:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Australian music industry rejects ‘divide and conquer’ proposal to give musicians exemption from AI scraping</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/20/australian-music-industry-rejects-proposal-to-give-musicians-exemption-ai-scraping</link>
-      <guid isPermaLink="false">9df169eba8373877459f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 14:00:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘A new day in the Senate’: 56-44 majority gives Democrats fuel to take on Trump</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/19/democrats-senate-majority-midterms-trump</link>
-      <guid isPermaLink="false">6e934cfa7638f165174f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 14:00:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>An elevator, a brick wall and a bathroom: scientists use gravity to send ‘practically unblockable’ message</title>
-      <link>https://www.theguardian.com/science/2026/nov/20/scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment</link>
-      <guid isPermaLink="false">83ed9ad492618f78fcd6</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 14:00:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>Myanmar committed genocide against Rohingya minority, world’s top court rules</title>
-      <link>https://www.theguardian.com/world/2026/nov/19/genocide-rohingya-international-court-of-justice-ruling-myanmar</link>
-      <guid isPermaLink="false">494a84273146762f54b8</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 13:52:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>UN warns against misuse of security laws as UK weighs Palestine Action ban</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/19/un-warns-misuse-security-laws-uk-palestine-action-ban</link>
-      <guid isPermaLink="false">8ad9f58d3a30c5796b29</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 13:43:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Venezuela signs military deal with US less than a year after Maduro's removal</title>
-      <link>https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">0f1dfbdae502ca8b95dc</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 19 Nov 2026 13:31:23 +0000</pubDate>
-    </item>
-    <item>
-      <title>What is at stake at the EU-UK summit in Brussels?</title>
-      <link>https://www.theguardian.com/politics/2026/nov/19/eu-uk-summit-explainer-burnham-brexit-brussels</link>
-      <guid isPermaLink="false">544e5abb581c180c3564</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 13:11:23 +0000</pubDate>
     </item>
   </channel>
 </rss>
