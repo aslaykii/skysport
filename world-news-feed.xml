@@ -5,8 +5,35 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Nov 2026 06:59:04 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 08:23:59 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>EDF snaps up 1.3m more customers after Utilita takeover</title>
+      <link>https://www.theguardian.com/business/2026/nov/19/edf-takeover-utilita-energy-suppliers-energy-bills</link>
+      <guid isPermaLink="false">726cb4361c7b9d5d4b1e</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 08:00:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>Crimean Bridge attacked again, Russia says</title>
+      <link>https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">ecb256426dd1c2753611</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Thu, 19 Nov 2026 07:32:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Violent protests and killings in Bangladesh ahead of exiled Sheikh Hasina’s planned return</title>
+      <link>https://www.theguardian.com/world/2026/nov/19/bangladesh-violent-protest-sheikh-hasina-planned-return</link>
+      <guid isPermaLink="false">c4b3d55d773b14949438</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 19 Nov 2026 06:58:33 +0000</pubDate>
+    </item>
     <item>
       <title>Tammy Shipley was supposed to be monitored in prison. Instead she died after drinking 20L of water</title>
       <link>https://www.theguardian.com/australia-news/2026/nov/19/tammy-shipley-was-supposed-to-be-monitored-in-prison-instead-she-died-after-drinking-20l-of-water-ntwnfb</link>
@@ -98,15 +125,6 @@
       <pubDate>Thu, 19 Nov 2026 04:42:52 +0000</pubDate>
     </item>
     <item>
-      <title>Crimean Bridge attacked again, Russian official says</title>
-      <link>https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">ecb256426dd1c2753611</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 19 Nov 2026 04:37:17 +0000</pubDate>
-    </item>
-    <item>
       <title>General Pants Co enters voluntary administration, putting hundreds of jobs at risk</title>
       <link>https://www.theguardian.com/business/2026/nov/19/general-pants-co-enters-voluntary-administration-jobs-at-risk</link>
       <guid isPermaLink="false">b7cda5e3fdcf6dcfac1e</guid>
@@ -150,24 +168,6 @@
       <category>Politics</category>
       <source>BBC News</source>
       <pubDate>Thu, 19 Nov 2026 02:59:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>AI giant Anthropic valued at up to $1.5tn ahead of stock market debut</title>
-      <link>https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">787ec3ea015eb548f2df</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 19 Nov 2026 02:20:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Elon Musk claims ‘I’m not Maga’ and says he regrets vast sums to back Republicans</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/18/elon-musk-maga-trump</link>
-      <guid isPermaLink="false">49cc00692981665cc592</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 01:07:51 +0000</pubDate>
     </item>
   </channel>
 </rss>
