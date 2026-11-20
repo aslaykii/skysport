@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 20:09:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 20:58:52 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Trump threatens ban on US firms building AI data centres overseas</title>
+      <link>https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">d020b8aa67dc21540cb4</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Fri, 20 Nov 2026 20:54:12 +0000</pubDate>
+    </item>
     <item>
       <title>Anthropic shares fall after blockbuster opening as wider tech sell-off continues</title>
       <link>https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&amp;at_campaign=rss</link>
@@ -15,15 +24,6 @@
       <category>Business</category>
       <source>BBC News</source>
       <pubDate>Fri, 20 Nov 2026 20:00:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump threatens ban on US firms building AI data centres overseas</title>
-      <link>https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">d020b8aa67dc21540cb4</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Fri, 20 Nov 2026 19:51:52 +0000</pubDate>
     </item>
     <item>
       <title>Gérard Depardieu and French author investigated over sexual allegations</title>
@@ -35,7 +35,7 @@
       <pubDate>Fri, 20 Nov 2026 19:45:20 +0000</pubDate>
     </item>
     <item>
-      <title>JP Morgan boss says he will set ‘example’ in offsetting UK tax hike on banks</title>
+      <title>JP Morgan boss says he will find ways to offset ‘unfair’ rise in UK tax on banks</title>
       <link>https://www.theguardian.com/business/2026/nov/20/jp-morgan-jamie-dimon-uk-tax-hike-bank-surcharge</link>
       <guid isPermaLink="false">abb51ca7e5e2533061f5</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
