@@ -5,8 +5,26 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 20:58:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 21:45:59 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading</title>
+      <link>https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off</link>
+      <guid isPermaLink="false">0d485e0dfc8d69ca8363</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 20 Nov 2026 21:38:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Another day of survival for a family in Ukraine</title>
+      <link>https://www.npr.org/2026/11/20/nx-s1-6042206/another-day-of-survival-for-a-family-in-ukraine</link>
+      <guid isPermaLink="false">401fb98f6d082662b3b4</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>NPR</source>
+      <pubDate>Fri, 20 Nov 2026 21:32:31 +0000</pubDate>
+    </item>
     <item>
       <title>Trump threatens ban on US firms building AI data centres overseas</title>
       <link>https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&amp;at_campaign=rss</link>
@@ -150,24 +168,6 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Fri, 20 Nov 2026 18:20:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>Denmark to expel Russian diplomat over alleged Moscow link to attempted killing of rapper</title>
-      <link>https://www.theguardian.com/world/2026/nov/20/denmark-russian-diplomat-us-ukrainian-rapper-attempted-killing</link>
-      <guid isPermaLink="false">86b740478c70257fdae1</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 20 Nov 2026 18:16:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>No one else in Reform is suitable to lead the party, Nigel Farage says</title>
-      <link>https://www.theguardian.com/politics/2026/nov/20/nigel-farage-leadership-reform-uk-party</link>
-      <guid isPermaLink="false">93cf950a2a4a95cfd87c</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 20 Nov 2026 18:11:25 +0000</pubDate>
     </item>
   </channel>
 </rss>
