@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 03:18:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 04:25:28 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>‘Perfect weapon’: diabetic woman found guilty of murdering her 94-year-old parents with insulin</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/20/diabetic-woman-found-guilty-murdering-94-year-old-parents-with-insulin-ntwnfb</link>
+      <guid isPermaLink="false">12e8d02e6f8f591f582f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 20 Nov 2026 04:15:16 +0000</pubDate>
+    </item>
     <item>
       <title>Fiona the hippo dies after ingesting knitted hat at Cincinnati zoo</title>
       <link>https://www.theguardian.com/world/2026/nov/19/fiona-hippo-cincinnati-zoo-knit-hat</link>
@@ -51,6 +60,15 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Fri, 20 Nov 2026 02:43:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>UK and EU to agree youth mobility scheme, BBC understands</title>
+      <link>https://www.bbc.co.uk/news/articles/c623j4kpg94go?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">5d830a8018231fbe64a0</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>BBC News</source>
+      <pubDate>Fri, 20 Nov 2026 02:40:49 +0000</pubDate>
     </item>
     <item>
       <title>US army postpones plan to detonate bomb-making chemical amid outcry</title>
@@ -150,24 +168,6 @@
       <category>Business</category>
       <source>BBC News</source>
       <pubDate>Thu, 19 Nov 2026 23:33:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>An elevator, a brick wall and a bathroom: scientists use gravity to send ‘practically unblockable’ message</title>
-      <link>https://www.theguardian.com/science/2026/nov/20/scientists-communicate-using-gravity-elevator-brick-wall-bathroom-experiment</link>
-      <guid isPermaLink="false">83ed9ad492618f78fcd6</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 23:30:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cumin-laced fizzy sodas are giving cola giants a tough fight in India</title>
-      <link>https://www.bbc.co.uk/news/articles/cw1m4ym7ez2eo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">85038a35caf4181eeab1</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 19 Nov 2026 23:29:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
