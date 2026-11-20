@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 14:10:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 15:04:09 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>EU wants ‘closest possible relationship’ with UK after agreeing Brexit reset deal – live</title>
@@ -14,10 +14,28 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Fri, 20 Nov 2026 13:53:41 +0000</pubDate>
+      <pubDate>Fri, 20 Nov 2026 14:42:14 +0000</pubDate>
     </item>
     <item>
-      <title>Global stock markets slump as Anthropic’s record IPO fails to stem AI sell-off</title>
+      <title>Pontins owner fined £1m over death of woman at Somerset holiday park</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/20/pontins-owner-fined-death-somerset-brean-sands-holiday-park-wendy-jones</link>
+      <guid isPermaLink="false">c0f7fd3ff570ea2af51f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 20 Nov 2026 14:07:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>As the Coalition stares down One Nation in NSW, a new threat is rising: the teals</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/21/coalition-one-nation-teals-new-threat-sydney</link>
+      <guid isPermaLink="false">f552b452d291bda4bf5f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 20 Nov 2026 14:00:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>Anthropic shares slump on second day of trading as stock markets reel from AI sell-off</title>
       <link>https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off</link>
       <guid isPermaLink="false">0d485e0dfc8d69ca8363</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
@@ -150,24 +168,6 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Fri, 20 Nov 2026 11:57:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘You’ve got me for life’: first ceremonies in England cement care leavers’ relationships</title>
-      <link>https://www.theguardian.com/society/2026/nov/20/lifelong-guardianship-ceremonies-england-care-leavers-relationships</link>
-      <guid isPermaLink="false">037183904ee2915957b7</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 20 Nov 2026 11:23:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘Weak and dizzy’: hunger striker in ICE detention tells of force-feeding ordeal – and what made him crack</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/20/ice-cuba-hunger-strike-force-feeding</link>
-      <guid isPermaLink="false">0e5fc9b767a7b5122cc1</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 20 Nov 2026 11:00:31 +0000</pubDate>
     </item>
   </channel>
 </rss>
