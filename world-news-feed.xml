@@ -5,16 +5,34 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 01:23:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 02:29:03 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>California’s top lawyer subpoenas Nvidia over Jensen Huang’s affair with suspected Chinese spy – live</title>
+      <title>Trump administration asks federal court to dismiss its lawsuit over US Senate election in Alaska – live</title>
       <link>https://www.theguardian.com/us-news/live/2026/nov/19/hakeem-jeffries-us-politics-demicrats-republicans-latest-news-updates</link>
       <guid isPermaLink="false">08dcbed660fe71825dfc</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 20 Nov 2026 02:01:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>Florida carries out record-breaking 20th execution of the year</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/19/record-executions-florida-texas</link>
+      <guid isPermaLink="false">06c420eff75e44396875</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>The Guardian</source>
-      <pubDate>Fri, 20 Nov 2026 01:05:29 +0000</pubDate>
+      <pubDate>Fri, 20 Nov 2026 01:27:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>White House cyber director ousted after US hit by wave of tech outages</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/19/white-house-cyber-director-ousted</link>
+      <guid isPermaLink="false">7a4c56c199a55067e917</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 20 Nov 2026 01:25:05 +0000</pubDate>
     </item>
     <item>
       <title>More climate money for Africa? Europe says use what's already pledged</title>
@@ -35,7 +53,7 @@
       <pubDate>Fri, 20 Nov 2026 00:50:24 +0000</pubDate>
     </item>
     <item>
-      <title>Religious messages agriculture secretary emailed to staff deemed unconstitutional</title>
+      <title>Religious messages US agriculture secretary emailed to staff deemed unconstitutional</title>
       <link>https://www.theguardian.com/us-news/2026/nov/19/religious-messages-agriculture-secretary-unconstitutional</link>
       <guid isPermaLink="false">4ecfd1dfe5d7bfac4779</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
@@ -134,15 +152,6 @@
       <pubDate>Thu, 19 Nov 2026 23:29:00 +0000</pubDate>
     </item>
     <item>
-      <title>Florida to carry out record-breaking 20th execution of the year</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/19/record-executions-florida-texas</link>
-      <guid isPermaLink="false">06c420eff75e44396875</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 19 Nov 2026 23:15:42 +0000</pubDate>
-    </item>
-    <item>
       <title>Howard-era minister Sharman Stone dies via voluntary assisted dying, aged 75</title>
       <link>https://www.theguardian.com/australia-news/2026/nov/20/howard-era-minister-sharman-stone-dies-via-voluntary-assisted-dying-aged-75</link>
       <guid isPermaLink="false">d5f1d127e4d3124170e0</guid>
@@ -159,15 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Thu, 19 Nov 2026 23:04:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>From premature baby to social media star - Famed hippo Fiona dies</title>
-      <link>https://www.bbc.co.uk/news/videos/cq39gvj9y7xpo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">4019b71fab57e4547aaf</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 19 Nov 2026 22:54:03 +0000</pubDate>
     </item>
   </channel>
 </rss>
