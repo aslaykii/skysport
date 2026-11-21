@@ -5,8 +5,44 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 17:56:23 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 18:36:56 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Suffolk village votes to ‘leave the UK’ over plans to house asylum seekers nearby</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/21/suffolk-village-votes-to-leave-the-uk-over-plans-to-house-asylum-seekers-nearby</link>
+      <guid isPermaLink="false">e29a5c2185e4c6ac1584</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 21 Nov 2026 18:20:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mexico detains top cartel boss 'El Chapo Isidro,' setting off violence</title>
+      <link>https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained</link>
+      <guid isPermaLink="false">5b76dfe3de30c0fc5f04</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>NPR</source>
+      <pubDate>Sat, 21 Nov 2026 18:08:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump orders contractors to check with White House over any congressional inquiries</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/21/trump-contractors-congress-executive-order</link>
+      <guid isPermaLink="false">b07e4c74ea4550b6e6e2</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 21 Nov 2026 18:08:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid</title>
+      <link>https://www.theguardian.com/world/2026/nov/21/alleged-mexican-drug-cartel-boss-el-chapo-isidro-meza-flores-arrested</link>
+      <guid isPermaLink="false">2681b8486e6260f1f09b</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 21 Nov 2026 17:46:55 +0000</pubDate>
+    </item>
     <item>
       <title>Vance stops short of endorsing Trump’s claim that Iran was close to nuclear weapon</title>
       <link>https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon</link>
@@ -80,15 +116,6 @@
       <pubDate>Sat, 21 Nov 2026 14:54:24 +0000</pubDate>
     </item>
     <item>
-      <title>Federal judge denies request to release man shot by immigration agents in New York</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/21/new-york-judge-ice-shooting-immigration</link>
-      <guid isPermaLink="false">880b9b278347f7bb85de</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 14:52:30 +0000</pubDate>
-    </item>
-    <item>
       <title>Cold gives way to rain in parts of UK as weather warning issued for south-west England</title>
       <link>https://www.theguardian.com/uk-news/2026/nov/21/uk-weather-cold-rain-warning-south-west-england</link>
       <guid isPermaLink="false">cac520db6f0d46e702b2</guid>
@@ -141,33 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Sat, 21 Nov 2026 13:15:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>Military analyst Phillips O'Brien on Ukraine and Europe being left out of Trump's talks</title>
-      <link>https://www.npr.org/2026/11/21/nx-s1-6047379/military-analyst-phillips-obrien-on-ukraine-and-europe-being-left-out-of-trumps-talks</link>
-      <guid isPermaLink="false">fb1fe9310c16f81ff089</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>NPR</source>
-      <pubDate>Sat, 21 Nov 2026 12:40:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI</title>
-      <link>https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai</link>
-      <guid isPermaLink="false">b9f55373dafe7bac7d35</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>NPR</source>
-      <pubDate>Sat, 21 Nov 2026 12:30:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>Reform UK considers pact with Restore Britain to overcome stalling performance in polls</title>
-      <link>https://www.theguardian.com/politics/2026/nov/21/reform-uk-considers-pact-restore-britain-stalling-performance-polls</link>
-      <guid isPermaLink="false">b02b36d9816de9ed04f9</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 12:22:54 +0000</pubDate>
     </item>
   </channel>
 </rss>
