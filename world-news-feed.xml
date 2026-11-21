@@ -5,8 +5,26 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 03:31:33 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 04:37:55 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Rohingya who escaped Myanmar’s genocide tell their stories</title>
+      <link>https://www.theguardian.com/world/2026/nov/21/rohingya-who-escaped-myanmars-genocide-tell-their-stories</link>
+      <guid isPermaLink="false">9d73a58cb838c3e8b54b</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 21 Nov 2026 04:00:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘A new record for entertainment’: Grand Theft Auto VI sales hit $3.8bn on first day of release, developer says</title>
+      <link>https://www.theguardian.com/games/2026/nov/21/a-new-record-for-entertainment-grand-theft-auto-vi-sales-hit-38bn-on-first-day-of-release-developer-says</link>
+      <guid isPermaLink="false">329f75fde5afedc310db</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 21 Nov 2026 03:51:03 +0000</pubDate>
+    </item>
     <item>
       <title>Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk</title>
       <link>https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&amp;at_campaign=rss</link>
@@ -89,16 +107,7 @@
       <pubDate>Fri, 20 Nov 2026 23:48:38 +0000</pubDate>
     </item>
     <item>
-      <title>Judge approves $7.25bn Bayer payout to settle claims that Roundup causes cancer</title>
-      <link>https://www.theguardian.com/business/2026/nov/20/bayer-roundup-cancer-litigation</link>
-      <guid isPermaLink="false">6701fc72f13b1f87186e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 20 Nov 2026 23:42:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>A new Nepal, an old neighbour - Balendra Shah's India test</title>
+      <title>A new Nepal, an old neighbour - Balendra Shah's India test on first visit</title>
       <link>https://www.bbc.co.uk/news/articles/c6jre8xd83qgo?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">0466177158dc20d417d1</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
@@ -159,15 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Fri, 20 Nov 2026 22:37:09 +0000</pubDate>
-    </item>
-    <item>
-      <title>French police officers found guilty of racist assault on black music producer</title>
-      <link>https://www.theguardian.com/world/2026/nov/20/french-police-officers-found-guilty-of-racist-assault-on-black-music-producer</link>
-      <guid isPermaLink="false">fbfbcaa4ebc142f3316a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 20 Nov 2026 22:23:53 +0000</pubDate>
     </item>
   </channel>
 </rss>
