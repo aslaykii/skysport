@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 20:57:58 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 21:36:27 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out</title>
+      <link>https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">d53e011b61eef9a5dd0f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 21 Nov 2026 21:05:29 +0000</pubDate>
+    </item>
     <item>
       <title>Two groups verify mathematician’s claim that Claude helped prove mathematics problem</title>
       <link>https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai</link>
@@ -159,15 +168,6 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Sat, 21 Nov 2026 15:19:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cold gives way to rain in parts of UK as weather warning issued for south-west England</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/21/uk-weather-cold-rain-warning-south-west-england</link>
-      <guid isPermaLink="false">cac520db6f0d46e702b2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Climate</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 14:51:37 +0000</pubDate>
     </item>
   </channel>
 </rss>
