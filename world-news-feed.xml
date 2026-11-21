@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 08:42:44 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 09:30:45 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Deal with EU not dependent on tuition fees agreement, Miliband says</title>
+      <link>https://www.bbc.co.uk/news/articles/cm9w9p4geke8o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">8bd28aa954d3604bf83d</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 21 Nov 2026 09:27:51 +0000</pubDate>
+    </item>
     <item>
       <title>Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend</title>
       <link>https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo?at_medium=RSS&amp;at_campaign=rss</link>
@@ -15,6 +24,15 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Sat, 21 Nov 2026 08:10:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trafalgar Square Christmas tree felled in Norway</title>
+      <link>https://www.bbc.co.uk/news/articles/cx8dv4327dnpo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">c04736f66c046ddc6f35</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 21 Nov 2026 08:10:03 +0000</pubDate>
     </item>
     <item>
       <title>Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in</title>
@@ -60,15 +78,6 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Sat, 21 Nov 2026 06:00:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Deal with EU not dependent on tuition fees agreement, Miliband says</title>
-      <link>https://www.bbc.co.uk/news/articles/cm9w9p4geke8o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">8bd28aa954d3604bf83d</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Sat, 21 Nov 2026 06:00:09 +0000</pubDate>
     </item>
     <item>
       <title>‘So what if there’s a hole? It hasn’t collapsed’: Kyiv residents unbothered by Russian attacks on city’s bridges</title>
@@ -159,15 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Sat, 21 Nov 2026 00:26:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump turns White House press conference into a 2028 succession audition</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/20/trump-republican-succession-battle-vance-rubio</link>
-      <guid isPermaLink="false">f2b965acf30650c095b1</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 00:16:26 +0000</pubDate>
     </item>
   </channel>
 </rss>
