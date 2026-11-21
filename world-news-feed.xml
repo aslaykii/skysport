@@ -5,8 +5,26 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 19:29:44 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 20:15:07 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Man charged with attempted murder after councillor stabbed in Bradford</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/21/man-charged-with-attempted-after-councillor-stabbed-in-bradford</link>
+      <guid isPermaLink="false">956b826fff8151702832</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 21 Nov 2026 19:42:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fight over fossil fuels leaves COP31 climate talks in deadlock</title>
+      <link>https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">e54ec07f73645f1c5748</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 21 Nov 2026 19:33:49 +0000</pubDate>
+    </item>
     <item>
       <title>Russia-bound ship attacked in Gulf of Finland</title>
       <link>https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&amp;at_campaign=rss</link>
@@ -143,15 +161,6 @@
       <pubDate>Sat, 21 Nov 2026 15:19:03 +0000</pubDate>
     </item>
     <item>
-      <title>Fight over fossil fuels leaves COP31 climate talks in deadlock</title>
-      <link>https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">e54ec07f73645f1c5748</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Climate</category>
-      <source>BBC News</source>
-      <pubDate>Sat, 21 Nov 2026 14:54:24 +0000</pubDate>
-    </item>
-    <item>
       <title>Cold gives way to rain in parts of UK as weather warning issued for south-west England</title>
       <link>https://www.theguardian.com/uk-news/2026/nov/21/uk-weather-cold-rain-warning-south-west-england</link>
       <guid isPermaLink="false">cac520db6f0d46e702b2</guid>
@@ -159,15 +168,6 @@
       <category>Climate</category>
       <source>The Guardian</source>
       <pubDate>Sat, 21 Nov 2026 14:51:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>Princess of Wales speaks about impact of cancer diagnosis in BBC film Heal</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/21/princess-of-wales-impact-cancer-diagnosis-bbc-film-heal</link>
-      <guid isPermaLink="false">d91368aed15e91eb1121</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 14:42:56 +0000</pubDate>
     </item>
   </channel>
 </rss>
