@@ -5,8 +5,35 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 16:27:01 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 17:14:18 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Anthropic mathematician claims he used Claude to prove 19th-century Riemann hypothesis</title>
+      <link>https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai</link>
+      <guid isPermaLink="false">5551def0095f2a9b1f13</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 21 Nov 2026 16:39:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>International UN talks on controlling use of autonomous weapons collapse</title>
+      <link>https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse</link>
+      <guid isPermaLink="false">cac4d486e46aeed2b2c3</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 21 Nov 2026 16:36:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>FBI reportedly investigating apparent hack of its criminal database</title>
+      <link>https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">1c64d44e2f0cbfcc2335</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 21 Nov 2026 16:35:15 +0000</pubDate>
+    </item>
     <item>
       <title>Virginia child dies in state’s first measles-associated death of 2026</title>
       <link>https://www.theguardian.com/us-news/2026/nov/21/virginia-child-dies-measles</link>
@@ -89,15 +116,6 @@
       <pubDate>Sat, 21 Nov 2026 14:18:17 +0000</pubDate>
     </item>
     <item>
-      <title>USDA, FBI breached by hackers amid spate of tech outages – reports</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/21/usda-fbi-outages-cyber-attack</link>
-      <guid isPermaLink="false">2483710c338eb636a0f2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 14:09:02 +0000</pubDate>
-    </item>
-    <item>
       <title>Denmark to expel Russian diplomat over alleged plot to kill US-Ukrainian rapper</title>
       <link>https://www.theguardian.com/world/2026/nov/20/denmark-russian-diplomat-us-ukrainian-rapper-attempted-killing</link>
       <guid isPermaLink="false">86b740478c70257fdae1</guid>
@@ -150,24 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Sat, 21 Nov 2026 12:22:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘Music was our teacher’: the sound system pioneers reviving the scene in Manchester and beyond</title>
-      <link>https://www.theguardian.com/news/2026/nov/21/sound-system-pioneers-music-manchester-windrush</link>
-      <guid isPermaLink="false">fff14844a6fa76123a3d</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 12:00:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>Rejoining EU ‘on the table’ as UK makes deals on trade and young people</title>
-      <link>https://www.theguardian.com/politics/2026/nov/21/rejoining-eu-uk-trade-youth-deals-ed-miliband</link>
-      <guid isPermaLink="false">438962f752c0a47aa622</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 11:33:01 +0000</pubDate>
     </item>
   </channel>
 </rss>
