@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 23:08:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 23:47:36 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out</title>
+      <link>https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">d53e011b61eef9a5dd0f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 21 Nov 2026 23:31:17 +0000</pubDate>
+    </item>
     <item>
       <title>Man found dead on Flinders Island linked to shooting of police officer, Tasmanian authorities say</title>
       <link>https://www.theguardian.com/australia-news/2026/nov/22/man-found-dead-on-flinders-island-linked-to-shooting-of-police-officer-tasmanian-authorities-say</link>
@@ -60,15 +69,6 @@
       <category>Politics</category>
       <source>BBC News</source>
       <pubDate>Sat, 21 Nov 2026 22:01:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out</title>
-      <link>https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">d53e011b61eef9a5dd0f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Sat, 21 Nov 2026 21:05:29 +0000</pubDate>
     </item>
     <item>
       <title>Two groups verify mathematician’s claim that Claude helped prove mathematics problem</title>
