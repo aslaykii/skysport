@@ -5,8 +5,44 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 05:49:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 06:54:14 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Dozens missing after fire at Indonesian factory</title>
+      <link>https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">737a9facdd26faa14593</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 22 Nov 2026 06:05:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘Serious error of judgment’: outrage over military AI event at Berlin arts complex</title>
+      <link>https://www.theguardian.com/world/2026/nov/22/military-ai-event-berlin-kraftwerk-arts-complex</link>
+      <guid isPermaLink="false">cc5e8f65eaaca95a6325</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 06:00:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>Labour MPs sign up for leadership course to counter rightwing populism</title>
+      <link>https://www.theguardian.com/politics/2026/nov/22/labour-mp-leadership-course-rightwing-populism-gary-lubner</link>
+      <guid isPermaLink="false">22e7bd5cfe172b592029</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 06:00:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>Europe is entering a ‘supercycle’ of national elections. Their outcomes could shake the EU’s foundations</title>
+      <link>https://www.theguardian.com/world/2026/nov/22/europe-elections-supercycle-could-shake-eu-foundations</link>
+      <guid isPermaLink="false">de7bf89f11d03d843881</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 06:00:18 +0000</pubDate>
+    </item>
     <item>
       <title>New draft deal aims to avert collapse of talks at climate summit</title>
       <link>https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&amp;at_campaign=rss</link>
@@ -132,42 +168,6 @@
       <category>World</category>
       <source>NPR</source>
       <pubDate>Sat, 21 Nov 2026 22:01:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>Lock of former US President George Washington's hair sells for $4,000</title>
-      <link>https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">490042f26061ca852e15</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Sat, 21 Nov 2026 22:01:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Two groups verify mathematician’s claim that Claude helped prove mathematics problem</title>
-      <link>https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai</link>
-      <guid isPermaLink="false">5551def0095f2a9b1f13</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 20:15:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>Man charged with attempted murder after councillor stabbed in Bradford</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/21/man-charged-with-attempted-after-councillor-stabbed-in-bradford</link>
-      <guid isPermaLink="false">956b826fff8151702832</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 19:42:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>Russia-bound ship attacked in Gulf of Finland</title>
-      <link>https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">a9bb7c6e29da205c76d2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Sat, 21 Nov 2026 19:20:22 +0000</pubDate>
     </item>
   </channel>
 </rss>
