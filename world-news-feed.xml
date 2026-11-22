@@ -5,16 +5,25 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 20:28:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 21:16:01 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>Australian politics live: small business carveout in digital duty of care; countdown to pass key legislation begins</title>
+      <title>Australian politics live: Chris Bowen ‘frustrated’ by climate summit; countdown to pass key legislation begins</title>
       <link>https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb</link>
       <guid isPermaLink="false">e04446d687eb90fac3bc</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 20:06:26 +0000</pubDate>
+      <pubDate>Sun, 22 Nov 2026 20:58:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>US intelligence chief says he trusts Trump’s description of Putin as ‘my friend’</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/22/intelligence-chief-jay-clayton-trump-putin-my-friend</link>
+      <guid isPermaLink="false">e7b0be9b33dae1e6e4ae</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 20:55:33 +0000</pubDate>
     </item>
     <item>
       <title>Explosion on Russian ship at Libya port caused by suspected drone attack, officials say</title>
@@ -23,7 +32,16 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>BBC News</source>
-      <pubDate>Sun, 22 Nov 2026 19:52:50 +0000</pubDate>
+      <pubDate>Sun, 22 Nov 2026 20:28:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Democrats win largest House majority since 1992 after flipping North Carolina seat</title>
+      <link>https://www.bbc.co.uk/news/articles/c6vg29g7dlyno?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">7e5383763bcf3b019d2c</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 22 Nov 2026 20:26:24 +0000</pubDate>
     </item>
     <item>
       <title>Jensen Huang’s reported affair was ‘most expensive sex since Helen of Troy’, US senator says</title>
@@ -32,7 +50,7 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 19:34:59 +0000</pubDate>
+      <pubDate>Sun, 22 Nov 2026 20:23:36 +0000</pubDate>
     </item>
     <item>
       <title>Democrats capture at least 258 House seats in largest sweep since 1992</title>
@@ -150,24 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Sun, 22 Nov 2026 17:32:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Russia-bound ship towed away after it was attacked in Gulf of Finland</title>
-      <link>https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">a9bb7c6e29da205c76d2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Sun, 22 Nov 2026 17:18:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>Climate change talks fall apart in final hours over fossil fuels</title>
-      <link>https://www.npr.org/2026/11/22/nx-s1-6046195/cop31-climate-talks-close-disappointment</link>
-      <guid isPermaLink="false">35cb6d5769c702625b29</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Climate</category>
-      <source>NPR</source>
-      <pubDate>Sun, 22 Nov 2026 16:33:22 +0000</pubDate>
     </item>
   </channel>
 </rss>
