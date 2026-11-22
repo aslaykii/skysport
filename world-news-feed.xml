@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 19:33:42 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 20:28:21 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Australian politics live: small business carveout in digital duty of care; countdown to pass key legislation begins</title>
+      <link>https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb</link>
+      <guid isPermaLink="false">e04446d687eb90fac3bc</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 20:06:26 +0000</pubDate>
+    </item>
     <item>
       <title>Explosion on Russian ship at Libya port caused by suspected drone attack, officials say</title>
       <link>https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&amp;at_campaign=rss</link>
@@ -14,7 +23,16 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>BBC News</source>
-      <pubDate>Sun, 22 Nov 2026 19:26:54 +0000</pubDate>
+      <pubDate>Sun, 22 Nov 2026 19:52:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>Jensen Huang’s reported affair was ‘most expensive sex since Helen of Troy’, US senator says</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/22/jensen-huang-nvidia-john-kennedy</link>
+      <guid isPermaLink="false">0a3f026f3a8e88bda835</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 19:34:59 +0000</pubDate>
     </item>
     <item>
       <title>Democrats capture at least 258 House seats in largest sweep since 1992</title>
@@ -150,24 +168,6 @@
       <category>Climate</category>
       <source>NPR</source>
       <pubDate>Sun, 22 Nov 2026 16:33:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cop31 climate talks break down as key deal rejected</title>
-      <link>https://www.theguardian.com/environment/2026/nov/22/cop31-climate-talks-set-to-end-in-deep-division-as-key-deal-rejected</link>
-      <guid isPermaLink="false">f18447eb72de50430273</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 16:14:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>Theresa May’s blast from the past calls Tories back to their unhappy place | Peter Walker</title>
-      <link>https://www.theguardian.com/politics/2026/nov/22/theresa-may-blast-from-the-past-tories-brexit</link>
-      <guid isPermaLink="false">896455605a4b34c58837</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 16:12:54 +0000</pubDate>
     </item>
   </channel>
 </rss>
