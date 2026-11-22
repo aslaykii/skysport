@@ -5,8 +5,35 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 17:56:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 18:37:41 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>'Danger seems greater all the time': Ukrainians search for missing after Russian strikes</title>
+      <link>https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">3a79b8d5c4b4253131a4</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 22 Nov 2026 17:57:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Two groups verify mathematician’s claim that Claude helped prove mathematics problem</title>
+      <link>https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai</link>
+      <guid isPermaLink="false">5551def0095f2a9b1f13</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 17:55:27 +0000</pubDate>
+    </item>
+    <item>
+      <title>Russell Brand’s wife vows to abide by prison rules after video controversy</title>
+      <link>https://www.theguardian.com/news/2026/nov/22/russell-brand-wife-laura-gallacher-youtube-video</link>
+      <guid isPermaLink="false">53a3561af451867d0fd3</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 17:49:12 +0000</pubDate>
+    </item>
     <item>
       <title>Lebanese villagers return to wrecked homes as the Israeli army pulls back</title>
       <link>https://www.npr.org/2026/11/22/nx-s1-6048710/lebanon-israel-army-conflict-homes</link>
@@ -141,33 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Sun, 22 Nov 2026 14:00:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>Australia urged to wean off imported fossil fuels amid global supply shocks</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/23/australia-urged-to-wean-off-imported-fossil-fuels-amid-global-supply-shocks</link>
-      <guid isPermaLink="false">0db2097cecb396fc378e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 14:00:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>Miley Cyrus weds drummer Maxx Morando in California – reports</title>
-      <link>https://www.theguardian.com/music/2026/nov/22/miley-cyrus-maxx-morando-wedding</link>
-      <guid isPermaLink="false">1bd9118177cddf2bd87e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 13:49:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>Briton swims length of strait of Hormuz to highlight environmental cost of war</title>
-      <link>https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war</link>
-      <guid isPermaLink="false">d72b3ea8eace295852ec</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 13:36:01 +0000</pubDate>
     </item>
   </channel>
 </rss>
