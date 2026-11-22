@@ -5,10 +5,28 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 06:54:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 08:04:38 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>Dozens missing after fire at Indonesian factory</title>
+      <title>Fire at confectionary factory in Indonesia leaves at least three dead and dozens missing</title>
+      <link>https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta</link>
+      <guid isPermaLink="false">b1fdd3d9246a5ec111d0</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 07:11:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>New draft deal aims to avert collapse of talks at COP31 climate summit</title>
+      <link>https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">384d88b27801a300144f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 22 Nov 2026 06:54:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Three killed and dozens missing after fire at Indonesian factory</title>
       <link>https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">737a9facdd26faa14593</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
@@ -42,15 +60,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Sun, 22 Nov 2026 06:00:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>New draft deal aims to avert collapse of talks at climate summit</title>
-      <link>https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">384d88b27801a300144f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Climate</category>
-      <source>BBC News</source>
-      <pubDate>Sun, 22 Nov 2026 05:26:10 +0000</pubDate>
     </item>
     <item>
       <title>Police say man whose body lay undiscovered in Sydney bushland for 12 days was killed in suspected hit-and-run</title>
@@ -159,15 +168,6 @@
       <category>Politics</category>
       <source>NPR</source>
       <pubDate>Sat, 21 Nov 2026 22:01:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>A grieving family in Lebanon returns to their village</title>
-      <link>https://www.npr.org/2026/11/21/nx-s1-6012085/a-grieving-family-in-lebanon-returns-to-their-village</link>
-      <guid isPermaLink="false">6734de109aeaa9337907</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>NPR</source>
-      <pubDate>Sat, 21 Nov 2026 22:01:32 +0000</pubDate>
     </item>
   </channel>
 </rss>
