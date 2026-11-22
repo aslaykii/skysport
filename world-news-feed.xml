@@ -5,8 +5,35 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 23:47:36 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 00:41:44 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>FBI reportedly investigating apparent hack of its criminal database</title>
+      <link>https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">1c64d44e2f0cbfcc2335</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 22 Nov 2026 00:10:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nigerian youth have shown their power in the past - why aren't they shaping this election?</title>
+      <link>https://www.bbc.co.uk/news/articles/ck4g174n020eo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">a201ec4f423e6ef281b4</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 22 Nov 2026 00:10:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>How a teen gamer and his mother helped rescue a missing girl</title>
+      <link>https://www.bbc.co.uk/news/articles/cmq8lyv8lkjwo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">7b29528f2e14da5a0c7c</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 22 Nov 2026 00:09:58 +0000</pubDate>
+    </item>
     <item>
       <title>Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out</title>
       <link>https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&amp;at_campaign=rss</link>
@@ -141,33 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Sat, 21 Nov 2026 18:20:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mexico detains top cartel boss 'El Chapo Isidro,' setting off violence</title>
-      <link>https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained</link>
-      <guid isPermaLink="false">5b76dfe3de30c0fc5f04</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>NPR</source>
-      <pubDate>Sat, 21 Nov 2026 18:08:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump orders contractors to check with White House over any congressional inquiries</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/21/trump-contractors-congress-executive-order</link>
-      <guid isPermaLink="false">b07e4c74ea4550b6e6e2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 18:08:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid</title>
-      <link>https://www.theguardian.com/world/2026/nov/21/alleged-mexican-drug-cartel-boss-el-chapo-isidro-meza-flores-arrested</link>
-      <guid isPermaLink="false">2681b8486e6260f1f09b</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sat, 21 Nov 2026 17:46:55 +0000</pubDate>
     </item>
   </channel>
 </rss>
