@@ -5,10 +5,19 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 08:04:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 08:56:26 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>Fire at confectionary factory in Indonesia leaves at least three dead and dozens missing</title>
+      <title>Highly lucrative: Bank of England directors illegally profited from post-abolition enslavement in Cuba</title>
+      <link>https://www.theguardian.com/news/2026/nov/22/bank-of-england-directors-illegally-profited-enslavement-cuba</link>
+      <guid isPermaLink="false">6fc3bb31bc34ec6a1dba</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 08:00:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fire at confectionery factory in Indonesia leaves at least three dead and dozens missing</title>
       <link>https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta</link>
       <guid isPermaLink="false">b1fdd3d9246a5ec111d0</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
@@ -159,15 +168,6 @@
       <category>Politics</category>
       <source>NPR</source>
       <pubDate>Sat, 21 Nov 2026 22:01:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>Highlights and challenges from covering an historic month in South America</title>
-      <link>https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america</link>
-      <guid isPermaLink="false">411940f8e460fbd061f7</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>NPR</source>
-      <pubDate>Sat, 21 Nov 2026 22:01:35 +0000</pubDate>
     </item>
   </channel>
 </rss>
