@@ -5,8 +5,35 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 16:27:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 17:14:54 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Explosion on Russian ship at Libya port caused by suspected drone attack, officials say</title>
+      <link>https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">cb29a20e38ef835b166a</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 22 Nov 2026 17:12:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>Blast on Russian ship in Benghazi a suspected drone attack, say Libyan authorities</title>
+      <link>https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya</link>
+      <guid isPermaLink="false">0a72272c8d43a3ceda33</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 16:55:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>International climate talks end in disappointment</title>
+      <link>https://www.npr.org/2026/11/22/nx-s1-6046195/cop31-climate-talks-close-disappointment</link>
+      <guid isPermaLink="false">35cb6d5769c702625b29</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>NPR</source>
+      <pubDate>Sun, 22 Nov 2026 16:33:22 +0000</pubDate>
+    </item>
     <item>
       <title>Cop31 climate talks break down as key deal rejected</title>
       <link>https://www.theguardian.com/environment/2026/nov/22/cop31-climate-talks-set-to-end-in-deep-division-as-key-deal-rejected</link>
@@ -24,15 +51,6 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Sun, 22 Nov 2026 16:12:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>Explosion on Russian ship at Libya port caused by suspected drone attack, officials say</title>
-      <link>https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">cb29a20e38ef835b166a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Sun, 22 Nov 2026 16:05:25 +0000</pubDate>
     </item>
     <item>
       <title>US releases files on suspected Bigfoot sightings in Montana and Oregon</title>
@@ -53,7 +71,7 @@
       <pubDate>Sun, 22 Nov 2026 15:43:01 +0000</pubDate>
     </item>
     <item>
-      <title>Netanyahu rival condemns settler arson attacks on Palestinian villages in West Bank</title>
+      <title>Netanyahu rival condemns ‘Jewish terrorism’ after settler attacks on Palestinian villages</title>
       <link>https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank</link>
       <guid isPermaLink="false">043841536d7cb43a67af</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
@@ -150,24 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Sun, 22 Nov 2026 13:00:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>UK politics: Burnham should ‘move on’ from Brexit, says Theresa May, as critics hit out over closer EU ties – as it happened</title>
-      <link>https://www.theguardian.com/politics/live/2026/nov/22/andy-burnham-brexit-theresa-may-michael-gove-latest-news-updates</link>
-      <guid isPermaLink="false">31d01d9a4c27c70147ee</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 12:50:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>South Korean minister quits after AI cheating scandal engulfs university exams</title>
-      <link>https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams</link>
-      <guid isPermaLink="false">520e56a219a4af173a96</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 12:12:08 +0000</pubDate>
     </item>
   </channel>
 </rss>
