@@ -5,8 +5,26 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 14:56:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 15:38:19 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Netanyahu rival condemns settler arson attacks on Palestinian villages in West Bank</title>
+      <link>https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank</link>
+      <guid isPermaLink="false">043841536d7cb43a67af</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 15:22:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Rivals author Jilly Cooper accused of ‘extensive and deliberate plagiarism’</title>
+      <link>https://www.theguardian.com/books/2026/nov/22/rivals-author-jilly-cooper-accused-plagiarism</link>
+      <guid isPermaLink="false">a9afb113a959f2ea1044</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 15:07:42 +0000</pubDate>
+    </item>
     <item>
       <title>Three killed and dozens missing after fire at Indonesian factory</title>
       <link>https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&amp;at_campaign=rss</link>
@@ -143,15 +161,6 @@
       <pubDate>Sun, 22 Nov 2026 12:00:28 +0000</pubDate>
     </item>
     <item>
-      <title>Cloned number plate victims in England and Wales to get new reporting tool</title>
-      <link>https://www.theguardian.com/money/2026/nov/22/cloned-number-plate-victims-england-and-wales-new-reporting-tool</link>
-      <guid isPermaLink="false">41233461afdce8f0053c</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 11:59:28 +0000</pubDate>
-    </item>
-    <item>
       <title>Russia-bound ship still on fire after attack in Gulf of Finland</title>
       <link>https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">a9bb7c6e29da205c76d2</guid>
@@ -159,15 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Sun, 22 Nov 2026 11:25:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>UK-EU food deal hailed by British firms: ‘We’re pretty aligned anyway’</title>
-      <link>https://www.theguardian.com/business/2026/nov/22/uk-eu-food-sps-deal-brexit-checks</link>
-      <guid isPermaLink="false">9fca7a9ef1e0d7bb963a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 11:00:24 +0000</pubDate>
     </item>
   </channel>
 </rss>
