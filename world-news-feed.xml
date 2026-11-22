@@ -5,8 +5,44 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 14:05:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 14:56:32 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Three killed and dozens missing after fire at Indonesian factory</title>
+      <link>https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">737a9facdd26faa14593</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sun, 22 Nov 2026 14:05:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>Experts say ‘trusted messengers’ critical as Amish grapple with measles outbreak</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/22/measles-amish-outbreak</link>
+      <guid isPermaLink="false">d05634d7441d7922f965</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Science &amp; Technology</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 14:00:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Potty-mouthed MPs ranked as Australian parliament sets new swearing record</title>
+      <link>https://www.theguardian.com/news/2026/nov/23/potty-mouthed-mps-ranked-as-australian-parliament-sets-new-swearing-record</link>
+      <guid isPermaLink="false">e2cf3299d8b8e2f49633</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 14:00:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>Australia urged to wean off imported fossil fuels amid global supply shocks</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/23/australia-urged-to-wean-off-imported-fossil-fuels-amid-global-supply-shocks</link>
+      <guid isPermaLink="false">0db2097cecb396fc378e</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sun, 22 Nov 2026 14:00:29 +0000</pubDate>
+    </item>
     <item>
       <title>Miley Cyrus weds drummer Maxx Morando in California – reports</title>
       <link>https://www.theguardian.com/music/2026/nov/22/miley-cyrus-maxx-morando-wedding</link>
@@ -125,15 +161,6 @@
       <pubDate>Sun, 22 Nov 2026 11:25:14 +0000</pubDate>
     </item>
     <item>
-      <title>Conservative media weighs its future as cracks emerge in Trump’s movement</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/22/conservative-media-trump-midterm-elections-results</link>
-      <guid isPermaLink="false">b150fa245fb0634065ab</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 11:00:26 +0000</pubDate>
-    </item>
-    <item>
       <title>UK-EU food deal hailed by British firms: ‘We’re pretty aligned anyway’</title>
       <link>https://www.theguardian.com/business/2026/nov/22/uk-eu-food-sps-deal-brexit-checks</link>
       <guid isPermaLink="false">9fca7a9ef1e0d7bb963a</guid>
@@ -141,33 +168,6 @@
       <category>Business</category>
       <source>The Guardian</source>
       <pubDate>Sun, 22 Nov 2026 11:00:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>South Korea education minister resigns over exam cheating scandal</title>
-      <link>https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">1702b449ef0b09d7ee21</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Sun, 22 Nov 2026 09:20:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Indian opposition party’s youth wing warns of more Meta protests after police clashes</title>
-      <link>https://www.theguardian.com/world/2026/nov/22/india-congress-meta-protests-police-hyderabad</link>
-      <guid isPermaLink="false">0e691f833f9faa4cdbe2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 09:14:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>Bank of England directors illegally profited from post-abolition enslavement in Cuba</title>
-      <link>https://www.theguardian.com/news/2026/nov/22/bank-of-england-directors-illegally-profited-enslavement-cuba</link>
-      <guid isPermaLink="false">6fc3bb31bc34ec6a1dba</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 08:00:22 +0000</pubDate>
     </item>
   </channel>
 </rss>
