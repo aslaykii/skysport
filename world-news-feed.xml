@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2026 01:50:26 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 02:50:00 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/23/father-daughter-ice-arrests-video-sparks-protests-seattle-airport</link>
+      <guid isPermaLink="false">9b21d61ef2e6245d10f2</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 02:38:16 +0000</pubDate>
+    </item>
     <item>
       <title>Australian politics live: PM’s staff numbers exceed crossbench’s allocation combined; Minns ends presser after heckling</title>
       <link>https://www.theguardian.com/australia-news/live/2026/nov/23/anthony-albanese-digital-duty-of-care-labor-greens-coalition-one-nation-angus-taylor-pauline-hanson-penny-wong-ai-ntwnfb</link>
@@ -14,7 +23,7 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 01:35:52 +0000</pubDate>
+      <pubDate>Mon, 23 Nov 2026 02:36:52 +0000</pubDate>
     </item>
     <item>
       <title>Democrats win largest House majority since 1992 after flipping North Carolina seat</title>
@@ -159,15 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Sun, 22 Nov 2026 21:22:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>US intelligence chief says he trusts Trump’s description of Putin as ‘my friend’</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/22/intelligence-chief-jay-clayton-trump-putin-my-friend</link>
-      <guid isPermaLink="false">e7b0be9b33dae1e6e4ae</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Sun, 22 Nov 2026 20:55:33 +0000</pubDate>
     </item>
   </channel>
 </rss>
