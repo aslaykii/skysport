@@ -5,16 +5,43 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2026 19:56:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 20:45:06 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>Republicans voice concerns over Jensen Huang’s Nvidia reinstatement after Trump urged board to rehire CEO – live</title>
+      <title>Australian politics live: Penny Wong to defend US alliance; rental affordability plummets to 14-year low</title>
+      <link>https://www.theguardian.com/australia-news/live/2026/nov/24/labor-penny-wong-us-china-anthony-albanese-final-sitting-week-ntwnfb</link>
+      <guid isPermaLink="false">1a47195440948f74fc2e</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 20:38:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>Top Democrats raise corruption concerns after Trump involvement in Jensen Huang’s Nvidia reinstatement – live</title>
       <link>https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates</link>
       <guid isPermaLink="false">e960cc4aeddb644cafab</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Business</category>
       <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 19:28:31 +0000</pubDate>
+      <pubDate>Mon, 23 Nov 2026 20:38:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Israel seeks to jail Palestinian student activist without trial after dorm arrest</title>
+      <link>https://www.theguardian.com/world/2026/nov/23/student-arrest-racist-campaign-israel-palestine-benjamin-netanyahu</link>
+      <guid isPermaLink="false">7e4cd8e18199759e344c</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 19:48:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump defers to appeals court over army plan to detonate bomb-making material in Iowa</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court</link>
+      <guid isPermaLink="false">f317b57513b330116161</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Health</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 19:42:40 +0000</pubDate>
     </item>
     <item>
       <title>Burnham says it would be ‘unthinkable’ to rejoin EU without referendum</title>
@@ -134,15 +161,6 @@
       <pubDate>Mon, 23 Nov 2026 17:24:25 +0000</pubDate>
     </item>
     <item>
-      <title>Mamdani says New York will cap ebike fares to ‘significantly’ cut cost of rides</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/23/nyc-ebike-cost-capped-mamdani</link>
-      <guid isPermaLink="false">1efc78a1defef94a421e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 17:22:05 +0000</pubDate>
-    </item>
-    <item>
       <title>Cop31 collapses: why did climate talks fall apart? - The Latest</title>
       <link>https://www.theguardian.com/news/audio/2026/nov/23/cop31-collapses-why-did-climate-talks-fall-apart-the-latest</link>
       <guid isPermaLink="false">6ef9292eb04b43754993</guid>
@@ -150,24 +168,6 @@
       <category>Climate</category>
       <source>The Guardian</source>
       <pubDate>Mon, 23 Nov 2026 17:19:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>Comedian impersonates Trump's dance moves, mocks trade talks at Canada press dinner</title>
-      <link>https://www.bbc.co.uk/news/articles/cr930y92dyx4o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">f6d36288d78349603d3f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Mon, 23 Nov 2026 17:14:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says</title>
-      <link>https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">81800622d8bc9a04d8c1</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Mon, 23 Nov 2026 17:07:25 +0000</pubDate>
     </item>
   </channel>
 </rss>
