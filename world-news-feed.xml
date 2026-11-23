@@ -5,16 +5,25 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2026 07:55:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 09:12:44 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>Clubs and families revolt as Football Queensland charges $5 a head to watch children play</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/23/football-queensland-gate-fee-kids-soccer-outrage</link>
-      <guid isPermaLink="false">0175b1b6413d0a7aa46d</guid>
+      <title>Zelenskyy says Ukraine responsible for sinking Russian warship in Libya – Europe live</title>
+      <link>https://www.theguardian.com/world/live/2026/nov/23/russia-ukraine-war-zelenskyy-libya-benghazi-drone-attack-ship-merkury-un-nato-europe-latest-news-updates</link>
+      <guid isPermaLink="false">97e5a541e8ca5f6487f3</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
+      <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 07:30:57 +0000</pubDate>
+      <pubDate>Mon, 23 Nov 2026 08:50:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>Gas prices in Europe surge as forecast cold snap feeds supply shortage fears</title>
+      <link>https://www.theguardian.com/business/2026/nov/23/gas-prices-in-europe-surge-as-forecast-cold-snap-feeds-supply-shortage-fears</link>
+      <guid isPermaLink="false">020ceb64514aa257f59f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 08:45:13 +0000</pubDate>
     </item>
     <item>
       <title>Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'</title>
@@ -23,7 +32,61 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>BBC News</source>
-      <pubDate>Mon, 23 Nov 2026 07:01:31 +0000</pubDate>
+      <pubDate>Mon, 23 Nov 2026 08:41:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Russian ships hit by Ukrainian drones off Libya coast, Zelensky says</title>
+      <link>https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">cb29a20e38ef835b166a</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Mon, 23 Nov 2026 08:36:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump hosts third crypto gala for meme coin amid conflict of interest outcry</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/22/trump-cryptocurrency-gala-meme-coin</link>
+      <guid isPermaLink="false">3d31a846dbd5358c7856</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 08:33:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>Up to 1.1m people eligible to join class action against Jetstar over alleged failure to refund Covid flights</title>
+      <link>https://www.theguardian.com/business/2026/nov/23/up-to-11m-people-eligible-to-join-class-action-against-jetstar-over-alleged-failure-to-refund-covid-flights-ntwnfb</link>
+      <guid isPermaLink="false">272236dde8efce6ef8fe</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 08:24:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>Constitutional law expert brands defence bill allowing secret security rules ‘lazy and irresponsible’</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/23/constitutional-law-expert-brands-defence-bill-allowing-secret-security-rules-lazy-and-irresponsible</link>
+      <guid isPermaLink="false">e5bd87564503192791f7</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 08:23:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>Manchester’s Co-op Live arena evacuated after ‘unknown substance’ released in crowd</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/23/manchester-co-op-live-arena-evacuated-tear-gas-don-toliver-concert</link>
+      <guid isPermaLink="false">3360c149e1188404ada5</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Health</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 07:48:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>Clubs and families revolt as Football Queensland charges $5 a head to watch children play</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/23/football-queensland-gate-fee-kids-soccer-outrage</link>
+      <guid isPermaLink="false">0175b1b6413d0a7aa46d</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 07:30:57 +0000</pubDate>
     </item>
     <item>
       <title>Grieving families getting into debt and doing without memorials due to benefit freezes</title>
@@ -42,6 +105,15 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Mon, 23 Nov 2026 06:46:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>Five takeaways from the failed climate talks COP31</title>
+      <link>https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">4279a33688d6c96d11c2</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>BBC News</source>
+      <pubDate>Mon, 23 Nov 2026 06:33:50 +0000</pubDate>
     </item>
     <item>
       <title>NSW MP Alex Greenwich drops support for Fred Nile state funeral after blowback from LGBTQ+ community – as it happened</title>
@@ -96,78 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Mon, 23 Nov 2026 05:33:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>Longest-ever UN climate talks end with no deal as deep divisions exposed</title>
-      <link>https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">e4dc3fa8f4ea0ce67434</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Mon, 23 Nov 2026 05:15:06 +0000</pubDate>
-    </item>
-    <item>
-      <title>Fewer than half in UK will pay TV licence fee within a decade, report warns</title>
-      <link>https://www.theguardian.com/media/2026/nov/23/bbc-tv-licence-fee-spiral-of-decline-report</link>
-      <guid isPermaLink="false">ad2a657a9a1c2254956d</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 05:00:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>Love made a fool of Beau Lamarre-Condon but did not make him a murderer, defence argues</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/23/beau-lamarre-condon-trail-executed-jesse-baird-prosecution-argues-ntwnfb</link>
-      <guid isPermaLink="false">932ecb810116f3b9d34f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 04:34:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘Difficult geopolitical times’: Albanese defends Bowen after Cop31 deal failure</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/23/difficult-geopolitical-times-albanese-defends-bowen-after-cop31-deal-failure</link>
-      <guid isPermaLink="false">d27b0bfc7a3699e6103e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 04:21:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/23/unemployment-to-surpass-5-and-things-will-get-a-bit-harder-treasurer-jim-chalmers-warns</link>
-      <guid isPermaLink="false">cf71e8c5e0359ed4e419</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 04:17:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>Israel’s destruction of Gaza has created a ‘toxic wasteland’, experts find</title>
-      <link>https://www.theguardian.com/world/2026/nov/23/israel-gaza-destruction-created-toxic-wasteland-oxfam-report</link>
-      <guid isPermaLink="false">99440db22079593ee45a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Health</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 04:00:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Manchester’s Co-op Live arena evacuated after ‘unknown substance’ released in crowd at Don Toliver concert</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/23/manchester-co-op-live-arena-evacuated-tear-gas-don-toliver-concert</link>
-      <guid isPermaLink="false">3360c149e1188404ada5</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Health</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 03:27:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Explosion on Russian ship at Libya port caused by suspected drone attack, officials say</title>
-      <link>https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">cb29a20e38ef835b166a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Mon, 23 Nov 2026 02:59:35 +0000</pubDate>
     </item>
   </channel>
 </rss>
