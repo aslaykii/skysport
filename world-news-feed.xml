@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2026 21:35:41 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 22:33:27 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>Top Democrats raise corruption concerns after Trump involvement in Jensen Huang’s Nvidia reinstatement – live</title>
@@ -14,7 +14,16 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Business</category>
       <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 21:29:11 +0000</pubDate>
+      <pubDate>Mon, 23 Nov 2026 22:29:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Jensen Huang reinstated as Nvidia CEO after Trump intervenes</title>
+      <link>https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive</link>
+      <guid isPermaLink="false">833a072f63c18c6f1a0c</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 22:23:40 +0000</pubDate>
     </item>
     <item>
       <title>Australian politics live: Labor to ‘save more than we spend’ in budget update, Chalmers says; rental affordability plummets to 14-year low</title>
@@ -23,7 +32,34 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 21:24:29 +0000</pubDate>
+      <pubDate>Mon, 23 Nov 2026 22:22:58 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump defers to appeals court over army plan to detonate bomb-making material in Iowa</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court</link>
+      <guid isPermaLink="false">f317b57513b330116161</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Health</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 22:22:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>Jimmy Gomez to resign after House ethics panel finds evidence of sexual misconduct</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/23/jimmy-gomez-congress-investigation-sexual-misconduct</link>
+      <guid isPermaLink="false">5418898a0f08e16023b2</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Mon, 23 Nov 2026 22:21:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>US to blacklist Asian AI firm Megaspeed after Nvidia scandal</title>
+      <link>https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">66403463587777bcb100</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Mon, 23 Nov 2026 22:15:26 +0000</pubDate>
     </item>
     <item>
       <title>Republican senators criticize Nvidia’s decision to reinstate Jensen Huang</title>
@@ -33,15 +69,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Mon, 23 Nov 2026 21:09:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>Republican sheriff racked up $3m security bill for California taxpayers, including Ritz-Carlton stays and steak</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/23/sheriff-chad-bianco-security-spending-california-governor-candidate</link>
-      <guid isPermaLink="false">2c54c3e5824f76075111</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 21:04:31 +0000</pubDate>
     </item>
     <item>
       <title>Iranian singer and four others receive lashes after performance without hijab</title>
@@ -80,15 +107,6 @@
       <pubDate>Mon, 23 Nov 2026 19:48:58 +0000</pubDate>
     </item>
     <item>
-      <title>Trump defers to appeals court over army plan to detonate bomb-making material in Iowa</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court</link>
-      <guid isPermaLink="false">f317b57513b330116161</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Health</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 19:42:40 +0000</pubDate>
-    </item>
-    <item>
       <title>Burnham says it would be ‘unthinkable’ to rejoin EU without referendum</title>
       <link>https://www.theguardian.com/politics/2026/nov/23/andy-burnham-brexit-deal-eu</link>
       <guid isPermaLink="false">8bb31f6530a7aa0213b4</guid>
@@ -98,13 +116,13 @@
       <pubDate>Mon, 23 Nov 2026 19:26:01 +0000</pubDate>
     </item>
     <item>
-      <title>Jensen Huang reinstated as Nvidia CEO after Trump intervenes</title>
-      <link>https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive</link>
-      <guid isPermaLink="false">833a072f63c18c6f1a0c</guid>
+      <title>'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia</title>
+      <link>https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">4c2b336b765a0af02ff0</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 18:51:56 +0000</pubDate>
+      <category>Business</category>
+      <source>BBC News</source>
+      <pubDate>Mon, 23 Nov 2026 18:43:00 +0000</pubDate>
     </item>
     <item>
       <title>Burnham says it would be ‘unthinkable’ for the UK to rejoin the EU without a referendum – as it happened</title>
@@ -150,24 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Mon, 23 Nov 2026 18:04:20 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘Scapegoating’: green groups condemn plan to axe Environment Agency and Natural England</title>
-      <link>https://www.theguardian.com/politics/2026/nov/23/natural-england-could-be-abolished-quango-cull-louise-haigh</link>
-      <guid isPermaLink="false">ef42e115c1e3b7d9bafa</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 17:47:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>What tactics will Burnham use to sell his EU plans? – podcast</title>
-      <link>https://www.theguardian.com/politics/audio/2026/nov/23/what-tactics-will-burnham-use-to-sell-his-eu-plans-podcast</link>
-      <guid isPermaLink="false">673bccf1a8822df85185</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 17:42:13 +0000</pubDate>
     </item>
   </channel>
 </rss>
