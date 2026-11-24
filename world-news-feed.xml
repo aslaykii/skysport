@@ -5,25 +5,34 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Nov 2026 00:31:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 01:58:10 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>Australian politics live: Taylor notes ‘tough year’ for Coalition party room; King Charles ‘deeply saddened’ by Meldrum’s death</title>
+      <title>Australian politics live: Australia and Singapore sign carbon capture treaty; ANZ predicts RBA could cut rates in June</title>
       <link>https://www.theguardian.com/australia-news/live/2026/nov/24/labor-penny-wong-us-china-anthony-albanese-final-sitting-week-ntwnfb</link>
       <guid isPermaLink="false">1a47195440948f74fc2e</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 00:21:58 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 01:43:11 +0000</pubDate>
     </item>
     <item>
-      <title>Republicans lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live</title>
+      <title>Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live</title>
       <link>https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates</link>
       <guid isPermaLink="false">e960cc4aeddb644cafab</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Business</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 00:19:01 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 01:26:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>Beau Lamarre-Condon chose ‘long walk’ to witness box rather than silence, his barrister tells court</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/24/beau-lamarre-condon-trial-barrister-closing-statement-ntwnfb</link>
+      <guid isPermaLink="false">40de6cd9df4382e04369</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 01:25:20 +0000</pubDate>
     </item>
     <item>
       <title>Zack Polanski backs report endorsing Nato membership and maintaining nuclear weapons</title>
@@ -159,15 +168,6 @@
       <category>Business</category>
       <source>BBC News</source>
       <pubDate>Mon, 23 Nov 2026 18:43:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Burnham says it would be ‘unthinkable’ for the UK to rejoin the EU without a referendum – as it happened</title>
-      <link>https://www.theguardian.com/politics/live/2026/nov/23/andy-burnham-brexit-europe-eu-uk-summit-deal-commons-cbi-farage-badenoch-haigh-politics-latest-news-updates</link>
-      <guid isPermaLink="false">b6cb2e5156e6fe6aa3b0</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 18:31:17 +0000</pubDate>
     </item>
   </channel>
 </rss>
