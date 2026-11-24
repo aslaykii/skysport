@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Nov 2026 15:12:47 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 16:25:35 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>World Chess Championship 2026 Game 1: Gukesh Dommaraju v Javokhir Sindarov – live</title>
@@ -14,16 +14,97 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 14:59:10 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 16:10:16 +0000</pubDate>
     </item>
     <item>
-      <title>Pip assessments are ‘not fit for purpose’, Timms tells MPs as he unveils his review – UK politics live</title>
+      <title>Irish plan offers Burnham breakthrough on Made in Europe</title>
+      <link>https://www.theguardian.com/business/2026/nov/24/uk-eu-made-in-europe-trade-cars-tariffs</link>
+      <guid isPermaLink="false">6c68f5361c8b9267cf54</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 16:09:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>Democrats hit out at Nvidia and Trump over Huang’s return – US politics live</title>
+      <link>https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates</link>
+      <guid isPermaLink="false">d9c8f7ab1ec55b30b0f0</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 16:08:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>Proposals in Timms review for changes to Pip would lead to higher welfare bill, IFS says – UK politics live</title>
       <link>https://www.theguardian.com/politics/live/2026/nov/24/pip-review-stephen-timms-andy-burnham-disability-welfare-brexit-latest-news-updates</link>
       <guid isPermaLink="false">6aec6ae6e51234b28e49</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 14:54:04 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 16:07:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>Italy expresses concern to Ukraine over Libya ship attacks – Europe live</title>
+      <link>https://www.theguardian.com/world/live/2026/nov/24/russia-ukraine-poland-drone-patriots-latest-news-updates</link>
+      <guid isPermaLink="false">9c53e5c4c0b02d3724bc</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 16:06:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>More than 300 Russians killed as Moscow props up Mali’s junta, leaked data reveals</title>
+      <link>https://www.theguardian.com/world/2026/nov/24/russian-fighters-killed-in-mali-africa-leaked-data</link>
+      <guid isPermaLink="false">7491f5c45d84e077375d</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 16:00:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>Two arrested after suspected burglary at home of Prince and Princess of Wales</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/24/two-arrested-after-suspected-burglary-prince-princess-of-wales-sandringham</link>
+      <guid isPermaLink="false">bbae591432d56726710e</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 15:43:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Tech sell-off resumes as Nvidia shares drop 5% and Anthropic tumbles below IPO price – as it happened</title>
+      <link>https://www.theguardian.com/business/live/2026/nov/24/jensen-huang-nvidia-stock-markets-ai-trade-us-political-backlash-donald-trump-latest-news-updates</link>
+      <guid isPermaLink="false">d27c313a3612fa928e7f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 15:36:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>Israeli air strike kills Hamas internal security chief in Gaza</title>
+      <link>https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">e8a823548b9b67b06dcb</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 15:35:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump made up to $15m on Nvidia stock after Huang’s return</title>
+      <link>https://www.theguardian.com/technology/2026/nov/24/donald-trump-nvidia-stock-jensen-huang-stock-market</link>
+      <guid isPermaLink="false">d9d1341cac103b26b635</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 15:23:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>Land mine casualties soar in Syria, two years after war</title>
+      <link>https://www.bbc.co.uk/news/articles/c893rl37ywdgo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">318e9d12844de6bae563</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 15:17:28 +0000</pubDate>
     </item>
     <item>
       <title>Gaza issues meningitis epidemic alert after steep rise in cases</title>
@@ -33,15 +114,6 @@
       <category>Health</category>
       <source>The Guardian</source>
       <pubDate>Tue, 24 Nov 2026 14:51:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Tech sell-off resumes as Nvidia shares drop 5% and Anthropic tumbles below IPO price – business live</title>
-      <link>https://www.theguardian.com/business/live/2026/nov/24/jensen-huang-nvidia-stock-markets-ai-trade-us-political-backlash-donald-trump-latest-news-updates</link>
-      <guid isPermaLink="false">d27c313a3612fa928e7f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 14:49:33 +0000</pubDate>
     </item>
     <item>
       <title>BBC’s preschool shows to be made available in CBeebies hub on Netflix</title>
@@ -62,15 +134,6 @@
       <pubDate>Tue, 24 Nov 2026 14:45:03 +0000</pubDate>
     </item>
     <item>
-      <title>Italy expresses concern to Ukraine over Libya ship attacks – Europe live</title>
-      <link>https://www.theguardian.com/world/live/2026/nov/24/russia-ukraine-poland-drone-patriots-latest-news-updates</link>
-      <guid isPermaLink="false">9c53e5c4c0b02d3724bc</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 14:43:50 +0000</pubDate>
-    </item>
-    <item>
       <title>Meta launches Muse in UK – the AI agent that can do your Christmas shopping</title>
       <link>https://www.theguardian.com/technology/2026/nov/24/meta-launches-muse-uk-ai-agent-do-christmas-shopping</link>
       <guid isPermaLink="false">834d96917f63ecc549fe</guid>
@@ -78,15 +141,6 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Tue, 24 Nov 2026 14:36:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>Democrats hit out at Nvidia and Trump over Huang’s return – US politics live</title>
-      <link>https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates</link>
-      <guid isPermaLink="false">d9c8f7ab1ec55b30b0f0</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 14:35:00 +0000</pubDate>
     </item>
     <item>
       <title>Who really owns the land in Albania that Jared Kushner wants to develop?</title>
@@ -107,15 +161,6 @@
       <pubDate>Tue, 24 Nov 2026 14:22:17 +0000</pubDate>
     </item>
     <item>
-      <title>Nigel Farage rules out deal with Restore Britain unless it disavows controversial backers</title>
-      <link>https://www.theguardian.com/politics/2026/nov/24/nigel-farage-rules-out-reform-uk-deal-restore-britain</link>
-      <guid isPermaLink="false">a8189e3e9569d917806d</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 14:13:38 +0000</pubDate>
-    </item>
-    <item>
       <title>Chinese police contacted members of WeChat group after they discussed Melbourne vigil for HungryPanda rider</title>
       <link>https://www.theguardian.com/business/2026/nov/25/chinese-police-wechat-group-hungrypanda-delivery-rider-alleged-murder-melbourne-ntwnfb</link>
       <guid isPermaLink="false">2b1e12423af18aefcd50</guid>
@@ -123,51 +168,6 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Tue, 24 Nov 2026 14:00:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>Guardian Essential poll: Albanese’s disapproval rating hits highest level as problems mount for Labor</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/25/guardian-essential-poll-anthony-albaneses-ai-datacentres-labor-one-nation-coalition</link>
-      <guid isPermaLink="false">1fe068907c42b95bd684</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 14:00:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>The Nvidia case is just the latest episode of Trump disregarding intelligence</title>
-      <link>https://www.theguardian.com/technology/2026/nov/24/nvidia-trump-huang-intelligence</link>
-      <guid isPermaLink="false">6943060eb2f601d4610a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 14:00:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>Days out from the Victorian election, nine datacentre projects await approval. What will their fate be?</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/24/nine-datacentre-projects-awaiting-approval-victoria-election</link>
-      <guid isPermaLink="false">7f746b50f59f8f35b434</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 14:00:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>Once ‘capital of the Confederacy’, Virginia enshrines rights to voting, abortion and gay marriage</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/24/virginia-voting-rights-abortion-gay-marriage</link>
-      <guid isPermaLink="false">65edd5bc575c3d24ec02</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 13:30:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Russian governor detained in rare criminal case against regional leader</title>
-      <link>https://www.bbc.co.uk/news/articles/cmwy868v3nneo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">04d463bcde637a48f9a6</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Tue, 24 Nov 2026 12:45:43 +0000</pubDate>
     </item>
   </channel>
 </rss>
