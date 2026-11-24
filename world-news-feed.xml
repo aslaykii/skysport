@@ -5,25 +5,34 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Nov 2026 02:51:48 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 03:50:51 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live</title>
-      <link>https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates</link>
-      <guid isPermaLink="false">e960cc4aeddb644cafab</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 02:44:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty of care; ANZ predicts RBA will cut rates in June</title>
+      <title>Australian politics live: Hanson-Young says digital duty of care bill will hit tech companies ‘where it hurts’; question time tribute to late MP Neil Andrew</title>
       <link>https://www.theguardian.com/australia-news/live/2026/nov/24/labor-penny-wong-us-china-anthony-albanese-final-sitting-week-ntwnfb</link>
       <guid isPermaLink="false">1a47195440948f74fc2e</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 02:43:16 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 03:43:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – as it happened</title>
+      <link>https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates</link>
+      <guid isPermaLink="false">e960cc4aeddb644cafab</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 03:04:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>Myanmar has been found guilty of genocide. Should Israel be worried? – podcast</title>
+      <link>https://www.theguardian.com/news/audio/2026/nov/24/myanmar-found-guilty-genocide-should-israel-be-worried-podcast</link>
+      <guid isPermaLink="false">af0717d10aa2330b6877</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 03:00:04 +0000</pubDate>
     </item>
     <item>
       <title>China sentences official to death for spying for foreign country</title>
@@ -159,15 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Mon, 23 Nov 2026 22:23:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>Jimmy Gomez to resign after House ethics panel finds evidence of sexual misconduct</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/23/jimmy-gomez-congress-investigation-sexual-misconduct</link>
-      <guid isPermaLink="false">5418898a0f08e16023b2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 22:21:45 +0000</pubDate>
     </item>
   </channel>
 </rss>
