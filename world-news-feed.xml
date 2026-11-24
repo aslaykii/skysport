@@ -5,17 +5,8 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Nov 2026 09:42:47 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 10:38:44 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
-    <item>
-      <title>Timms says Pip review being published today will ‘rehumanise’ benefit – UK politics live</title>
-      <link>https://www.theguardian.com/politics/live/2026/nov/24/pip-review-stephen-timms-andy-burnham-disability-welfare-brexit-latest-news-updates</link>
-      <guid isPermaLink="false">6aec6ae6e51234b28e49</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 09:29:10 +0000</pubDate>
-    </item>
     <item>
       <title>Nvidia shares fall in premarket trading as Jensen Huang’s return sparks US political backlash – business live</title>
       <link>https://www.theguardian.com/business/live/2026/nov/24/jensen-huang-nvidia-stock-markets-ai-trade-us-political-backlash-donald-trump-latest-news-updates</link>
@@ -23,7 +14,7 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 09:24:12 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 10:22:13 +0000</pubDate>
     </item>
     <item>
       <title>Russian drone violates Polish airspace days after cruise missiles fell on country – Europe live</title>
@@ -32,7 +23,88 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 09:22:10 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 10:20:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>Under-16s social media ban could disrupt sites that pose no risk, says UK tech industry</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/24/under-16s-social-media-ban-disrupt-sites-no-risk-uk-tech-industry</link>
+      <guid isPermaLink="false">b53332d8368351e872aa</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 10:18:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>Timms says Pip review being published today will ‘rehumanise’ benefit – UK politics live</title>
+      <link>https://www.theguardian.com/politics/live/2026/nov/24/pip-review-stephen-timms-andy-burnham-disability-welfare-brexit-latest-news-updates</link>
+      <guid isPermaLink="false">6aec6ae6e51234b28e49</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 10:14:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>Congress to grill Jensen Huang over ties with China and Trump’s intervention</title>
+      <link>https://www.theguardian.com/technology/2026/nov/24/nvidia-jensen-huang-congress</link>
+      <guid isPermaLink="false">53ddc3f079419d18944e</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 10:00:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>Tale of Thanksgiving grandma and accidental guest to receive Lifetime movie treatment</title>
+      <link>https://www.theguardian.com/lifeandstyle/2026/nov/24/thanksgiving-grandmother-text-lifetime</link>
+      <guid isPermaLink="false">a80383147efa8f5a7378</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 10:00:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bleeding, birth defects: Congo residents sue over alleged mining pollution</title>
+      <link>https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals</link>
+      <guid isPermaLink="false">25eb94bafb0065e7b0ba</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>NPR</source>
+      <pubDate>Tue, 24 Nov 2026 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Meet Colombia's fuzzy 'water guardians'</title>
+      <link>https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons</link>
+      <guid isPermaLink="false">c997a1d4b5f21fe9b38d</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>NPR</source>
+      <pubDate>Tue, 24 Nov 2026 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump made up to $15m on Nvidia stock after Huang’s return</title>
+      <link>https://www.theguardian.com/technology/2026/nov/24/donald-trump-nvidia-stock-jensen-huang-stock-market</link>
+      <guid isPermaLink="false">d9d1341cac103b26b635</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 09:54:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fighting between Russia and Ukraine has expanded geographically, drawing concerns</title>
+      <link>https://www.npr.org/2026/11/24/nx-s1-6051564/fighting-between-russia-and-ukraine-has-expanded-geographically-drawing-concerns</link>
+      <guid isPermaLink="false">ed7b23b1d2c0c61d6080</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>NPR</source>
+      <pubDate>Tue, 24 Nov 2026 09:52:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang</title>
+      <link>https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">25d043b118adad46fcdf</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 09:42:54 +0000</pubDate>
     </item>
     <item>
       <title>Watch: Moment troops raid home and capture Mexican drug lord</title>
@@ -60,15 +132,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Tue, 24 Nov 2026 08:35:41 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump made up to $15m on Nvidia stock after Huang’s return</title>
-      <link>https://www.theguardian.com/technology/2026/nov/24/donald-trump-nvidia-stock-jensen-huang-stock-market</link>
-      <guid isPermaLink="false">d9d1341cac103b26b635</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 08:28:00 +0000</pubDate>
     </item>
     <item>
       <title>Leader of India’s Cockroach movement says he was stopped from boarding flight to UK</title>
@@ -105,69 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Tue, 24 Nov 2026 07:42:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>After 80 years in Oxford, Naga ancestors are finally going home</title>
-      <link>https://www.theguardian.com/world/2026/nov/23/this-is-india-pitt-rivers-museum-oxford-human-remains-repatriation</link>
-      <guid isPermaLink="false">0c7d9de5ee4c574a6d45</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Science &amp; Technology</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 07:30:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>What Jensen Huang's return teaches China's Xi about Trump</title>
-      <link>https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">c2d8990c4b9f1e119917</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Tue, 24 Nov 2026 07:26:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘State-sanctioned theft’: Australian news outlets demand content is protected from AI scraping – as it happened</title>
-      <link>https://www.theguardian.com/australia-news/live/2026/nov/24/labor-penny-wong-us-china-anthony-albanese-final-sitting-week-ntwnfb</link>
-      <guid isPermaLink="false">1a47195440948f74fc2e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 07:21:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>UK disability benefit cuts risk worsening youth destitution, research warns</title>
-      <link>https://www.theguardian.com/society/2026/nov/24/cuts-uk-disability-benefit-risk-worsening-youth-destitution-research-warns</link>
-      <guid isPermaLink="false">1e1394ce7dd4117c6a6d</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 07:00:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>Bangladesh's ex-PM Sheikh Hasina says she plans to return on 16 December</title>
-      <link>https://www.bbc.co.uk/news/articles/c60rk1yj07xeo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">b1d82f5106d46801c847</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Tue, 24 Nov 2026 06:23:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sports whistleblowers protected under proposed laws amid Australian cricket ball tampering saga</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/24/sports-whistleblowers-protected-proposed-laws-australian-cricket-ball-tampering-sandpapergate-ntwnfb</link>
-      <guid isPermaLink="false">a0de565bf64dea2ded52</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 06:20:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>Meta launches Muse in UK – the AI agent that can do your Christmas shopping</title>
-      <link>https://www.theguardian.com/technology/2026/nov/24/meta-launches-muse-uk-ai-agent-do-christmas-shopping</link>
-      <guid isPermaLink="false">834d96917f63ecc549fe</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 06:00:07 +0000</pubDate>
     </item>
   </channel>
 </rss>
