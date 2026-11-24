@@ -5,16 +5,70 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Nov 2026 20:21:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 21:22:41 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>Australian politics live: Chalmers notes ‘serious moment for our economy’; inflation expected to jump to 4.8%</title>
+      <title>US attorney general dodges questions about Nvidia investigation</title>
+      <link>https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">2a1422ea57bb08bb754c</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 21:19:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>Huawei found guilty of stealing trade secrets but acquitted of racketeering</title>
+      <link>https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">762ce6d7fedd6d19f353</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 21:16:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>Australian politics live: US ambassador criticises digital duty of care bill; Chalmers downplays recession fears</title>
       <link>https://www.theguardian.com/australia-news/live/2026/nov/25/treasurer-jim-chalmers-myefo-inflation-figures-coalition-one-nation-ntwnfb</link>
       <guid isPermaLink="false">509b355ea77de53592ea</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 20:08:55 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 21:14:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>Armed men hold hostages at supermarket in top Colombian tourist destination</title>
+      <link>https://www.theguardian.com/world/2026/nov/24/cartagena-colombia-hostages-supermarket</link>
+      <guid isPermaLink="false">75a3a86ed42c87797de4</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 21:06:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump’s DoJ ‘looked into’ concerns about Huang after affair with suspected Chinese spy but says no security risk found – live</title>
+      <link>https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates</link>
+      <guid isPermaLink="false">d9c8f7ab1ec55b30b0f0</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 20:49:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nvidia CEO Jensen Huang apologizes to staff: ‘I made some terrible mistakes’</title>
+      <link>https://www.theguardian.com/technology/2026/nov/24/jensen-huang-nvidia-apologizes-staff</link>
+      <guid isPermaLink="false">c18f5a8804513b9ffd56</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 20:32:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>Democrat Victoria Broderick unseats eight-term Republican incumbent in Tennessee to win election</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/24/democrat-victoria-broderick-election-win-tennesee-midterms</link>
+      <guid isPermaLink="false">8ebe4d78fc0dc030f0cd</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 20:20:24 +0000</pubDate>
     </item>
     <item>
       <title>Schumer accuses Huang of violating US export control laws amid shipments of chips to China</title>
@@ -42,24 +96,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Tue, 24 Nov 2026 20:00:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump’s DoJ ‘looked into’ concerns about Huang after affair with suspected Chinese spy but says no security risk found – live</title>
-      <link>https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates</link>
-      <guid isPermaLink="false">d9c8f7ab1ec55b30b0f0</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 19:59:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>Nvidia CEO Jensen Huang apologizes to staff: ‘I made some terrible mistakes’</title>
-      <link>https://www.theguardian.com/technology/2026/nov/24/jensen-huang-nvidia-apologizes-staff</link>
-      <guid isPermaLink="false">c18f5a8804513b9ffd56</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 19:41:16 +0000</pubDate>
     </item>
     <item>
       <title>NHS trusts to be investigated over ‘repeated failures’ to admit treatment errors</title>
@@ -98,15 +134,6 @@
       <pubDate>Tue, 24 Nov 2026 19:27:23 +0000</pubDate>
     </item>
     <item>
-      <title>Georgia Tech couple clears up viral televised argument during football game</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/24/georgia-tech-football-couple-arguing-espn</link>
-      <guid isPermaLink="false">07402f3bcb441136f6f0</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 19:11:46 +0000</pubDate>
-    </item>
-    <item>
       <title>Nigerian monarch, 92, suspended after sexual assault claims</title>
       <link>https://www.bbc.co.uk/news/articles/cmglrz462nn6o?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">03d1b8471517e4668e7b</guid>
@@ -134,15 +161,6 @@
       <pubDate>Tue, 24 Nov 2026 19:02:15 +0000</pubDate>
     </item>
     <item>
-      <title>US attorney general dodges questions about Nvidia investigation</title>
-      <link>https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">2a1422ea57bb08bb754c</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Tue, 24 Nov 2026 18:55:59 +0000</pubDate>
-    </item>
-    <item>
       <title>Burnham under fire over influencers’ No 10 reception after TikTok video row</title>
       <link>https://www.theguardian.com/politics/2026/nov/24/andy-burnham-influencers-no-10-reception-max-balegde-tiktok-explicit-lyrics</link>
       <guid isPermaLink="false">c9c47cac8c974001cecd</guid>
@@ -150,24 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Tue, 24 Nov 2026 18:47:48 +0000</pubDate>
-    </item>
-    <item>
-      <title>Armed men take 25 hostages at supermarket in one of Colombia’s top tourist destinations</title>
-      <link>https://www.theguardian.com/world/2026/nov/24/cartagena-colombia-hostages-supermarket</link>
-      <guid isPermaLink="false">75a3a86ed42c87797de4</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 18:36:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight</title>
-      <link>https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">4acc4486706bb1659549</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Tue, 24 Nov 2026 18:07:46 +0000</pubDate>
     </item>
   </channel>
 </rss>
