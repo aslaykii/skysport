@@ -5,17 +5,8 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Nov 2026 01:58:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 02:51:48 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
-    <item>
-      <title>Australian politics live: Australia and Singapore sign carbon capture treaty; ANZ predicts RBA could cut rates in June</title>
-      <link>https://www.theguardian.com/australia-news/live/2026/nov/24/labor-penny-wong-us-china-anthony-albanese-final-sitting-week-ntwnfb</link>
-      <guid isPermaLink="false">1a47195440948f74fc2e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 01:43:11 +0000</pubDate>
-    </item>
     <item>
       <title>Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live</title>
       <link>https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates</link>
@@ -23,7 +14,43 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Business</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 01:26:13 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 02:44:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty of care; ANZ predicts RBA will cut rates in June</title>
+      <link>https://www.theguardian.com/australia-news/live/2026/nov/24/labor-penny-wong-us-china-anthony-albanese-final-sitting-week-ntwnfb</link>
+      <guid isPermaLink="false">1a47195440948f74fc2e</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 02:43:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>China sentences official to death for spying for foreign country</title>
+      <link>https://www.theguardian.com/world/2026/nov/24/china-official-ma-death-sentence-spying-leaking-national-secrets</link>
+      <guid isPermaLink="false">fd3c944f0667032b85d9</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 02:37:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Federal court clears way for army to detonate bomb-making chemicals in Iowa</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court</link>
+      <guid isPermaLink="false">f317b57513b330116161</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 02:25:49 +0000</pubDate>
+    </item>
+    <item>
+      <title>US adds Megaspeed, AI firm at center of Nvidia scandal, to trade blacklist</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/23/megaspeed-us-trade-blacklist-nvidia</link>
+      <guid isPermaLink="false">2ef56a355d6bc961ddef</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 01:47:15 +0000</pubDate>
     </item>
     <item>
       <title>Beau Lamarre-Condon chose ‘long walk’ to witness box rather than silence, his barrister tells court</title>
@@ -33,6 +60,42 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Tue, 24 Nov 2026 01:25:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>How Nvidia is reacting to Jensen Huang's return as CEO</title>
+      <link>https://www.bbc.co.uk/news/videos/ckedq2edqegzo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">e0495d6a5040b0f670d8</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 01:21:41 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'</title>
+      <link>https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">25d043b118adad46fcdf</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 01:11:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>King Charles and Elton John pay tribute to Australian music legend Molly Meldrum</title>
+      <link>https://www.bbc.co.uk/news/articles/c3qj57rkd2k1o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">e000e454f6b288cbd948</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 00:23:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dad who discovered daughter's murder on Facebook feels ignored by South African police</title>
+      <link>https://www.bbc.co.uk/news/articles/cqglr0d5jejxo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">c63e4cf44e0ffbe2ec39</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 00:02:15 +0000</pubDate>
     </item>
     <item>
       <title>Zack Polanski backs report endorsing Nato membership and maintaining nuclear weapons</title>
@@ -53,15 +116,6 @@
       <pubDate>Tue, 24 Nov 2026 00:01:00 +0000</pubDate>
     </item>
     <item>
-      <title>Federal court clears way for army to detonate bomb-making material in Iowa</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court</link>
-      <guid isPermaLink="false">f317b57513b330116161</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 23:57:33 +0000</pubDate>
-    </item>
-    <item>
       <title>US to blacklist Asian AI firm Megaspeed after Nvidia scandal</title>
       <link>https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">66403463587777bcb100</guid>
@@ -78,6 +132,15 @@
       <category>World</category>
       <source>NPR</source>
       <pubDate>Mon, 23 Nov 2026 23:08:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>Outrage after ICE arrest father and daughter at Seattle airport</title>
+      <link>https://www.bbc.co.uk/news/videos/crd910g5x882o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">eb3ae9634767b876d25f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Mon, 23 Nov 2026 22:59:07 +0000</pubDate>
     </item>
     <item>
       <title>Butt of the joke: Trump impersonator mocks president at Canada press dinner</title>
@@ -105,69 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Mon, 23 Nov 2026 22:21:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Republican senators criticize Nvidia’s decision to reinstate Jensen Huang</title>
-      <link>https://www.theguardian.com/technology/2026/nov/23/trump-jensen-huang-nvidia-reinstated</link>
-      <guid isPermaLink="false">baf5bff4c4d47bce4f93</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 21:09:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>Iranian singer and four others receive lashes after performance without hijab</title>
-      <link>https://www.theguardian.com/world/2026/nov/23/iranian-singer-lashes-performing-without-hijab</link>
-      <guid isPermaLink="false">496dfdefe1dadc23690a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 20:56:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>What strike on Russian ship in Libya says about spread of Ukraine war</title>
-      <link>https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">8b0993be5d17e9fa32a2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Mon, 23 Nov 2026 20:48:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Metropolitan police seize 893kg of cocaine hidden in boxes of oranges</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/23/metropolitan-police-seize-cocaine-hidden-boxes-oranges-new-spitalfields</link>
-      <guid isPermaLink="false">fff9e57f652106594d23</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 20:41:43 +0000</pubDate>
-    </item>
-    <item>
-      <title>Israel seeks to jail Palestinian student activist without trial after dorm arrest</title>
-      <link>https://www.theguardian.com/world/2026/nov/23/student-arrest-racist-campaign-israel-palestine-benjamin-netanyahu</link>
-      <guid isPermaLink="false">7e4cd8e18199759e344c</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 19:48:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>Burnham says it would be ‘unthinkable’ to rejoin EU without referendum</title>
-      <link>https://www.theguardian.com/politics/2026/nov/23/andy-burnham-brexit-deal-eu</link>
-      <guid isPermaLink="false">8bb31f6530a7aa0213b4</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Mon, 23 Nov 2026 19:26:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia</title>
-      <link>https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">4c2b336b765a0af02ff0</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>BBC News</source>
-      <pubDate>Mon, 23 Nov 2026 18:43:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
