@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Nov 2026 04:56:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 05:54:43 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>India's 'cockroach' party leader says he was stopped from flying to UK</title>
+      <link>https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">4acc4486706bb1659549</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Tue, 24 Nov 2026 05:33:07 +0000</pubDate>
+    </item>
     <item>
       <title>Australian politics live: Government lacks ‘moral authority’ on decarbonisation, Monique Ryan says; eight teens arrested over alleged schoolies assault</title>
       <link>https://www.theguardian.com/australia-news/live/2026/nov/24/labor-penny-wong-us-china-anthony-albanese-final-sitting-week-ntwnfb</link>
@@ -14,7 +23,25 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 04:44:31 +0000</pubDate>
+      <pubDate>Tue, 24 Nov 2026 05:22:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ebikes, screens and failing manners pose challenge for Dutch cycling culture</title>
+      <link>https://www.theguardian.com/world/2026/nov/24/ebikes-screens-and-failing-manners-pose-challenge-for-dutch-cycling-culture</link>
+      <guid isPermaLink="false">d56ae315880fa92c98a1</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 05:00:07 +0000</pubDate>
+    </item>
+    <item>
+      <title>Channel 4 hit as Unilever switches from TV to influencer marketing</title>
+      <link>https://www.theguardian.com/media/2026/nov/24/channel-4-unilever-tv-influencer-marketing</link>
+      <guid isPermaLink="false">a284d4fa44a5979c28d1</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Tue, 24 Nov 2026 05:00:07 +0000</pubDate>
     </item>
     <item>
       <title>Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang</title>
@@ -141,33 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Tue, 24 Nov 2026 00:01:01 +0000</pubDate>
-    </item>
-    <item>
-      <title>Robert Macfarlane says trust in Cop to deliver change on climate is ‘misplaced’</title>
-      <link>https://www.theguardian.com/environment/2026/nov/24/robert-macfarlane-trust-cop-climate-summit-deliver-change-misplaced</link>
-      <guid isPermaLink="false">2db968efedbea7c59585</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Climate</category>
-      <source>The Guardian</source>
-      <pubDate>Tue, 24 Nov 2026 00:01:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>US to blacklist Asian AI firm Megaspeed after Nvidia scandal</title>
-      <link>https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">66403463587777bcb100</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Mon, 23 Nov 2026 23:16:08 +0000</pubDate>
-    </item>
-    <item>
-      <title>Russian incursions into NATO territory are increasing</title>
-      <link>https://www.npr.org/2026/11/23/nx-s1-6051013/russian-incursions-into-nato-territory-are-increasing</link>
-      <guid isPermaLink="false">de22efa4f979e1245f6a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>NPR</source>
-      <pubDate>Mon, 23 Nov 2026 23:08:51 +0000</pubDate>
     </item>
   </channel>
 </rss>
