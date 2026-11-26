@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 05:24:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 06:23:20 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>Australian politics live: Senior Liberal slams Blyth in email to members, saying ‘you gave her your trust, she threw it away’</title>
@@ -14,7 +14,34 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 05:18:33 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2026 06:12:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump tariff threat ‘unacceptable’, says Brazil, as China denounces levies as baseless</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat</link>
+      <guid isPermaLink="false">a77b5085c9245e54e54e</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 06:10:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>Timms review puts rare focus on improving benefits system for disabled claimants</title>
+      <link>https://www.theguardian.com/world/2026/nov/26/timms-review-pip-disability-benefits-claimants</link>
+      <guid isPermaLink="false">f885ce2f4dcb23f5df5a</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 06:00:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Coalition would privatise Melbourne’s sewage treatment while selling state land and renewables to fund Victorian election promises and cut debt</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/26/liberal-nationals-victoria-election-policy-costings-revealed-sewage-land-energy</link>
+      <guid isPermaLink="false">5fdffbfcba174b08c5db</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 05:30:32 +0000</pubDate>
     </item>
     <item>
       <title>‘Trapped in grief’: wife of Japanese journalist detained by Russia pleads for his release</title>
@@ -44,15 +71,6 @@
       <pubDate>Thu, 26 Nov 2026 04:47:36 +0000</pubDate>
     </item>
     <item>
-      <title>Coalition would privatise Melbourne’s sewage treatment while selling state land and renewables to fund Victorian election promises and cut debt</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/26/liberal-nationals-victoria-election-policy-costings-revealed-sewage-land-energy</link>
-      <guid isPermaLink="false">5fdffbfcba174b08c5db</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 04:34:12 +0000</pubDate>
-    </item>
-    <item>
       <title>Teen’s homicidal thoughts dismissed as ‘crap’ days before she killed 10-year-old, inquest hears</title>
       <link>https://www.theguardian.com/australia-news/2026/nov/26/teens-homicidal-thoughts-dismissed-as-crap-before-killed-10-year-old-inquest-ntwnfb</link>
       <guid isPermaLink="false">6151a5eb4abb7c6237db</guid>
@@ -78,15 +96,6 @@
       <category>Climate</category>
       <source>BBC News</source>
       <pubDate>Thu, 26 Nov 2026 04:04:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump tariff threat ‘unacceptable’, says Brazil, as China denounces levies as baseless</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat</link>
-      <guid isPermaLink="false">a77b5085c9245e54e54e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 03:54:24 +0000</pubDate>
     </item>
     <item>
       <title>FedEx plane overshoots Miami runway, with flights briefly suspended at airport</title>
@@ -159,15 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Thu, 26 Nov 2026 00:24:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>Spanish elections: What you need to know and what's at stake</title>
-      <link>https://www.bbc.co.uk/news/articles/c6wy4ejnyvdyo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">9035963a629573df0906</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 26 Nov 2026 00:23:49 +0000</pubDate>
     </item>
   </channel>
 </rss>
