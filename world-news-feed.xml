@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 20:45:38 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 21:44:38 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Southern and central Australia face summer of heightened bushfire risk and heatwaves</title>
+      <link>https://www.theguardian.com/environment/2026/nov/27/southern-and-central-australia-face-summer-of-heightened-bushfire-risk-and-heatwaves</link>
+      <guid isPermaLink="false">7a7d6b9db8ea7d7de786</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 21:33:36 +0000</pubDate>
+    </item>
     <item>
       <title>Two Italians killed in strike in Kuwait, as Iran denies responsibility</title>
       <link>https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&amp;at_campaign=rss</link>
@@ -14,7 +23,16 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Business</category>
       <source>BBC News</source>
-      <pubDate>Thu, 26 Nov 2026 20:35:39 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2026 21:17:53 +0000</pubDate>
+    </item>
+    <item>
+      <title>Coalition team up with Labor to pass 20% gas reservation scheme for Australia’s largest exporters</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/26/coalition-to-team-up-with-labor-to-pass-20-gas-reservation-scheme-for-australias-largest-exporters</link>
+      <guid isPermaLink="false">bd19ba6222622bab6b6a</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 20:58:12 +0000</pubDate>
     </item>
     <item>
       <title>‘Disaster’ unfolding as Sydney fire ant outbreak partly blamed on ignored biosecurity recommendations</title>
@@ -32,7 +50,7 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 20:33:08 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2026 20:33:07 +0000</pubDate>
     </item>
     <item>
       <title>Net migration to UK falls to lowest level since 1997 excluding pandemic</title>
@@ -150,24 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Thu, 26 Nov 2026 17:50:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>Marlboro maker Altria considering takeover bid for Imperial Brands</title>
-      <link>https://www.theguardian.com/business/2026/nov/26/marlboro-maker-altria-considering-takeover-bid-for-imperial-brands</link>
-      <guid isPermaLink="false">4dfccba889294a7dae41</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 17:44:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>Coalition team up with Labor to pass 20% gas reservation scheme for Australia’s largest exporters</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/26/coalition-to-team-up-with-labor-to-pass-20-gas-reservation-scheme-for-australias-largest-exporters</link>
-      <guid isPermaLink="false">bd19ba6222622bab6b6a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 17:35:25 +0000</pubDate>
     </item>
   </channel>
 </rss>
