@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 09:59:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:57:47 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>UK net migration falls to 77,000, lowest since 1997 excluding Covid pandemic – UK politics live</title>
@@ -14,16 +14,79 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 09:47:58 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2026 10:49:56 +0000</pubDate>
     </item>
     <item>
-      <title>EU leaders brace for tough talks on budget and Ukraine – Europe live</title>
+      <title>EU leaders ‘very far apart’ on agreeing budget at summit, reveals Danish prime minister – Europe live</title>
       <link>https://www.theguardian.com/world/live/2026/nov/26/eu-budget-summit-ukraine-russia-spain-serbia-elections-latest-news-updates</link>
       <guid isPermaLink="false">a451d7d09a51e8dd786f</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 09:41:10 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2026 10:46:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>US Army says controlled blast of explosives in Iowa was 'huge success'</title>
+      <link>https://www.bbc.co.uk/news/articles/cwg7l5ve251ko?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">b6100b41d82114b18fc3</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Thu, 26 Nov 2026 10:38:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>Paul Whitehouse urges PM to act over ‘imminent extinction’ of Windermere’s ice-age fish</title>
+      <link>https://www.theguardian.com/environment/2026/nov/26/burnham-urged-to-act-extinction-windemere-arctic-char-paul-whitehouse</link>
+      <guid isPermaLink="false">8125e4b03ae7b84c15c9</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 10:25:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>Norse Atlantic Airways suspends all flights as it makes urgent funding plea</title>
+      <link>https://www.theguardian.com/business/2026/nov/26/norse-atlantic-airways-suspends-all-flights-urgent-funding-plea</link>
+      <guid isPermaLink="false">a62f8b21fff0ec24caa1</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 10:15:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Net migration to UK falls to lowest level since 1997 excluding pandemic</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/26/net-migration-to-uk-falls-to-lowest-level-since-1997-excluding-pandemic</link>
+      <guid isPermaLink="false">6167442d2b001c7cebed</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 10:10:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Michael Giles, co-founder and drummer of King Crimson, dies aged 84</title>
+      <link>https://www.theguardian.com/music/2026/nov/26/michael-giles-co-founder-and-drummer-of-king-crimson-dies-aged-84</link>
+      <guid isPermaLink="false">a719afea064adfaee79a</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 10:02:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Israel ‘officially sanctions’ torture of Palestinian prisoners to extract confessions, report concludes</title>
+      <link>https://www.theguardian.com/world/2026/nov/26/israel-officially-sanctions-torture-palestinian-prisoners-confessions-report</link>
+      <guid isPermaLink="false">1339e65df707c6f7f206</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 10:00:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>New UK-EU treaty has 10-year termination clause</title>
+      <link>https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">ab16224e8d1cd5dd506e</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Thu, 26 Nov 2026 09:59:14 +0000</pubDate>
     </item>
     <item>
       <title>Older Australians suffering under Labor’s ‘botched’ aged care at home program, inquiry finds</title>
@@ -80,15 +143,6 @@
       <pubDate>Thu, 26 Nov 2026 08:30:12 +0000</pubDate>
     </item>
     <item>
-      <title>UK watchdog calls for shake-up of private dentistry market amid ‘catalogue of concerns’</title>
-      <link>https://www.theguardian.com/society/2026/nov/26/uk-watchdog-calls-for-shake-up-of-private-dentistry-market</link>
-      <guid isPermaLink="false">e59149b44a1c180d657e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Business</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 08:13:01 +0000</pubDate>
-    </item>
-    <item>
       <title>Coalition to privatise Melbourne sewage plants and sell state land and renewables if it wins election</title>
       <link>https://www.theguardian.com/australia-news/2026/nov/26/liberal-nationals-victoria-election-policy-costings-revealed-sewage-land-energy</link>
       <guid isPermaLink="false">5fdffbfcba174b08c5db</guid>
@@ -96,15 +150,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Thu, 26 Nov 2026 08:07:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>Children’s hospitals close beds to comply with NHS cost-cutting targets</title>
-      <link>https://www.theguardian.com/society/2026/nov/26/childrens-hospitals-close-beds-to-comply-with-nhs-cost-cutting-targets</link>
-      <guid isPermaLink="false">50ded3eb1e60f8e8287c</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Health</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 08:05:47 +0000</pubDate>
     </item>
     <item>
       <title>Guinea orders residents to clean up the capital months after deadly rubbish dump collapse</title>
@@ -116,15 +161,6 @@
       <pubDate>Thu, 26 Nov 2026 07:43:48 +0000</pubDate>
     </item>
     <item>
-      <title>New UK-EU treaty has 10-year termination clause, BBC understands</title>
-      <link>https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">ab16224e8d1cd5dd506e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 26 Nov 2026 07:40:04 +0000</pubDate>
-    </item>
-    <item>
       <title>FedEx plane overshoots Miami runway, causing brief suspension of flights at airport</title>
       <link>https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&amp;at_campaign=rss</link>
       <guid isPermaLink="false">a067c0da2f1d96696152</guid>
@@ -132,42 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Thu, 26 Nov 2026 07:34:47 +0000</pubDate>
-    </item>
-    <item>
-      <title>Thirteen dead as mine disaster highlights illegal hunt for gold</title>
-      <link>https://www.bbc.co.uk/news/articles/cmde1zr0nlyro?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">b271d52226ceeea65fc5</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Climate</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 26 Nov 2026 07:31:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>DR Congo demands answers over Ugandan general's threats</title>
-      <link>https://www.bbc.co.uk/news/articles/cwz0k90rgpm8o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">05c65400c78fcefda4d4</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 26 Nov 2026 07:24:39 +0000</pubDate>
-    </item>
-    <item>
-      <title>London commuters braced for disruption as tube strike begins</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/26/tube-drivers-strike-will-cause-severe-disruption-to-network-on-thursday-and-friday</link>
-      <guid isPermaLink="false">4fa319af2f2282097f52</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 06:56:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘Are they all turncoats?’: Barnaby Joyce says voters are turning to One Nation – and Liberals like Blyth can too</title>
-      <link>https://www.theguardian.com/australia-news/2026/nov/26/liberal-senator-leah-blyth-defection-to-one-nation-ntwnfb</link>
-      <guid isPermaLink="false">110857bb707714d5bcd2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 06:55:35 +0000</pubDate>
     </item>
   </channel>
 </rss>
