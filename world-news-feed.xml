@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 19:46:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 20:45:38 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>Two Italians killed in strike in Kuwait, as Iran denies responsibility</title>
@@ -14,7 +14,70 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Business</category>
       <source>BBC News</source>
-      <pubDate>Thu, 26 Nov 2026 19:27:45 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2026 20:35:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘Disaster’ unfolding as Sydney fire ant outbreak partly blamed on ignored biosecurity recommendations</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/27/sydney-fire-ants-outbreak-biosecurity-experts-ignored</link>
+      <guid isPermaLink="false">45b5554e420ec5277246</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 20:33:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>Israeli strikes kill 16 schoolchildren so far this month, Gaza ministry says</title>
+      <link>https://www.theguardian.com/world/2026/nov/26/gaza-ministry-schoolchildren-killed-this-month-israel-strikes</link>
+      <guid isPermaLink="false">bb1d47b33428c7af5ba2</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 20:33:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Net migration to UK falls to lowest level since 1997 excluding pandemic</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/26/net-migration-to-uk-falls-to-lowest-level-since-1997-excluding-pandemic</link>
+      <guid isPermaLink="false">6167442d2b001c7cebed</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 20:01:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nottingham man jailed for 12 years for drugging and sexually assaulting partner</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/26/nottingham-man-jailed-for-12-years-for-drugging-and-sexually-assaulting-partner</link>
+      <guid isPermaLink="false">193724b9fae7f2c0faaf</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 19:54:05 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trump alleges ‘fake’ economic figures released before US midterms but doesn’t provide evidence</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/26/trump-fake-economic-figures-midterms</link>
+      <guid isPermaLink="false">64295a51bb9fe152c13a</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 19:41:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>How much of the sharp fall in UK immigration is due to Labour’s policies?</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/26/how-much-sharp-fall-uk-immigration-labour-policies</link>
+      <guid isPermaLink="false">6337193dc7946189ca5d</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Thu, 26 Nov 2026 19:38:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>Watch: Roofs torn off and streets under water as severe weather hits US</title>
+      <link>https://www.bbc.co.uk/news/videos/cq808d704m22o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">531caf503c7fef54c54f</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>BBC News</source>
+      <pubDate>Thu, 26 Nov 2026 19:26:16 +0000</pubDate>
     </item>
     <item>
       <title>US Senate ‘permitting bill’ threatens clean water protections to speed up energy projects</title>
@@ -71,15 +134,6 @@
       <pubDate>Thu, 26 Nov 2026 18:13:33 +0000</pubDate>
     </item>
     <item>
-      <title>Israeli strikes kill 16 schoolchildren so far this month, Gaza ministry says</title>
-      <link>https://www.theguardian.com/world/2026/nov/26/gaza-ministry-schoolchildren-killed-this-month-israel-strikes</link>
-      <guid isPermaLink="false">bb1d47b33428c7af5ba2</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 17:59:44 +0000</pubDate>
-    </item>
-    <item>
       <title>EU leaders wrestle over Ukraine aid as potential Le Pen victory sparks fear</title>
       <link>https://www.theguardian.com/world/2026/nov/26/eu-leaders-braced-for-clashes-over-ukraine-aid-at-budget-talks</link>
       <guid isPermaLink="false">8375d91514f568616ba0</guid>
@@ -107,67 +161,13 @@
       <pubDate>Thu, 26 Nov 2026 17:44:56 +0000</pubDate>
     </item>
     <item>
-      <title>Man who stabbed passengers on train to London guilty of attempted murder of 14 people</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/26/anthony-williams-guilty-attempted-murder-lner-train</link>
-      <guid isPermaLink="false">3c2e4458c8b98d5575db</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 17:43:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mandelson tried to influence Starmer’s cabinet reshuffle, new documents reveal – as it happened</title>
-      <link>https://www.theguardian.com/politics/live/2026/nov/26/uk-eu-food-deal-farage-penalty-compensation-reform-net-migration-latest-news-updates</link>
-      <guid isPermaLink="false">751c51fd8ac1f0f2018f</guid>
+      <title>Coalition team up with Labor to pass 20% gas reservation scheme for Australia’s largest exporters</title>
+      <link>https://www.theguardian.com/australia-news/2026/nov/26/coalition-to-team-up-with-labor-to-pass-20-gas-reservation-scheme-for-australias-largest-exporters</link>
+      <guid isPermaLink="false">bd19ba6222622bab6b6a</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 17:41:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>US army calls detonation of bomb chemicals in Iowa a success after fears of toxic plume</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/26/iowa-chemical-lead-bomb-detonation-toxic-dust-fears</link>
-      <guid isPermaLink="false">00ce350a39110f65b72a</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 17:05:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>UK bill to implement EU deal will allow ministers to enact closer ties in future</title>
-      <link>https://www.theguardian.com/politics/2026/nov/26/uk-bill-to-implement-eu-deal-closer-future-ties</link>
-      <guid isPermaLink="false">b8e8a1d4654de46e5a20</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 17:00:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>Nine injured, three critically, after Bangkok oil refinery explosion</title>
-      <link>https://www.bbc.co.uk/news/articles/crx209kwk4kzo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">d47facffc6b66e7d86b1</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Thu, 26 Nov 2026 16:21:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Georgia judge blocks own order to turn over US election ballot copies to state board</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/26/georgia-election-ballots-seized</link>
-      <guid isPermaLink="false">2b041efb2862411119cf</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 16:08:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Trump says he wants Putin to ‘pull back all military aggression’ in Europe – as it happened</title>
-      <link>https://www.theguardian.com/world/live/2026/nov/26/eu-budget-summit-ukraine-russia-spain-serbia-elections-latest-news-updates</link>
-      <guid isPermaLink="false">a451d7d09a51e8dd786f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Thu, 26 Nov 2026 15:59:13 +0000</pubDate>
+      <pubDate>Thu, 26 Nov 2026 17:35:25 +0000</pubDate>
     </item>
   </channel>
 </rss>
