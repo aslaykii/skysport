@@ -5,8 +5,35 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 21:46:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 22:47:31 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Thousands still without power after storms that snarled Thanksgiving travel</title>
+      <link>https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving</link>
+      <guid isPermaLink="false">55820b01fcc01eeb145d</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 27 Nov 2026 22:14:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>Prosecutors seek 25-year prison term for 'poison seller' Kenneth Law</title>
+      <link>https://www.bbc.co.uk/news/articles/cmx2898wq2qjo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">6ccc7c31dee7390a75c1</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Fri, 27 Nov 2026 22:03:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Princess of Wales documentary Heal charts ‘pilgrimage’ after cancer treatment</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/27/catherine-princess-of-wales-heal-documentary-cancer</link>
+      <guid isPermaLink="false">d698678185b8e5e26753</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 27 Nov 2026 22:00:21 +0000</pubDate>
+    </item>
     <item>
       <title>Spanish PM and rivals rally supporters in final pitch for votes</title>
       <link>https://www.bbc.co.uk/news/articles/c8wy5p4gdnwvo?at_medium=RSS&amp;at_campaign=rss</link>
@@ -14,7 +41,7 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>BBC News</source>
-      <pubDate>Fri, 27 Nov 2026 21:40:01 +0000</pubDate>
+      <pubDate>Fri, 27 Nov 2026 21:55:53 +0000</pubDate>
     </item>
     <item>
       <title>Elderly ‘Scrooge’ severs neighbour’s Christmas lights in mobility-scooter raid</title>
@@ -116,15 +143,6 @@
       <pubDate>Fri, 27 Nov 2026 17:53:30 +0000</pubDate>
     </item>
     <item>
-      <title>Labour row over Rosebank deepens as dozens of MPs warn PM not to block oilfield</title>
-      <link>https://www.theguardian.com/politics/2026/nov/27/rosebank-supporting-mps-warn-pm-blocking-the-oilfield-would-mean-lights-out-for-labour-in-scotland</link>
-      <guid isPermaLink="false">c3da9a1d6e63e4f1e4b3</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 17:39:10 +0000</pubDate>
-    </item>
-    <item>
       <title>Google told to halt Belgium datacentre construction over lack of planning permit</title>
       <link>https://www.theguardian.com/world/2026/nov/27/belgian-authorities-order-google-to-halt-datacentre-construction-over-lack-of-permits</link>
       <guid isPermaLink="false">db367a35fb282de990d7</guid>
@@ -150,24 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Fri, 27 Nov 2026 16:53:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>Jared Kushner’s 70-minute interview reveals naive bias in handling of Putin’s aggression</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/27/jared-kushner-interview-peril-putin-corporate-rival</link>
-      <guid isPermaLink="false">1c8ed0b731975bc1fe0e</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 16:49:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>Spanish prime minister Pedro Sánchez confident of election victory despite polls – as it happened</title>
-      <link>https://www.theguardian.com/world/live/2026/nov/27/zelenskyy-putin-trump-comments-russia-ukraine-latest-news-updates</link>
-      <guid isPermaLink="false">f0a62b2b913b8363d018</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 16:19:50 +0000</pubDate>
     </item>
   </channel>
 </rss>
