@@ -5,8 +5,35 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 16:57:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 17:50:35 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Man jailed in Newcastle for blackmailing vulnerable girls online</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/27/man-jailed-in-newcastle-for-blackmailing-vulnerable-girls-online</link>
+      <guid isPermaLink="false">20b5afc09f530842af6a</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 27 Nov 2026 17:27:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>Google told to halt Belgium datacentre construction over lack of planning permit</title>
+      <link>https://www.theguardian.com/world/2026/nov/27/belgian-authorities-order-google-to-halt-datacentre-construction-over-lack-of-permits</link>
+      <guid isPermaLink="false">db367a35fb282de990d7</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Fri, 27 Nov 2026 17:21:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Kenyan doomsday cult leader convicted over further 123 deaths</title>
+      <link>https://www.bbc.co.uk/news/articles/cmy49de4xx1zo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">60bd6b1a9655a23182e6</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Fri, 27 Nov 2026 17:19:31 +0000</pubDate>
+    </item>
     <item>
       <title>Canada's top court largely upholds Quebec ban on religious symbols for public servants</title>
       <link>https://www.bbc.co.uk/news/articles/cq3dgpy9lem3o?at_medium=RSS&amp;at_campaign=rss</link>
@@ -60,15 +87,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Fri, 27 Nov 2026 16:13:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>Kenyan doomsday cult leader convicted over further 123 deaths</title>
-      <link>https://www.bbc.co.uk/news/articles/cmy49de4xx1zo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">60bd6b1a9655a23182e6</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Fri, 27 Nov 2026 16:06:37 +0000</pubDate>
     </item>
     <item>
       <title>British Gas owner seeks urgent government talks over future of storage facility</title>
@@ -150,24 +168,6 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Fri, 27 Nov 2026 15:12:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Three studies link glyphosate to cancer, contradicting claims of Trump EPA</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/27/glyphosate-cancer-studies-trump-epa</link>
-      <guid isPermaLink="false">7680eebecdd8bf180b77</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 15:00:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>Hackers reportedly breach US Air Force’s flagship cloud computing platform</title>
-      <link>https://www.theguardian.com/technology/2026/nov/27/hackers-breach-us-air-force-cloud-computing</link>
-      <guid isPermaLink="false">a2aee26315fa8c166bb3</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 14:50:15 +0000</pubDate>
     </item>
   </channel>
 </rss>
