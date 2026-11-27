@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 18:46:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 19:51:01 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>'We couldn't give up that easily': Marching bands scramble to cover costs after Thanksgiving parade rearranged</title>
+      <link>https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">5813550398040e4fc6ea</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>BBC News</source>
+      <pubDate>Fri, 27 Nov 2026 18:52:33 +0000</pubDate>
+    </item>
     <item>
       <title>Weary of war but with no sign of backing down, Kyiv faces another punishing winter</title>
       <link>https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o?at_medium=RSS&amp;at_campaign=rss</link>
@@ -23,7 +32,7 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 18:34:16 +0000</pubDate>
+      <pubDate>Fri, 27 Nov 2026 18:35:45 +0000</pubDate>
     </item>
     <item>
       <title>Zelensky criticises 'strange' Trump-Putin friendship in BBC interview</title>
@@ -89,7 +98,7 @@
       <pubDate>Fri, 27 Nov 2026 16:53:46 +0000</pubDate>
     </item>
     <item>
-      <title>Jared Kushner’s 70-minute interview reveals perils of treating Putin like a corporate rival</title>
+      <title>Jared Kushner’s 70-minute interview reveals naive bias in handling of Putin’s aggression</title>
       <link>https://www.theguardian.com/us-news/2026/nov/27/jared-kushner-interview-peril-putin-corporate-rival</link>
       <guid isPermaLink="false">1c8ed0b731975bc1fe0e</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
@@ -159,15 +168,6 @@
       <category>Business</category>
       <source>The Guardian</source>
       <pubDate>Fri, 27 Nov 2026 15:40:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Newly released documents suggest CIA did more post-9/11 waterboarding than previously acknowledged</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/27/newly-released-documents-cia-waterboarding-9-11</link>
-      <guid isPermaLink="false">aae50e2e60619d723720</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 15:25:03 +0000</pubDate>
     </item>
   </channel>
 </rss>
