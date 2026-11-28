@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 03:47:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 04:52:19 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>Victorian election 2026 live: voters head to the polls as Coalition seeks to topple Labor – latest news</title>
@@ -14,7 +14,25 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Sat, 28 Nov 2026 03:34:26 +0000</pubDate>
+      <pubDate>Sat, 28 Nov 2026 04:31:18 +0000</pubDate>
+    </item>
+    <item>
+      <title>Eight killed in Peruvian military helicopter crash</title>
+      <link>https://www.bbc.co.uk/news/articles/cwp9d85mlp88o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">0b2a52c951b978bc840b</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 28 Nov 2026 04:19:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>Turkish officials 'destroyed' pro-opposition TV channel, owner tells BBC</title>
+      <link>https://www.bbc.co.uk/news/articles/cq36gk151xkdo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">58b7ceb1a51005c1e808</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 28 Nov 2026 04:13:45 +0000</pubDate>
     </item>
     <item>
       <title>Australia’s east coast deluged by storms as roads flood and damaging winds forecast for NSW and Victoria</title>
@@ -150,24 +168,6 @@
       <category>Politics</category>
       <source>The Guardian</source>
       <pubDate>Fri, 27 Nov 2026 21:24:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>Capsized tanker carrying 7,000 tonnes of diesel to be towed away from Ibiza</title>
-      <link>https://www.bbc.co.uk/news/articles/cvrlgz6g0ekgo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">1bc3f2e2255b4e741e68</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Fri, 27 Nov 2026 20:34:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sales for Biden memoir fall far short of books by Obama and Clinton</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/27/biden-promise-me-america-memoir-sales-fall-short</link>
-      <guid isPermaLink="false">dfb873eea1bbc7feef3b</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 20:13:58 +0000</pubDate>
     </item>
   </channel>
 </rss>
