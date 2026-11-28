@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 05:50:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 06:56:23 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>Victorian election 2026 live updates: polls point to Coalition win over Labor in state election results – latest news</title>
@@ -14,21 +14,48 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Sat, 28 Nov 2026 05:30:51 +0000</pubDate>
+      <pubDate>Sat, 28 Nov 2026 06:49:41 +0000</pubDate>
     </item>
     <item>
-      <title>Yuri and I used to play football together. Then I spotted his name among Russia’s war dead</title>
-      <link>https://www.theguardian.com/world/2026/nov/28/yuri-football-together-russia-war-dead-ukraine</link>
-      <guid isPermaLink="false">6ab5d6559ff0df911d01</guid>
+      <title>Mental health patients refusing NHS treatment over shared therapy notes</title>
+      <link>https://www.theguardian.com/society/2026/nov/28/mental-health-patients-refusing-nhs-treatment-medical-history-shared</link>
+      <guid isPermaLink="false">c3b5602650a19cb07ca9</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Health</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 28 Nov 2026 06:47:29 +0000</pubDate>
+    </item>
+    <item>
+      <title>Palestinian tells of ‘devastating’ struggle after being made redundant by EU in Gaza</title>
+      <link>https://www.theguardian.com/world/2026/nov/28/mohammad-baraka-palestinian-eu-gaza-redundancy-pay-access</link>
+      <guid isPermaLink="false">b88e4c954a8a97b0e4ac</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 28 Nov 2026 06:00:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>Stunted sprouts: heatwaves and drought take toll on festive vegetable</title>
+      <link>https://www.theguardian.com/business/2026/nov/28/sprouts-smaller-than-usual-heatwaves-drought-festive-vegetable</link>
+      <guid isPermaLink="false">18ec304842d0e34071ae</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Climate</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 28 Nov 2026 06:00:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>La succession: France’s wealthiest family said to be battling over who will take over LVMH</title>
+      <link>https://www.theguardian.com/business/2026/nov/28/french-succession-bernard-arnault-lvmh</link>
+      <guid isPermaLink="false">0a792c60da7e62150d27</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Sat, 28 Nov 2026 05:00:30 +0000</pubDate>
     </item>
     <item>
-      <title>La succession: France’s wealthiest family said to be battling over who will take over LVMH</title>
-      <link>https://www.theguardian.com/business/2026/nov/28/french-succession-bernard-arnault-lvmh</link>
-      <guid isPermaLink="false">0a792c60da7e62150d27</guid>
+      <title>Yuri and I used to play football together. Then I spotted his name among Russia’s war dead</title>
+      <link>https://www.theguardian.com/world/2026/nov/28/yuri-football-together-russia-war-dead-ukraine</link>
+      <guid isPermaLink="false">6ab5d6559ff0df911d01</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>World</category>
       <source>The Guardian</source>
@@ -141,33 +168,6 @@
       <category>World</category>
       <source>The Guardian</source>
       <pubDate>Fri, 27 Nov 2026 23:02:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Thousands still without power after storms that snarled Thanksgiving travel</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving</link>
-      <guid isPermaLink="false">55820b01fcc01eeb145d</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 22:14:56 +0000</pubDate>
-    </item>
-    <item>
-      <title>Princess of Wales documentary Heal charts ‘pilgrimage’ after cancer treatment</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/27/catherine-princess-of-wales-heal-documentary-cancer</link>
-      <guid isPermaLink="false">d698678185b8e5e26753</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Climate</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 22:00:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>Spanish PM and rivals rally supporters in final pitch for votes</title>
-      <link>https://www.bbc.co.uk/news/articles/c8wy5p4gdnwvo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">65e067513a05324abc88</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Fri, 27 Nov 2026 21:55:53 +0000</pubDate>
     </item>
   </channel>
 </rss>
