@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 06:56:23 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 08:11:18 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>Victorian election 2026 live updates: polls point to Coalition win over Labor in state election results – latest news</title>
@@ -14,7 +14,25 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Sat, 28 Nov 2026 06:49:41 +0000</pubDate>
+      <pubDate>Sat, 28 Nov 2026 08:04:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Unpaid TV licence or cycling on pavement could bar people from settling in UK</title>
+      <link>https://www.theguardian.com/uk-news/2026/nov/28/new-immigration-rules-uk-unpaid-tv-licence-cycling-pavement-adult-convictions</link>
+      <guid isPermaLink="false">9c99068a5fa8adcd4032</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Politics</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 28 Nov 2026 08:00:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>‘I told it to never call me again’: AI bots wreak havoc with UK restaurant bookings</title>
+      <link>https://www.theguardian.com/business/2026/nov/28/ai-bots-wreak-havoc-uk-restaurant-bookings-meta-muse</link>
+      <guid isPermaLink="false">1238713f440f690e9acc</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 28 Nov 2026 08:00:34 +0000</pubDate>
     </item>
     <item>
       <title>Mental health patients refusing NHS treatment over shared therapy notes</title>
@@ -150,24 +168,6 @@
       <category>Business</category>
       <source>The Guardian</source>
       <pubDate>Fri, 27 Nov 2026 23:28:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>Behind China's spectacular rise, voices who defied it say they are being drowned out</title>
-      <link>https://www.bbc.co.uk/news/articles/cme3d4y094x7o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">dd6d2bba2a6517066d52</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Fri, 27 Nov 2026 23:02:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>Charity set up by Captain Tom Moore’s family applies to be struck off</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/27/charity-set-up-by-captain-tom-moores-family-applies-to-be-struck-off</link>
-      <guid isPermaLink="false">63baf80bc90b496ec210</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 23:02:04 +0000</pubDate>
     </item>
   </channel>
 </rss>
