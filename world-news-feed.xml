@@ -5,16 +5,34 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 04:52:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:50:27 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
-      <title>Victorian election 2026 live: voters head to the polls as Coalition seeks to topple Labor – latest news</title>
+      <title>Victorian election 2026 live updates: polls point to Coalition win over Labor in state election results – latest news</title>
       <link>https://www.theguardian.com/australia-news/live/2026/nov/28/victorian-election-live-results-updates-premier-ben-carroll-jess-wilson-warren-pickering-2026-victoria-polls-votes-latest-news-ntwnfb</link>
       <guid isPermaLink="false">f75cb2f04dd4ef578a76</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Sat, 28 Nov 2026 04:31:18 +0000</pubDate>
+      <pubDate>Sat, 28 Nov 2026 05:30:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>Yuri and I used to play football together. Then I spotted his name among Russia’s war dead</title>
+      <link>https://www.theguardian.com/world/2026/nov/28/yuri-football-together-russia-war-dead-ukraine</link>
+      <guid isPermaLink="false">6ab5d6559ff0df911d01</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 28 Nov 2026 05:00:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>La succession: France’s wealthiest family said to be battling over who will take over LVMH</title>
+      <link>https://www.theguardian.com/business/2026/nov/28/french-succession-bernard-arnault-lvmh</link>
+      <guid isPermaLink="false">0a792c60da7e62150d27</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 28 Nov 2026 05:00:30 +0000</pubDate>
     </item>
     <item>
       <title>Eight killed in Peruvian military helicopter crash</title>
@@ -150,24 +168,6 @@
       <category>Politics</category>
       <source>BBC News</source>
       <pubDate>Fri, 27 Nov 2026 21:55:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>Elderly ‘Scrooge’ severs neighbour’s Christmas lights in mobility-scooter raid</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/27/elderly-scrooge-severs-neighbours-christmas-lights-in-mobility-scooter-raid</link>
-      <guid isPermaLink="false">78caa118250160bc1863</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 21:31:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>‘Abusive and insulting to Canadians’: campaign to oust US ambassador presented to parliament</title>
-      <link>https://www.theguardian.com/world/2026/nov/27/pete-hoekstra-canada-us-ambassador-petition</link>
-      <guid isPermaLink="false">17509216a0f52cbf2a10</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 21:24:10 +0000</pubDate>
     </item>
   </channel>
 </rss>
