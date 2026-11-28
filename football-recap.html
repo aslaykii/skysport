@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09140f">
+  <meta name="description" content="Create Arabic football match recaps, goal-by-goal scripts, YouTube descriptions and tags.">
+  <title>Football Recap &amp; Goal Script Generator | SkySport</title>
+  <style>
+    :root{color-scheme:dark;--bg:#09140f;--surface:#101e17;--surface-raised:#15261d;--line:#ffffff17;--text:#f2f7f3;--muted:#9aafa0;--green:#42dc88;--green-dark:#163d2a;--red:#ff7f72;--radius:18px}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(ellipse at 82% 0,#173421 0,transparent 36%),var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    a{color:inherit}
+    .shell{width:min(1360px,calc(100% - 40px));margin:auto}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+    .brand-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--green);color:#082114;font-weight:950}
+    .brand-copy{display:grid;line-height:1.2}
+    .brand-copy strong{font-size:.92rem;letter-spacing:.08em;text-transform:uppercase}
+    .brand-copy span{color:var(--muted);font-size:.72rem}
+    .home-link{color:var(--muted);font-size:.83rem;text-decoration:none}
+    .home-link:hover{color:var(--green)}
+    .intro{padding:34px 0 25px}
+    .eyebrow{display:flex;align-items:center;gap:9px;color:var(--green);font-size:.72rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
+    .eyebrow:before{width:7px;height:7px;border-radius:50%;background:var(--green);content:""}
+    h1{margin:10px 0 6px;font-size:clamp(1.7rem,4vw,2.7rem);line-height:1.15;letter-spacing:-.04em}
+    .intro p{max-width:680px;margin:0;color:var(--muted)}
+    .layout{display:grid;grid-template-columns:minmax(320px,.88fr) minmax(0,1.12fr);align-items:start;gap:22px;padding-bottom:48px}
+    .column{display:grid;gap:18px;min-width:0}
+    .panel{min-width:0;padding:21px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,#13231a,var(--surface) 56%);box-shadow:0 18px 48px #00000020}
+    .panel-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:18px}
+    .panel-heading h2{margin:0;font-size:1.03rem}
+    .panel-heading p{margin:3px 0 0;color:var(--muted);font-size:.78rem}
+    .step{display:grid;place-items:center;flex:none;width:30px;height:30px;border:1px solid #42dc8840;border-radius:10px;background:#42dc8812;color:var(--green);font-size:.75rem;font-weight:850}
+    .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+    .field{display:grid;gap:6px;min-width:0}
+    .field.full{grid-column:1/-1}
+    label,.field-label{color:#dce8df;font-size:.78rem;font-weight:700}
+    input,select,textarea{width:100%;border:1px solid var(--line);border-radius:10px;outline:none;background:#0b1710;color:var(--text)}
+    input,select{min-height:44px;padding:9px 11px}
+    textarea{min-height:120px;padding:12px;line-height:1.7;resize:vertical}
+    input::placeholder,textarea::placeholder{color:#6e8274}
+    input:focus,select:focus,textarea:focus{border-color:#42dc8890;box-shadow:0 0 0 3px #42dc8818}
+    .score-row{display:flex;align-items:center;gap:10px}
+    .score-row input{text-align:center;font-size:1.12rem;font-weight:850}
+    .score-separator{color:var(--green);font-weight:900}
+    .goal-list{display:grid;gap:10px}
+    .goal-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(102px,.8fr) minmax(72px,.55fr) 38px;align-items:end;gap:8px;padding:11px;border:1px solid var(--line);border-radius:12px;background:#0b1710}
+    .goal-row .field{gap:4px}
+    .goal-row label{color:var(--muted);font-size:.68rem}
+    .goal-row input,.goal-row select{min-height:39px;padding:7px 8px;font-size:.82rem}
+    .goal-row .description-field{grid-column:1/4}
+    .remove-goal{width:38px;height:39px;border:1px solid #ff7f7238;border-radius:9px;background:#ff7f7210;color:var(--red);font-size:1.1rem}
+    .remove-goal:hover{background:#ff7f7225}
+    .subtle-button,.secondary-button,.primary-button,.copy-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid var(--line);border-radius:10px;font-weight:750;text-decoration:none;transition:background .15s,border-color .15s,transform .15s}
+    .subtle-button{min-height:38px;padding:7px 12px;background:#ffffff07;color:#dce8df;font-size:.78rem}
+    .subtle-button:hover,.secondary-button:hover{border-color:#42dc8860;background:#42dc8810}
+    .add-goal{margin-top:11px;color:var(--green)}
+    .actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+    .primary-button{min-height:45px;padding:10px 16px;border-color:var(--green);background:var(--green);color:#082114}
+    .primary-button:hover{background:#6be9a2;transform:translateY(-1px)}
+    .secondary-button{min-height:42px;padding:9px 13px;background:transparent;color:var(--text);font-size:.82rem}
+    .form-status{min-height:20px;margin:9px 0 0;color:var(--muted);font-size:.77rem}
+    .form-status.error{color:var(--red)}
+    .output-head{align-items:center}
+    .output-head .panel-heading{margin-bottom:15px}
+    .output-hint{margin:0 0 15px;padding:12px 14px;border:1px dashed #ffffff22;border-radius:11px;color:var(--muted);font-size:.8rem}
+    .outputs{display:grid;gap:12px}
+    .output-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#0a160f}
+    .output-card-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+    .output-card-head h3{margin:0;font-size:.82rem}
+    .output-tools{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:.68rem}
+    .copy-button{min-height:32px;padding:5px 9px;border-color:#42dc8830;background:#42dc8810;color:var(--green);font-size:.7rem}
+    .copy-button:hover{background:#42dc8822}
+    .output-value{display:block;width:100%;min-height:52px;padding:13px 14px;border:0;border-radius:0;background:transparent;color:#e3eee6;font-size:.87rem;line-height:1.75;resize:vertical}
+    .output-value:focus{box-shadow:inset 0 0 0 1px #42dc8870}
+    .output-value[dir=rtl]{text-align:right;font-family:Tahoma,Arial,sans-serif}
+    #script-output{min-height:265px}
+    #description-output{min-height:150px}
+    #tags-output{min-height:58px}
+    .history-head{align-items:center}
+    .history-count{display:inline-grid;place-items:center;min-width:28px;height:25px;padding:0 7px;border-radius:99px;background:#42dc8815;color:var(--green);font-size:.72rem;font-weight:850}
+    .history-list{display:grid;gap:9px}
+    .history-empty{padding:17px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:.81rem;text-align:center}
+    .history-item{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px;padding:12px;border:1px solid var(--line);border-radius:12px;background:#0b1710}
+    .history-title{margin:0;font-size:.82rem;line-height:1.4}
+    .history-meta{margin:4px 0 0;color:var(--muted);font-size:.68rem}
+    .history-actions{display:flex;align-items:center;gap:6px}
+    .history-actions button{min-height:34px;padding:6px 9px;font-size:.69rem}
+    .used-badge{display:inline-flex;align-items:center;gap:5px;margin-top:7px;color:var(--green);font-size:.66rem;font-weight:800}
+    .used-badge:before{width:6px;height:6px;border-radius:50%;background:var(--green);content:""}
+    .history-error{margin:0 0 11px;color:var(--red);font-size:.77rem}
+    .footer-note{padding:17px 0 25px;border-top:1px solid var(--line);color:var(--muted);font-size:.72rem;text-align:center}
+    .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.column{grid-template-columns:minmax(0,1fr)}}
+    @media(max-width:540px){.shell{width:calc(100% - 24px)}.topbar{padding:15px 0}.intro{padding:24px 0 19px}.panel{padding:15px;border-radius:15px}.form-grid{gap:11px}.goal-row{grid-template-columns:minmax(0,1fr) minmax(90px,.8fr) 72px 36px;padding:8px;gap:6px}.goal-row .description-field{grid-column:1/4}.goal-row .remove-goal{width:36px}.history-item{grid-template-columns:minmax(0,1fr)}.history-actions{flex-wrap:wrap}.history-actions button{flex:1}.actions>*{flex:1}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="news.html" aria-label="SkySport home"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-copy"><strong>SkySport</strong><span>Creator studio</span></span></a>
+    <a class="home-link" href="news.html">← SkySport home</a>
+  </header>
+  <main class="shell">
+    <section class="intro">
+      <span class="eyebrow">Matchday creator toolkit</span>
+      <h1>Football Recap &amp; Goal Script Generator</h1>
+      <p>Turn the final score and key moments into an Arabic YouTube pack—ready to refine, copy and save. Everything runs in your browser.</p>
+    </section>
+    <div class="layout">
+      <div class="column">
+        <form class="panel" id="match-form">
+          <div class="panel-heading"><div><h2>Match details</h2><p>Set the score, competition and the moments that mattered.</p></div><span class="step" aria-hidden="true">01</span></div>
+          <div class="form-grid">
+            <div class="field"><label for="home-team">Home team</label><input id="home-team" name="homeTeam" autocomplete="organization" placeholder="e.g. Arsenal" required></div>
+            <div class="field"><label for="away-team">Away team</label><input id="away-team" name="awayTeam" autocomplete="organization" placeholder="e.g. Barcelona" required></div>
+            <div class="field full"><span class="field-label">Final score</span><div class="score-row"><input id="home-score" aria-label="Home team score" type="number" min="0" max="99" value="0" required><span class="score-separator" aria-hidden="true">—</span><input id="away-score" aria-label="Away team score" type="number" min="0" max="99" value="0" required></div></div>
+            <div class="field"><label for="competition">Competition</label><select id="competition"><option value="دوري أبطال أوروبا">Champions League</option><option value="الدوري الإنجليزي الممتاز">Premier League</option><option value="الدوري الإسباني">La Liga</option><option value="الدوري الإيطالي">Serie A</option><option value="الدوري الألماني">Bundesliga</option><option value="كأس العالم / مباراة دولية">World Cup / International</option><option value="__other">Other</option></select></div>
+            <div class="field"><label for="tone">Tone / style</label><select id="tone"><option value="energetic">Energetic Sports Commentary</option><option value="tactical">Tactical Goal Analysis</option><option value="short">Short Recap</option></select></div>
+            <div class="field full" id="other-competition-field" hidden><label for="other-competition">Competition name</label><input id="other-competition" placeholder="Enter competition name"></div>
+            <div class="field full"><div class="panel-heading" style="align-items:center;margin:5px 0 0"><div><h2>Goal moments</h2><p>Add scorers, minutes and how each goal happened.</p></div><span class="step" aria-hidden="true">02</span></div><div class="goal-list" id="goal-list"></div><button class="subtle-button add-goal" id="add-goal" type="button">＋ Add a goal</button></div>
+          </div>
+          <div class="actions"><button class="primary-button" type="submit">✦ Generate &amp; save pack</button><button class="secondary-button" id="new-match" type="button">Clear form</button></div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <section class="panel" aria-labelledby="history-heading">
+          <div class="panel-heading history-head"><div><h2 id="history-heading">Saved history</h2><p>Edit a pack or mark it used for your channel.</p></div><span class="history-count" id="history-count">0</span></div>
+          <p class="history-error" id="history-error" role="status" hidden></p>
+          <div class="history-list" id="history-list"></div>
+        </section>
+      </div>
+      <div class="column">
+        <section class="panel" aria-labelledby="output-heading">
+          <div class="panel-heading output-head"><div><h2 id="output-heading">Your YouTube pack</h2><p>Arabic, ready to copy or polish in place.</p></div><span class="step" aria-hidden="true">03</span></div>
+          <p class="output-hint" id="output-hint">Fill in the match details, then generate your title, commentary, description and tags.</p>
+          <div class="outputs">
+            <section class="output-card"><div class="output-card-head"><h3>YouTube title</h3><div class="output-tools"><button class="copy-button" type="button" data-copy="title-output">Copy</button></div></div><textarea class="output-value" id="title-output" dir="rtl" aria-label="YouTube title output" placeholder="عنوان الفيديو سيظهر هنا" spellcheck="false"></textarea></section>
+            <section class="output-card"><div class="output-card-head"><h3>Commentary / goal analysis</h3><div class="output-tools"><span id="script-stats"></span><button class="copy-button" type="button" data-copy="script-output">Copy</button></div></div><textarea class="output-value" id="script-output" dir="rtl" aria-label="Arabic commentary and goal analysis output" placeholder="السيناريو العربي سيظهر هنا" spellcheck="false"></textarea></section>
+            <section class="output-card"><div class="output-card-head"><h3>YouTube description</h3><div class="output-tools"><button class="copy-button" type="button" data-copy="description-output">Copy</button></div></div><textarea class="output-value" id="description-output" dir="rtl" aria-label="YouTube description output" placeholder="وصف الفيديو سيظهر هنا" spellcheck="false"></textarea></section>
+            <section class="output-card"><div class="output-card-head"><h3>Tags</h3><div class="output-tools"><button class="copy-button" type="button" data-copy="tags-output">Copy</button></div></div><textarea class="output-value" id="tags-output" dir="rtl" aria-label="Comma-separated YouTube tags output" placeholder="كرة القدم, ملخص المباراة" spellcheck="false"></textarea></section>
+          </div>
+          <div class="actions"><button class="secondary-button" id="save-output-edits" type="button">Save output edits</button><button class="secondary-button" id="copy-all" type="button">Copy all sections</button></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="shell footer-note">Your match details and saved packs stay in this browser. No external API or account required.</footer>
+  <template id="goal-template">
+    <div class="goal-row">
+      <div class="field"><label>Scorer</label><input class="goal-scorer" placeholder="Player name"></div>
+      <div class="field"><label>Team</label><select class="goal-team"><option value="home">Home team</option><option value="away">Away team</option></select></div>
+      <div class="field"><label>Minute</label><input class="goal-minute" placeholder="23'" inputmode="numeric"></div>
+      <div class="field description-field"><label>How it happened</label><input class="goal-description" placeholder="Header from a corner, curled shot…"></div>
+      <button class="remove-goal" type="button" aria-label="Remove goal">×</button>
+    </div>
+  </template>
+  <script>
+    (() => {
+      "use strict";
+      const STORAGE_KEY = "skysport-football-recap-packs-v1";
+      const form = document.getElementById("match-form");
+      const goalList = document.getElementById("goal-list");
+      const goalTemplate = document.getElementById("goal-template");
+      const formStatus = document.getElementById("form-status");
+      const historyError = document.getElementById("history-error");
+      const outputs = ["title-output", "script-output", "description-output", "tags-output"];
+      const fields = {
+        homeTeam: document.getElementById("home-team"),
+        awayTeam: document.getElementById("away-team"),
+        homeScore: document.getElementById("home-score"),
+        awayScore: document.getElementById("away-score"),
+        competition: document.getElementById("competition"),
+        otherCompetition: document.getElementById("other-competition"),
+        tone: document.getElementById("tone")
+      };
+      let packs = [];
+      let activePackId = null;
+      let storageReadError = "";
+
+      function setStatus(message, isError) {
+        formStatus.textContent = message;
+        formStatus.classList.toggle("error", Boolean(isError));
+      }
+
+      function addGoal(goal) {
+        const row = goalTemplate.content.firstElementChild.cloneNode(true);
+        row.querySelector(".goal-team").value = goal && goal.team === "away" ? "away" : "home";
+        if (goal) {
+          row.querySelector(".goal-scorer").value = goal.scorer || "";
+          row.querySelector(".goal-minute").value = goal.minute || "";
+          row.querySelector(".goal-description").value = goal.description || "";
+        }
+        goalList.append(row);
+      }
+
+      function competitionName() {
+        return fields.competition.value === "__other"
+          ? fields.otherCompetition.value.trim()
+          : fields.competition.value;
+      }
+
+      function getMatch() {
+        const goals = Array.from(goalList.querySelectorAll(".goal-row")).map((row) => ({
+          scorer: row.querySelector(".goal-scorer").value.trim(),
+          team: row.querySelector(".goal-team").value,
+          minute: row.querySelector(".goal-minute").value.trim(),
+          description: row.querySelector(".goal-description").value.trim()
+        })).filter((goal) => goal.scorer || goal.minute || goal.description);
+        return {
+          homeTeam: fields.homeTeam.value.trim(),
+          awayTeam: fields.awayTeam.value.trim(),
+          homeScore: Number(fields.homeScore.value),
+          awayScore: Number(fields.awayScore.value),
+          competition: competitionName(),
+          competitionValue: fields.competition.value,
+          tone: fields.tone.value,
+          goals
+        };
+      }
+
+      function selectedGoals(match) {
+        return match.goals.map((goal) => ({
+          ...goal,
+          teamName: goal.team === "away" ? match.awayTeam : match.homeTeam
+        }));
+      }
+
+      function makeScript(match) {
+        const score = `${match.homeScore} - ${match.awayScore}`;
+        const outcome = match.homeScore === match.awayScore
+          ? `تعادل ${match.homeTeam} و${match.awayTeam}`
+          : `فوز ${match.homeScore > match.awayScore ? match.homeTeam : match.awayTeam}`;
+        const toneIntro = {
+          energetic: `يا لها من مواجهة كروية مليئة بالإثارة! ${match.homeTeam} يواجه ${match.awayTeam} في ${match.competition}، والنتيجة النهائية ${score}.`,
+          tactical: `في ${match.competition}، انتهت مواجهة ${match.homeTeam} و${match.awayTeam} بنتيجة ${score}. لنحلل أبرز لحظات المباراة وكيف صنعت الفارق.`,
+          short: `ملخص سريع لمباراة ${match.homeTeam} و${match.awayTeam} في ${match.competition}، والتي انتهت بنتيجة ${score}.`
+        }[match.tone];
+        const goals = selectedGoals(match);
+        const goalLines = goals.length
+          ? goals.map((goal) => {
+            const minute = goal.minute ? `في الدقيقة ${goal.minute.replace(/['’]/g, "")}` : "في إحدى لحظات المباراة";
+            const detail = goal.description ? ` ${goal.description}.` : " بعد تحرك هجومي مميز.";
+            const style = match.tone === "tactical"
+              ? `سجل ${goal.scorer} لـ${goal.teamName} بعد قراءة ذكية للمساحة والتوقيت.`
+              : match.tone === "short"
+                ? `وسجل ${goal.scorer} لـ${goal.teamName}.`
+                : `يا سلام! ${goal.scorer} يضع بصمته ويهز الشباك لـ${goal.teamName}!`;
+            return `⚽ ${minute}: ${style}${detail}`;
+          })
+          : ["لم تُسجل تفاصيل الأهداف في هذه النسخة. أضف أسماء المسجلين والدقائق لإثراء التعليق."];
+        const conclusion = match.tone === "tactical"
+          ? `الخلاصة أن التفاصيل الصغيرة والتحولات في مجريات اللعب حسمت مواجهة ${match.homeTeam} و${match.awayTeam}. انتهى اللقاء ${score} مع ${outcome}. والآن أخبرونا: ما اللحظة التي غيرت المباراة من وجهة نظركم؟`
+          : match.tone === "short"
+            ? `كانت هذه أبرز أحداث اللقاء. شاركونا رأيكم في النتيجة، ولا تنسوا الاشتراك لمزيد من ملخصات كرة القدم.`
+            : `صافرة النهاية تؤكد ${outcome} في مواجهة ستبقى حديث الجماهير! ${match.homeTeam} أمام ${match.awayTeam}، والنتيجة ${score}. ما رأيكم في أداء الفريقين؟ اكتبوا توقعاتكم للمباراة القادمة في التعليقات، ولا تنسوا الإعجاب والاشتراك!`;
+        return `المقدمة\n${toneIntro}\n\nأبرز الأهداف\n${goalLines.join("\n\n")}\n\nالخاتمة\n${conclusion}`;
+      }
+
+      function makePack(match, id) {
+        const winner = match.homeScore === match.awayScore
+          ? "تعادل مثير"
+          : match.homeScore > match.awayScore ? `فوز ${match.homeTeam}` : `فوز ${match.awayTeam}`;
+        const goalCount = match.homeScore + match.awayScore;
+        const titlePrefix = match.tone === "energetic" ? "ملخص ناري" : match.tone === "tactical" ? "تحليل وأهداف" : "ملخص سريع";
+        const title = `${titlePrefix} مباراة ${match.homeTeam} و${match.awayTeam} ${match.homeScore}-${match.awayScore} | ${winner}`;
+        const script = makeScript(match);
+        const words = script.trim().split(/\s+/).filter(Boolean).length;
+        const minutes = Math.max(1, Math.ceil(words / 130));
+        const goals = selectedGoals(match);
+        const moments = goals.length
+          ? goals.map((goal) => `⚽ ${goal.minute ? `${goal.minute.replace(/['’]/g, "")}’` : "هدف"} — ${goal.scorer} (${goal.teamName})`).join("\n")
+          : `النتيجة النهائية: ${match.homeTeam} ${match.homeScore} - ${match.awayScore} ${match.awayTeam}`;
+        const description = `ملخص مباراة ${match.homeTeam} ضد ${match.awayTeam} في ${match.competition}.\nالنتيجة النهائية: ${match.homeTeam} ${match.homeScore} - ${match.awayScore} ${match.awayTeam}.\n${winner} مع ${goalCount} هدف${goalCount === 1 ? "" : "ًا"}.\n\nأبرز اللحظات:\n${moments}\n\nما رأيكم في المباراة؟ شاركونا توقعاتكم في التعليقات!\n#كرة_القدم #ملخص_المباراة #${match.homeTeam.replace(/\s+/g, "_")} #${match.awayTeam.replace(/\s+/g, "_")}`;
+        const tags = ["كرة القدم", "ملخص المباراة", "أهداف اليوم", match.homeTeam, match.awayTeam, match.competition, "تحليل كروي", "الدوري"].join(", ");
+        return {
+          id: id || `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+          match, title, script, description, tags, words, minutes,
+          createdAt: id ? (packs.find((pack) => pack.id === id) || {}).createdAt || Date.now() : Date.now(),
+          updatedAt: Date.now(),
+          used: id ? Boolean((packs.find((pack) => pack.id === id) || {}).used) : false
+        };
+      }
+
+      function readPacks() {
+        try {
+          const stored = localStorage.getItem(STORAGE_KEY);
+          if (!stored) return [];
+          const parsed = JSON.parse(stored);
+          if (!Array.isArray(parsed) || parsed.some((pack) => !pack || typeof pack.id !== "string" || !pack.match)) {
+            throw new Error("Saved packs have an unexpected format.");
+          }
+          return parsed;
+        } catch (error) {
+          storageReadError = `Could not read saved history: ${error.message}`;
+          return [];
+        }
+      }
+
+      function persistPacks() {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(packs));
+          storageReadError = "";
+          historyError.hidden = true;
+          historyError.textContent = "";
+          return true;
+        } catch (error) {
+          historyError.textContent = `Could not save to this browser: ${error.message}`;
+          historyError.hidden = false;
+          return false;
+        }
+      }
+
+      function formatDate(timestamp) {
+        return new Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(new Date(timestamp));
+      }
+
+      function renderHistory() {
+        const list = document.getElementById("history-list");
+        document.getElementById("history-count").textContent = String(packs.length);
+        list.replaceChildren();
+        if (storageReadError) {
+          historyError.textContent = storageReadError;
+          historyError.hidden = false;
+        }
+        if (!packs.length) {
+          const empty = document.createElement("div");
+          empty.className = "history-empty";
+          empty.textContent = "Your saved match packs will appear here.";
+          list.append(empty);
+          return;
+        }
+        packs.slice().sort((a, b) => b.updatedAt - a.updatedAt).forEach((pack) => {
+          const item = document.createElement("article");
+          item.className = "history-item";
+          const info = document.createElement("div");
+          const title = document.createElement("h3");
+          title.className = "history-title";
+          title.textContent = pack.title;
+          const meta = document.createElement("p");
+          meta.className = "history-meta";
+          meta.textContent = `${pack.match.competition} · ${formatDate(pack.updatedAt)}`;
+          info.append(title, meta);
+          if (pack.used) {
+            const badge = document.createElement("span");
+            badge.className = "used-badge";
+            badge.textContent = "Used on channel";
+            info.append(badge);
+          }
+          const actions = document.createElement("div");
+          actions.className = "history-actions";
+          const edit = document.createElement("button");
+          edit.className = "subtle-button";
+          edit.type = "button";
+          edit.textContent = "Edit";
+          edit.addEventListener("click", () => loadPack(pack));
+          const used = document.createElement("button");
+          used.className = "subtle-button";
+          used.type = "button";
+          used.textContent = pack.used ? "Mark unused" : "Mark used";
+          used.setAttribute("aria-pressed", String(pack.used));
+          used.addEventListener("click", () => {
+            packs = packs.map((entry) => entry.id === pack.id ? { ...entry, used: !entry.used, updatedAt: Date.now() } : entry);
+            if (persistPacks()) renderHistory();
+          });
+          actions.append(edit, used);
+          item.append(info, actions);
+          list.append(item);
+        });
+      }
+
+      function writeOutputs(pack) {
+        document.getElementById("title-output").value = pack.title;
+        document.getElementById("script-output").value = pack.script;
+        document.getElementById("description-output").value = pack.description;
+        document.getElementById("tags-output").value = pack.tags;
+        document.getElementById("script-stats").textContent = `${pack.words} words · ~${pack.minutes} min`;
+        document.getElementById("output-hint").textContent = `Generated for ${pack.match.homeTeam} ${pack.match.homeScore}–${pack.match.awayScore} ${pack.match.awayTeam}. Edit any text, then save your changes.`;
+      }
+
+      function loadPack(pack) {
+        activePackId = pack.id;
+        fields.homeTeam.value = pack.match.homeTeam;
+        fields.awayTeam.value = pack.match.awayTeam;
+        fields.homeScore.value = String(pack.match.homeScore);
+        fields.awayScore.value = String(pack.match.awayScore);
+        fields.tone.value = pack.match.tone;
+        const options = Array.from(fields.competition.options).map((option) => option.value);
+        if (options.includes(pack.match.competitionValue)) {
+          fields.competition.value = pack.match.competitionValue;
+        } else {
+          fields.competition.value = "__other";
+          fields.otherCompetition.value = pack.match.competition;
+        }
+        document.getElementById("other-competition-field").hidden = fields.competition.value !== "__other";
+        goalList.replaceChildren();
+        pack.match.goals.forEach(addGoal);
+        if (!pack.match.goals.length) addGoal();
+        writeOutputs(pack);
+        setStatus("Pack loaded. Edit the match or any output, then save your changes.", false);
+        form.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      function saveCurrentOutputEdits() {
+        if (!activePackId) {
+          setStatus("Generate a match pack before saving output edits.", true);
+          return;
+        }
+        const current = packs.find((pack) => pack.id === activePackId);
+        if (!current) {
+          setStatus("This saved pack is no longer available. Generate a new pack first.", true);
+          return;
+        }
+        const script = document.getElementById("script-output").value;
+        const words = script.trim().split(/\s+/).filter(Boolean).length;
+        const updated = {
+          ...current,
+          title: document.getElementById("title-output").value.trim(),
+          script,
+          description: document.getElementById("description-output").value,
+          tags: document.getElementById("tags-output").value,
+          words,
+          minutes: Math.max(1, Math.ceil(words / 130)),
+          updatedAt: Date.now()
+        };
+        packs = packs.map((pack) => pack.id === activePackId ? updated : pack);
+        if (persistPacks()) {
+          renderHistory();
+          document.getElementById("script-stats").textContent = `${words} words · ~${updated.minutes} min`;
+          setStatus("Output edits saved to this browser.", false);
+        }
+      }
+
+      document.getElementById("add-goal").addEventListener("click", () => addGoal());
+      goalList.addEventListener("click", (event) => {
+        if (event.target.closest(".remove-goal")) {
+          event.target.closest(".goal-row").remove();
+          if (!goalList.children.length) addGoal();
+        }
+      });
+      fields.competition.addEventListener("change", () => {
+        document.getElementById("other-competition-field").hidden = fields.competition.value !== "__other";
+      });
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        const match = getMatch();
+        if (!match.homeTeam || !match.awayTeam || !match.competition) {
+          setStatus("Add both team names and a competition to generate a pack.", true);
+          return;
+        }
+        const pack = makePack(match, activePackId);
+        packs = [pack, ...packs.filter((entry) => entry.id !== pack.id)];
+        writeOutputs(pack);
+        if (persistPacks()) {
+          activePackId = pack.id;
+          renderHistory();
+          setStatus("Your Arabic YouTube pack is generated and saved.", false);
+        } else {
+          setStatus("The pack was generated, but could not be saved in this browser.", true);
+        }
+      });
+      document.getElementById("save-output-edits").addEventListener("click", saveCurrentOutputEdits);
+      document.getElementById("new-match").addEventListener("click", () => {
+        form.reset();
+        goalList.replaceChildren();
+        addGoal();
+        activePackId = null;
+        document.getElementById("other-competition-field").hidden = true;
+        outputs.forEach((id) => { document.getElementById(id).value = ""; });
+        document.getElementById("script-stats").textContent = "";
+        document.getElementById("output-hint").textContent = "Fill in the match details, then generate your title, commentary, description and tags.";
+        setStatus("", false);
+      });
+      document.querySelectorAll("[data-copy]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const text = document.getElementById(button.dataset.copy).value;
+          if (!text.trim()) {
+            setStatus("Generate a pack before copying this section.", true);
+            return;
+          }
+          try {
+            await navigator.clipboard.writeText(text);
+            const original = button.textContent;
+            button.textContent = "Copied!";
+            window.setTimeout(() => { button.textContent = original; }, 1400);
+          } catch (error) {
+            setStatus(`Could not copy to clipboard: ${error.message}`, true);
+          }
+        });
+      });
+      document.getElementById("copy-all").addEventListener("click", async () => {
+        const text = outputs.map((id) => document.getElementById(id).value.trim()).filter(Boolean).join("\n\n---\n\n");
+        if (!text) {
+          setStatus("Generate a pack before copying it.", true);
+          return;
+        }
+        try {
+          await navigator.clipboard.writeText(text);
+          setStatus("All generated sections copied.", false);
+        } catch (error) {
+          setStatus(`Could not copy to clipboard: ${error.message}`, true);
+        }
+      });
+
+      packs = readPacks();
+      addGoal();
+      renderHistory();
+    })();
+  </script>
+</body>
+</html>
