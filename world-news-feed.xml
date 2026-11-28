@@ -5,7 +5,7 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 00:37:15 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 01:59:29 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
     <item>
       <title>Victorian election 2026 live: voters head to the polls as Coalition seeks to topple Labor – latest news</title>
@@ -14,7 +14,34 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Sat, 28 Nov 2026 00:12:10 +0000</pubDate>
+      <pubDate>Sat, 28 Nov 2026 01:44:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nigeria's 'ultimate hard man' who become an online meme</title>
+      <link>https://www.bbc.co.uk/news/articles/cm3vg3lkrk03o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">5ebdf7f6465550fbfd18</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 28 Nov 2026 01:20:35 +0000</pubDate>
+    </item>
+    <item>
+      <title>'Poison seller' Kenneth Law apologises in court to the families of his victims</title>
+      <link>https://www.bbc.co.uk/news/articles/cmx2898wq2qjo?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">6ccc7c31dee7390a75c1</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 28 Nov 2026 00:56:55 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Indian 'Tamasha queen' whose fans paid for a show that never happened</title>
+      <link>https://www.bbc.co.uk/news/articles/cj20q9pw0116o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">d78f8d306811d4ce8ea8</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 28 Nov 2026 00:50:11 +0000</pubDate>
     </item>
     <item>
       <title>A clinic is reassessing people with ADHD and autism diagnoses - but critics fear it could deepen stigma</title>
@@ -80,15 +107,6 @@
       <pubDate>Fri, 27 Nov 2026 22:14:56 +0000</pubDate>
     </item>
     <item>
-      <title>Prosecutors seek 25-year prison term for 'poison seller' Kenneth Law</title>
-      <link>https://www.bbc.co.uk/news/articles/cmx2898wq2qjo?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">6ccc7c31dee7390a75c1</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Fri, 27 Nov 2026 22:03:46 +0000</pubDate>
-    </item>
-    <item>
       <title>Princess of Wales documentary Heal charts ‘pilgrimage’ after cancer treatment</title>
       <link>https://www.theguardian.com/uk-news/2026/nov/27/catherine-princess-of-wales-heal-documentary-cancer</link>
       <guid isPermaLink="false">d698678185b8e5e26753</guid>
@@ -150,24 +168,6 @@
       <category>Climate</category>
       <source>BBC News</source>
       <pubDate>Fri, 27 Nov 2026 20:06:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>Graham Thorpe’s widow takes legal action against NHS trust after inquest</title>
-      <link>https://www.theguardian.com/uk-news/2026/nov/27/graham-thorpe-widow-legal-action-against-nhs-trust-after-inquest</link>
-      <guid isPermaLink="false">673df459e1c80717be2f</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Health</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 19:52:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>Weary of war but with no sign of backing down, Kyiv faces another punishing winter</title>
-      <link>https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">1eab93bf7e54c93e2ea5</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Fri, 27 Nov 2026 18:42:50 +0000</pubDate>
     </item>
   </channel>
 </rss>
