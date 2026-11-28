@@ -5,8 +5,17 @@
     <link>https://aslaykii.github.io/skysport/world-news.html</link>
     <description>Source-linked world news with concise summaries based on trusted publisher feeds.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 09:59:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 10:50:32 +0000</lastBuildDate>
     <generator>SkySport World News</generator>
+    <item>
+      <title>Two staff killed in Israeli strike on Gaza medical clinic, MSF says</title>
+      <link>https://www.bbc.co.uk/news/articles/cm5y10yydln3o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">f3d70f2740f257b6e480</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Health</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 28 Nov 2026 10:34:58 +0000</pubDate>
+    </item>
     <item>
       <title>Victorian election 2026 live results: Ben Carroll projected to lose seat as Coalition wipes out Labor</title>
       <link>https://www.theguardian.com/australia-news/live/2026/nov/28/victorian-election-live-results-updates-premier-ben-carroll-jess-wilson-warren-pickering-2026-victoria-polls-votes-latest-news-ntwnfb</link>
@@ -14,16 +23,34 @@
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Sat, 28 Nov 2026 09:48:19 +0000</pubDate>
+      <pubDate>Sat, 28 Nov 2026 10:34:08 +0000</pubDate>
     </item>
     <item>
-      <title>Victorian election 2026: Coalition projected to win state poll, ending 12 years of Labor government</title>
+      <title>Victorian election 2026: Ben Carroll concedes to Jess Wilson, ending 12 years of Labor government</title>
       <link>https://www.theguardian.com/australia-news/2026/nov/28/victoria-election-2026-winner-announced-who-won-poll-win-coalition-labor-victorian-state-results</link>
       <guid isPermaLink="false">3da97a0727a3bad39be0</guid>
       <description>AI summary unavailable. Open the source report for context.</description>
       <category>Politics</category>
       <source>The Guardian</source>
-      <pubDate>Sat, 28 Nov 2026 09:37:54 +0000</pubDate>
+      <pubDate>Sat, 28 Nov 2026 10:29:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Seven students killed and nearly 100 injured in explosion in Afghanistan, official says</title>
+      <link>https://www.bbc.co.uk/news/articles/ckp80jyz6dl8o?at_medium=RSS&amp;at_campaign=rss</link>
+      <guid isPermaLink="false">7479e0f80cfc2f0eb8fd</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>World</category>
+      <source>BBC News</source>
+      <pubDate>Sat, 28 Nov 2026 10:14:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>Woman ‘traumatised’ by Sainsbury’s shoplifting ban after staff facial recognition error</title>
+      <link>https://www.theguardian.com/technology/2026/nov/28/woman-traumatised-sainsburys-shoplifting-ban-after-staff-facial-recognition-error</link>
+      <guid isPermaLink="false">0c1f8a31e59cc9f7f024</guid>
+      <description>AI summary unavailable. Open the source report for context.</description>
+      <category>Business</category>
+      <source>The Guardian</source>
+      <pubDate>Sat, 28 Nov 2026 10:00:36 +0000</pubDate>
     </item>
     <item>
       <title>Unpaid TV licence or cycling on pavement could bar people from settling in UK</title>
@@ -141,33 +168,6 @@
       <category>World</category>
       <source>BBC News</source>
       <pubDate>Sat, 28 Nov 2026 00:56:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>The Indian 'Tamasha queen' whose fans paid for a show that never happened</title>
-      <link>https://www.bbc.co.uk/news/articles/cj20q9pw0116o?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">d78f8d306811d4ce8ea8</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>BBC News</source>
-      <pubDate>Sat, 28 Nov 2026 00:50:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>A clinic is reassessing people with ADHD and autism diagnoses - but critics fear it could deepen stigma</title>
-      <link>https://www.bbc.co.uk/news/articles/cr9309nyg2vno?at_medium=RSS&amp;at_campaign=rss</link>
-      <guid isPermaLink="false">776f6dea0328e2d7c613</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>Politics</category>
-      <source>BBC News</source>
-      <pubDate>Sat, 28 Nov 2026 00:05:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>Purse found of woman, 24, swept from California beach three weeks ago</title>
-      <link>https://www.theguardian.com/us-news/2026/nov/27/purse-found-woman-california-beach-wave</link>
-      <guid isPermaLink="false">b5c2a10b96a149b72dcc</guid>
-      <description>AI summary unavailable. Open the source report for context.</description>
-      <category>World</category>
-      <source>The Guardian</source>
-      <pubDate>Fri, 27 Nov 2026 23:43:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
